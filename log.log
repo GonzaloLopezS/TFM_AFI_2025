@@ -1,0 +1,17 @@
+Inicializacion del repositorio en GitHub y comienzo de creación del proyecto.
+Creación del script binder_bateaus.py
+Problemas con licencias y API Key para acceder a la API
+Localización y descarga de datasets en Kaggle (en caso de necesidad)
+
+10/12/2024:
+Creación del script scrapping_functions.py
+En Kpler MarineTraffic se permiten descargar csv de los datos. No se sabe si una gran cantidad de datos implica algún tipo de gasto.
+Preparando scrapping masivo a decidir puertos y rutas
+
+- Ports: Country, Port, Lococode, Vessels in Port, Departures, Arrivals, Expected Arrivals, Local Time, Related Anchorage, Area Global, Area Local, Coverage
+Filtrar por Área Global, Area Local, Country, Port
+
+-¿Qué regiones/zonas me interesan?: Flujos este asiático a costa occidental de Norteamérica. Costa de Mexico y litoral pacífico del resto de América.
+- Cuellos de botella: Panama, Suez, Estrechos: Costa Este de Estados Unidos, Puertos Norte de Europa, Puertos del Mediterráneo.
+
+- Vessels: flag, vessel_name, destination_port, imo, vessel type, time_of_last_position, latitude, longitude, mmsi
