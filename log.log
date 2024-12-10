@@ -15,3 +15,10 @@ Filtrar por Área Global, Area Local, Country, Port
 - Cuellos de botella: Panama, Suez, Estrechos: Costa Este de Estados Unidos, Puertos Norte de Europa, Puertos del Mediterráneo.
 
 - Vessels: flag, vessel_name, destination_port, imo, vessel type, time_of_last_position, latitude, longitude, mmsi
+
+- Productos Kpler y MarineTraffic: 
+    - Data Services: https://www.kpler.com/product/maritime/data-services
+    - Online Services: https://www.marinetraffic.com/en/online-services/solutions
+    - Container Tracking: https://www.kpler.com/product/maritime/container-tracking
+
+- Terms of Use: https://www.marinetraffic.com/en/data/[object%20Object]/p/terms
