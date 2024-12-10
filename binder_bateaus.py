@@ -39,3 +39,4 @@ import kagglehub
 path = kagglehub.dataset_download("marsalanakhtar/ais-data-for-ships")
 
 print("Path to dataset files:", path)
+
