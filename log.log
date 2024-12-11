@@ -22,3 +22,24 @@ Filtrar por Área Global, Area Local, Country, Port
     - Container Tracking: https://www.kpler.com/product/maritime/container-tracking
 
 - Terms of Use: https://www.marinetraffic.com/en/data/[object%20Object]/p/terms
+
+11/12/2024:
+Conformación de las url de búsqueda en las páginas
+Diseñando las columnas que se requerirán para el dataset así como los filtros específicos
+
+En el caso de vessels: imo, destination_port, reported destination, reported eta, (latitude, longitude, mmsi)
+filtros: Vessel Type = 'Cargo', Capacity?, 'Global Area', 'Local Area?', Reported Destination, 'current port country'
+
+En el caso de ports: country, port, un/locode, vessels in port, departures, arrivals, expected arrivals, Area Global, Area Local
+Filtros: Area Global, Area Local, Port Type
+
+Diferencias entre imo y mmsi: https://www.retevismarine.com/blog/What-is-the-difference-between-MMSI-and-IMO-
+
+Revisar Global Area y Local Area.
+
+¿Cada cuanto capturar datos? ¿De qué regiones tomar?
+Capacidades y tamaños de buques mercantes: https://porteconomicsmanagement-org.translate.goog/pemp/contents/part4/terminals-and-terminal-operators/ship-characteristics-capacity-measures/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq
+[Revisar más fuentes]
+
+Divergencia matemática (a fin de cuentas se está midiendo flujo entre dos puntos: fuentes y sumideros): https://es.wikipedia.org/wiki/Divergencia_(matem%C3%A1tica)
+¿Cuál sería el campo vectorial?
