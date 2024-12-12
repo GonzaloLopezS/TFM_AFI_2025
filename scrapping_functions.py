@@ -15,14 +15,7 @@ print("Opción de entrar en MarineTraffic")
 # Variables globales:
 url_principal = 'https://www.marinetraffic.com/en/data/'
 
-# Datos de puertos:
-sub_ports = '?asset_type=ports'
-# columns_ports = '&columns=flag,portname,unlocode,photo,vessels_in_port,vessels_departures,vessels_arrivals,vessels_expected_arrivals,local_time,anchorage,geographical_area_one,geographical_area_two,coverage'
-columns_ports = '&columns=flag%2Cportname%2Cunlocode%2Cvessels_in_port%2Cvessels_departures%2Cvessels_arrivals%2Cvessels_expected_arrivals%2Clocal_time%2Cgeographical_area_one%2Cgeographical_area_two'
-filters_ports = '&geographical_area_one_in=NPAC|North+Pacific%2CUSWC|US+West+Coast%2CJAPAN|Japan+Coast%2CSCHINA|South+China%2CCCHINA|Central+China'
 
-url_puertos = url_principal + sub_ports + columns_ports + filters_ports
-print(url_puertos)
 
 # Datos de embarcaciones:
 sub_vessels = '?asset_type=vessels'
