@@ -39,7 +39,18 @@ Revisar Global Area y Local Area.
 
 ¿Cada cuanto capturar datos? ¿De qué regiones tomar?
 Capacidades y tamaños de buques mercantes: https://porteconomicsmanagement-org.translate.goog/pemp/contents/part4/terminals-and-terminal-operators/ship-characteristics-capacity-measures/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq
-[Revisar más fuentes]
+[Revisar más fuentes] https://transportgeography.org/
 
 Divergencia matemática (a fin de cuentas se está midiendo flujo entre dos puntos: fuentes y sumideros): https://es.wikipedia.org/wiki/Divergencia_(matem%C3%A1tica)
 ¿Cuál sería el campo vectorial?
+
+13/12/2024:
+Creación de ports_data.py con datos sacados de scrapping_functions.py
+- Extraer 1 vez la cabecera de las tablas
+Se trata de una web dinámica -> Uso de selenium
+Geckodriver (Driver de firefox) version 0.35 compatible con Firefox (version 133.0) en Ubuntu 22.04
+
+Error en la ejecución de ports_data.py:
+- https://stackoverflow.com/questions/72490452/how-to-solve-your-firefox-profile-cannot-be-loaded-it-may-be-missing-or-inacce
+- https://stackoverflow.com/questions/54941970/selenium-firefox-profile-missing-on-linux
+- https://stackoverflow.com/questions/72405117/selenium-geckodriver-profile-missing-your-firefox-profile-cannot-be-loaded
