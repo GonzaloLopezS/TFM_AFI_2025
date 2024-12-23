@@ -54,3 +54,95 @@ Error en la ejecución de ports_data.py:
 - https://stackoverflow.com/questions/72490452/how-to-solve-your-firefox-profile-cannot-be-loaded-it-may-be-missing-or-inacce
 - https://stackoverflow.com/questions/54941970/selenium-firefox-profile-missing-on-linux
 - https://stackoverflow.com/questions/72405117/selenium-geckodriver-profile-missing-your-firefox-profile-cannot-be-loaded
+
+18/12/2024:
+Primera captura de datos manual de MarineTraffic -> a fichero .csv
+Crear BDD para estructurar datos (Opciones: PosgreSQL, MySQL, MongoDB...)
+En caso de no tener preparada la BDD, "at" con la escritura del fichero .csv + crontab ajustado a 24 horas.
+Programar el crontab en un contenedor docker si es posible. 1 ejecución cada 24 horas.
+
+Para evitar suspicacias y aumento del tráfico en la web
+
+Puertos clasificados por 'Áreas Globales':
+ - Pacifico (3518 Ports): North Pacific, US West Coast, Japan Coast, South China, South Pacific, Inland China, Central China, CIS Pacific, East Australia, Indonesia, North China, Philippines, South-East Asia, West Coast Canada
+    ¿South America?
+ - Atlantico + Mediterráneo (13747 Ports): West Mediterranean, Baltic Sea, North Atlantic, East Coast South America, Gulf of Meico, Adriatic Sea, US West Coast, Norwegian Coast, Caribbean Sea, Inland, Europe, Inland, South America, East Coast Central America, East Coast Canada, North Coast South America, UK Coast & Atlantic, US East Coast, West Africa.
+
+Potenciales 'Áreas Locales': Antwerp Area, Rotterdam Area, Piraeus Area, North Sea, Gibraltar, Gulf of California, East China Sea...
+
+Tomar todos los datos sin filtro? -> 20887 Puertos en total
+Cargo Vessels en total -> ~ 300K
+
+Plans and online services: https://www.marinetraffic.com/en/online-services/plans
+
+23/12/2024:
+Prueba de extraccion de datos para 3518 puertos del pacífico + 10 columnas
+- Se recomienda que los substrings 'filters_ports_pacific' y 'filters_ports_atlantic_mediterranean' se extraigan o bien desde un fichero de contexto, o de tablas de bdd.
+
+- Para la extracción de datos: cada iteración -> random.uniform(0,3) segundos entre extracción. Extender esto cuando toque hacer crawler.
+
+Primer error:
+Traceback (most recent call last):
+  File "/home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/ports_data.py", line 51, in <module>
+    container = driver.find_element(By.CLASS_NAME, "MuiDataGrid-topContainer")
+  File "/home/gonzalopc/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/gonzalopc/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/home/gonzalopc/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .MuiDataGrid-topContainer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+- Problemas con detección de robot. Probar con la obtención semimanual de los datos. Ordenamos los puertos según volumen de llegadas y salidas.
+- Regla Pareto 80/20
+- 20/100 de 3500 vienen a ser 700 puertos.
+
+Búsqueda de alternativas Open Source a marinetraffic:
+ 1) https://www.vesselfinder.com/ -> Vessels, Port (cannot filter by type without premium), Containers
+
+ 2) https://www.vesseltracker.com/ -> Has a demo, and trial:
+    - data services: https://www.vesseltracker.com/en/products/dataServices.html
+    - trial: https://www.vesseltracker.com/en/products/onlineAccounts.html
+
+ 3) https://www.myshiptracking.com/
+    - Plans: https://www.myshiptracking.com/pricing/contributors
+    - Port Database: https://www.myshiptracking.com/ports?sort=ARRIVALS&sort_type=DESC
+
+ 4) https://shipfinder.co/
+ 5) https://www.shipxplorer.com/
+ 6) https://www.techsalerator.com/
+
+ 7) https://openseamap.org/index.php?id=openseamap&L=1
+
+ 8) https://www.bigoceandata.com/
+    - Port activity: https://www.bigoceandata.com/problems-solved/port-activity-and-scheduling-toolset/
+    - Vessel tracking: https://www.bigoceandata.com/applications/vessel-tracking/
+
+ 9) https://github.com/transparency-everywhere/position-api/
+
+ 10) https://support.marinetraffic.com/en/articles/9552956-opencpn -> OpenCPN
+ 11) https://www.aishub.net/ -> https://www.aishub.net/stations?Station%5BSID%5D=&Station%5Bstatus%5D=0&Station%5Buptime%5D=&Station%5BCOUNTRY%5D=&Station%5BLOCATION%5D=&Station%5BCOUNT%5D=&Station%5BDISTINCT%5D=&sort=-COUNT
+    - Web API: https://www.aishub.net/api (1 consulta/ minuto)
+
+    Ejemplo de consulta:
+    https://data.aishub.net/stations.php?username=A&output=B&compress=C&id=D
+    [REVISAR]
+
+ 12) https://documentation.spire.com/ -> API: GRAPHQL. DESCARTADO
+    - Routing API: https://documentation.spire.com/routing-api/routing/
+    - API: https://documentation.spire.com/maritime-2-0/ 
+    - trial token: https://documentation.spire.com/maritime-2-0/
+
+Uso de GraphQL con Python: https://www.apollographql.com/blog/complete-api-guide
+
+He accedido a los datos de aishub. Especialmente para los puertos. Dado que el tiempo de "procesado", es decir, trayectos, carga, descargas...
+de un barco puede durar horas o incluso algún día, no hay urgencia para la toma de datos.
+
+He obtenido los puertos marítimos ordenados por cantidad de flota atracada (*) y siguiendo la regla de Pareto (80-20) se podría reducir el número
+de datos, maximizando la cantidad de información.
+Ver en: https://asana.com/es/resources/pareto-principle-80-20-rule
