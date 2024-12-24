@@ -3,11 +3,20 @@ import pandas as pd
 import requests
 import time
 import random
+import csv
+import datetime
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+# Datetime and csv file to export:
+x = datetime.datetime.now()
+date_part = x.strftime("%Y%m%d")
+csv_export_filename = date_part + "_marinetraffic_ports.csv"
 
 # URLs y Direcciones:
 service_dir = "/usr/local/bin/"
@@ -27,46 +36,150 @@ filters_ports_atlantic_mediterranean = '&geographical_area_one_in=WMED|West+Medi
 url_puertos = url_principal + sub_ports + columns_ports + filters_ports_pacific
 print(url_puertos)
 
-# Configuracion del navegador Firefox:
-firefox_options = Options()
-firefox_options.add_argument("--headless")
-# firefox_options.add_argument("-profile")
-# firefox_options.binary_location = firefox_path
+# Configuracion del driver de Firefox:
+def driver_configuration():
+    firefox_options = Options()
+    # firefox_options.add_argument("--headless")
+    firefox_options.add_argument("--incognito")
+    service = Service(geckodriver_service)
+    # firefox_options.binary_location = firefox_path
+    print("Preparando el driver")
+    driver = webdriver.Firefox(service=service, options=firefox_options)
+    return driver
 
-service = Service(geckodriver_service) #service_dir + geckodriver_path
-print("Preparando el driver")
-driver = webdriver.Firefox(service=service, options=firefox_options) # Fallo aqui: 
+def prueba_con_google():
+    driver = driver_configuration()
 
-# Apertura de la página web:
-print("Antes de entrar en url")
-driver.get("https://www.google.com")
+    try:
+        # Apertura de la página web:
+        print("Antes de entrar en url")
+        driver.get("https://www.google.com")
 
-print("Hasta aqui")
-# Tiempo de espera de carga del contenido dinámico:
-print(driver.title)
-driver.implicitly_wait(15)
-print("Tras 15 segundos")
+        print(driver.title)
+        # driver.implicitly_wait(15)
+        # print("Tras 15 segundos")
 
-# # Extraccion de la información:
-container = driver.find_element(By.CLASS_NAME, "MuiDataGrid-topContainer")
-headers = container.find_elements(By.CLASS_NAME, "MuiDataGrid-columnHeaderTitle")
+        # Rechazar cookies:
+        try:
+            boton_rechazar = WebDriverWait(driver, 10).until(
+                # EC.element_to_be_clickable((By.XPATH,"//button[text()='Rechazar todo'] | //button[text()='Rechazar']"))
+                # EC.element_to_be_clickable((By.NAME,"")) # id="W0wltc"
+                EC.element_to_be_clickable((By.ID,"W0wltc")) # id="W0wltc"
+            )
+            boton_rechazar.click()
+            print("Cookies rechazadas")
+        except:
+            print("No se encontró el botón de rechazo de cookies.")
 
-for header in headers:
-    time.sleep(random.uniform(0,3))
-    print(header.text)
+        #Ignorar otras ventanas emergentes:
+        try:
+            ventanas_emergentes = driver.find_elements(By.XPATH, "//button[contains(text(),'No, gracias') or contains(text(),'Cerrar')]")
+            for boton in ventanas_emergentes:
+                boton.click()
+            print("Ventanas emergentes cerradas.")
+        except:
+            print("No se encontraron ventanas emergentes")
 
-driver.quit()
+        # Hacer click en otra pestaña:
+        try:
+            imagenes_tab = WebDriverWait(driver, 5).until(
+                EC.element_to_be_clickable((By.XPATH, "//a[text()='Imágenes']"))
+            )
+            imagenes_tab.click()
+            print("Se hizo clic en la pestaña 'Imágenes'.")
+        except Exception as e:
+            print(f"No se pudo encontrar o hacer clic en la pestaña 'Imágenes': {e}")
 
-####### DESCATALOGADO ###################
-# print(url_puertos)
+        # Mantén el navegador abierto un momento para visualizar el resultado
+        time.sleep(5)
 
-# # realizacion de la peticion http al servidor web:
-# response = requests.get(url_puertos)
+    finally:
+        driver.quit()
 
-# # Respuesta del servidor:
-# if response.status_code == 200:
-#     print("solicitud realizada")
-# else:
-#     print(f"Error: {response.status_code}")
 
-# Presentacion del contenido html
+# if __name__ == "__main__":
+#     main()
+
+def extract_marinetraffic():
+    driver = driver_configuration()
+
+    try:
+        driver.get(url_puertos)
+        print(driver.title)
+        driver.implicitly_wait(15)
+
+        # Cookies:
+        try:
+            boton_rechazar = WebDriverWait(driver, 10).until(
+                # EC.element_to_be_clickable((By.XPATH,"//button[text()='Rechazar todo'] | //button[text()='Rechazar']"))
+                # EC.element_to_be_clickable((By.NAME,"")) # id="W0wltc"
+                EC.element_to_be_clickable((By.ID,"W0wltc")) # id="W0wltc"
+            )
+            boton_rechazar.click()
+            print("Cookies rechazadas")
+        except:
+            print("No se encontró el botón de rechazo de cookies")
+
+        # Ventanas emergentes:
+        try:
+            ventanas_emergentes = driver.find_elements(By.XPATH, "//button[contains(text(),'No, gracias') or contains(text(),'Cerrar')]")
+            for boton in ventanas_emergentes:
+                boton.click()
+            print("Ventanas emergentes cerradas.")
+        except:
+            print("No se encontraron ventanas emergentes")
+
+        # Extraer datos de la tabla y cargarlos a un .csv:
+        try:
+
+            # Extraccion de la cabecera:
+            
+
+            # Extraccion de las filas de datos:
+            data_block = WebDriverWait(driver, 10).until(
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, "1xdhyk6")) #class_name: MuiDataGrid-virtualScrollerContent
+            )
+            
+            rows_data = data_block.find_elements(By.NAME, "MuiDataGrid-row")
+            datos = []
+
+            #Lectura fila a fila:
+            for row in rows_data:
+                cells = row.find_elements(By.NAME, "MuiDataGrid-cell")
+                cells_texts = [cell.text for cell in cells]
+                row_data =  cells_texts
+                # {
+                #     "data-id": row.get_attribute("data-id")
+                #     "cells": cells_texts
+                # }
+                datos.append(row_data)
+
+                # Espera entre iteracion e iteración:
+                time.sleep(random.uniform(0.3,3))
+                print(row_data)
+
+            registros = datos
+
+
+            # guardar los registros en un fichero .csv:
+            try:
+                nombre_archivo = csv_export_filename
+                with open(nombre_archivo, mode="w", encoding = "utf-8", newline="") as csv_file:
+                    csv_writer = csv.writer(csv_file)
+                    # csv_writer.writerow(header)
+                    csv_writer.writerows(registros)
+                print(f"Los datos se han guardado en el archivo: {nombre_archivo}")
+
+            except:
+                print("No se pudieron guardar los datos")
+
+        except Exception as e:
+            print(f"No se pudo tratar la tabla de MarineTraffic: {e}")
+
+        # Mantén el navegador abierto un momento para visualizar el resultado
+        time.sleep(5)
+
+    finally:
+        driver.quit()
+
+extract_marinetraffic()

@@ -146,3 +146,11 @@ de un barco puede durar horas o incluso algún día, no hay urgencia para la tom
 He obtenido los puertos marítimos ordenados por cantidad de flota atracada (*) y siguiendo la regla de Pareto (80-20) se podría reducir el número
 de datos, maximizando la cantidad de información.
 Ver en: https://asana.com/es/resources/pareto-principle-80-20-rule
+        20241223_paretoPorts.csv
+
+24/12/2024:
+Libro: "Probabilidad y Estadística para Ingenieros" (Walpole, Myers, Myers)
+Realización de funciones de captura de datos de marinetraffic.
+Propuestas ETL: .logs, sleep con aleatoriedad normal, guardar en ficheros csv con estructura "YYYYMMDD_marinetraffic_ports.csv"
+Hay que pasar la pasarela de las "cookies" ver si deja como incognito o si solo se puede en modo normal.
+También es importante
