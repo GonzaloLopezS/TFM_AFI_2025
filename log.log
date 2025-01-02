@@ -153,4 +153,78 @@ Libro: "Probabilidad y Estadística para Ingenieros" (Walpole, Myers, Myers)
 Realización de funciones de captura de datos de marinetraffic.
 Propuestas ETL: .logs, sleep con aleatoriedad normal, guardar en ficheros csv con estructura "YYYYMMDD_marinetraffic_ports.csv"
 Hay que pasar la pasarela de las "cookies" ver si deja como incognito o si solo se puede en modo normal.
-También es importante
+También es importante incluir posibilidad de usar VPN.
+
+25/12/2024:
+Parece que han cambiado la Interfaz de Usuario de la web, y ahora hay una pasarela en la que obligan a iniciar sesión.
+Si no, si entro por url, aparece tabla pero "NO ROWS".
+Haciendo uso de VPN, podría intentar conectarme a los datos. O incluso crear usuario + iniciar sesión.
+
+Nuevas páginas:
+- Gobierno Noruega: https://www.kystverket.no/en/navigation-and-monitoring/ais/access-to-ais-data/#j_1522
+- Copernicus Marine Service (UE): https://marine.copernicus.eu/
+      https://marine.copernicus.eu/register-copernicus-marine-service?mtm_campaign=Copernicus-Souscription&mtm_medium=cpc&mtm_source=google&mtm_content=text&mtm_cid=145762311082&mtm_kwd=marine%20data&gad_source=1&gclid=Cj0KCQiA9667BhDoARIsANnamQaol86aOfZrX4741DDfuomXQc6_ERH3PR6NTdLTMIa-MVNjXHJvB4caAuS1EALw_wcB
+      https://marine.copernicus.eu/access-data
+
+- aisstream: https://aisstream.io/
+      https://github.com/aisstream
+      https://aisstream.io/documentation
+
+- World Bank: https://datacatalog.worldbank.org/search/dataset/0038118/Global---International-Ports
+- Maritime Safety Information: https://msi.nga.mil/Publications/DBP
+- Global Fishing Watch: https://globalfishingwatch.org/datasets-and-code-anchorages/
+      APIs: https://globalfishingwatch.org/our-apis/
+      R packages: https://github.com/GlobalFishingWatch/gfwr
+      Datasets and code: https://globalfishingwatch.org/datasets-and-code/
+      + Data Download
+      Research: https://globalfishingwatch.org/research/
+
+- Marine Cadastre: https://hub.marinecadastre.gov/pages/vesseltraffic
+   Archivos anuales que contienen ficheros diarios. Muy pesados en su conjunto. A nivel nacional (USA).
+   Descarga dia a dia (año 2023): https://coast.noaa.gov/htdata/CMSP/AISDataHandler/2023/index.html
+
+Danish Maritime Authority: https://www.dma.dk/safety-at-sea/navigational-information/ais-data
+   Port State Control:
+   Transit Routes: https://www.dma.dk/safety-at-sea/navigational-information/ais-data/transit-routes
+   Download Data: https://www.dma.dk/safety-at-sea/navigational-information/download-data
+   Merchant Ships: https://www.dma.dk/seafarers-and-manning/safe-manning-document/merchant-ships
+   EU Baltic Strategy: https://www.dma.dk/growth-and-framework-conditions/eu/eu-baltic-sea-strategy
+   Data: http://web.ais.dk/aisdata/
+
+Marine Plan: http://marineplan.com/open-ship-data-api/
+
+S&P Global MarketPlace: https://www.marketplace.spglobal.com/en/datasets/ship-movements-(284)
+   Data Visualization: https://www.marketplace.spglobal.com/en/datasets/ship-movements-(284)#data-visualization
+   Datasets: https://www.marketplace.spglobal.com/en/datasets
+
+OECD: https://www.oecd.org/en/data/dashboards/monitoring-maritime-trade-the-oecd-ais-vessel-tracking-dashboard.html
+   Research Paper: https://www.oecd.org/en/publications/an-ocean-of-data_34b7a926-en.html
+                   https://oecdstatistics.blog/2024/03/21/monitoring-global-trade-using-data-on-vessel-traffic/
+                   https://www.oecd.org/en/topics/measuring-international-trade.html
+   Insights: https://www.oecd.org/en/data/insights.html?orderBy=mostRelevant&page=0
+   Datasets: https://www.oecd.org/en/data/datasets.html?orderBy=mostRelevant&page=0
+   Dashboard on Trade: https://www.oecd.org/en/data/dashboards.html?orderBy=mostRelevant&page=0&facetTags=oecd-policy-areas%3Apa16
+   Container Transport by Sea: https://www.oecd.org/en/data/indicators/container-transport.html?oecdcontrol-93f22d3fd5-var6=SEA
+
+EMSA (European Maritime Safety Agency): https://www.emsa.europa.eu/combined-maritime-data-menu/data-sources.html
+   Maritime Digital Services Catalogue: https://www.emsa.europa.eu/combined-maritime-data-menu/data-sources/item/4449-maritime-digital-services-catalogue.html
+   Infographics: https://www.emsa.europa.eu/newsroom/infographics.html
+   Data Request Procedure: https://www.emsa.europa.eu/publications/data-request-procedure.html
+   Inventories: https://www.emsa.europa.eu/publications/inventories.html
+   Corporate Publications: https://www.emsa.europa.eu/publications/corporate-publications.html
+   Documents: https://www.emsa.europa.eu/publications/documents.html
+   Legislative texts: https://www.emsa.europa.eu/publications/legislative-texts.html
+   Data Sources: https://www.emsa.europa.eu/combined-maritime-data-menu/data-sources.html
+
+Revisar dimensiones de los barcos cargueros y de los contenedores.
+
+31/12/2024: Lectura https://transportgeography.org/contents/chapter1/
+Para citar: https://www.taylorfrancis.com/books/mono/10.4324/9781003343196/geography-transport-systems-jean-paul-rodrigue
+Leer en: "apuntes_transport-geography_ch1.txt"
+
+01/01/2025: Obtención de los datos del Banco Mundial (https://datacatalog.worldbank.org/search/dataset/0038118/Global---International-Ports)
+Más fuentes del Banco Mundial: https://datacatalog.worldbank.org/search/dataset/0037580/Global-Shipping-Traffic-Density
+- https://datacatalog.worldbank.org/search/dataset/0060145/International-portsheds
+He generado el script "data_vesseltracker.py" para obtener datos de https://www.vesseltracker.com/en/ports.html
+Los resultados se guardan en: "port_data_vesseltracker__yyyymmdd.csv"
+

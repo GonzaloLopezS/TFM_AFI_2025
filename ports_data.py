@@ -108,6 +108,10 @@ def extract_marinetraffic():
         print(driver.title)
         driver.implicitly_wait(15)
 
+        # Click on cross:
+        close_button = driver.find_element(By.NAME, "4zd751")
+        close_button.click()
+
         # Cookies:
         try:
             boton_rechazar = WebDriverWait(driver, 10).until(
