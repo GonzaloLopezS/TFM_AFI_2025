@@ -69,12 +69,13 @@ paginacion = "?page=X&sortOrder=desc&sortField=noOfShips"
 mis_urls = generar_urls(url, paginacion, num_paginas)
 
 # Nombre del archivo CSV de salida
+directorio_output = "vesseltracker_data/"
 current_date = datetime.now().strftime("_%Y%m%d")
 output_csv = f"port_data_vesseltracker_{current_date}.csv"
 
 # Llama a la función y muestra el resultado
 for pagina in mis_urls:
-    result = extract_container_content(pagina, output_csv)
+    result = extract_container_content(pagina, directorio_output + output_csv)
     print(result)
 
     #Pausa aleatoria:

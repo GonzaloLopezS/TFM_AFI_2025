@@ -228,3 +228,10 @@ Más fuentes del Banco Mundial: https://datacatalog.worldbank.org/search/dataset
 He generado el script "data_vesseltracker.py" para obtener datos de https://www.vesseltracker.com/en/ports.html
 Los resultados se guardan en: "port_data_vesseltracker__yyyymmdd.csv"
 
+04/01/2025: Creacion de "ais_noaa_process.py" para procesar ficheros .zip de la web de archivos de NOAA. Puedo obtener MMSI de barcos,
+revisar vessel_type según NOAA. Otra opción: calcular distancia entre el mayor rango de dias (no solamente distancia acumulada).
+Vessel types code en: https://coast.noaa.gov/data/marinecadastre/ais/VesselTypeCodes2018.pdf
+
+05/01/2025: Funciones implementadas correctamente en "ais_noaa_process.py". Apuntes:
+- Igual es posible extender su uso a spark. Problema: limite de librerias.
+- Si pudiera, se podría extender la captura de datos para análisis.
