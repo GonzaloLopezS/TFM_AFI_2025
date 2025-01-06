@@ -235,3 +235,47 @@ Vessel types code en: https://coast.noaa.gov/data/marinecadastre/ais/VesselTypeC
 05/01/2025: Funciones implementadas correctamente en "ais_noaa_process.py". Apuntes:
 - Igual es posible extender su uso a spark. Problema: limite de librerias.
 - Si pudiera, se podría extender la captura de datos para análisis.
+
+06/01/2025: Datos de puertos y barcos (mmsi) ya consolidados.
+- Se pueden seguir extrayendo datos.
+- Obtención de datos en relación a la incautación de bienes (drogas) en puertos:
+# USA:
+   - Customs and Border Protection: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal
+   (CBP provides this data for public use and analysis). Statistical information is subject to change due to system changes, change in data definition...
+   - Fuente csv: https://www.cbp.gov/document/stats/amo-drug-seizures
+   - Drug seizure statistics: https://www.cbp.gov/newsroom/stats/drug-seizure-statistics
+
+- Para leer: NAFTA: https://www.cbp.gov/trade/north-american-free-trade-agreement
+- Trade statistics: https://www.cbp.gov/newsroom/stats/trade
+- Border Security. Ports of Entry: https://www.cbp.gov/border-security/ports-entry, https://www.cbp.gov/border-security/air-sea/about/leadership
+- Frontline against fentanyl: https://www.cbp.gov/border-security/frontline-against-fentanyl
+- Revisar Fiscal Year: https://en.wikipedia.org/wiki/Fiscal_year
+- Un poco de historia del CBP: https://www.cbp.gov/border-security/along-us-borders/history
+
+   - Drug Enforcement Agency (DEA): https://www.dea.gov/resources/data-and-statistics
+   - Fentanyl supply chain (China-Based...): https://www.dea.gov/press-releases/2024/10/24/china-based-chemical-manufacturing-companies-and-employees-indicted
+   "Empresas chinas productoras de precursores basadas en: Guangzhou, Wuhan (Hubei), Beijing (Hebei), Tianjin (Hebei), Zhengzhou (Henan), Fengxian (Shanghai) "
+   - Fentanyl supply chain: https://www.dea.gov/resources/fentanyl-supply-chain
+
+# Unión Europea:
+   - Maritime Analysis And Operations Centre (MAOC) Noticias: https://maoc.eu/ (Se busca también dejar fuera algunos tipos de barcos)
+   - Statistics: https://maoc.eu/statistics/
+   - European Union Drug Agency: https://www.euda.europa.eu/index_en
+      - Data and statistics: https://www.euda.europa.eu/data_en
+         - Seizures 2024: https://www.euda.europa.eu/data/stats2024/szr_en
+         - Historical Seizures (2023-2004): https://www.euda.europa.eu/data/statistical-bulletin/archive_en
+
+   - European Drug Report 2024: (Existe version PDF) https://www.euda.europa.eu/publications/european-drug-report/2024_en
+      - Understanding European Drug Situation: https://www.euda.europa.eu/publications/european-drug-report/2024/drug-situation-in-europe-up-to-2024_en
+      - Drug Supply, production and precursors: https://www.euda.europa.eu/publications/european-drug-report/2024/drug-supply-production-and-precursors_en
+
+# Reino Unido:
+   - GOV.UK: https://www.euda.europa.eu/publications/european-drug-report/2024/drug-supply-production-and-precursors_en
+   - Drug Seizure in England and Wales (FY 2023): https://www.gov.uk/government/statistics/seizures-of-drugs-in-england-and-wales-financial-year-ending-2023
+   - Drug Seizure in England and Wales (FY 2022): https://www.gov.uk/government/statistics/seizures-of-drugs-in-england-and-wales-financial-year-ending-2022
+
+   - National Crime Agency (NCA): https://www.nationalcrimeagency.gov.uk/
+      Drug Trafficking: https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/drug-trafficking
+
+# Canada:
+   - Government of Canada: https://open.canada.ca/data/dataset/
