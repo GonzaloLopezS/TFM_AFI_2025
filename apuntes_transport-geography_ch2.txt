@@ -1,0 +1,78 @@
+# 2.1 The geography of transportation networks
+Routes linking locations. Analogy: Structure + flows.
+The rooute (link between two nodes, edges) is less tangible in sea corridors.
+
+"The setting of networks results from strategies such as providing access and mobility to a region, reinforcing a specific trade corridor or
+ technological developments, and making a particular mode and network more advantageous."
+
+ Transport networks are better understood by the usage level (e.g. the number of passengers, tons, vehicles, capacity) than by their sole 
+ topology based on a binary state (presence or absence of links). Inequalities between locations can often be measured by the number of links 
+ between nodes and the related economic opportunities associated with connectivity and the level of traffic. Many locations within a network 
+ have higher accessibility, which is often related to better opportunities. However, economic integration processes tend to change inequalities
+  between regions, mainly by reorientating the structure and flows within transportation networks at the transnational level. Economic and 
+  commercial changes are associated with changes in network configurations and connectivity.
+
+Maritime network remains vaguely defined due to its high spatial flexibility.
+
+Structure Components of Transport Network: https://transportgeography.org/contents/chapter2/geography-of-transportation-networks/transport-network-structural-components/
+Point-to-Point vs Hub-and-Spoke Networks: https://transportgeography.org/contents/chapter2/geography-of-transportation-networks/point-to-point-versus-hub-and-spoke-network/
+Impacts of Integration Processes on Networks and Flows: https://transportgeography.org/contents/chapter2/geography-of-transportation-networks/spatial-integration-networks-flows/
+Main Maritime Shipping Routes and Chokepoints: https://porteconomicsmanagement.org/pemp/contents/part1/interoceanic-passages/main-maritime-shipping-routes/
+Domains of Maritime Circulation: https://transportgeography.org/contents/chapter5/maritime-transportation/domains-maritime-circulation/
+
+# 2.2 Transportation and Spatial Organization
+
+## 1. The Spatial Organization of Transportation:
+"Transportation favors not only economic development but also has an impact on spatial organization. Throughout history, transport networks 
+have structured space at different scales."
+ The structure of these flows in terms of origin, destination, and routing are closely related to spatial organization. Space shapes transport
+ as much as transport shapes space, which is a salient example of the reciprocity of transportation and its geography. 
+
+## 2. Global Spatial Organization
+Maritime Transport benefits from Globalization and supports most of global flows because of its scale of service.
+
+The global spatial organization is a priori conditioned by its connectivity, often reflective of a network structure. Its main components are 
+the nodes and the foreland (international connectivity, usually by maritime and air transportation) and hinterlands (regional connectivity, 
+usually by land transport systems).
+
+Scales of Spatial Organization for Transportation: https://transportgeography.org/contents/chapter2/transport-and-spatial-organization/transportation-spatial-organization-scale/
+Poles of the Global Economy: https://transportgeography.org/contents/chapter2/transport-and-spatial-organization/global-economy-poles/
+Global Net Migration (2010-2015): https://transportgeography.org/contents/chapter2/transport-and-spatial-organization/global-net-migration/
+
+# 2.3 Transport and Location
+Location theories tend to have an explicit or implicit role attributed to transport since accessibility is an important factor in the location 
+preferences of firms and individuals. As there are no absolute rules dictating locational choices, the importance of transport can only be 
+evaluated with varying degrees of accuracy and based on the context it takes place. Transportation has four main locational influences, 
+including costs, agglomeration, density, and co-location. At best, the following observations concerning transportation modes and terminals 
+and their importance as locations can be made:
+
+Ports and airports. Main port and airport facilities, particularly the networks they support, have been important factors in reducing 
+transportation costs, particularly over long distances. The location and the level of activity of ports and airports are reflective of global 
+trade patterns. These facilities are also important drivers of co-location of related activities, particularly for ports, since inland 
+distribution costs tend to be higher.
+
+"the relationships between transportation and location are dynamic, meaning that circumstances can change due to economic and even political 
+factors."
+
+Location Theory: https://transportgeography.org/contents/chapter2/transport-and-location/location-theory-traditions/
+World's Major Container Ports, 2020: https://transportgeography.org/contents/chapter6/port-terminals/world-major-container-ports/
+China's Special Economic Zones: https://transportgeography.org/contents/chapter7/globalization-international-trade/special-economic-zones-china/
+
+# 2.4 Information Technologies and Mobility
+
+With the emergence of an information society, the transactional structures of the economy have changed drastically towards networked 
+organizational forms of individuals, institutions, organizations, and corporations with more intensive interactions, many of which are 
+associated with new forms of mobility. Mobility can be provided in three major forms:
+
+    Modal-oriented. The direct ownership and operation of modes and terminals by corporations (owning a fleet) or individuals (owning a 
+    vehicle for exclusive use). Ownership guarantees access to mobility at any time. Digitalization involves more efficient internal use of 
+    the assets such as tracking and navigation. Still, the optimal use is bounded by the ownership setting.
+
+    Operation-oriented. The direct lease and operation of modes and terminals by corporations and individuals. Leasing guarantees access to 
+    mobility for the terms of the lease, such as time and condition. Digitalization involves making assets available across a market, 
+    reconciling supply and demand.
+
+    Demand-oriented. Accessing mobility based on expected demand (for corporations) and need (for individuals). Digitalization involves 
+    accessing the availability of transportation assets in real time to rent their use temporarily.
+
+
