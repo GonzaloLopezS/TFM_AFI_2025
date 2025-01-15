@@ -15,3 +15,292 @@ Filtrar por Área Global, Area Local, Country, Port
 - Cuellos de botella: Panama, Suez, Estrechos: Costa Este de Estados Unidos, Puertos Norte de Europa, Puertos del Mediterráneo.
 
 - Vessels: flag, vessel_name, destination_port, imo, vessel type, time_of_last_position, latitude, longitude, mmsi
+
+- Productos Kpler y MarineTraffic: 
+    - Data Services: https://www.kpler.com/product/maritime/data-services
+    - Online Services: https://www.marinetraffic.com/en/online-services/solutions
+    - Container Tracking: https://www.kpler.com/product/maritime/container-tracking
+
+- Terms of Use: https://www.marinetraffic.com/en/data/[object%20Object]/p/terms
+
+11/12/2024:
+Conformación de las url de búsqueda en las páginas
+Diseñando las columnas que se requerirán para el dataset así como los filtros específicos
+
+En el caso de vessels: imo, destination_port, reported destination, reported eta, (latitude, longitude, mmsi)
+filtros: Vessel Type = 'Cargo', Capacity?, 'Global Area', 'Local Area?', Reported Destination, 'current port country'
+
+En el caso de ports: country, port, un/locode, vessels in port, departures, arrivals, expected arrivals, Area Global, Area Local
+Filtros: Area Global, Area Local, Port Type
+
+Diferencias entre imo y mmsi: https://www.retevismarine.com/blog/What-is-the-difference-between-MMSI-and-IMO-
+
+Revisar Global Area y Local Area.
+
+¿Cada cuanto capturar datos? ¿De qué regiones tomar?
+Capacidades y tamaños de buques mercantes: https://porteconomicsmanagement-org.translate.goog/pemp/contents/part4/terminals-and-terminal-operators/ship-characteristics-capacity-measures/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq
+[Revisar más fuentes] https://transportgeography.org/
+
+Divergencia matemática (a fin de cuentas se está midiendo flujo entre dos puntos: fuentes y sumideros): https://es.wikipedia.org/wiki/Divergencia_(matem%C3%A1tica)
+¿Cuál sería el campo vectorial?
+
+13/12/2024:
+Creación de ports_data.py con datos sacados de scrapping_functions.py
+- Extraer 1 vez la cabecera de las tablas
+Se trata de una web dinámica -> Uso de selenium
+Geckodriver (Driver de firefox) version 0.35 compatible con Firefox (version 133.0) en Ubuntu 22.04
+
+Error en la ejecución de ports_data.py:
+- https://stackoverflow.com/questions/72490452/how-to-solve-your-firefox-profile-cannot-be-loaded-it-may-be-missing-or-inacce
+- https://stackoverflow.com/questions/54941970/selenium-firefox-profile-missing-on-linux
+- https://stackoverflow.com/questions/72405117/selenium-geckodriver-profile-missing-your-firefox-profile-cannot-be-loaded
+
+18/12/2024:
+Primera captura de datos manual de MarineTraffic -> a fichero .csv
+Crear BDD para estructurar datos (Opciones: PosgreSQL, MySQL, MongoDB...)
+En caso de no tener preparada la BDD, "at" con la escritura del fichero .csv + crontab ajustado a 24 horas.
+Programar el crontab en un contenedor docker si es posible. 1 ejecución cada 24 horas.
+
+Para evitar suspicacias y aumento del tráfico en la web
+
+Puertos clasificados por 'Áreas Globales':
+ - Pacifico (3518 Ports): North Pacific, US West Coast, Japan Coast, South China, South Pacific, Inland China, Central China, CIS Pacific, East Australia, Indonesia, North China, Philippines, South-East Asia, West Coast Canada
+    ¿South America?
+ - Atlantico + Mediterráneo (13747 Ports): West Mediterranean, Baltic Sea, North Atlantic, East Coast South America, Gulf of Meico, Adriatic Sea, US West Coast, Norwegian Coast, Caribbean Sea, Inland, Europe, Inland, South America, East Coast Central America, East Coast Canada, North Coast South America, UK Coast & Atlantic, US East Coast, West Africa.
+
+Potenciales 'Áreas Locales': Antwerp Area, Rotterdam Area, Piraeus Area, North Sea, Gibraltar, Gulf of California, East China Sea...
+
+Tomar todos los datos sin filtro? -> 20887 Puertos en total
+Cargo Vessels en total -> ~ 300K
+
+Plans and online services: https://www.marinetraffic.com/en/online-services/plans
+
+23/12/2024:
+Prueba de extraccion de datos para 3518 puertos del pacífico + 10 columnas
+- Se recomienda que los substrings 'filters_ports_pacific' y 'filters_ports_atlantic_mediterranean' se extraigan o bien desde un fichero de contexto, o de tablas de bdd.
+
+- Para la extracción de datos: cada iteración -> random.uniform(0,3) segundos entre extracción. Extender esto cuando toque hacer crawler.
+
+Primer error:
+Traceback (most recent call last):
+  File "/home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/ports_data.py", line 51, in <module>
+    container = driver.find_element(By.CLASS_NAME, "MuiDataGrid-topContainer")
+  File "/home/gonzalopc/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 770, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "/home/gonzalopc/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/home/gonzalopc/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: .MuiDataGrid-topContainer; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+- Problemas con detección de robot. Probar con la obtención semimanual de los datos. Ordenamos los puertos según volumen de llegadas y salidas.
+- Regla Pareto 80/20
+- 20/100 de 3500 vienen a ser 700 puertos.
+
+Búsqueda de alternativas Open Source a marinetraffic:
+ 1) https://www.vesselfinder.com/ -> Vessels, Port (cannot filter by type without premium), Containers
+
+ 2) https://www.vesseltracker.com/ -> Has a demo, and trial:
+    - data services: https://www.vesseltracker.com/en/products/dataServices.html
+    - trial: https://www.vesseltracker.com/en/products/onlineAccounts.html
+
+ 3) https://www.myshiptracking.com/
+    - Plans: https://www.myshiptracking.com/pricing/contributors
+    - Port Database: https://www.myshiptracking.com/ports?sort=ARRIVALS&sort_type=DESC
+
+ 4) https://shipfinder.co/
+ 5) https://www.shipxplorer.com/
+ 6) https://www.techsalerator.com/
+
+ 7) https://openseamap.org/index.php?id=openseamap&L=1
+
+ 8) https://www.bigoceandata.com/
+    - Port activity: https://www.bigoceandata.com/problems-solved/port-activity-and-scheduling-toolset/
+    - Vessel tracking: https://www.bigoceandata.com/applications/vessel-tracking/
+
+ 9) https://github.com/transparency-everywhere/position-api/
+
+ 10) https://support.marinetraffic.com/en/articles/9552956-opencpn -> OpenCPN
+ 11) https://www.aishub.net/ -> https://www.aishub.net/stations?Station%5BSID%5D=&Station%5Bstatus%5D=0&Station%5Buptime%5D=&Station%5BCOUNTRY%5D=&Station%5BLOCATION%5D=&Station%5BCOUNT%5D=&Station%5BDISTINCT%5D=&sort=-COUNT
+    - Web API: https://www.aishub.net/api (1 consulta/ minuto)
+
+    Ejemplo de consulta:
+    https://data.aishub.net/stations.php?username=A&output=B&compress=C&id=D
+    [REVISAR]
+
+ 12) https://documentation.spire.com/ -> API: GRAPHQL. DESCARTADO
+    - Routing API: https://documentation.spire.com/routing-api/routing/
+    - API: https://documentation.spire.com/maritime-2-0/ 
+    - trial token: https://documentation.spire.com/maritime-2-0/
+
+Uso de GraphQL con Python: https://www.apollographql.com/blog/complete-api-guide
+
+He accedido a los datos de aishub. Especialmente para los puertos. Dado que el tiempo de "procesado", es decir, trayectos, carga, descargas...
+de un barco puede durar horas o incluso algún día, no hay urgencia para la toma de datos.
+
+He obtenido los puertos marítimos ordenados por cantidad de flota atracada (*) y siguiendo la regla de Pareto (80-20) se podría reducir el número
+de datos, maximizando la cantidad de información.
+Ver en: https://asana.com/es/resources/pareto-principle-80-20-rule
+        20241223_paretoPorts.csv
+
+24/12/2024:
+Libro: "Probabilidad y Estadística para Ingenieros" (Walpole, Myers, Myers)
+Realización de funciones de captura de datos de marinetraffic.
+Propuestas ETL: .logs, sleep con aleatoriedad normal, guardar en ficheros csv con estructura "YYYYMMDD_marinetraffic_ports.csv"
+Hay que pasar la pasarela de las "cookies" ver si deja como incognito o si solo se puede en modo normal.
+También es importante incluir posibilidad de usar VPN.
+
+25/12/2024:
+Parece que han cambiado la Interfaz de Usuario de la web, y ahora hay una pasarela en la que obligan a iniciar sesión.
+Si no, si entro por url, aparece tabla pero "NO ROWS".
+Haciendo uso de VPN, podría intentar conectarme a los datos. O incluso crear usuario + iniciar sesión.
+
+Nuevas páginas:
+- Gobierno Noruega: https://www.kystverket.no/en/navigation-and-monitoring/ais/access-to-ais-data/#j_1522
+- Copernicus Marine Service (UE): https://marine.copernicus.eu/
+      https://marine.copernicus.eu/register-copernicus-marine-service?mtm_campaign=Copernicus-Souscription&mtm_medium=cpc&mtm_source=google&mtm_content=text&mtm_cid=145762311082&mtm_kwd=marine%20data&gad_source=1&gclid=Cj0KCQiA9667BhDoARIsANnamQaol86aOfZrX4741DDfuomXQc6_ERH3PR6NTdLTMIa-MVNjXHJvB4caAuS1EALw_wcB
+      https://marine.copernicus.eu/access-data
+
+- aisstream: https://aisstream.io/
+      https://github.com/aisstream
+      https://aisstream.io/documentation
+
+- World Bank: https://datacatalog.worldbank.org/search/dataset/0038118/Global---International-Ports
+- Maritime Safety Information: https://msi.nga.mil/Publications/DBP
+- Global Fishing Watch: https://globalfishingwatch.org/datasets-and-code-anchorages/
+      APIs: https://globalfishingwatch.org/our-apis/
+      R packages: https://github.com/GlobalFishingWatch/gfwr
+      Datasets and code: https://globalfishingwatch.org/datasets-and-code/
+      + Data Download
+      Research: https://globalfishingwatch.org/research/
+
+- Marine Cadastre: https://hub.marinecadastre.gov/pages/vesseltraffic
+   Archivos anuales que contienen ficheros diarios. Muy pesados en su conjunto. A nivel nacional (USA).
+   Descarga dia a dia (año 2023): https://coast.noaa.gov/htdata/CMSP/AISDataHandler/2023/index.html
+
+Danish Maritime Authority: https://www.dma.dk/safety-at-sea/navigational-information/ais-data
+   Port State Control:
+   Transit Routes: https://www.dma.dk/safety-at-sea/navigational-information/ais-data/transit-routes
+   Download Data: https://www.dma.dk/safety-at-sea/navigational-information/download-data
+   Merchant Ships: https://www.dma.dk/seafarers-and-manning/safe-manning-document/merchant-ships
+   EU Baltic Strategy: https://www.dma.dk/growth-and-framework-conditions/eu/eu-baltic-sea-strategy
+   Data: http://web.ais.dk/aisdata/
+
+Marine Plan: http://marineplan.com/open-ship-data-api/
+
+S&P Global MarketPlace: https://www.marketplace.spglobal.com/en/datasets/ship-movements-(284)
+   Data Visualization: https://www.marketplace.spglobal.com/en/datasets/ship-movements-(284)#data-visualization
+   Datasets: https://www.marketplace.spglobal.com/en/datasets
+
+OECD: https://www.oecd.org/en/data/dashboards/monitoring-maritime-trade-the-oecd-ais-vessel-tracking-dashboard.html
+   Research Paper: https://www.oecd.org/en/publications/an-ocean-of-data_34b7a926-en.html
+                   https://oecdstatistics.blog/2024/03/21/monitoring-global-trade-using-data-on-vessel-traffic/
+                   https://www.oecd.org/en/topics/measuring-international-trade.html
+   Insights: https://www.oecd.org/en/data/insights.html?orderBy=mostRelevant&page=0
+   Datasets: https://www.oecd.org/en/data/datasets.html?orderBy=mostRelevant&page=0
+   Dashboard on Trade: https://www.oecd.org/en/data/dashboards.html?orderBy=mostRelevant&page=0&facetTags=oecd-policy-areas%3Apa16
+   Container Transport by Sea: https://www.oecd.org/en/data/indicators/container-transport.html?oecdcontrol-93f22d3fd5-var6=SEA
+
+EMSA (European Maritime Safety Agency): https://www.emsa.europa.eu/combined-maritime-data-menu/data-sources.html
+   Maritime Digital Services Catalogue: https://www.emsa.europa.eu/combined-maritime-data-menu/data-sources/item/4449-maritime-digital-services-catalogue.html
+   Infographics: https://www.emsa.europa.eu/newsroom/infographics.html
+   Data Request Procedure: https://www.emsa.europa.eu/publications/data-request-procedure.html
+   Inventories: https://www.emsa.europa.eu/publications/inventories.html
+   Corporate Publications: https://www.emsa.europa.eu/publications/corporate-publications.html
+   Documents: https://www.emsa.europa.eu/publications/documents.html
+   Legislative texts: https://www.emsa.europa.eu/publications/legislative-texts.html
+   Data Sources: https://www.emsa.europa.eu/combined-maritime-data-menu/data-sources.html
+
+Revisar dimensiones de los barcos cargueros y de los contenedores.
+
+31/12/2024: Lectura https://transportgeography.org/contents/chapter1/
+Para citar: https://www.taylorfrancis.com/books/mono/10.4324/9781003343196/geography-transport-systems-jean-paul-rodrigue
+Leer en: "apuntes_transport-geography_ch1.txt"
+
+01/01/2025: Obtención de los datos del Banco Mundial (https://datacatalog.worldbank.org/search/dataset/0038118/Global---International-Ports)
+Más fuentes del Banco Mundial: https://datacatalog.worldbank.org/search/dataset/0037580/Global-Shipping-Traffic-Density
+- https://datacatalog.worldbank.org/search/dataset/0060145/International-portsheds
+He generado el script "data_vesseltracker.py" para obtener datos de https://www.vesseltracker.com/en/ports.html
+Los resultados se guardan en: "port_data_vesseltracker__yyyymmdd.csv"
+
+04/01/2025: Creacion de "ais_noaa_process.py" para procesar ficheros .zip de la web de archivos de NOAA. Puedo obtener MMSI de barcos,
+revisar vessel_type según NOAA. Otra opción: calcular distancia entre el mayor rango de dias (no solamente distancia acumulada).
+Vessel types code en: https://coast.noaa.gov/data/marinecadastre/ais/VesselTypeCodes2018.pdf
+
+05/01/2025: Funciones implementadas correctamente en "ais_noaa_process.py". Apuntes:
+- Igual es posible extender su uso a spark. Problema: limite de librerias.
+- Si pudiera, se podría extender la captura de datos para análisis.
+
+06/01/2025: Datos de puertos y barcos (mmsi) ya consolidados.
+- Se pueden seguir extrayendo datos.
+- Obtención de datos en relación a la incautación de bienes (drogas) en puertos:
+# USA:
+   - Customs and Border Protection: https://www.cbp.gov/newsroom/stats/cbp-public-data-portal
+   (CBP provides this data for public use and analysis). Statistical information is subject to change due to system changes, change in data definition...
+   - Fuente csv: https://www.cbp.gov/document/stats/amo-drug-seizures
+   - Drug seizure statistics: https://www.cbp.gov/newsroom/stats/drug-seizure-statistics
+
+- Para leer: NAFTA: https://www.cbp.gov/trade/north-american-free-trade-agreement
+- Trade statistics: https://www.cbp.gov/newsroom/stats/trade
+- Border Security. Ports of Entry: https://www.cbp.gov/border-security/ports-entry, https://www.cbp.gov/border-security/air-sea/about/leadership
+- Frontline against fentanyl: https://www.cbp.gov/border-security/frontline-against-fentanyl
+- Revisar Fiscal Year: https://en.wikipedia.org/wiki/Fiscal_year
+- Un poco de historia del CBP: https://www.cbp.gov/border-security/along-us-borders/history
+
+   - Drug Enforcement Agency (DEA): https://www.dea.gov/resources/data-and-statistics
+   - Fentanyl supply chain (China-Based...): https://www.dea.gov/press-releases/2024/10/24/china-based-chemical-manufacturing-companies-and-employees-indicted
+   "Empresas chinas productoras de precursores basadas en: Guangzhou, Wuhan (Hubei), Beijing (Hebei), Tianjin (Hebei), Zhengzhou (Henan), Fengxian (Shanghai) "
+   - Fentanyl supply chain: https://www.dea.gov/resources/fentanyl-supply-chain
+
+# Unión Europea:
+   - Maritime Analysis And Operations Centre (MAOC) Noticias: https://maoc.eu/ (Se busca también dejar fuera algunos tipos de barcos)
+   - Statistics: https://maoc.eu/statistics/
+   - European Union Drug Agency: https://www.euda.europa.eu/index_en
+      - Data and statistics: https://www.euda.europa.eu/data_en
+         - Seizures 2024: https://www.euda.europa.eu/data/stats2024/szr_en
+         - Historical Seizures (2023-2004): https://www.euda.europa.eu/data/statistical-bulletin/archive_en
+
+   - European Drug Report 2024: (Existe version PDF) https://www.euda.europa.eu/publications/european-drug-report/2024_en
+      - Understanding European Drug Situation: https://www.euda.europa.eu/publications/european-drug-report/2024/drug-situation-in-europe-up-to-2024_en
+      - Drug Supply, production and precursors: https://www.euda.europa.eu/publications/european-drug-report/2024/drug-supply-production-and-precursors_en
+
+# Reino Unido:
+   - GOV.UK: https://www.euda.europa.eu/publications/european-drug-report/2024/drug-supply-production-and-precursors_en
+   - Drug Seizure in England and Wales (FY 2023): https://www.gov.uk/government/statistics/seizures-of-drugs-in-england-and-wales-financial-year-ending-2023
+   - Drug Seizure in England and Wales (FY 2022): https://www.gov.uk/government/statistics/seizures-of-drugs-in-england-and-wales-financial-year-ending-2022
+
+   - National Crime Agency (NCA): https://www.nationalcrimeagency.gov.uk/
+      Drug Trafficking: https://www.nationalcrimeagency.gov.uk/what-we-do/crime-threats/drug-trafficking
+
+# Canada:
+   - Government of Canada: https://open.canada.ca/data/dataset/
+
+07/01/2025: Lectura de "https://oecdstatistics.blog/2024/03/21/monitoring-global-trade-using-data-on-vessel-traffic/"
+- UN Global Platform: https://unstats.un.org/bigdata/un-global-platform.cshtml
+- OECD Identifying Working Papers: https://www.oecd.org/en/publications/oecd-statistics-working-papers_18152031.html
+
+13/01/2025: Productos de S&P:
+ - Sea-Web movements: https://www.spglobal.com/market-intelligence/en/solutions/products/sea-web-vessel-movements:ç
+ "Ten year historical movements"
+ - Maritime and Sea Port Data: https://www.spglobal.com/market-intelligence/en/solutions/ship-and-port-data
+
+Lectura "https://transportgeography.org/contents/chapter2/geography-of-transportation-networks/"
+2.1 - The geography of Transportation Networks.
+
+14/01/2025:
+¿Qué quiere decir Expected Port Arrivals? https://www.vesselfinder.com/expected-arrivals-api
+
+"En un experimento que incluye una variable aleatoria continua, la función de densidad f(x) se desconoce y se supone su forma."
+
+Lectura de: Parthesius, "Dutch Ships in Tropical Waters": https://archive.org/details/dli.doa.086/mode/2up?view=theater
+Lectura "https://transportgeography.org/contents/chapter3/transportation-and-economic-development/"
+Apuntes tomados en: "apuntes_transport-geography_ch3.txt"
+
+15/01/2025:
+Lectura "https://transportgeography.org/contents/chapter5/transportation-modes-modal-competition-modal-shift/"
+EDA Drug Seizure Data: 

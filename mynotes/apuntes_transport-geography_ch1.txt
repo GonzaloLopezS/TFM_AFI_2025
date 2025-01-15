@@ -1,0 +1,181 @@
+Chapter 1:
+
+Nos centramos en lo que se refiere a la introducción del contenedor y el concepto "container shipping" a lo largo del siglo XX (Globalización).
+La "geografía del transporte" concierne a la movilidad de las personas, organización espacial... Incluye atributos relacionados con el origen, destino,
+naturaleza y propósito de la movilidad. 
+
+purpose of transportation is to overcome space, which is shaped by human and physical constraints such as distance, time, administrative divisions,
+ and topography
+
+ From the mobility of a person using an automobile or a public transit system to commute to their place of work to the mobility of cargo being shipped
+  across the Pacific as part of an international trade transaction; both are bound to a similar set of constraints.
+
+  Ver esto -> https://transportgeography.org/contents/chapter1/what-is-transport-geography/core-principles-transport-geography/
+
+- Analogia de sisifo en el transporte: https://transportgeography.org/contents/chapter1/what-is-transport-geography/sisyphus-analogy-transportation/
+- Representaciones del efecto de la distancia: https://transportgeography.org/contents/chapter1/what-is-transport-geography/representations-effects-distance/
+- Diferencia operativa entre transporte de pasajeros y de cargamentos: https://transportgeography.org/contents/chapter1/what-is-transport-geography/operational-differences-passenger-freight/
+- Atomización vs Masificación en modos de transporte: https://transportgeography.org/contents/chapter1/what-is-transport-geography/atomization-massification-modes/
+
+Transporte y Movilidad de cargamento: https://transportgeography.org/contents/chapter1/what-is-transport-geography/transportmobility-2/
+Patrones de flujo espacial: https://transportgeography.org/contents/chapter1/what-is-transport-geography/patterns-spatial-flows/
+
+2. La importancia del transporte: componente indispensable de la economía, permite crear conexiones entre regiones y actividades económicas.
+Se compone de: modos, infraestructuras, redes y flujos. La geografía permanece como una fuerza generadora capaz de modelar el transporte a pesar
+de los avances tecnológicos, sociales o económicos.
+
+- Core components of transportation: https://transportgeography.org/contents/chapter1/what-is-transport-geography/core-components-transportation/
+- Key Dimensions of transportation: https://transportgeography.org/contents/chapter1/what-is-transport-geography/key-dimensions-transportation/
+
+3. Transporte en la geografía: características como recursos (naturales), población y actividades económicas no están distribuidas de manera aleatoria
+alrededor del mundo. Se intenta entender el ordenamiento de estas características así como sus interacciones.
+
+4. Sistemas de transporte: nodos, redes y demanda. Manejo de la teoría de grafos.
+- Teoria de Grafos en Geografía: https://transportgeography.org/contents/methods/graph-theory-definition-properties/
+- Sistemas de transporte: https://transportgeography.org/contents/chapter1/what-is-transport-geography/transport-system-overview/
+- Multidisciplinariedad en la Geografía del Transporte: https://transportgeography.org/contents/chapter1/what-is-transport-geography/transport-geography-dimensions/
+- Transporte y sistemas complejos: https://transportgeography.org/contents/chapter1/what-is-transport-geography/complex-systems-transportation/
+"Leer sobre sistemas complejos"
+- Desafíos típicos en los sistemas de transporte: https://transportgeography.org/contents/chapter1/what-is-transport-geography/challenges-transport-systems/
+- Falacias típicas: https://transportgeography.org/contents/chapter1/what-is-transport-geography/fallacies-transport-geography/
+
+1.2 Transporte y Entorno Físico:
+a. Topografía, b. Hidrología (canales navegables, oceanos, rios, mares interiores...)
+Los puertos suelen encontrarse en bahías, fiordos... que los protegen. La localización de los puertos es un elemento dominante en la estructura de
+redes marítimas.
+- Tipos de barreras: https://transportgeography.org/contents/chapter1/transportation-and-space/absolute-relative-arbitrary-barriers/
+- Masas de agua principales: https://transportgeography.org/contents/chapter1/transportation-and-space/main-water-masses-world/
+- Espacio geografico en transporte maritimo: https://transportgeography.org/contents/chapter1/transportation-and-space/maritime-transportation-geography-components/
+- Corrientes marinas: https://transportgeography.org/contents/chapter1/transportation-and-space/world-oceanic-gyres-currents/
+Otros: El clima (c)
+
+- Transporte y estructura espacial: site (harbour of a port) vs situation (relation of this port to the rest of the network).
+- Especializacion geográfica: https://transportgeography.org/contents/chapter1/transportation-and-space/transportation-networks-specialization/
+
+1.3 Historia de la mecanizacion de los transportes y el comercio:
+https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/
+"Puedo usar un resumen del siguiente texto como introducción":
+The economic importance and the geopolitics of transportation were recognized very early. 
+Maritime transportation was the most convenient way to move freight and passengers around, an advantage that would not change until
+the Industrial Revolution. Large commercial empires were established with the setting of maritime trade networks. However, long-distance 
+maritime trade involved risk, which favored the emergence of a financing and insurance industry as mitigation instruments. In Ancient Greece, 
+merchants financed their commercial ventures through high-interest loans that acted simultaneously as insurance since the loan would not be repaid 
+if the ship sank. This model, known as “bottomry”, was then copied by the Romans. It originates in the Babylonian Code of Hammurabi around 1700 BCE 
+stating repayment of a loan for a successful voyage. These early forms of financing and insurance permitted commercial activities that would otherwise
+ not have taken place to the same extent.
+
+By the 13th century, an extensive maritime trade network was established, the highways of the time, centered along the navigable rivers, 
+canals, and coastal waters of Europe and China. Shipping was using the English Channel, the North Sea, the Baltic, and the Mediterranean, 
+where the most important cities were coastal or inland ports (London, Norwich, Königsberg, Hamburg, Bruges, Bordeaux, Lyon, Lisbon, Barcelona, 
+and Venice). Trade of bulk goods, such as grain, salt, wine, wool, timber, and stone, took place. By the 14th century, galleys were finally replaced 
+by full-fledged sailships (the caravel, the carrick, and then the galleon) that were faster and required smaller crews. The discovery by the Portuguese
+ in 1431 of the North Atlantic circular wind pattern, better known as the trade winds, marked the beginning of European expansion. A similar wind 
+ pattern was also found in the Indian and Pacific oceans with the monsoon winds. This allowed sailships to travel over longer distances along 
+ consistent and reliable routes.
+
+ [...]
+
+ The beginning of the 19th century saw the establishment of the first regular maritime routes linking harbors worldwide, 
+ especially over the North Atlantic between Europe and North America. Many of these long-distance routes were navigated by fast Clipper ships, 
+ which dominated ocean trade until the late 1850s. Due to technical improvements such as hull design, copper plating (less drag), 
+ improved sail designs, and iron joints and bolts, the speed of sailships increased by a factor of up to 50% between 1750 and 1830. 
+ By the 1850s, it could take more than three months to move cargo from China to the UK, while before clipper ships, the same journey 
+ could take up to one year. Another significant improvement was the design of accurate navigation charts where prevailing winds and sea currents 
+ could be used for navigation advantages. Composite ships (a mix of wood and iron armature) then took over a large portion of the trade 
+ until about 1900. Still, they could not compete with steamships, which have been continually improved since they were first introduced 
+ one hundred years before.
+
+- Genesis de la Globalizacion: https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/genesis-globalization/
+- Sistemas de canales durante la dinastia Ming en China (s.XIV - XVII AD): https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/grand-canal-china/
+- Variacion de los patrones eolicos principales: https://transportgeography.org/contents/chapter1/transportation-and-space/wind-patterns-seasonal-variations/
+- CLipper Ships: https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/clipper-ship/
+"Revisar comercio del siglo XIX, transporte China-Costa Oeste EE UU en siglo XIX y Guerras del Opio".
+- Rutas maritimas mundiales (1912): https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/world-trade-routes-1912/
+- Impactos de los canales de Suez y Panama: https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/suez-panama-canal-geography-impacts/
+- Distancia en dias en viaje maritimo desde Gran Bretaña a Australia: https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/maritime-journey-australia-1788-1960/
+
+1.4 https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/
+"Continua punto 1.3":
+1. Transporte en la era fordista:
+2. (1970-2000 Era Post-Fordista)
+
+The diffusion of railways in the late 19th and early 20th centuries considerably improved the efficiency of inland transportation. However, the growth
+ of trade and the economies of scale provided by railways placed additional pressures on ports where the interface between maritime and inland 
+ transport systems was the bottleneck. Containers were introduced by the American entrepreneur Malcolm McLean, who initially applied containerization 
+ to land transport but saw the opportunity to use container shipping as an alternative to acute road congestion in the early 1950s before the first 
+ Interstate Highways were constructed. The first containership (the Ideal-X, a converted T2 oil tanker) set sail in 1956 from New York to Houston and 
+ marked the beginning of the era of containerization.
+
+Before the introduction of containers, loading and unloading at ports could account for between 50% and 70% of the cost of break bulk shipping. 
+Containers, the main agents of the modern international transport system, enable increased freight transport flexibility, mainly by reducing 
+transshipment costs and delays; handling a container requires about 25 to 40 times less labor than its equivalent in bulk freight. Loading and 
+unloading operations that required days could now be done in a matter of hours. The first containerships spent about 18% of their operational time at 
+ports, while a breakbulk ship would spend 40%. From a cost perspective, loading and unloading cargo went from about $5 per ton for breakbulk cargo to 
+about 15 cents per ton with containers. This enabled further the unitization trend brought forward by the pallet, particularly since pallets could be 
+loaded into containers. The initial attempts at containerization thus aimed at reducing maritime transshipment costs and time. Later on, the true 
+potential of containerization became clear when interfacing with other modes became an operational reality, mainly between maritime, rail, and road 
+transportation.
+
+In 1960, the Port Authority of New York and New Jersey, foreseeing the potential of containerization, constructed the first specialized container 
+terminal next to Port Newark; the Port Elizabeth Marine Terminal. Unlike conventional break bulk operations that require storage sheds adjacent to 
+piers, containerization requires large paved open spaces for container storage. The Sea-Land Company established the first regular maritime container 
+line in 1966 over the Atlantic between North America and Western Europe. It took over a decade for the container to become a standardized form of 
+maritime shipping as ports and shipping lines were initially reluctant to provide the required capital investments. By the early 1980s, container 
+services with specialized ships (cellular containerships, first introduced in 1968) became a dominant aspect of international and regional transport 
+systems, transforming the maritime industry. However, the size of those ships remained constrained for 20 years by the size of the Panama Canal, which
+ de facto became the Panamax standard. In 1988, the first post-Panamax containership was introduced, indicating the will to expand economies of scale 
+ in maritime container shipping. The container revolution was concomitant with globalization by supporting an increasingly complex system of trade 
+ involving parts, manufactured goods, and even commodities. Few other transport innovations had such an impact on the global economic landscape.
+
+ - US Maritime Commission Cargo Ships: https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/usmc-cargo-ships/
+ - Impactos de la primera contenerización: https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/impacts-early-containerization/
+ - Primer barco contenedor (Ideal-X, 1956): https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/idealx-first-containeriship-1956/
+ - El amanecer de la contenerización (1970): https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/dawn-containerization/
+ - Contenedores e Intermodalismo: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/container-barge-shanghai/
+
+3. Setting of Global Mobility Systems:
+ By the second half of the 20th century, trade liberalization and the formation of economic blocs allowed for the fragmentation of production at the 
+ global level. A conjunction of trade liberalization, containerization, and technological innovations modified the operational scale of transport 
+ systems and their network structure. The setting of gateways and hubs became particularly prevalent, leading to an extended scale for transportation 
+ that reflects commercial considerations less subject to political or regulatory constraints. 
+
+ The increasing efforts to manage freight reinforced the development of logistics and global supply chains.
+ Although manufacturing clusters emerged in the first half of the 20th century, by the 21st century, clusters became prevalent across a wide range of 
+ activities and locations. Accessibility and connectivity offered by intermodal transportation allowed for setting logistics clusters near terminal 
+ facilities. These clusters became the regulators and coordinators of distribution systems spanning large regions.
+
+ - Cargo carried by steamship by port city: https://porteconomicsmanagement.org/pemp/contents/part3/changing-geography-of-seaports/cargo-carried-steamship-port-city/
+
+1.5 Transporte y Geografía Comercial:
+https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/
+1. Comercio y geografía comercial:
+Trade, the exchange of goods and services over long distances, and commercial activities, the exchange of products and services at specific markets, 
+are core components of the economy. Trade and commerce have evolved in space and time, from low volume and limited extent before the industrial 
+revolution, to the extensive flows and transactions that characterize the contemporary global economy. 
+
+Trade is the transmission of ownership in return for a counterpart, generally money, often defined as a medium of exchange. This exchange involves 
+a transaction and its associated capital flows, information, commodities, parts, or finished products. All these activities define commercial geography.
+
+La geografía comercial investiga las características espaciales del comercio y las transacciones en términos de su naturaleza, causas y consecuencias.
+
+Commercial geography can be considered a component of economic geography similar to transport geography. Still, it is relevant to see commercial 
+geography as distinct, which allows the sphere of locations investigated by economic geography to interact with the sphere of circulation investigated 
+by transport geography.
+
+ - https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/economic-transport-commercial-geography/
+ - Global Financial Centers: https://transportgeography.org/contents/chapter7/globalization-international-trade/global-financial-centers/
+
+Globalizacion y comercio:
+ -  Share of East Asia in the Value of World Merchandise Trade: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/east-asia-share-global-trade/
+ - Globalizacion como factor de valor añadido: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/globalization-driver-added-value/
+ - Elementos en la globalización y el comercio: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/drivers-trade-globalization/
+ 
+ - Principales Areas Metropolitanas del mundo: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/gdp-metropolitan-areas/
+ - Principales paises manufactureros: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/global-manufacturing/
+
+- Multinacionales logisticas: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/transportation-logistics-multinationals/
+- Seleccion de la ruta de transporte: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/transport-route-selection/
+- Principales actores en la distribucion de cargamento: https://transportgeography.org/contents/chapter1/transportation-and-commercial-geography/commercial-actors-freight-distribution/
+
+- Logistic Performance Index (2015): https://transportgeography.org/contents/chapter7/logistics-freight-distribution/logistics-performance-index/
+

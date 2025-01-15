@@ -1,0 +1,86 @@
+# 3.1 Transportation and Economic Development:
+
+"High-density transport infrastructure and highly connected networks are commonly associated with high levels of development. When transport systems 
+are efficient, they provide economic and social opportunities and benefits that result in positive multiplier effects, such as better accessibility to 
+markets, employment, and additional investments."
+
+geographical dimension: Access to a broader market base where economies of scale in production, distribution, and consumption can be improved. 
+Increases in productivity from the access to a larger and more diverse base of inputs (raw materials, parts, energy, or labor) and broader markets for 
+diverse outputs (intermediate and finished goods). Another important geographical impact concerns the influence of transport on the location of 
+activities and its impacts on land values.
+
+Transportation links together the factors of production in a complex web of relationships between producers and consumers. The outcome is commonly a 
+more efficient division of production by the exploitation of comparative geographical advantages, as well as the means to develop economies of scale 
+and scope. 
+
+## 2. Transportation and Economic opportunities
+Seaports. The historical importance of seaports in trade has been enduring. Seaports supported the early development of international trade through 
+colonial empires but were constrained by limited inland access. Later in the industrial revolution, many ports became important industrial platforms. 
+With globalization and containerization, seaports increased their importance in supporting global trade and supply chains. The cargo handled by 
+seaports reflects the economic complexity of their hinterlands. Simple economies are usually associated with bulk cargoes, while complex economies 
+generate more containerized flows. Technological and commercial developments have incited a greater reliance on the oceans as an economic and 
+circulation space.
+
+Rivers and canals. River trade has prevailed throughout history, and even canals were built where no significant altitude change existed since lock 
+technology was rudimentary. The first stage of the Industrial Revolution in the late 18th and early 19th centuries was linked with the development of 
+canal systems with locks in Western Europe and North America, mainly to transport heavy goods.
+
+No single transport mode has been solely responsible for economic growth. Instead, modes have been linked with the economic functions they support and 
+the geography in which growth was taking place.
+
+The first trade routes established a rudimentary system of distribution and transactions that would eventually be expanded by long-distance maritime 
+shipping networks and the setting of the first multinational corporations managing these flows.
+
+port development, particularly container ports, has been of strategic interest as a tool of integration into the global economy, as the case of China 
+illustrates. There is a direct relationship, or coordination, between foreign trade and container port volumes, so container port development is 
+commonly seen as a tool to capture the opportunities brought by globalization. The growth of container shipping has systematically been 3 to 4 times 
+the GDP growth rate, underlining a significant multiplier effect between economic growth and container trade. However, this multiplying effect has 
+substantially receded since 2009, underlining the maturity of the diffusion of containerization and its dissociation from economic growth.
+
+ - Factors behind DEvelopment of Transportation systems: https://transportgeography.org/contents/chapter3/transportation-and-economic-development/factors-behind-the-development-of-transport-systems/
+ - Economic Impacts of Transportation Infrastructure: https://transportgeography.org/contents/chapter3/transportation-and-economic-development/transport-infrastructure-economic-impacts/
+ - Basic Location Factors: https://transportgeography.org/contents/chapter2/transport-and-location/location-factors-basic/
+ - Dutch East India Company, TRade Network (18th century): https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/dutch-east-india-company-trade-network/
+ - Phases of Development of the Global Economy: https://transportgeography.org/contents/chapter1/the-setting-of-global-transportation-systems/global-economy-development-phases/
+ - Long Wave Cycles of Innovation: https://transportgeography.org/contents/chapter3/transportation-and-economic-development/innovation-long-wave-cycles/
+ - Resource-Based Transport Systems: https://transportgeography.org/contents/chapter3/transportation-and-economic-development/transport-system-resources/
+ - Diffussion Cycle of Containerization: https://transportgeography.org/contents/chapter3/transportation-and-economic-development/containerization-diffusion-cycles/
+
+# 3.3 Transportation costs
+The transport time component is also an important consideration as it is associated with the service factor of transportation. They include the 
+transport time, the order time, the timing, the punctuality, and the frequency. For instance, a maritime shipping company may offer a container 
+transport service between several North American and Pacific Asian ports. It may take 12 days to service two ports across the Pacific (transport time), 
+and a port call is done every two days (frequency). To secure a slot on a ship, a freight forwarder must call at least five days in advance (order 
+time). For a specific port terminal, a ship arrives at 8 AM and leaves at 5 PM (timing), with the average delay being six hours (punctuality).
+
+LArger containerships involve lower unit costs (economy of scale)
+
+The efficiency and capacity of transport modes and terminals directly impact transport costs. Poor infrastructures imply higher transport costs, 
+delays, and adverse economic consequences. More developed transport systems tend to have lower transport costs since they are more reliable, 
+connected, and can handle more movements.
+
+ - Cost to Import a 20 ft container (2015): https://transportgeography.org/contents/chapter3/transport-costs/import-costs-container-teu/
+ - Different Components of Transport Time: https://transportgeography.org/contents/chapter3/transport-costs/transport-time-components/
+ - Friction Distance Functions: https://transportgeography.org/contents/chapter3/transport-costs/friction-distance-functions/
+ - Freight Rates in TEU Between Singapore and Rotterdam: https://transportgeography.org/contents/chapter3/transport-costs/freight-rates-singapore-rotterdam-teu/
+
+# 3.4 The Provision and Demand for Transportation
+Transport demand that is met by a supply of transport services generates traffic (trucks, trains, ships, airplanes, buses, bicycles, etc.) on the 
+corresponding transport infrastructure networks. The traffic capacity is generally larger than the actual transport demand since the average 
+utilization level of vehicles rarely reaches 100 percent. This involves, for instance, empty hauls of trucks, an underutilized container ship capacity 
+sailing on a shipping route characterized by imbalanced container flows.
+
+Several factors impact the capacity of transport infrastructure, including the physical characteristics of the network, how it is funded, operated, 
+and maintained, or the presence of bottlenecks. Transport supply can be simplified by a set of functions representing the main variables influencing 
+the capacity of transport systems. These variables are different for each mode. air and maritime transportation transport supply is strongly 
+influenced by the capacity of the terminals (intermodal supply).
+
+ - Types of Transportation Demand: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/types-transportation-demand/
+ - Static and Dynamic Capacity of Transport Infrastructure: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/transport-infrastructure-static-dynamic-capacity/
+ - Factors behind Freight Transport Demand: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/transport-demand-factors/
+ - Growth Factors in Transport Demand: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/transport-demand-growth-factors/
+ - The Functions of Transport Supply and Demand: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/transport-supply-demand/
+ - Intermodal Capacity on Transport Supply: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/transport-supply-modal-competition/
+ - Major Supply Variables for Transportation Modes: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/transport-modes-sypply-variables/
+ - Factors behind Freight Transport Demand: https://transportgeography.org/contents/chapter3/provision-and-demand-of-transportation/transport-demand-factors/
+ 
