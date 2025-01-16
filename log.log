@@ -303,4 +303,14 @@ Apuntes tomados en: "apuntes_transport-geography_ch3.txt"
 
 15/01/2025:
 Lectura "https://transportgeography.org/contents/chapter5/transportation-modes-modal-competition-modal-shift/"
-EDA Drug Seizure Data: 
+EDA Drug Seizure Data: drug-seizure_EDA.ipynb
+¿Cuál será la pregunta que plantee mi hipotesis?
+Opcion A) Predecir (o hallar correlación) entre incautaciones de droga y llegada de 'cargo ship' a puertos (en EE UU).
+Opción B) Dado el flujo de barcos 'cargo ship', hallar volumen de incautacion de droga.
+Opcion C) Dada la actividad en puertos (escoger zona, basandonos en flujos migratorios y economicos), hallar volumen de incautacion de droga.
+
+EDA de USA y UK.
+Año fiscal USA (empieza 1 de octubre), Año fiscal UK (empieza primera semana abril)
+
+16/01/2025:
+Revisar datos de Europa (Drug-seizure).
