@@ -314,3 +314,25 @@ Año fiscal USA (empieza 1 de octubre), Año fiscal UK (empieza primera semana a
 
 16/01/2025:
 Revisar datos de Europa (Drug-seizure).
+
+Nuevas fuentes de datos y bibliografía como mejoras:
+- "Mapping UK shipping density and routes (June 2014)": https://assets.publishing.service.gov.uk/media/5a7edadce5274a2e87db254b/1066.pdf
+- Anonymised AIS Derived Track Lines UK (WMS): https://environment.data.gov.uk/explore/ffb7d2d8-2e13-487c-a17f-7abc0f116d50
+
+Datos Portuarios en UK:
+- Maritime Statistics (2014): https://www.data.gov.uk/dataset/ca00d8ed-cb20-436d-8bf2-8cd4cc257a1a/maritime_statistics
+- Port Statistics (2014): https://www.data.gov.uk/dataset/3554c68e-5911-4b66-91f3-497e3b19fc5c/port_statistics
+- Port Freight Statistics (2014): https://www.data.gov.uk/dataset/4744ca72-ea9b-436e-8cd4-5fcbc711233c/port_freight_statistics
+- Waterborne Freight (2016): https://www.data.gov.uk/dataset/16dc4344-b6a5-4ea5-9076-aaa4f7144c6b/waterborne_freight_in_the_united_kingdom
+- Port traffic data (2013): https://www.data.gov.uk/dataset/c9e12cc0-c091-4d17-a718-2b65fa475c6d/port-traffic-data
+- HMRC/UKBA Freight Tracking System (2013): https://www.data.gov.uk/dataset/cea14b37-226a-4872-ada7-74804a5be7bc/hmrc-ukba-freight-tracking-system
+
+See: https://www.gov.uk/government/organisations/department-for-transport/about/statistics
+Copernicus Environmental Data: https://www.wekeo.eu/subscription-benefits?mtm_campaign=Wekeo-Souscription&mtm_medium=cpc&mtm_source=google&mtm_content=text&mtm_cid=164861945227&mtm_kwd=marine%20data&gad_source=1&gclid=Cj0KCQiA-aK8BhCDARIsAL_-H9lrSSpJrYHLujqXpakdfN717IFSMYc44g2FTGmIRFJEuq1mTAAgJuIaAkI7EALw_wcB
+IMF: https://portwatch.imf.org/search?collection=Dataset
+
+Datos Portuarios en USA:
+- https://catalog.data.gov/dataset/?tags=port
+
+Datos Portuarios en UE:
+- Puerto de Barcelona: https://datos.gob.es/en/catalogo/ea0001302-buques-en-puerto1
