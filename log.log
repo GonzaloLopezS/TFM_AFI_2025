@@ -336,3 +336,33 @@ Datos Portuarios en USA:
 
 Datos Portuarios en UE:
 - Puerto de Barcelona: https://datos.gob.es/en/catalogo/ea0001302-buques-en-puerto1
+
+19/01/2025:
+Datos sobre puertos en UK curados en parte.
+- Estudiar posible métrica para definir la relación y orden entre variables categóricas.
+- Hallar definición para flujo (o caudal) según número de barcos (o tonelaje de carga total).
+
+Del TFM de Juan de Dios Romero (Apartado 4.2):
+
+"Una vez más, la primera decisión que debemos tomar es el nivel geográfico al que queremos trabajar. En este sentido consideramos que el nivel de 
+provincia es el más indicado ya que es el nivel más granular del que tenemos información sobre el origen del cliente. Además, vamos a enfrentar el 
+problema de dos maneras distintas: por un lado, se ejecutará un proceso de clustering tradicional de las series temporales de origen-destino (e. g. 
+gasto de clientes de Huesca en las Islas Baleares) y, por otro lado, utilizaremos una visión basada en grafos para agrupar únicamente las series 
+temporales de cada destino (sin tener en cuenta el origen)."
+
+Estudiar distancia entre series temporales que permitan agrupar o relacionarlas mediante grafos. Objetivo: estudiar la estructura de las series temporales.
+Uso de distancia basada en la correlación entre series temporales (Montero & Vilar, 2014).
+
+Incluir diagrama de Gant con tareas realizadas.
+
+*Definiciones* (en port0301.xls):
+- Main Freight: A subset of unitised goods - consists of all load-on/load-off (Lo-Lo) containers and those roll-on/roll-off (Ro-Ro) units designed 
+to carry freight. This category includes:
+- All container (Lo-Lo) traffic;
+- Road goods vehicles and trailers;
+- Unaccompanied road goods vehicle trailers;
+- Rail wagons, shipborne trailers, barges engaged in goods transport.
+
+*TEU
+TEU (twenty-foot equivalent units) is a standardised measure to allow for the diferent sizes of container boxes. See the Notes and Definitions for a 
+breakdown of the measure.
