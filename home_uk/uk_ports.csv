@@ -1,120 +1,116 @@
-Port,key_1,Major/Minor ports,Port group,UK Country,id_Port
-Aberdeen,0,Major port,Scotland East Coast,Scotland,0
-Appledore,0,Minor port,Bristol Channel,,1
-Ardrishaig,0,Minor port,Scotland West Coast,,2
-Ayr,0,Minor port,Scotland West Coast,,3
-Barrow,0,Minor port,Lancs and Cumbria,,4
-Barry,0,Minor port,Bristol Channel,,5
-Belfast,0,Major port,Northern Ireland,Northern Ireland,6
-Berwick-On-Tweed,0,Minor port,North East,,7
-Bideford,0,Minor port,Bristol Channel,,8
-Blyth,0,Minor port,North East,,9
-Boston,0,Major port,Wash & Northern E Anglia,England,10
-Bridgwater,0,Minor port,Bristol Channel,,11
-Brightlingsea,0,Minor port,Thames and Kent,,12
-Bristol,0,Major port,Bristol Channel,England,13
-Buckie,0,Minor port,Scotland East Coast,,14
-Burry Port,0,Minor port,Bristol Channel,,15
-Cairnryan,0,Major port,Scotland West Coast,Scotland,16
-Cardiff,0,Major port,Bristol Channel,Wales,17
-Chichester,0,Minor port,Sussex and Hampshire,,18
-Clyde,0,Major port,Scotland West Coast,Scotland,19
-Coleraine,0,Minor port,Northern Ireland,,20
-Corpach,0,Minor port,Scotland West Coast,,21
-"Cowes, Isle of Wight ",0,Minor port,Sussex and Hampshire,,22
-Cromarty Firth,0,Major port,Scotland East Coast,Scotland,23
-Dover,0,Major port,Thames and Kent,England,24
-Dundee,0,Major port,Scotland East Coast,Scotland,25
-Falmouth,0,Minor port,West Country,,26
-Felixstowe,0,Major port,Haven,England,27
-Fishguard,0,Major port,West and North Wales,Wales,28
-Fleetwood,0,Major port,Lancs and Cumbria,,29
-Forth,0,Major port,Scotland East Coast,Scotland,30
-Fowey,0,Major port,West Country,England,31
-Fraserburgh,0,Minor port,Scotland East Coast,,32
-Garston,0,Minor port,Lancs and Cumbria,,33
-Gill's Bay Scotland,0,Minor port,Scotland East Coast,,34
-Glensanda,0,Major port,Scotland West Coast,Scotland,35
-Goole,0,Major port,Humber,England,36
-Great Yarmouth,0,Major port,Wash & Northern E Anglia,England,37
-Grimsby & Immingham,0,Major port,Humber,England,38
-Harwich,0,Major port,Haven,England,39
-Heysham,0,Major port,Lancs and Cumbria,England,40
-Holyhead,0,Major port,West and North Wales,Wales,41
-Hughtown (St Mary's),0,Minor port,West Country,,42
-Hull,0,Major port,Humber,England,43
-Inverkeithing,0,Minor port,Scotland East Coast,,44
-Inverness,0,Minor port,Scotland East Coast,,45
-Ipswich,0,Major port,Haven,,46
-Kilroot,0,Minor port,Northern Ireland,,47
-Kilroot Power Station Jetty,0,Major port,Northern Ireland,Northern Ireland,48
-King's Lynn,0,Minor port,Wash & Northern E Anglia,,49
-Lancaster,0,Minor port,Lancs and Cumbria,,50
-Larne,0,Major port,Northern Ireland,Northern Ireland,51
-Lerwick,0,Minor port,Scotland East Coast,,52
-Littlehampton,0,Minor port,Sussex and Hampshire,,53
-Liverpool,0,Major port,Lancs and Cumbria,England,54
-Llandulas,0,Minor port,West and North Wales,,55
-Loch Ryan ,0,Major port,Scotland West Coast,Scotland,56
-London,0,Major port,Thames and Kent,,57
-Londonderry,0,Major port,Northern Ireland,Northern Ireland,58
-Lowestoft,0,Minor port,Wash & Northern E Anglia,,59
-Manchester,0,Major port,Lancs and Cumbria,England,60
-Medway,0,Major port,Thames and Kent,England,61
-Milford Haven,0,Major port,West and North Wales,Wales,62
-Mistley,0,Minor port,Haven,,63
-Montrose,0,Minor port,Scotland East Coast,,64
-Mostyn,0,Minor port,West and North Wales,,65
-Neath,0,Minor port,Bristol Channel,,66
-Newhaven,0,Major port,Sussex and Hampshire,England,67
-Newport,0,Major port,Bristol Channel,Wales,68
-"Newport, Isle of Wight",0,Minor port,Sussex and Hampshire,,69
-Orkney,0,Major port,Scotland East Coast,Scotland,70
-Other ports,0,Minor port,,,71
-Padstow,0,Minor port,West Country,,72
-Penzance,0,Minor port,West Country,,73
-Perth,0,Minor port,Scotland East Coast,,74
-Peterhead,0,Major port,Scotland East Coast,Scotland,75
-Plymouth,0,Major port,West Country,England,76
-Poole,0,Major port,West Country,England,77
-Port Penrhyn,0,Minor port,West and North Wales,,78
-Port Talbot,0,Major port,Bristol Channel,Wales,79
-Porthoustock,0,Minor port,West Country,,80
-Portsmouth ,0,Major port,Sussex and Hampshire,,81
-Ramsgate ,0,Major port,Thames and Kent,,82
-River Ouse,0,Minor port,Humber,,83
-River Trent,0,Major port,Humber,England,84
-Rivers Hull and Humber,0,Major port,Humber,,85
-Rye,0,Minor port,Thames and Kent,,86
-Scalloway,0,Minor port,Scotland East Coast,,87
-Scrabster,0,Minor port,Scotland East Coast,,88
-Seaham,0,Minor port,North East,,89
-Sharpness,0,Minor port,Bristol Channel,,90
-Shoreham,0,Major port,Sussex and Hampshire,England,91
-Silloth,0,Minor port,Lancs and Cumbria,,92
-Southampton ,0,Major port,Sussex and Hampshire,England,93
-Stornoway,0,Minor port,Scotland West Coast,,94
-Stranraer ,0,Major port,Scotland West Coast,Scotland,95
-Sullom Voe,0,Major port,Scotland East Coast,Scotland,96
-Sunderland,0,Major port,North East,England,97
-Sutton Bridge,0,Minor port,Wash & Northern E Anglia,,98
-Swansea,0,Major port,Bristol Channel,Wales,99
-Tees and Hartlepool,0,Major port,North East,,100
-Teignmouth,0,Minor port,West Country,,101
-Troon,0,Minor port,Scotland West Coast,,102
-Truro,0,Minor port,West Country,,103
-Tyne,0,Major port,North East,England,104
-Wallasea,0,Minor port,Thames and Kent,,105
-Warrenpoint,0,Major port,Northern Ireland,Northern Ireland,106
-Weymouth & Portland,0,Minor port,West Country,,107
-Whitstable,0,Minor port,Thames and Kent,,108
-Wick,0,Minor port,Scotland East Coast,,109
-Wisbech,0,Minor port,Wash & Northern E Anglia,,110
-Workington,0,Minor port,Lancs and Cumbria,,111
-Fleetwood ,0,,,England,112
-Ipswich ,0,,,England,113
-London ,0,,,England,114
-Portsmouth,0,,,England,115
-Ramsgate,0,,,England,116
-Rivers Hull & Humber,0,,,England,117
-Tees & Hartlepool,0,,,England,118
+Port,key_1,Major/Minor ports,Port group,UK Country,id_Port,Police force region
+Aberdeen,0.0,Major port,Scotland East Coast,Scotland,0,Northumbria
+Appledore,0.0,Minor port,Bristol Channel,,1,Avon & Somerset
+Ardrishaig,0.0,Minor port,Scotland West Coast,,2,Cumbria
+Ayr,0.0,Minor port,Scotland West Coast,,3,Cumbria
+Barrow,0.0,Minor port,Lancs and Cumbria,,4,Cumbria
+Barry,0.0,Minor port,Bristol Channel,,5,Avon & Somerset
+Belfast,0.0,Major port,Northern Ireland,Northern Ireland,6,Northern Ireland
+Berwick-On-Tweed,0.0,Minor port,North East,,7,Cleveland
+Bideford,0.0,Minor port,Bristol Channel,,8,Avon & Somerset
+Blyth,0.0,Minor port,North East,,9,Cleveland
+Boston,0.0,Major port,Wash & Northern E Anglia,England,10,Norfolk 
+Bridgwater,0.0,Minor port,Bristol Channel,,11,Avon & Somerset
+Brightlingsea,0.0,Minor port,Thames and Kent,,12,Kent 
+Bristol,0.0,Major port,Bristol Channel,England,13,Avon & Somerset
+Buckie,0.0,Minor port,Scotland East Coast,,14,Northumbria
+Burry Port,0.0,Minor port,Bristol Channel,,15,Avon & Somerset
+Cairnryan,0.0,Major port,Scotland West Coast,Scotland,16,Cumbria
+Cardiff,0.0,Major port,Bristol Channel,Wales,17,Avon & Somerset
+Chichester,0.0,Minor port,Sussex and Hampshire,,18,Sussex
+Clyde,0.0,Major port,Scotland West Coast,Scotland,19,Cumbria
+Coleraine,0.0,Minor port,Northern Ireland,,20,Northern Ireland
+Corpach,0.0,Minor port,Scotland West Coast,,21,Cumbria
+"Cowes, Isle of Wight",0.0,Minor port,Sussex and Hampshire,,22,Sussex
+Cromarty Firth,0.0,Major port,Scotland East Coast,Scotland,23,Northumbria
+Dover,0.0,Major port,Thames and Kent,England,24,Kent 
+Dundee,0.0,Major port,Scotland East Coast,Scotland,25,Northumbria
+Falmouth,0.0,Minor port,West Country,,26,Devon & Cornwall 
+Felixstowe,0.0,Major port,Haven,England,27,Essex
+Fishguard,0.0,Major port,West and North Wales,Wales,28,North Wales
+Fleetwood,0.0,Major port,Lancs and Cumbria,,29,Cumbria
+Forth,0.0,Major port,Scotland East Coast,Scotland,30,Northumbria
+Fowey,0.0,Major port,West Country,England,31,Devon & Cornwall 
+Fraserburgh,0.0,Minor port,Scotland East Coast,,32,Northumbria
+Garston,0.0,Minor port,Lancs and Cumbria,,33,Cumbria
+Gill's Bay Scotland,0.0,Minor port,Scotland East Coast,,34,Northumbria
+Glensanda,0.0,Major port,Scotland West Coast,Scotland,35,Cumbria
+Goole,0.0,Major port,Humber,England,36,Humberside
+Great Yarmouth,0.0,Major port,Wash & Northern E Anglia,England,37,Norfolk 
+Grimsby & Immingham,0.0,Major port,Humber,England,38,Humberside
+Harwich,0.0,Major port,Haven,England,39,Essex
+Heysham,0.0,Major port,Lancs and Cumbria,England,40,Cumbria
+Holyhead,0.0,Major port,West and North Wales,Wales,41,North Wales
+Hughtown (St Mary's),0.0,Minor port,West Country,,42,Devon & Cornwall 
+Hull,0.0,Major port,Humber,England,43,Humberside
+Inverkeithing,0.0,Minor port,Scotland East Coast,,44,Northumbria
+Inverness,0.0,Minor port,Scotland East Coast,,45,Northumbria
+Ipswich,0.0,Major port,Haven,,46,Essex
+Kilroot,0.0,Minor port,Northern Ireland,,47,Northern Ireland
+Kilroot Power Station Jetty,0.0,Major port,Northern Ireland,Northern Ireland,48,Northern Ireland
+King's Lynn,0.0,Minor port,Wash & Northern E Anglia,,49,Norfolk 
+Lancaster,0.0,Minor port,Lancs and Cumbria,,50,Cumbria
+Larne,0.0,Major port,Northern Ireland,Northern Ireland,51,Northern Ireland
+Lerwick,0.0,Minor port,Scotland East Coast,,52,Northumbria
+Littlehampton,0.0,Minor port,Sussex and Hampshire,,53,Sussex
+Liverpool,0.0,Major port,Lancs and Cumbria,England,54,Cumbria
+Llandulas,0.0,Minor port,West and North Wales,,55,North Wales
+Loch Ryan,0.0,Major port,Scotland West Coast,Scotland,56,Cumbria
+London,0.0,Major port,Thames and Kent,,57,Kent 
+Londonderry,0.0,Major port,Northern Ireland,Northern Ireland,58,Northern Ireland
+Lowestoft,0.0,Minor port,Wash & Northern E Anglia,,59,Norfolk 
+Manchester,0.0,Major port,Lancs and Cumbria,England,60,Cumbria
+Medway,0.0,Major port,Thames and Kent,England,61,Kent 
+Milford Haven,0.0,Major port,West and North Wales,Wales,62,North Wales
+Mistley,0.0,Minor port,Haven,,63,Essex
+Montrose,0.0,Minor port,Scotland East Coast,,64,Northumbria
+Mostyn,0.0,Minor port,West and North Wales,,65,North Wales
+Neath,0.0,Minor port,Bristol Channel,,66,Avon & Somerset
+Newhaven,0.0,Major port,Sussex and Hampshire,England,67,Sussex
+Newport,0.0,Major port,Bristol Channel,Wales,68,Avon & Somerset
+"Newport, Isle of Wight",0.0,Minor port,Sussex and Hampshire,,69,Sussex
+Orkney,0.0,Major port,Scotland East Coast,Scotland,70,Northumbria
+Other ports,0.0,Minor port,,,71,
+Padstow,0.0,Minor port,West Country,,72,Devon & Cornwall 
+Penzance,0.0,Minor port,West Country,,73,Devon & Cornwall 
+Perth,0.0,Minor port,Scotland East Coast,,74,Northumbria
+Peterhead,0.0,Major port,Scotland East Coast,Scotland,75,Northumbria
+Plymouth,0.0,Major port,West Country,England,76,Devon & Cornwall 
+Poole,0.0,Major port,West Country,England,77,Devon & Cornwall 
+Port Penrhyn,0.0,Minor port,West and North Wales,,78,North Wales
+Port Talbot,0.0,Major port,Bristol Channel,Wales,79,Avon & Somerset
+Porthoustock,0.0,Minor port,West Country,,80,Devon & Cornwall 
+Portsmouth,0.0,Major port,Sussex and Hampshire,,81,Sussex
+Ramsgate,0.0,Major port,Thames and Kent,,82,Kent 
+River Ouse,0.0,Minor port,Humber,,83,Humberside
+River Trent,0.0,Major port,Humber,England,84,Humberside
+Rivers Hull and Humber,0.0,Major port,Humber,,85,Humberside
+Rye,0.0,Minor port,Thames and Kent,,86,Kent 
+Scalloway,0.0,Minor port,Scotland East Coast,,87,Northumbria
+Scrabster,0.0,Minor port,Scotland East Coast,,88,Northumbria
+Seaham,0.0,Minor port,North East,,89,Cleveland
+Sharpness,0.0,Minor port,Bristol Channel,,90,Avon & Somerset
+Shoreham,0.0,Major port,Sussex and Hampshire,England,91,Sussex
+Silloth,0.0,Minor port,Lancs and Cumbria,,92,Cumbria
+Southampton,0.0,Major port,Sussex and Hampshire,England,93,Sussex
+Stornoway,0.0,Minor port,Scotland West Coast,,94,Cumbria
+Stranraer,0.0,Major port,Scotland West Coast,Scotland,95,Cumbria
+Sullom Voe,0.0,Major port,Scotland East Coast,Scotland,96,Northumbria
+Sunderland,0.0,Major port,North East,England,97,Cleveland
+Sutton Bridge,0.0,Minor port,Wash & Northern E Anglia,,98,Norfolk 
+Swansea,0.0,Major port,Bristol Channel,Wales,99,Avon & Somerset
+Tees and Hartlepool,0.0,Major port,North East,,100,Cleveland
+Teignmouth,0.0,Minor port,West Country,,101,Devon & Cornwall 
+Troon,0.0,Minor port,Scotland West Coast,,102,Cumbria
+Truro,0.0,Minor port,West Country,,103,Devon & Cornwall 
+Tyne,0.0,Major port,North East,England,104,Cleveland
+Wallasea,0.0,Minor port,Thames and Kent,,105,Kent 
+Warrenpoint,0.0,Major port,Northern Ireland,Northern Ireland,106,Northern Ireland
+Weymouth & Portland,0.0,Minor port,West Country,,107,Devon & Cornwall 
+Whitstable,0.0,Minor port,Thames and Kent,,108,Kent 
+Wick,0.0,Minor port,Scotland East Coast,,109,Northumbria
+Wisbech,0.0,Minor port,Wash & Northern E Anglia,,110,Norfolk 
+Workington,0.0,Minor port,Lancs and Cumbria,,111,Cumbria
+Rivers Hull & Humber,0.0,,,England,117,
+Tees & Hartlepool,0.0,,,England,118,
+Grimsby and Immingham,,,,,124,

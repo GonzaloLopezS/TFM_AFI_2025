@@ -143,3 +143,109 @@ Liner Transatlantic Crossing Times (1833 - 1952): https://transportgeography.org
 'E' Class Containership, The Evelyn Maersk: https://transportgeography.org/contents/chapter5/maritime-transportation/e-class-containership-evelyn-maersk/
 
 ## 3. Maritime shipping
+The maritime shipping industry is one of the most globalized.
+
+Maritime shipping is dominated by bulk cargo, with dry bulk cargoes such as iron ore, coal, and grain roughly accounting for 28% of all the ton-miles 
+shipped in 2021. Due to containerization, the share of break-bulk cargo is increasing steadily, which accounted for 15% of all ton-miles in 2021. 
+Maritime shipping has traditionally faced two drawbacks in relation to other modes. First, it is slow, with speeds at sea averaging 15 knots for bulk 
+ships (26 km/hr), although container ships are designed to sail at speeds above 20 knots (37 km/hr). Secondly, delays are encountered in ports where 
+loading and unloading take place. The latter may involve several days of handling when break-bulk cargo is concerned. These drawbacks are particularly 
+constrained where goods must be moved over short distances or shippers require rapid deliveries.
+
+Maritime shipping has seen several major technical innovations aiming at improving the performance of ships or their access to port facilities, 
+notably in the 20th century. 
+
+### a. Ship size and speed:
+Each time the size of a ship is doubled, its capacity is cubed (tripled). Although the minimum size for cost-effective bulk handling is estimated to 
+be around 1,000 deadweight tons, economies of scale have pushed for larger ship sizes to service transportation demand.
+
+The largest tankers (ULCC) are around 500,000 dwt (dominant size between 250,000 and 350,000 dwt), while the largest dry bulk carriers are around 
+350,000 dwt (dominant size between 100,000 and 150,000 dwt). For container shipping, the scale effect on ships has been an important driving force in 
+the growth of its capacity. 
+
+The average speed of ships is about 15 knots (1 knot = 1 marine mile = 1,853 meters), which is 28 km per hour. Under such circumstances, a ship would 
+travel about 575 km per day. More recent ships can travel between 25 to 30 knots (45 to 55 km per hour), but it is uncommon for a commercial ship to 
+travel faster than 25 knots due to energy requirements. 
+
+### b. Ship specialization and design
+Economies of scale are often linked with market specialization and segmentation since many ships are designed to carry only one type of cargo. In 
+maritime transportation, ships have a commercial openness in terms of the diversity of customers they can serve and a functional openness in terms of 
+the diversity of cargo they can carry.
+
+ships became increasingly specialized, including general cargo ships, tankers, grain carriers, barges, mineral carriers, bulk carriers, Liquefied 
+Natural Gas (LNG) carriers, RO-RO ships (roll-on roll-off; for vehicles), and container ships.
+
+Ship design significantly improved from wood hulls (before the 16th century) to wood hulls with steel armatures (18th century), to steel hulls (19th 
+century; the first were warships), and to steel, aluminum, and composite materials hulls in the 20th and 21st centuries. The hulls of contemporary 
+ships result from considerable efforts to minimize energy consumption and construction costs and improve safety. 
+
+Different automation technologies are possible, including self-unloading ships, computer-assisted navigation (crew needs are reduced, and safety is 
+increased), global positioning systems, and Automatic Identification Systems (AIS). Automation has resulted in smaller crews being required to operate 
+larger ships.
+
+- World Merchant Fleet, Tonnage Registered per Ship Size (1970-2020): https://transportgeography.org/contents/chapter5/maritime-transportation/world-registered-fleet-tonnage/
+- Vessel Size Groups: https://transportgeography.org/contents/chapter5/maritime-transportation/vessel-size-groups/
+- Evolution of Containerships: https://transportgeography.org/contents/chapter5/maritime-transportation/evolution-containerships-classes/
+- Fuel Consumption by Containership: https://transportgeography.org/contents/chapter4/transportation-and-energy/fuel-consumption-containerships/
+- Three Containership Classes: https://transportgeography.org/contents/chapter5/maritime-transportation/three-containership-classes/
+- Flexibility and specialization of Major Ship Designs: https://transportgeography.org/contents/chapter5/maritime-transportation/flexibility-ship-design/
+
+Characteristics of Short Sea Shipping Services: https://transportgeography.org/contents/chapter5/maritime-transportation/short-sea-shipping-services/
+
+# 5.6 Intermodal Transportation and Containerization
+ntermodal transportation concerns the mobility of passengers or freight from an origin to a destination relying on several modes of transportation. 
+The container has become the dominant intermodal transport unit.
+
+## 3. Containerization
+Container. A large standard size metal box into which cargo is packed for shipment aboard specially configured transport modes (ISO 668). It is 
+designed to be moved with common handling equipment enabling high-speed intermodal transfers in economically large units between ships, railcars, 
+truck chassis, and barges using a minimum of labor. The container, therefore, serves as the load unit rather than the cargo contained therein. The 
+reference size is the 20-foot box of 20 feet long, 8’6″ feet high and 8 feet wide, or 1 Twenty-foot Equivalent Unit (TEU). Since most containers are 
+now forty feet long, the term Forty-foot Equivalent Unit (FEU) is also used, but less commonly. “Hi cube” containers are also common, and they are one 
+foot higher (9’6″) than the standard.
+
+Containerization. Refers to the increasing and generalized use of the container as a load unit for freight transportation. It involves processes where 
+the intermodal container either substitutes cargo from other conveyances, is adopted as a mode supporting freight distribution, or can diffuse 
+spatially as a growing number of transport systems are able to handle containers.
+
+Containerization conveys a variety of benefits to the mobility of freight, namely lower transportation costs, lower inventory costs, and a higher 
+service level, including reliability.
+
+- The Benefits of Containerization: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/benefits-containerization/
+- Driving Forces of Containerization and Intermodalism: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/containerization-intermodalism-driving-forces/
+- Number of Units and Weight of Consumption Goods: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/container-weighting-cubing-out/
+- Carrying Capacity of Containers: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/container-carrying-capacity/
+- World Container Throughput (1980-2021): https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/world-container-throughput/
+- Containerization Growth Factors: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/containerization-growth-factors/
+
+## 4. Advantages and Challenges of Containerization:
+a. Standardization
+b. Flexibility of usage
+c. Economies of scale
+d. Operational Velocity
+e. Warehousing and security
+f. Site constraints
+Containerization implies a large consumption of terminal space. To fully load or unload a containership of 5,000 TEU, a minimum of 12 hectares of 
+stacking space is required. Conventional port areas are often inadequate for the location of container transshipment infrastructures, particularly 
+because of draft issues as well as required space for terminal operations. Many container vessels require a draft of at least 14 meters (45 feet), and 
+the later generation of larger ships requires at least 15 meters (50 feet). The site constraints imposed by containerization have incited the 
+development of new terminal facilities and migration towards better-suited sites. A similar challenge applies to container rail terminals; many were 
+relocated at the periphery of metropolitan areas. Consequently, major container handling facilities have new location criteria where suitable sites are 
+only found at the periphery and, at times, far from the original site.
+
+g. Infrastructure costs and stacking
+h. Thefts and losses
+i. Empty travel
+j. Illicit trade
+By its confidential character, the container is a common instrument used in the illicit trade of counterfeit goods, drugs, and weapons. At the global 
+level, only 2 to 5% of all containers handled at ports are manually inspected by customs, leaving opportunities for illicit cargoes. This share can go 
+as low as 1% for several large European ports. Manually inspecting a container requires physical resources such as inspection areas as well as labor 
+resources. Thus, assessing if a container should be physically inspected is the outcome of careful considerations related to its origin, the customs 
+declaration, the carrier, and the cargo owner. Concerns have also been raised about containers being used for terrorism.
+
+These fears have given rise to regulations to counter the illegal use of containers. In 2003, following US inspection requirements, the International 
+Maritime Organization (IMO) introduced regulations regarding the security of port sites and the vetting of workers in the shipping industry. The 
+United States established a 24-hour rule, requiring all shipments destined for the United States to receive clearance from US authorities 24 hours 
+before the vessel’s departure. In 2008, the US Congress passed a regulation requiring all US-bound containers to be electronically scanned at the 
+foreign loading port before departure. These measures incur additional costs and delays that many in the industry oppose.
+

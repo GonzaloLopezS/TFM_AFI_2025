@@ -366,3 +366,19 @@ to carry freight. This category includes:
 *TEU
 TEU (twenty-foot equivalent units) is a standardised measure to allow for the diferent sizes of container boxes. See the Notes and Definitions for a 
 breakdown of the measure.
+
+20/01/2025:
+Considerar que en unos casos tengo los puertos (UK) pero en otros, regiones donde interviene la policia (drug seizure).
+Hallar la relación entre el puerto y la región a la que pertenece.
+Con la region se pierde granularidad.
+Probabilidad de incautacion en un puerto, dado que se conoce incautacion en una region. ¿Dependerá de las toneladas de cargamento?
+
+Revisar la escala de las metricas.
+
+Sobre calidad del dato: https://www.ibm.com/think/topics/data-quality
+
+Police Areas in the UK: https://assets-hmicfrs.justiceinspectorates.gov.uk/uploads/police-force-map.pdf
+   Fuente: https://hmicfrs.justiceinspectorates.gov.uk/publications/map-of-police-forces-in-england-wales-and-northern-ireland/
+   Fuente: https://www.data.gov.uk/dataset/e30745e7-1d94-4b38-a228-068decc68625/police-force-boundaries-england-and-wales
+
+Terminada la lectura del Capitulo 5 de "The Geography of Transport Systems".
