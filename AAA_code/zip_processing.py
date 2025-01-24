@@ -16,7 +16,7 @@ def web_scraping(url_in, href_in):
     return file_link
 
 # 2. descargar .zip
-def download_zip(file_link_in, path_to_zip_file):
+def download_zip(file_link_in, path_to_zip_file, url):
     if file_link_in:
         download_url = url.rsplit("/", 1)[0] + "/" + file_link_in['href'] # si no, = url
         print(f"Enlace encontrado: {download_url}")
@@ -35,14 +35,15 @@ def download_zip(file_link_in, path_to_zip_file):
 
     # convertir path_to_zip_file en puntero a fichero .csv:
     csv_filename = target_file.replace(".zip",".csv")
-    return csv_filename
+    zip_filename = target_file
+    return csv_filename, zip_filename
 
 # 3. descomprimir zip
 # csv_path = os.path.join(directory, csv_filename)
-def uncompress_zip(csv_filename_in, path_to_zip_file_in, directory_in):
+def uncompress_zip(csv_filename_in, zip_filename_in, directory_in): #segundo parametro: path_to_zip_file_in
     if not os.path.exists(csv_filename_in):
         print(f"El archivo {csv_filename_in} no está extraído. Descomprimiendo...")
-        with zipfile.ZipFile(path_to_zip_file_in, 'r') as zip_ref:
+        with zipfile.ZipFile(zip_filename_in, 'r') as zip_ref: # si no, segundo parametro
             zip_ref.extractall(directory_in)
     else:
         print(f"El archivo {csv_filename_in} ya está extraído. Saltando descompresión.")
@@ -54,7 +55,7 @@ def data_extraction(csv_filename_in):
     return dataframe_csv
 
 # 5. obtener datos de interés -> guardarlos (revisar mmsi)
-def data_transformation(df_in, vessel_type_list, csv_filename_in):
+def data_transformation(df_in, vessel_type_list, csv_filename_in, directory):
     df_unique = df_in.drop_duplicates(subset='MMSI', keep='first')
 
     # Eliminacion de NAs:

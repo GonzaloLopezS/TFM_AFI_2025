@@ -392,3 +392,13 @@ URL del libro: https://transportgeography.org/contents/
 - Tratamiento Datos y Visualizacion Droga UK (+ Puertos UK)
 - Limpieza datos USA
 - Visualizacion Puertos USA
+
+23/01/2025:
+- Estudio Clustering: como tratar o averiguar los puertos del litoral de Estados Unidos.
+
+Informacion sobre puertos en USA:
+- https://www.bts.gov/content/tonnage-top-50-us-water-ports-ranked-total-tons
+- https://data.bts.gov/stories/s/Tonnage/iqfi-cuyv/
+
+Status NOAA AIS: https://documentation.spire.com/ais-fundamentals/how-to-interpret-navigational-status-codes/
+Other AIS Resources: https://coast.noaa.gov/data/marinecadastre/ais/Other_AIS_Resources.pdf
