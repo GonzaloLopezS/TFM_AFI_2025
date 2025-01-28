@@ -402,3 +402,6 @@ Informacion sobre puertos en USA:
 
 Status NOAA AIS: https://documentation.spire.com/ais-fundamentals/how-to-interpret-navigational-status-codes/
 Other AIS Resources: https://coast.noaa.gov/data/marinecadastre/ais/Other_AIS_Resources.pdf
+
+28/01/2025:
+- Es necesario abrir Google Colab o Databricks para tratar procesamientos complejos (visualizacion de mapas complejos en plotly)
