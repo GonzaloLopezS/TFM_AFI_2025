@@ -405,3 +405,56 @@ Other AIS Resources: https://coast.noaa.gov/data/marinecadastre/ais/Other_AIS_Re
 
 28/01/2025:
 - Es necesario abrir Google Colab o Databricks para tratar procesamientos complejos (visualizacion de mapas complejos en plotly)
+
+30/01/2025:
+- Que es TEU? Definicion exacta (Ya vista)
+- US Waterborne container traffic: https://usace.contentdm.oclc.org/digital/collection/p16021coll2/id/14565
+- Clasificacion de los puertos: https://www.integralshipping.com/clasificacion-puertos-maritimos/
+- USACE reports: https://usace.contentdm.oclc.org/digital/collection/p16021coll2/search/searchterm/Shipping/field/subjec/mode/exact/conn/and
+
+Me interesa más el número de contenedores (TEU) y en menor medida, el número de barcos. Por el contrario, creo que es menos importante saber el 
+volumen/peso del cargamento. Si acaso, el volumen en la incautacion de droga (o numero de incautaciones).
+
+Unificar en un dataframe puertos (US) + drug_seizure (nationwide) + TEUS (US)
+- Interesan los valores CBP nationwide: https://www.cbp.gov/document/stats/nationwide-drug-seizures
+   En tanto en cuanto hagan falta completar datos, echar mano de los datasets amo
+   - https://www.cbp.gov/sites/default/files/assets/documents/2022-Dec/nationwide-drug-seizures-data-dictionary.pdf
+   - https://www.cbp.gov/document/stats/amo-drug-seizures
+
+Más para leer:
+- https://www.cushmanwakefield.com/en/united-states/insights/north-american-ports-report
+- https://www.supplychaindive.com/news/largest-us-ports-by-volume-month-coast-cargo-trends/693493/
+
+Esquema del dataset:
+Info Puerto | Info Barcos en Puerto | Info Incautaciones de droga
+Datos USA
+Datos UK
+Datos EU?
+Datos Canada?
+
+Columnas info puerto: Port_name| Major/Minor_ports | Port_hub (Cluster) | State/Region | id_Port | LAT | LON | Police force region |
+USA
+UK
+EU?
+Canada?
+
+Columnas barcos en puerto: [Year_boats] | [Year_TEU]
+USA: Obtain from noaa | Obtain from dataset usace
+UK: uk_vessels_in_ports | Revisar uk_freight y uk_port_freight_quarterly
+EU?
+Canada?
+* Cada año en una fila distinta
+
+Columnas Incautacion de drogas: date | Component | Region | Land Filter | Area of Responsibility | Drug Type | Count of Event | Sum Qty (lbs)
+* Normalizar quantity (kg or lbs)
+US: nationwide from CBP
+UK: obtain info from uk_drug_Seizure_kg_df [Sum Qty]* | uk_drug_seizure_df [Count of Event]
+* [UK Sum Qty] try to obtain info from different years
+
+31/01/2025:
+Nationwide Drug Seizures: CBP officers and agents interdict illicit narcotics crossing the border at and between ports of entry. CBP keeps dangerous 
+drugs out of our communities and denies criminal organizations the profits derived from their sale.
+
+- CBP depends on federal government
+
+- Creado dataset ports_dataframe_input.csv en 'AAA_code'

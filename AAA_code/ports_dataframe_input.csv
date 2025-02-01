@@ -1,0 +1,226 @@
+,port_name,Region/State,Port hub,coord_0,coord_1,Major/Minor ports,id_Port
+0,"baltimore, md",MD,"baltimore, md, filadelfia, pa",39.16201698275862,-76.08407508620691,,
+1,"beaumont, tx",TX,"houston/galveston, tx",29.602093408239703,-94.66715344569288,,
+2,"bellingham, wa",WA,"seattle/tacoma, wa",47.449354639175255,-122.42877860824744,,
+3,"bethel, ak",AK,,,,,
+4,"brevig mission, ak",AK,,,,,
+5,"buffalo, ny",NY,"erie/buffalo, ny, hamilton/toronto, canada",43.279341333333335,-79.57720466666666,,
+6,"calhoun port authority, tx",TX,"corpus christi, tx",26.56988564516129,-97.17190096774192,,
+7,"canaveral port district, fl",FL,"tampa, fl",27.84197524691358,-82.33899320987655,,
+8,"cheboygan, mi",MI,Michigan-canada,46.026427,-84.311425,,
+9,"clallam county port district, wa",WA,"seattle/tacoma, wa",47.449354639175255,-122.42877860824744,,
+10,"cleveland-cuyahoga county, oh",OH,"detroit, mi/ toledo, cleveland, oh",42.37002410714285,-82.85000535714286,,
+11,"cordova, ak",AK,,,,,
+12,"corpus christi, tx",TX,"corpus christi, tx",26.56988564516129,-97.17190096774192,,
+13,"detour, mi",MI,Michigan-canada,46.026427,-84.311425,,
+14,"detroit/wayne county port authority, mi",MI,"detroit, mi/ toledo, cleveland, oh",42.37002410714285,-82.85000535714286,,
+15,"dillingham, ak",AK,,,,,
+16,"duluth-superior, mn and wi",WI,"duluth, mn",46.77014048780488,-92.03004219512196,,
+17,"fall river port authority, ma",MA,"boston, ma",41.93522783018868,-70.91931396226416,,
+18,"false pass, ak",AK,,,,,
+19,"galveston, tx",TX,"houston/galveston, tx",29.602093408239703,-94.66715344569288,,
+20,"guayanilla, pr",PR,"san juan, puerto rico",18.307611,-65.421345,,
+21,"guaynabo, pr",PR,"san juan, puerto rico",18.307611,-65.421345,,
+22,"haines borough, ak",AK,,,,,
+23,"hilo, hawai'i, hi",HI,"honolulu, hi",21.30005636363636,-157.84118363636364,,
+24,"honolulu, o'ahu, hi",HI,"honolulu, hi",21.30005636363636,-157.84118363636364,,
+25,"hoonah, ak",AK,,,,,
+26,"hooper bay, ak",AK,,,,,
+27,"illinois international port district, il",IL,"chicago, il",41.80227346938776,-87.3036787755102,,
+28,"jacksonville, fl",FL,"jacksonville, fl",30.62464088709677,-81.48267733870966,,
+29,"jefferson county port district, wa",WA,"seattle/tacoma, wa",47.449354639175255,-122.42877860824744,,
+30,"juneau, ak",AK,,,,,
+31,"kahului, maui, hi",HI,"honolulu, hi",21.30005636363636,-157.84118363636364,,
+32,"kake, ak",AK,,,,,
+33,"kaumalapau, lana'i, hi",HI,"honolulu, hi",21.30005636363636,-157.84118363636364,,
+34,"kaunakakai, moloka'i, hi",HI,"honolulu, hi",21.30005636363636,-157.84118363636364,,
+35,"kawaihae, hawai'i, hi",HI,"honolulu, hi",21.30005636363636,-157.84118363636364,,
+36,"ketchikan, ak",AK,,,,,
+37,"kivalina, ak",AK,,,,,
+38,"kodiak, ak",AK,,,,,
+39,"lake charles harbor and terminal district, la",LA,"new orleans, lo",29.635235045806905,-90.30409463002114,,
+40,"manatee county port authority, fl",FL,"tampa, fl",27.84197524691358,-82.33899320987655,,
+41,"metlakatla, ak",AK,,,,,
+42,"mobile, al",AL,"jackson county, ms, mobile, al",30.455800085106382,-87.89717340425531,,
+43,"morehead city, nc",NC,"wilmington, nc",34.444470985915494,-77.20615211267605,,
+44,"nawiliwili, kaua'i, hi",HI,"honolulu, hi",21.30005636363636,-157.84118363636364,,
+45,"new bedford port authority, ma",MA,"boston, ma",41.93522783018868,-70.91931396226416,,
+46,"nome, ak",AK,,,,,
+47,"ocean highway and port authority, fl",FL,"jacksonville, fl",30.624641,-81.482677,,
+48,"old harbor, ak",AK,,,,,
+49,"oxnard harbor district, ca",CA,"great los angeles, ca",33.804338012958965,-118.37905453563714,,
+50,"panama city port authority, fl",FL,"jackson county, ms, mobile, al",30.455800085106382,-87.89717340425531,,
+51,"petersburg, ak",AK,,,,,
+52,"philadelphia regional port authority, pa",PA,"baltimore, md, filadelfia, pa",39.16201698275862,-76.08407508620691,,
+53,"plaquemines port, harbor and terminal district, la",LA,"new orleans, lo",29.635235045806905,-90.30409463002114,,
+54,"port arthur, tx",TX,"houston/galveston, tx",29.602093408239703,-94.66715344569288,,
+55,"port authority of new york and new jersey, ny & nj","NY,NJ","newark/new york, nj/ny",40.6909464495114,-74.15705749185668,,
+56,"port everglades, fl",FL,"miami-fort lauderdale, fl",26.14492877245509,-79.93771224550898,,
+57,"port freeport, tx",TX,"houston/galveston, tx",29.602093408239703,-94.66715344569288,,
+58,"port huron, mi",MI,"detroit, mi/ toledo, cleveland, oh",42.37002410714285,-82.85000535714286,,
+59,"port milwaukee, wi",WI,"chicago, il",41.80227346938776,-87.3036787755102,,
+60,"port moller, ak",AK,,,,,
+61,"port of alaska, ak",AK,,,,,
+62,"port of boston, ma",MA,"boston, ma",41.93522783018868,-70.91931396226416,,
+63,"port of charleston, sc",SC,"charleston, sc",32.76884049295775,-79.81073528169014,,
+64,"port of everett, wa",WA,"seattle/tacoma, wa",47.449354639175255,-122.42877860824744,,
+65,"port of greater baton rouge, la",LA,"new orleans, lo",29.635235045806905,-90.30409463002114,,
+66,"port of green bay, wi",WI,Michigan-canada,46.026427,-84.311425,,
+67,"port of gulfport, ms",MS,"jackson county, ms, mobile, al",30.455800085106382,-87.89717340425531,,
+68,"port of houston authority of harris county, tx",TX,"houston/galveston, tx",29.602093408239703,-94.66715344569288,,
+69,"port of long beach, ca",CA,"great los angeles, ca",33.804338012958965,-118.37905453563714,,
+70,"port of longview, wa",WA,"portland, or",45.81600253731344,-123.1006234328358,,
+71,"port of los angeles, ca",CA,"great los angeles, ca",33.804338012958965,-118.37905453563714,,
+72,"port of new orleans, la",LA,"new orleans, lo",29.635235045806905,-90.30409463002114,,
+73,"port of oakland, ca",CA,"san francisco bay area, ca",37.90095694063927,-122.20986401826484,,
+74,"port of palm beach district, fl",FL,"miami-fort lauderdale, fl",26.14492877245509,-79.93771224550898,,
+75,"port of pascagoula, ms",MS,"jackson county, ms, mobile, al",30.455800085106382,-87.89717340425531,,
+76,"port of pensacola, fl",FL,"jackson county, ms, mobile, al",30.455800085106382,-87.89717340425531,,
+77,"port of portland, or",OR,"portland, or",45.81600253731344,-123.1006234328358,,
+78,"port of providence, ri",RI,"boston, ma",41.93522783018868,-70.91931396226416,,
+79,"port of savannah, ga",GA,"savannah, ga",32.04481505882353,-80.82024464705883,,
+80,"port of seattle, wa",WA,"seattle/tacoma, wa",47.449354639175255,-122.42877860824744,,
+81,"port of south louisiana, la",LA,"new orleans, lo",29.635235045806905,-90.30409463002114,,
+82,"port of vancouver usa, wa",WA,"portland, or",45.81600253731344,-123.1006234328358,,
+83,"port of virginia, va",VA,"norfolk, va",36.971158,-76.191172,,
+84,"portland, me",ME,"boston, ma",41.93522783018868,-70.91931396226416,,
+85,"portmiami, fl",FL,"miami-fort lauderdale, fl",26.14492877245509,-79.93771224550898,,
+86,"richmond, va",VA,"norfolk, va",36.971158,-76.191172,,
+87,"rochester, ny",NY,"erie/buffalo, ny, hamilton/toronto, canada",43.279341,-79.577205,,
+88,"rogers city, mi",MI,Michigan-canada,46.026427,-84.311425,,
+89,"san diego unified port district, ca",CA,"san diego, ca",32.1247252,-116.84287293333334,,
+90,"san francisco port commission, ca",CA,"san francisco bay area, ca",37.90095694063927,-122.20986401826484,,
+91,"san juan, pr",PR,"san juan, puerto rico",18.307611,-65.421345,,
+92,"sault ste marie, mi",MI,Michigan-canada,46.026427,-84.311425,,
+93,"seward, ak",AK,,,,,
+94,"shishmaref, ak",AK,,,,,
+95,"skagway, ak",AK,,,,,
+96,"south jersey port corporation, nj",NJ,"baltimore, md, filadelfia, pa",39.16201698275862,-76.08407508620691,,
+97,"stockton port district, ca",CA,"san francisco bay area, ca",37.90095694063927,-122.20986401826484,,
+98,"tacoma, wa",WA,"seattle/tacoma, wa",47.449354639175255,-122.42877860824744,,
+99,"tampa port authority, fl",FL,"tampa, fl",27.84197524691358,-82.33899320987655,,
+100,"texas city, tx",TX,"houston/galveston, tx",29.602093408239703,-94.66715344569288,,
+101,"unalaska island, ak",AK,,,,,
+102,"utqiagvik (barrow), ak",AK,,,,,
+103,"valdez, ak",AK,,,,,
+104,"wainwright, ak",AK,,,,,
+105,"whittier, ak",AK,,,,,
+106,"wilmington, de",DE,"baltimore, md, filadelfia, pa",39.16201698275862,-76.08407508620691,,
+107,"wilmington, nc",NC,"wilmington, nc",34.444470985915494,-77.20615211267605,,
+108,"wrangell, ak",AK,,,,,
+109,"yakutat, ak",AK,,,,,
+110,Aberdeen,Scotland,Scotland East Coast,57.144555555555556,-2.086388888888889,Major port,0.0
+111,Appledore,,Bristol Channel,51.50705555555555,-2.7167222222222223,Minor port,1.0
+112,Ardrishaig,,Scotland West Coast,55.470333333333336,-4.639166666666666,Minor port,2.0
+113,Ayr,,Scotland West Coast,55.470333333333336,-4.639166666666666,Minor port,3.0
+114,Barrow,,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Minor port,4.0
+115,Barry,,Bristol Channel,51.50705555555555,-2.7167222222222223,Minor port,5.0
+116,Belfast,Northern Ireland,Northern Ireland,54.62802777777778,-5.890138888888888,Major port,6.0
+117,Berwick-On-Tweed,,North East,54.91469444444444,-1.3645277777777778,Minor port,7.0
+118,Bideford,,Bristol Channel,51.50705555555555,-2.7167222222222223,Minor port,8.0
+119,Blyth,,North East,54.91469444444444,-1.3645277777777778,Minor port,9.0
+120,Boston,England,Wash & Northern E Anglia,52.962472222222225,-0.003472222222222222,Major port,10.0
+121,Bridgwater,,Bristol Channel,51.50705555555555,-2.7167222222222223,Minor port,11.0
+122,Brightlingsea,,Thames and Kent,51.124138888888886,1.3383611111111111,Minor port,12.0
+123,Bristol,England,Bristol Channel,51.50705555555555,-2.7167222222222223,Major port,13.0
+124,Buckie,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,14.0
+125,Burry Port,,Bristol Channel,51.50705555555555,-2.7167222222222223,Minor port,15.0
+126,Cairnryan,Scotland,Scotland West Coast,55.470333333333336,-4.639166666666666,Major port,16.0
+127,Cardiff,Wales,Bristol Channel,51.50705555555555,-2.7167222222222223,Major port,17.0
+128,Chichester,,Sussex and Hampshire,50.9065,-1.4428611111111111,Minor port,18.0
+129,Clyde,Scotland,Scotland West Coast,55.470333333333336,-4.639166666666666,Major port,19.0
+130,Coleraine,,Northern Ireland,54.62802777777778,-5.890138888888888,Minor port,20.0
+131,Corpach,,Scotland West Coast,55.470333333333336,-4.639166666666666,Minor port,21.0
+132,"Cowes, Isle of Wight",,Sussex and Hampshire,50.9065,-1.4428611111111111,Minor port,22.0
+133,Cromarty Firth,Scotland,Scotland East Coast,57.144555555555556,-2.086388888888889,Major port,23.0
+134,Dover,England,Thames and Kent,51.124138888888886,1.3383611111111111,Major port,24.0
+135,Dundee,Scotland,Scotland East Coast,57.144555555555556,-2.086388888888889,Major port,25.0
+136,Falmouth,,West Country,50.70716666666667,-1.9895555555555555,Minor port,26.0
+137,Felixstowe,England,Haven,51.95605555555556,1.2995277777777776,Major port,27.0
+138,Fishguard,Wales,West and North Wales,53.31111111111111,-4.628111111111112,Major port,28.0
+139,Fleetwood,,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Major port,29.0
+140,Forth,Scotland,Scotland East Coast,57.144555555555556,-2.086388888888889,Major port,30.0
+141,Fowey,England,West Country,50.70716666666667,-1.9895555555555555,Major port,31.0
+142,Fraserburgh,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,32.0
+143,Garston,,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Minor port,33.0
+144,Gill's Bay Scotland,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,34.0
+145,Glensanda,Scotland,Scotland West Coast,55.470333333333336,-4.639166666666666,Major port,35.0
+146,Goole,England,Humber,53.5805,-0.07241666666666667,Major port,36.0
+147,Great Yarmouth,England,Wash & Northern E Anglia,52.962472222222225,-0.003472222222222222,Major port,37.0
+148,Grimsby & Immingham,England,Humber,53.5805,-0.07241666666666667,Major port,38.0
+149,Harwich,England,Haven,51.95605555555556,1.2995277777777776,Major port,39.0
+150,Heysham,England,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Major port,40.0
+151,Holyhead,Wales,West and North Wales,53.31111111111111,-4.628111111111112,Major port,41.0
+152,Hughtown (St Mary's),,West Country,50.70716666666667,-1.9895555555555555,Minor port,42.0
+153,Hull,England,Humber,53.5805,-0.07241666666666667,Major port,43.0
+154,Inverkeithing,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,44.0
+155,Inverness,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,45.0
+156,Ipswich,,Haven,51.95605555555556,1.2995277777777776,Major port,46.0
+157,Kilroot,,Northern Ireland,54.62802777777778,-5.890138888888888,Minor port,47.0
+158,Kilroot Power Station Jetty,Northern Ireland,Northern Ireland,54.62802777777778,-5.890138888888888,Major port,48.0
+159,King's Lynn,,Wash & Northern E Anglia,52.962472222222225,-0.003472222222222222,Minor port,49.0
+160,Lancaster,,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Minor port,50.0
+161,Larne,Northern Ireland,Northern Ireland,54.62802777777778,-5.890138888888888,Major port,51.0
+162,Lerwick,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,52.0
+163,Littlehampton,,Sussex and Hampshire,50.9065,-1.4428611111111111,Minor port,53.0
+164,Liverpool,England,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Major port,54.0
+165,Llandulas,,West and North Wales,53.31111111111111,-4.628111111111112,Minor port,55.0
+166,Loch Ryan,Scotland,Scotland West Coast,55.470333333333336,-4.639166666666666,Major port,56.0
+167,London,,Thames and Kent,51.124138888888886,1.3383611111111111,Major port,57.0
+168,Londonderry,Northern Ireland,Northern Ireland,54.62802777777778,-5.890138888888888,Major port,58.0
+169,Lowestoft,,Wash & Northern E Anglia,52.962472222222225,-0.003472222222222222,Minor port,59.0
+170,Manchester,England,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Major port,60.0
+171,Medway,England,Thames and Kent,51.124138888888886,1.3383611111111111,Major port,61.0
+172,Milford Haven,Wales,West and North Wales,53.31111111111111,-4.628111111111112,Major port,62.0
+173,Mistley,,Haven,51.95605555555556,1.2995277777777776,Minor port,63.0
+174,Montrose,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,64.0
+175,Mostyn,,West and North Wales,53.31111111111111,-4.628111111111112,Minor port,65.0
+176,Neath,,Bristol Channel,51.50705555555555,-2.7167222222222223,Minor port,66.0
+177,Newhaven,England,Sussex and Hampshire,50.9065,-1.4428611111111111,Major port,67.0
+178,Newport,Wales,Bristol Channel,51.50705555555555,-2.7167222222222223,Major port,68.0
+179,"Newport, Isle of Wight",,Sussex and Hampshire,50.9065,-1.4428611111111111,Minor port,69.0
+180,Orkney,Scotland,Scotland East Coast,57.144555555555556,-2.086388888888889,Major port,70.0
+181,Other ports,,,,,Minor port,71.0
+182,Padstow,,West Country,50.70716666666667,-1.9895555555555555,Minor port,72.0
+183,Penzance,,West Country,50.70716666666667,-1.9895555555555555,Minor port,73.0
+184,Perth,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,74.0
+185,Peterhead,Scotland,Scotland East Coast,57.144555555555556,-2.086388888888889,Major port,75.0
+186,Plymouth,England,West Country,50.70716666666667,-1.9895555555555555,Major port,76.0
+187,Poole,England,West Country,50.70716666666667,-1.9895555555555555,Major port,77.0
+188,Port Penrhyn,,West and North Wales,53.31111111111111,-4.628111111111112,Minor port,78.0
+189,Port Talbot,Wales,Bristol Channel,51.50705555555555,-2.7167222222222223,Major port,79.0
+190,Porthoustock,,West Country,50.70716666666667,-1.9895555555555555,Minor port,80.0
+191,Portsmouth,,Sussex and Hampshire,50.9065,-1.4428611111111111,Major port,81.0
+192,Ramsgate,,Thames and Kent,51.124138888888886,1.3383611111111111,Major port,82.0
+193,River Ouse,,Humber,53.5805,-0.07241666666666667,Minor port,83.0
+194,River Trent,England,Humber,53.5805,-0.07241666666666667,Major port,84.0
+195,Rivers Hull and Humber,,Humber,53.5805,-0.07241666666666667,Major port,85.0
+196,Rye,,Thames and Kent,51.124138888888886,1.3383611111111111,Minor port,86.0
+197,Scalloway,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,87.0
+198,Scrabster,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,88.0
+199,Seaham,,North East,54.91469444444444,-1.3645277777777778,Minor port,89.0
+200,Sharpness,,Bristol Channel,51.50705555555555,-2.7167222222222223,Minor port,90.0
+201,Shoreham,England,Sussex and Hampshire,50.9065,-1.4428611111111111,Major port,91.0
+202,Silloth,,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Minor port,92.0
+203,Southampton,England,Sussex and Hampshire,50.9065,-1.4428611111111111,Major port,93.0
+204,Stornoway,,Scotland West Coast,55.470333333333336,-4.639166666666666,Minor port,94.0
+205,Stranraer,Scotland,Scotland West Coast,55.470333333333336,-4.639166666666666,Major port,95.0
+206,Sullom Voe,Scotland,Scotland East Coast,57.144555555555556,-2.086388888888889,Major port,96.0
+207,Sunderland,England,North East,54.91469444444444,-1.3645277777777778,Major port,97.0
+208,Sutton Bridge,,Wash & Northern E Anglia,52.962472222222225,-0.003472222222222222,Minor port,98.0
+209,Swansea,Wales,Bristol Channel,51.50705555555555,-2.7167222222222223,Major port,99.0
+210,Tees and Hartlepool,,North East,54.91469444444444,-1.3645277777777778,Major port,100.0
+211,Teignmouth,,West Country,50.70716666666667,-1.9895555555555555,Minor port,101.0
+212,Troon,,Scotland West Coast,55.470333333333336,-4.639166666666666,Minor port,102.0
+213,Truro,,West Country,50.70716666666667,-1.9895555555555555,Minor port,103.0
+214,Tyne,England,North East,54.91469444444444,-1.3645277777777778,Major port,104.0
+215,Wallasea,,Thames and Kent,51.124138888888886,1.3383611111111111,Minor port,105.0
+216,Warrenpoint,Northern Ireland,Northern Ireland,54.62802777777778,-5.890138888888888,Major port,106.0
+217,Weymouth & Portland,,West Country,50.70716666666667,-1.9895555555555555,Minor port,107.0
+218,Whitstable,,Thames and Kent,51.124138888888886,1.3383611111111111,Minor port,108.0
+219,Wick,,Scotland East Coast,57.144555555555556,-2.086388888888889,Minor port,109.0
+220,Wisbech,,Wash & Northern E Anglia,52.962472222222225,-0.003472222222222222,Minor port,110.0
+221,Workington,,Lancs and Cumbria,53.45308333333334,-3.0247777777777776,Minor port,111.0
+222,Rivers Hull & Humber,England,,,,,117.0
+223,Tees & Hartlepool,England,,,,,118.0
+224,Grimsby and Immingham,,,,,,124.0
