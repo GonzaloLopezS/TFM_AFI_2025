@@ -1,0 +1,92 @@
+Antecedentes:
+El objetivo del problema es hallar lo que vendrían a ser hubs portuarios. Para ello, se va a tratar el problema como si se tratase de un problema
+de clústering. A diferencia de otros algoritmos de clustering, el punto de referencia se debe encontrar en el litoral. Es decir, no se puede usar
+un algoritmo particional al uso. Por otro lado, los algoritmos jerárquicos permiten aumentar la granularidad y detalle sin que haya demasiados cambios
+de asignación entre clústeres. Como nota adversa, estos algoritmos suelen tener un mayor coste computacional que los particionales.
+
+Observando el conjunto de datos afectados, lo primero que se tiende a pensar es que, al tratarse de un problema de asignación de posición geográfica,
+las coordenadas de los barcos serán las variables a tener en cuenta. Sin embargo, hay otras variables que nos pueden dar pistas: el estatus que tiende
+asignado cada barco (rumbo de navegación con motor, atracado, realizando maniobras con movilidad limitada, etc.) o la velocidad y orientación del rumbo
+que mantiene. Esto último puede servir para calcular el vector de cada barco (identificado por su mmsi*) y, por extensión, la trayectoria de cada uno
+de ellos.
+
+Ahora bien, muy posiblemente, encontremos muchos puntos concentrados cerca del litoral. Con independencia de su estatus, de si están amarrados o nave-
+gando, esos puntos podrían ser considerados muy probablemente como puertos (o hubs de puertos, por ejemplo: La zona de la Bahía de San Francisco, po-
+dría incluir tanto el puerto de San Francisco como el de Oakland). ¿Pero qué ocurre si tenemos barcos que se desplazan cerca del litoral? Podrían dar
+lugar a confusión. Y, además, hay que estimar el destino al que viajan. De ahí, la importancia de tener en cuenta la característica vectorial, es decir,
+no solo las coordenadas de la posición del barco importan, sino su velocidad (en nudos marinos) y su (variación del) rumbo (en grados).
+
+Tras tener en cuenta estos últimos puntos, la posición (sus coordenadas), ya no tienen tanta influencia y dependerán tanto de la velocidad que lleve
+el barco como de la variación del rumbo. Por otro lado, dado que la aproximación del problema se está haciendo desde una perspectiva de campos vecto-
+riales, las "rutas marítimas" podrían considerarse como líneas del campo y, las áreas con mayor afluencia de barcos (posibles puertos), podrían consi-
+derarse "puntos sumideros" de la divergencia de ese campo vectorial.
+
+Dado que la divergencia del campo vectorial (valor escalar) calcula qué cantidad [en qué unidades] de ese campo vectorial hay en cada punto. Matemáti-
+camente, el valor de la divergencia en el punto sumidero debería ser menor que cero. A priori, esto podría dar una intuición sobre qué variables consi-
+derar. Además, considerando que hallar cuáles son los puertos destino es uno de los principales problemas generales planteados, resta importancia a los
+barcos (líneas del campo) que salen del mismo.
+
+Revisar: https://en.wikipedia.org/wiki/Divergence [Mejorar fuentes]
+Revisar: https://en.wikipedia.org/wiki/Sources_and_sinks [Mejorar fuentes]
+Extra: https://en.wikipedia.org/wiki/Solenoidal_vector_field
+
+Considerando todo ello, tratando los missing values, los outliers, agrupando los datos para las distintas fechas, estudiando las posibles redundancias,
+selección de variables, estandarización y correlaciones se tienen los datos pre-procesados listos para ser aplicados para un primer algoritmo de clúste-
+ring: algoritmo K-Means para campos vectoriales (de Ferreira, Klosowski et al.)
+
+Vector Field K-Means: Clustering Trajectories
+Our approach is based on the premise that movement trends in trajectory data can be modeled as flows within multiple vector fields, and the vector 
+field itself is what defines each of the clusters.
+
+We present an algorithm that finds a locally optimal clustering of trajectories into vector fields, and demonstrate how vector-field k-means can be 
+used to mine patterns from trajectory data.
+
+[Revisar SoTA]
+----------------------------------------------------------------------
+
+The recent ubiquity of GPS and RFID devices has caused a rapid increase in the
+amount of available trajectory data. These devices have been used to determine locations
+of animals, shipping containers and different vehicles
+
+The analysis of this kind of data is challenging not only because of its size, but
+also due to its complexity [36]. Trajectories are spatio-temporal in nature, involving
+geometric positions, directions, velocities, durations, life spans, and potentially many
+other characteristics specific to the entities being tracked.
+
+Gudmundsson et
+al. [20] suggest that it may be possible to infer the characteristics simply by looking at
+the trajectory data itself.
+
+model-based trajectory clustering approach that uses
+vector fields as the models for the clustering. Our method, called vector field k-means,
+consists of finding vector fields whose integral lines approximate the given trajectory
+dataset. The use of vector fields allows us to naturally encode features of the trajectories
+such as direction and speed, which has not been achieved by previous techniques that
+used either distance metrics between trajectories or density-based methods ( [20, 25]).
+
+vector fields are a good summary for trajectory
+clusters and can be easily visualized using any of the numerous techniques available
+from the vast literature on vector field visualization. Previous clustering methods
+use “representative” trajectories as a way to summarize the result of the clustering
+process.
+
+One final argument for clustering a set of trajectories using our method is its innate
+capability of handling partially collected or missing data. [REVISAR]
+
+Citar: Vector Field k-Means: Clustering Trajectories by Fitting Multiple Vector Fields
+Nivan Ferreira, James T. Klosowski, Carlos Scheidegger, Claudio Silva
+@misc{ferreira2012vectorfieldkmeansclustering,
+      title={Vector Field k-Means: Clustering Trajectories by Fitting Multiple Vector Fields}, 
+      author={Nivan Ferreira and James T. Klosowski and Carlos Scheidegger and Claudio Silva},
+      year={2012},
+      eprint={1208.5801},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1208.5801}, 
+}
+arXiv:1208.5801
+----------------------------------------
+Otros: https://ins.uni-bonn.de/media/public/publication-media/GaPrRuTeWeWi00.pdf?pk=935
+
+Al no haber implementado en scikit-learn o librerías de python, un algoritmo de clustering para campos vectoriales, se toma la decisión de usar
+alguno de los algoritmos ya desarrollados.

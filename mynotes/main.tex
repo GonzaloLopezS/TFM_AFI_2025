@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Transporte marítimo e incautación de droga}
+\author{Gonzalo Lopez Segovia}
+\date{December 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+Historia del transporte marítimo. Transporte marítimo de mercancías. Logística.
+Comercio mundial, nodos y puertos marítimos.
+
+Tráfico de productos ilegales. Qué se considera como droga. La lucha contra el narcotráfico.
+¿Cómo se mide la cantidad de mercancías? En containers (TEU), en tonelaje total transportado, en
+cuantía del valor de la mercancía. ¿Cuál se adaptará mejor al problema a modelar?
+
+\subsection{Motivación del proyecto}
+Interés en la Geografía como elemento de estudio y su comprensión para generar valor con los datos estudiados a través de ella.
+
+
+\subsection{Antecedentes}
+Otros trabajos (¿mencionar TFM de Juande?), estudios pasados sobre geografía del transporte.
+Las diferentes aproximaciones en la lucha contra el narcotráfico en lugares de destino. Enfoque particular para Estados Unidos de América (EE UU), Reino Unido (UK) y la Unión Europea.
+SOTA in Drug Seizure and Maritim Traffic and Trade.
+
+\section{Descripción del problema}
+Diseño del Modelo
+
+\section{Estado del arte}
+Estudio con series temporales.
+Al faltar datos de flujos y vías marítimas, no es trivial hallar la red o grafo mundial de conexiones portuarias.
+
+
+\section{Implementación Práctica del Modelo}
+Descripción de las tareas realizadas para implementar el proyecto.
+Se destacan las principales actividades y decisiones.
+Fases de desarrollo del proyecto.
+Diagrama de Gantt con las tareas realizadas.
+\subsection{Pre procesamiento de los datos}
+Captura de los datos. Open Data vs Datos bajo Licencia. Organizaciones e instituciones. Datasets disponibles.
+EDA, Limpieza, tratamiento de outliers.
+
+Tratamiento de Variables (Feature Selection, Feature Engineering).
+Visualizacion de datos.
+
+¿Las series temporales de los datos? ¿Son o no son invariantes en el tiempo?¿Existe o no estacionalidad? ¿Su dependencia está ligada con el ciclo económico?
+Conocimientos de trabajos pasados que ayuden a simplificar el número de observaciones y/o variables.
+\subsection{Algoritmos de Machine Learning}
+Agrupamiento de los barcos de EE UU mediante técnicas de clustering. Objetivo: hallar punto en el litoral que sirva como "punto de puerto" para los barcos más próximos. Es preferible que se trate de un algoritmo de clustering de tipo jerárquico: para ir aumentando la granularidad basándose en la situación geográfica.
+Algoritmos tipo K-Means o PAM quedan descartados por dos motivos: no son jerárquicos y, sobre todo, su centro de masas tenderá a ser escogido en alta mar (o como punto medio o mediano de los barcos que formen cada clúster).
+
+Para los puertos en Reino Unido no hay que realizar ninguna operación de este tipo. Sin embargo, a la hora de relacionar los distintos puertos y áreas portuarias con las regiones de autoridad policial, no es trivial. ¿Realizar embedding que relacione los puertos/ciudades con las regiones policiales?
+
+\section{Metodología empleada}
+
+\section{Resultados y Análisis}
+
+\section{Conclusiones y trabajo futuro}
+
+\section{Bibliografia}
+
+\section{Glosario}
+
+\end{document}

@@ -303,4 +303,161 @@ Apuntes tomados en: "apuntes_transport-geography_ch3.txt"
 
 15/01/2025:
 Lectura "https://transportgeography.org/contents/chapter5/transportation-modes-modal-competition-modal-shift/"
-EDA Drug Seizure Data: 
+EDA Drug Seizure Data: drug-seizure_EDA.ipynb
+¿Cuál será la pregunta que plantee mi hipotesis?
+Opcion A) Predecir (o hallar correlación) entre incautaciones de droga y llegada de 'cargo ship' a puertos (en EE UU).
+Opción B) Dado el flujo de barcos 'cargo ship', hallar volumen de incautacion de droga.
+Opcion C) Dada la actividad en puertos (escoger zona, basandonos en flujos migratorios y economicos), hallar volumen de incautacion de droga.
+
+EDA de USA y UK.
+Año fiscal USA (empieza 1 de octubre), Año fiscal UK (empieza primera semana abril)
+
+16/01/2025:
+Revisar datos de Europa (Drug-seizure).
+
+Nuevas fuentes de datos y bibliografía como mejoras:
+- "Mapping UK shipping density and routes (June 2014)": https://assets.publishing.service.gov.uk/media/5a7edadce5274a2e87db254b/1066.pdf
+- Anonymised AIS Derived Track Lines UK (WMS): https://environment.data.gov.uk/explore/ffb7d2d8-2e13-487c-a17f-7abc0f116d50
+
+Datos Portuarios en UK:
+- Maritime Statistics (2014): https://www.data.gov.uk/dataset/ca00d8ed-cb20-436d-8bf2-8cd4cc257a1a/maritime_statistics
+- Port Statistics (2014): https://www.data.gov.uk/dataset/3554c68e-5911-4b66-91f3-497e3b19fc5c/port_statistics
+- Port Freight Statistics (2014): https://www.data.gov.uk/dataset/4744ca72-ea9b-436e-8cd4-5fcbc711233c/port_freight_statistics
+- Waterborne Freight (2016): https://www.data.gov.uk/dataset/16dc4344-b6a5-4ea5-9076-aaa4f7144c6b/waterborne_freight_in_the_united_kingdom
+- Port traffic data (2013): https://www.data.gov.uk/dataset/c9e12cc0-c091-4d17-a718-2b65fa475c6d/port-traffic-data
+- HMRC/UKBA Freight Tracking System (2013): https://www.data.gov.uk/dataset/cea14b37-226a-4872-ada7-74804a5be7bc/hmrc-ukba-freight-tracking-system
+
+See: https://www.gov.uk/government/organisations/department-for-transport/about/statistics
+Copernicus Environmental Data: https://www.wekeo.eu/subscription-benefits?mtm_campaign=Wekeo-Souscription&mtm_medium=cpc&mtm_source=google&mtm_content=text&mtm_cid=164861945227&mtm_kwd=marine%20data&gad_source=1&gclid=Cj0KCQiA-aK8BhCDARIsAL_-H9lrSSpJrYHLujqXpakdfN717IFSMYc44g2FTGmIRFJEuq1mTAAgJuIaAkI7EALw_wcB
+IMF: https://portwatch.imf.org/search?collection=Dataset
+
+Datos Portuarios en USA:
+- https://catalog.data.gov/dataset/?tags=port
+
+Datos Portuarios en UE:
+- Puerto de Barcelona: https://datos.gob.es/en/catalogo/ea0001302-buques-en-puerto1
+
+19/01/2025:
+Datos sobre puertos en UK curados en parte.
+- Estudiar posible métrica para definir la relación y orden entre variables categóricas.
+- Hallar definición para flujo (o caudal) según número de barcos (o tonelaje de carga total).
+
+Del TFM de Juan de Dios Romero (Apartado 4.2):
+
+"Una vez más, la primera decisión que debemos tomar es el nivel geográfico al que queremos trabajar. En este sentido consideramos que el nivel de 
+provincia es el más indicado ya que es el nivel más granular del que tenemos información sobre el origen del cliente. Además, vamos a enfrentar el 
+problema de dos maneras distintas: por un lado, se ejecutará un proceso de clustering tradicional de las series temporales de origen-destino (e. g. 
+gasto de clientes de Huesca en las Islas Baleares) y, por otro lado, utilizaremos una visión basada en grafos para agrupar únicamente las series 
+temporales de cada destino (sin tener en cuenta el origen)."
+
+Estudiar distancia entre series temporales que permitan agrupar o relacionarlas mediante grafos. Objetivo: estudiar la estructura de las series temporales.
+Uso de distancia basada en la correlación entre series temporales (Montero & Vilar, 2014).
+
+Incluir diagrama de Gant con tareas realizadas.
+
+*Definiciones* (en port0301.xls):
+- Main Freight: A subset of unitised goods - consists of all load-on/load-off (Lo-Lo) containers and those roll-on/roll-off (Ro-Ro) units designed 
+to carry freight. This category includes:
+- All container (Lo-Lo) traffic;
+- Road goods vehicles and trailers;
+- Unaccompanied road goods vehicle trailers;
+- Rail wagons, shipborne trailers, barges engaged in goods transport.
+
+*TEU
+TEU (twenty-foot equivalent units) is a standardised measure to allow for the diferent sizes of container boxes. See the Notes and Definitions for a 
+breakdown of the measure.
+
+20/01/2025:
+Considerar que en unos casos tengo los puertos (UK) pero en otros, regiones donde interviene la policia (drug seizure).
+Hallar la relación entre el puerto y la región a la que pertenece.
+Con la region se pierde granularidad.
+Probabilidad de incautacion en un puerto, dado que se conoce incautacion en una region. ¿Dependerá de las toneladas de cargamento?
+
+Revisar la escala de las metricas.
+
+Sobre calidad del dato: https://www.ibm.com/think/topics/data-quality
+
+Police Areas in the UK: https://assets-hmicfrs.justiceinspectorates.gov.uk/uploads/police-force-map.pdf
+   Fuente: https://hmicfrs.justiceinspectorates.gov.uk/publications/map-of-police-forces-in-england-wales-and-northern-ireland/
+   Fuente: https://www.data.gov.uk/dataset/e30745e7-1d94-4b38-a228-068decc68625/police-force-boundaries-england-and-wales
+
+Terminada la lectura del Capitulo 5 de "The Geography of Transport Systems".
+
+21/01/2025:
+Terminada la lectura del Capitulo 6 de "The Geography of Transport Systems".
+URL del libro: https://transportgeography.org/contents/
+
+22/01/2025:
+- Visualizacion Puertos UK
+- Tratamiento Datos y Visualizacion Droga UK (+ Puertos UK)
+- Limpieza datos USA
+- Visualizacion Puertos USA
+
+23/01/2025:
+- Estudio Clustering: como tratar o averiguar los puertos del litoral de Estados Unidos.
+
+Informacion sobre puertos en USA:
+- https://www.bts.gov/content/tonnage-top-50-us-water-ports-ranked-total-tons
+- https://data.bts.gov/stories/s/Tonnage/iqfi-cuyv/
+
+Status NOAA AIS: https://documentation.spire.com/ais-fundamentals/how-to-interpret-navigational-status-codes/
+Other AIS Resources: https://coast.noaa.gov/data/marinecadastre/ais/Other_AIS_Resources.pdf
+
+28/01/2025:
+- Es necesario abrir Google Colab o Databricks para tratar procesamientos complejos (visualizacion de mapas complejos en plotly)
+
+30/01/2025:
+- Que es TEU? Definicion exacta (Ya vista)
+- US Waterborne container traffic: https://usace.contentdm.oclc.org/digital/collection/p16021coll2/id/14565
+- Clasificacion de los puertos: https://www.integralshipping.com/clasificacion-puertos-maritimos/
+- USACE reports: https://usace.contentdm.oclc.org/digital/collection/p16021coll2/search/searchterm/Shipping/field/subjec/mode/exact/conn/and
+
+Me interesa más el número de contenedores (TEU) y en menor medida, el número de barcos. Por el contrario, creo que es menos importante saber el 
+volumen/peso del cargamento. Si acaso, el volumen en la incautacion de droga (o numero de incautaciones).
+
+Unificar en un dataframe puertos (US) + drug_seizure (nationwide) + TEUS (US)
+- Interesan los valores CBP nationwide: https://www.cbp.gov/document/stats/nationwide-drug-seizures
+   En tanto en cuanto hagan falta completar datos, echar mano de los datasets amo
+   - https://www.cbp.gov/sites/default/files/assets/documents/2022-Dec/nationwide-drug-seizures-data-dictionary.pdf
+   - https://www.cbp.gov/document/stats/amo-drug-seizures
+
+Más para leer:
+- https://www.cushmanwakefield.com/en/united-states/insights/north-american-ports-report
+- https://www.supplychaindive.com/news/largest-us-ports-by-volume-month-coast-cargo-trends/693493/
+
+Esquema del dataset:
+Info Puerto | Info Barcos en Puerto | Info Incautaciones de droga
+Datos USA
+Datos UK
+Datos EU?
+Datos Canada?
+
+Columnas info puerto: Port_name| Major/Minor_ports | Port_hub (Cluster) | State/Region | id_Port | LAT | LON | Police force region |
+USA
+UK
+EU?
+Canada?
+
+Columnas barcos en puerto: [Year_boats] | [Year_TEU]
+USA: Obtain from noaa | Obtain from dataset usace
+UK: uk_vessels_in_ports | Revisar uk_freight y uk_port_freight_quarterly
+EU?
+Canada?
+* Cada año en una fila distinta
+
+Columnas Incautacion de drogas: date | Component | Region | Land Filter | Area of Responsibility | Drug Type | Count of Event | Sum Qty (lbs)
+* Normalizar quantity (kg or lbs)
+US: nationwide from CBP
+UK: obtain info from uk_drug_Seizure_kg_df [Sum Qty]* | uk_drug_seizure_df [Count of Event]
+* [UK Sum Qty] try to obtain info from different years
+
+31/01/2025:
+Nationwide Drug Seizures: CBP officers and agents interdict illicit narcotics crossing the border at and between ports of entry. CBP keeps dangerous 
+drugs out of our communities and denies criminal organizations the profits derived from their sale.
+
+- CBP depends on federal government
+
+- Creado dataset ports_dataframe_input.csv en 'AAA_code'
+
+02/02/2025:
+Metodologia UK drug seizure: https://www.gov.uk/government/publications/seizures-of-drugs-in-england-and-wales-user-guide/seizures-of-drugs-in-england-and-wales-user-guide--2

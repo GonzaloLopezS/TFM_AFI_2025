@@ -1,0 +1,173 @@
+# 6. Transportation terminals
+# 6.1 Function of Transport terminals
+
+    A terminal is a facility where passengers and freight are assembled or dispersed during transportation.
+
+Freight must be consolidated at a distribution center, a port, or a rail yard before shipment. 
+
+Terminal. Any location where freight and passengers either originate, terminate, or are handled in the transportation process. Terminals are central 
+and intermediate locations in the mobility of passengers and freight. They often require specific facilities and equipment to accommodate the traffic 
+they handle.
+
+One core attribute of transport terminals is their convergence function. They are obligatory points of passage, capitalizing on their geographical 
+location, which is generally intermediate to commercial flows. Thus, transport terminals are created by centrality or intermediacy processes involving 
+the locations they are connected to.
+
+The importance of a transport terminal is often a function of its size. Large transport terminals, particularly ports and airports, confer the status 
+of gateway or hub to their location since they become obligatory points of transit between different segments of the global transport system. 
+Containerization has favored the emergence of a hierarchy of terminals fulfilling different functions and added value, from the mega-gateway 
+coordinating the flows of a large market area to a small rail yard or truck depot servicing a local market.
+
+- Freight Terminal hierarchy and added value: https://transportgeography.org/contents/chapter6/function-of-transport-terminals/terminal-added-value-hierarchy/
+- Functions of Transport Terminals: https://transportgeography.org/contents/chapter6/function-of-transport-terminals/transport-terminal-function/
+
+## 2. Importance and Performance:
+Location. The major locational factor of a transport terminal is obviously to serve a large concentration of economic activities, representing a 
+terminal’s market area. Specific terminals have specific locational constraints, such as port and airport sites. The former requires a suitable 
+coastline and nautical profile, while the latter requires a large footprint of open flat land. New transport terminals tend to be located outside 
+central areas to avoid high land costs and congestion and find available land.
+
+The time a conveyance (bus, truck, train, or ship) is allowed to load or unload passengers or freight at a terminal is usually defined as dwell time.
+For freight terminals as dwell time refers to when cargo stays in a terminal yard or storage area while waiting to be loaded.
+
+## 4. Freight Terminals:
+A basic distinction concerns bulk, general cargo, and containers:
+
+    Bulk refers to goods handled in large quantities that are unpackaged and available in uniform dimensions. Liquid bulk goods include crude oil and 
+    refined products that can be handled using pumps to move the product along with hoses and pipes. Relatively limited handling equipment is needed, 
+    but significant storage facilities may be required. Dry bulk includes a wide range of products, such as ores, coal, and cereals. More equipment for 
+    dry bulk handling is needed, because the material may have to utilize specialized grabs and cranes and conveyor-belt systems. For specific bulk 
+    cargoes, some changes in their characteristics may be required to ensure the continuity of the transportation process, such as its load unit or its 
+    physical state (from solid to liquid or gas, or any combination).
+
+    General cargo refers to goods of many shapes, dimensions, and weights, such as machinery, processed materials, and parts. Because the goods are so 
+    uneven and irregular, handling is difficult to mechanize. General cargo handling usually requires labor.
+
+    Containers are standard units that have had a substantial impact on terminal operations. Container terminals have minimal labor requirements and 
+    perform a wide variety of intermodal functions. They, however, require a significant amount of storage space, which are simple paved areas where 
+    containers can be stacked and retrieved with intermodal equipment (cranes, straddlers, and holsters). Depending on the intermodal function of the 
+    container terminal, specialized cranes, such as portainers (container cranes), are required.
+
+Measurement of freight traffic through terminals is more complicated than for passengers. Because freight is so diverse, standard measures of weight 
+and value are difficult to compare and combine. Because bulk cargoes are inevitably weighty, terminals specialized in such cargoes will record higher 
+throughput measured in tons than others more specialized in general cargoes. This is evident in the world’s two leading ports, Singapore and Rotterdam, 
+handling large quantities of petroleum. The reverse may be true if the value of commodities handled is the measure employed. The problem of measurement 
+involving weight or volumes becomes very difficult when many types of freight are handled because one is adding together goods that are inherently 
+unequal. Interpreting the significance of freight traffic totals is thus subject to caution. For container terminals, a common measure of productivity 
+concerns the number of lifts per container gantry crane-hour, which are usually 25-40 moves per hour for quay cranes and 40-60 for rail cranes.
+
+The difficulty of comparing traffic totals of different commodities has led to attempts to weigh cargoes based on some indication of the value-added 
+they contribute to the terminal.
+The most famous is the “Bremen Rule” developed in 1982 by the port of Bremen and based on a survey of the labor cost incurred in handling one ton of 
+different cargoes.
+The results found that handling one ton of general cargo equals three tons of dry bulk and 12 tons of liquid bulk.
+
+Although this is the most widely used method, other rules have been developed by individual ports, such as the Antwerp and Rotterdam Rules. The 
+“Antwerp Rule” indicates that the highest value-added is fruit handling. Using this benchmark, forest product handling requires 3.0 tons to provide 
+the same value-added as fruit, cars 1.5 tons, containers 7 tons, cereals 12 tons, and crude oil 47 tons. The “Rotterdam Rules” are more recent (2009) 
+and relate to common practices to ensure the transport of freight “door-to-door” with a sea transport leg.
+
+# 6.3 Port terminals
+Ports are harbor areas in which marine terminal facilities are transferring cargo and passengers between ships and land transportation.
+
+# 1. Ports and Port sites
+Ports are points of convergence between the land and maritime domains of passengers and freight circulation. While the maritime domain can involve 
+substantial geographic coverage related to global trade, the land domain is related to the region and locality of ports.
+Historically, ports emerged as safe harbors for fishing, and those with convenient locations became trade hubs, many of which of free access and 
+designed to protect trade.
+Today, many of the most important cities in the world owe their origin to their port location. The port is a multidimensional entity anchored within 
+geography by its site and situation and depending on its operations, governance structure, and the supply chains it is embedded in.
+
+Due to the operational characteristics of maritime transportation, port location is constrained to a limited array of sites, primarily defined by 
+geography. Since ports are bound by the need to serve ships, access to navigable waterways has been historically the most important site consideration.
+Port sites were frequently chosen at the head of water navigation, the most upstream sites, such as London on the Thames, Montreal on the St. Lawrence 
+River, or Guangzhou on the Pearl River.
+
+Conventional break-bulk terminals were mainly focused on direct transshipment from the deepsea vessel to inland transport modes. Direct transshipment 
+is associated with short dwell times, the average time the cargo remains stacked on the terminal and waits for some activity to occur. This required 
+only a small temporary storage area on the terminal. 
+
+The growth of the oil industry in the 1920s and 1930s and the fast rise of the chemical industry in the 1950s and 1960s, such as producing 
+petrochemicals such as plastics, led many ports to expand to locations with ample space for the development of vast Maritime Industrial Development 
+Areas (MIDA). In the 1960s, the gradual shift from conventional break-bulk terminals to container terminals brought about a fundamental change in the 
+layout of terminals as well as site selection. Ports increasingly became impacted by global processes, such as sourcing resources, parts, and goods to 
+other parts of the world. 
+
+Containerized transportation substantially changed port dynamics to favor the emergence of specialized container ports. Compared to conventional 
+break-bulk cargo ships, most containerships did not have onboard cranes, and container terminal facilities had to provide capital-intensive cranes and 
+ample storage space to stack containers dockside. 
+
+The usual dwell time of a containership is around 24 hours, implying that a containership spends about ten times less in a port than an equivalent 
+break-bulk cargo ship. Containerization has become a fundamental function of global port operations and has changed the structure and configuration of 
+port terminals that occupy more space. Recently, ports have been challenged to find enough space to create new large-scale logistics zones in the 
+framework of port-centric logistics and free trade and economic development zones.
+
+As terminals, ports handle the largest amounts of freight, more than any other type of terminal combined. For handling freight, port infrastructures 
+must jointly accommodate transshipment activities and thus facilitate convergence between land transport and maritime systems. 
+
+Most ports, especially those that are ancient, owe their initial emergence to their site as most harbors take advantage of a natural coastline or a 
+natural site along a river.
+
+# 2. Port Functions and traffic
+Ports are defined by their traffic since it is their primary function to supply services to freight (warehousing, transshipment, etc.) and ships 
+(piers, refueling, repairs, etc.). Consequently, it is misleading to strictly consider a port as a maritime terminal since it acts concomitantly as a 
+land terminal where inland traffic originates or ends. Ports are cargo-oriented facilities involving a wide array of activities related to their 
+management and operations. The cargo base of a port can expand through the intensification of its fundamental hinterland, the expansion of its 
+hinterland to new areas, and the development of transshipment.
+
+Ports are becoming increasingly regional in their dynamics, representing a new development from their traditional local function, namely as industrial 
+clusters. For instance, the port of Hong Kong owes its wealth to its natural site and its geographical position as a transit harbor for southern China. 
+Shanghai assumes a similar function serving central China through the Yangtze River system. For its part, Singapore has been favored by its location at 
+the outlet of the strategic Strait of Malacca and is, therefore, a point of convergence of Southeast Asian transportation. More than 90% of the traffic 
+it handles is strictly transshipments, which involve cargo moving from one maritime service to another without exiting the port terminal. New York has 
+traditionally acted as the gateway of the North American Midwest through the Hudson / Erie Canal system, a function that Western European ports such as 
+Rotterdam or Antwerp perform with access to the Rhine system.
+
+Comparing ports on a tonnage basis requires caution as it does not indicate the nature and value of the cargo. For instance, a mineral port (e.g. iron 
+ore), an energy port (e.g. coal or oil), and a container port could handle a similar tonnage but significantly different value levels.
+
+They will also be related to different supply chains as bulk ports are separate entities from container ports. Regarding the freight they handle, ports 
+can be classified into monofunctional and polyfunctional ports.
+
+ - Monofunctional ports (resource ports) transit a limited array of commodities, most often dry or liquid bulks (raw materials). They have specialized 
+ piers designed to handle specific commodities and where the flows a commonly outbound, implying that they are usually load centers.
+ - Polyfunctional ports are vast harbors where transshipment and industrial activities are present. They have a variety of specialized and general 
+ cargo piers linked to a wide range of modes that can include containers, bulk cargo, or raw materials. They tend to be more inbound-related facilities.
+
+The oil ports of the Persian Gulf or the mineral ports of Australia, Africa, and, in some measure, Canada are monofunctional.
+
+About 3,700 commercial ports operate worldwide, but only less than one hundred ports can be considered gateways or hubs of global importance. Of this, 
+there are about 680 container ports, with 150 handling traffic above a million TEU. Maritime traffic has a high concentration of port activity, a 
+process mainly attributed to maritime access and infrastructure development. Major ports have established themselves as gateways of continental 
+distribution systems and have access to high-capacity inland freight distribution corridors, notably rail. Such a position is difficult to challenge 
+unless a port faces acute congestion, forcing maritime shipping companies to seek alternatives. Gateways, as locations of high accessibility to 
+maritime and inland transportation networks, have seen the development of port-centric logistics activities that support export and import-based 
+activities.
+
+The world container throughput is the summation of all containers handled by ports, either as imports, exports, or transshipments. As of 2022, about 
+866 million TEUs were handled by container ports, including the notable growth in containers transshipped at intermediate locations, as well as the 
+repositioning of empty containers. This means that a container is at least counted twice. First, as an import and export, and second, each time it is 
+handled at an intermediary location, such as at a transshipment hub, where it will be counted when unloaded and reloaded. Empty containers, most of 
+them being repositioned, account for about 20% of the world’s throughput. Thus, throughput should ideally be counted in container moves, but both port 
+authorities and terminal operators prefer to communicate throughput figures in TEU for commercial and strategic reasons. The world container traffic is 
+the absolute number of containers being carried by sea, excluding the double counts of imports and exports as well as the number of involved 
+transshipments. The throughput reflects the level of transport activity (handles and rehandles subject to revenue), while the traffic reflects the 
+level of trade activity (imports and exports).
+
+# 3. Port Authorities and Port Holdings
+ - Port Authority. An entity of state or local government that owns, operates, or otherwise provides wharf, dock, and other marine terminal investments 
+ and services at ports.
+
+ - Port holding. An entity, commonly private, that owns or leases port terminals in a variety of locations. It is also known as a port terminal 
+ operator.
+
+ - A concession agreement is a long-term lease of port facilities involving the requirement that the concessionaire undertakes capital investments to 
+ build, expand, or maintain the cargo-handling facilities, equipment, and infrastructure to agreed-upon standards.
+
+- Dimensions of Port Geography: https://transportgeography.org/contents/chapter6/port-terminals/main-port-dimensions/
+- Terminal Depth at Selected Ports: https://porteconomicsmanagement.org/pemp/contents/part6/container-terminal-design-equipment/terminal-depth-selected-ports/
+- Port Sites and Functions: https://transportgeography.org/contents/chapter6/port-terminals/port-site-functions/
+- Range of Activties Performed by Ports: https://transportgeography.org/contents/chapter6/port-terminals/port-activities-types/
+- World's Major Container Ports (2020): https://transportgeography.org/contents/chapter6/port-terminals/world-major-container-ports/
+- Public and Private Roles in Port Management: https://transportgeography.org/contents/chapter6/port-terminals/public-private-roles-ports/
+

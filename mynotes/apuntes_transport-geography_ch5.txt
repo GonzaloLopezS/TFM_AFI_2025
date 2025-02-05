@@ -1,3 +1,251 @@
 # 5. Transportation Modes
 are essential components of transport systems since they are the means of supporting mobility. Modes can be grouped into three broad categories based 
 on the medium they exploit: land, water, and air. 
+
+Maritime Transportation:
+With physical properties such as buoyancy and limited friction, maritime transportation is the most effective mode of moving large quantities of cargo 
+over long distances. Main maritime routes are composed of oceans, coasts, seas, lakes, rivers, and channels. However, due to the location of economic 
+activities, maritime circulation takes place in specific parts of the maritime space, particularly over the North Atlantic and the North Pacific.
+
+Yet, with containerization, maritime shipping has become the linchpin of globalization, allowing the trading of a wide range of goods and commodities.
+
+Intermodal transportation:
+Although intermodal transportation applies to passenger movements, such as using the different, interconnected modes of a public transit system, it is 
+over freight transportation that the most significant impacts of intermodalism have been observed. Containerization has been a powerful vector of 
+intermodal integration, enabling maritime and land transportation systems to interconnect.
+
+2. Modal Competition:
+Modes can compete or complement one another in cost, speed, accessibility, frequency, safety, comfort, etc. 
+Three main conditions ensure that some modes complement one another:
+- Different geographical markets. If different markets are involved, modes will enable continuity within the transport system, particularly if 
+different scales are concerned, such as between national and international transportation. This requires an interconnection, commonly known as a 
+gateway, where transferring from one mode to another is possible. 
+- Different transport markets. The nature of what is being transported, such as passengers or freight, often indicates a level of complementarity. 
+Even if the same market area is serviced, it may not be equally accessible, depending on the mode used. 
+- Different levels of service. For a similar market and accessibility, two modes offering different service levels will tend to complement one another 
+with niche services.
+
+While maritime transport might offer the lowest variable costs, road transport tends to be most competitive over short distances and for small bundles 
+of goods. A critical factor is the terminal cost structure for each mode, where the costs (and delays) of loading and unloading a unit impose fixed 
+costs incurred independent of the distance traveled.
+
+With increasing income levels, the propensity for people to travel rises. At the same time, international trade in manufactured goods and parts has 
+increased. These trends in travel demand act differently upon modes. Freight, rail, and shipping have been impacted by competition from road and air 
+modes. While shipping, pipelines, and rail still perform well for bulk shipments, competition has seen road and air modes capture an important market 
+share of the high revenue-generating goods over the last decades.
+
+- Infrastructure usage. Competition resulting from the presence of freight and passenger traffic on the same itineraries linking the same nodes. 
+Therefore, each level of capacity a mode uses is at the expense of the other mode.
+- Market area. Competition between transport terminals for using new locations (terminal relocation or expansion) or capturing new markets (hinterland).
+
+ - Main Freight Modal Options: https://transportgeography.org/contents/chapter5/transportation-modes-modal-competition-modal-shift/freight-modal-options/
+ - Atomization vs Massification in Transportation Modes: https://transportgeography.org/contents/chapter1/what-is-transport-geography/atomization-massification-modes/
+
+ - Domains of Maritime circulation: https://transportgeography.org/contents/chapter5/maritime-transportation/domains-maritime-circulation/
+ - Distribution of Freight Demand by Mode: https://transportgeography.org/contents/chapter5/transportation-modes-modal-competition-modal-shift/distribution-demand-mode/
+
+# 5.4 Maritime Transportation
+From its modest origins as Egyptian coastal and river sailships around 3,200 BCE, maritime transportation has always been the dominant support of 
+global trade. By 1,200 BCE, Egyptian ships traded as far as Sumatra, representing one of the longest maritime routes of that time. By the 10th century, 
+Chinese merchants frequented the South China Sea and the Indian Ocean, establishing regional trade networks.
+
+With the development of the steam engine in the mid-19th century, trade networks expanded considerably as ships were no longer subject to dominant wind 
+patterns. Accordingly, and in conjunction with the opening of the Suez Canal, the second half of the 19th century saw an intensification of maritime 
+trade to and across the Pacific. In the 20th century, maritime transport grew exponentially as changes in international trade and seaborne trade became 
+interrelated. Maritime transportation, like all transportation, is a derived demand that exists to support trade relations, which are influenced by the 
+existing maritime shipping capacity and the changes in the composition of maritime shipping services. 
+
+There is a level of reciprocity between trade and maritime shipping capabilities. As of 2018, seaborne trade accounted for 80% of global trade in 
+volume and 70% in value. Maritime shipping is one of the most globalized industries in ownership and operations.
+
+Maritime transportation, like land and air modes, operates on its own space, which is concomitantly geographical by its physical attributes, strategic 
+by its control, and commercial by its usage. While geographical considerations tend to be constant in time (except for the seasonality of weather 
+patterns), strategic and especially commercial considerations are much more dynamic. The physiography of maritime transportation is composed of two 
+major elements, which are rivers and oceans.
+
+The notion of maritime transportation rests on the existence of regular itineraries, better known as maritime routes.
+
+Maritime routes. Corridors trying to avoid the discontinuities of land transport by linking ports. Maritime routes are a function of obligatory points 
+of passage, physical constraints (coasts, winds, marine currents, depth, reefs, ice), and political borders. Maritime routes draw arcs on the ocean 
+surface as they try to follow the great circle distance.
+
+The most recent technological transformations affecting water transport have focused on modifying water channels, such as dredging port channels to 
+deeper depths and expanding the capacity of transoceanic passages such as Panama and Suez. Increasing the size, automation, and specialization of vessels 
+(e.g. container ships, tankers, bulk carriers) has also been the focus. This has required the development of massive port terminal facilities to 
+support the technical requirements of maritime transportation.
+
+The growing importance of container shipping is also associated with risks related to the immobilization of ship assets.
+
+Most maritime circulation occurs along coastlines, and two continents have limited fluvial trade; Africa and Australia.
+For instance, France has significant nautical accessibility, but the primary port handling containerized traffic is Antwerp in Belgium.
+
+The importance and configuration of maritime routes have changed with economic development and technical improvements. Among those, containerization 
+changed the configuration of freight routes with innovative services. Before containerization, loading or unloading a ship was a costly and 
+time-consuming task, and a cargo ship typically spent more time docked than at sea. While sailing time represented around 25% of the annual ship time 
+for standard break-bulk ships, this figure is now around 70% for containerships. With faster and cheaper port operations, inter-range routes have 
+emerged as a dominant configuration of containerized maritime networks.
+
+- Inter-range service. Involves a set of sequential port calls from at least two maritime ranges, commonly including a transoceanic service and 
+structured as a continuous loop. They are almost exclusively used for container transportation with the purpose of servicing a market by balancing the 
+number of port calls and the frequency of services.
+
+The main advantage of inter-range services is the ability to call several ports and increase the ship load factor. This sequence of ports tends to be 
+highly flexible in terms of which ports are serviced to maximize the market potential.
+
+ - Density of Ship Log Entries: https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/ship-log-density-1750-1810/
+ - Colonial Trade Pattern, North Atlantic, 18th Century: https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/colonial-trade-pattern-atlantic-18th-century/
+ - Types of Maritime Routes: https://transportgeography.org/contents/chapter5/maritime-transportation/maritime-routes-types/
+
+## 2. Maritime traffic
+Maritime transportation is dominantly focused on freight since there is no other effective alternative to the long-distance transportation of large 
+amounts of freight. The systematic growth of maritime freight traffic has been fueled by the following:
+- Absolute advantages. They are linked with the geographical distribution of resources, implying that the places of extraction usually differ from the 
+places of consumption. Therefore, large quantities of cargo need to be carried over long distances.
+
+- Comparative advantages. Concerns cargoes that under ideal circumstances would likely not be carried. Substantial shipping is generated because of cost 
+and capabilities differentials. Outsourcing, offshoring, and trade liberalization resulted in parts and finished goods being carried over long 
+distances, supporting the growth in container shipping. Due to economic conditions, such cargo can be temporary and subject to changes in their origins 
+and destinations.
+
+- Technical improvements. Ships and maritime terminals have become more efficient in terms of their throughput and their ability to handle several 
+types of cargoes (e.g. containers, natural gas, refrigerated goods), enabling them to support long-distance trade.
+
+- Economies of scale. The growth in the size of ships permitted maritime transportation to become increasingly cost-effective, a trend that has been 
+strengthened by containerization.
+
+Maritime traffic is commonly measured in deadweight tons, which refers to the cargo that can be loaded on an “empty” ship without exceeding its 
+operational design limits. This limit is often identified as a loadline, which is the maximal draft of the ship and does not account for the ship’s 
+weight but includes fuel and ballast water. Maritime freight is conventionally considered in two main markets:
+- Bulk cargo. Refers to freight, both dry and liquid, that is not packaged, such as minerals (oil, coal, iron ore, bauxite) and grains. 
+Conventionally, this cargo has a single origin, destination, and client and is prone to economies of scale. Services tend to be irregular, except for 
+energy trades, and part of vertically integrated production processes. The dynamics of the bulk market are mainly attributed to industrialization and 
+economic development, creating additional demand for resources and energy.
+
+- Break-bulk cargo. Refers to general cargo that has been packaged in some way with the use of bags, boxes, drums, and particularly containers. This 
+cargo tends to have numerous origins, destinations, and clients. Before containerization, economies of scale were difficult to achieve with break-bulk 
+cargo as loading and unloading were very labor and time-consuming. The dynamics of the breakbulk market are related to manufacturing and consumption.
+
+The composition of maritime traffic has shifted from being dominated by liquid bulk (petroleum) to dry bulk and containers. Technical improvements 
+tend to blur the distinction between bulk and break-bulk cargo, as both can be unitized on pallets and increasingly in containers.
+The amount of containerized freight has grown substantially, from 9.8% of total tons-km in 2000 to 15.2% in 2021.
+
+Geographically, maritime traffic has evolved considerably over the last decades, especially through growth in Asia-Europe and transpacific trade. By 
+establishing commercial linkages between continents, maritime transport supports considerable traffic. The advantage of maritime transport does not 
+rest on its speed, but on its capacity and on the continuity of its services. 
+
+The global maritime shipping industry is serviced by about 55,000 registered commercial vessels of more than 1,000 tons.
+Bulk-carriers, General cargo ships, RORO vessels
+
+Changes in Global Trade Flows: https://porteconomicsmanagement.org/pemp/contents/part1/maritime-shipping-and-international-trade/changes-global-trade-flows/
+Types of Maritime Cargo: https://transportgeography.org/contents/chapter5/maritime-transportation/types-maritime-cargo/
+World Seaborne Trade by Cargo Type (1970-2021): https://transportgeography.org/contents/chapter5/maritime-transportation/seaboard-trade-cargo-type/
+Liner Transatlantic Crossing Times (1833 - 1952): https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/liner-transatlantic-crossing-time/
+'E' Class Containership, The Evelyn Maersk: https://transportgeography.org/contents/chapter5/maritime-transportation/e-class-containership-evelyn-maersk/
+
+## 3. Maritime shipping
+The maritime shipping industry is one of the most globalized.
+
+Maritime shipping is dominated by bulk cargo, with dry bulk cargoes such as iron ore, coal, and grain roughly accounting for 28% of all the ton-miles 
+shipped in 2021. Due to containerization, the share of break-bulk cargo is increasing steadily, which accounted for 15% of all ton-miles in 2021. 
+Maritime shipping has traditionally faced two drawbacks in relation to other modes. First, it is slow, with speeds at sea averaging 15 knots for bulk 
+ships (26 km/hr), although container ships are designed to sail at speeds above 20 knots (37 km/hr). Secondly, delays are encountered in ports where 
+loading and unloading take place. The latter may involve several days of handling when break-bulk cargo is concerned. These drawbacks are particularly 
+constrained where goods must be moved over short distances or shippers require rapid deliveries.
+
+Maritime shipping has seen several major technical innovations aiming at improving the performance of ships or their access to port facilities, 
+notably in the 20th century. 
+
+### a. Ship size and speed:
+Each time the size of a ship is doubled, its capacity is cubed (tripled). Although the minimum size for cost-effective bulk handling is estimated to 
+be around 1,000 deadweight tons, economies of scale have pushed for larger ship sizes to service transportation demand.
+
+The largest tankers (ULCC) are around 500,000 dwt (dominant size between 250,000 and 350,000 dwt), while the largest dry bulk carriers are around 
+350,000 dwt (dominant size between 100,000 and 150,000 dwt). For container shipping, the scale effect on ships has been an important driving force in 
+the growth of its capacity. 
+
+The average speed of ships is about 15 knots (1 knot = 1 marine mile = 1,853 meters), which is 28 km per hour. Under such circumstances, a ship would 
+travel about 575 km per day. More recent ships can travel between 25 to 30 knots (45 to 55 km per hour), but it is uncommon for a commercial ship to 
+travel faster than 25 knots due to energy requirements. 
+
+### b. Ship specialization and design
+Economies of scale are often linked with market specialization and segmentation since many ships are designed to carry only one type of cargo. In 
+maritime transportation, ships have a commercial openness in terms of the diversity of customers they can serve and a functional openness in terms of 
+the diversity of cargo they can carry.
+
+ships became increasingly specialized, including general cargo ships, tankers, grain carriers, barges, mineral carriers, bulk carriers, Liquefied 
+Natural Gas (LNG) carriers, RO-RO ships (roll-on roll-off; for vehicles), and container ships.
+
+Ship design significantly improved from wood hulls (before the 16th century) to wood hulls with steel armatures (18th century), to steel hulls (19th 
+century; the first were warships), and to steel, aluminum, and composite materials hulls in the 20th and 21st centuries. The hulls of contemporary 
+ships result from considerable efforts to minimize energy consumption and construction costs and improve safety. 
+
+Different automation technologies are possible, including self-unloading ships, computer-assisted navigation (crew needs are reduced, and safety is 
+increased), global positioning systems, and Automatic Identification Systems (AIS). Automation has resulted in smaller crews being required to operate 
+larger ships.
+
+- World Merchant Fleet, Tonnage Registered per Ship Size (1970-2020): https://transportgeography.org/contents/chapter5/maritime-transportation/world-registered-fleet-tonnage/
+- Vessel Size Groups: https://transportgeography.org/contents/chapter5/maritime-transportation/vessel-size-groups/
+- Evolution of Containerships: https://transportgeography.org/contents/chapter5/maritime-transportation/evolution-containerships-classes/
+- Fuel Consumption by Containership: https://transportgeography.org/contents/chapter4/transportation-and-energy/fuel-consumption-containerships/
+- Three Containership Classes: https://transportgeography.org/contents/chapter5/maritime-transportation/three-containership-classes/
+- Flexibility and specialization of Major Ship Designs: https://transportgeography.org/contents/chapter5/maritime-transportation/flexibility-ship-design/
+
+Characteristics of Short Sea Shipping Services: https://transportgeography.org/contents/chapter5/maritime-transportation/short-sea-shipping-services/
+
+# 5.6 Intermodal Transportation and Containerization
+ntermodal transportation concerns the mobility of passengers or freight from an origin to a destination relying on several modes of transportation. 
+The container has become the dominant intermodal transport unit.
+
+## 3. Containerization
+Container. A large standard size metal box into which cargo is packed for shipment aboard specially configured transport modes (ISO 668). It is 
+designed to be moved with common handling equipment enabling high-speed intermodal transfers in economically large units between ships, railcars, 
+truck chassis, and barges using a minimum of labor. The container, therefore, serves as the load unit rather than the cargo contained therein. The 
+reference size is the 20-foot box of 20 feet long, 8’6″ feet high and 8 feet wide, or 1 Twenty-foot Equivalent Unit (TEU). Since most containers are 
+now forty feet long, the term Forty-foot Equivalent Unit (FEU) is also used, but less commonly. “Hi cube” containers are also common, and they are one 
+foot higher (9’6″) than the standard.
+
+Containerization. Refers to the increasing and generalized use of the container as a load unit for freight transportation. It involves processes where 
+the intermodal container either substitutes cargo from other conveyances, is adopted as a mode supporting freight distribution, or can diffuse 
+spatially as a growing number of transport systems are able to handle containers.
+
+Containerization conveys a variety of benefits to the mobility of freight, namely lower transportation costs, lower inventory costs, and a higher 
+service level, including reliability.
+
+- The Benefits of Containerization: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/benefits-containerization/
+- Driving Forces of Containerization and Intermodalism: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/containerization-intermodalism-driving-forces/
+- Number of Units and Weight of Consumption Goods: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/container-weighting-cubing-out/
+- Carrying Capacity of Containers: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/container-carrying-capacity/
+- World Container Throughput (1980-2021): https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/world-container-throughput/
+- Containerization Growth Factors: https://transportgeography.org/contents/chapter5/intermodal-transportation-containerization/containerization-growth-factors/
+
+## 4. Advantages and Challenges of Containerization:
+a. Standardization
+b. Flexibility of usage
+c. Economies of scale
+d. Operational Velocity
+e. Warehousing and security
+f. Site constraints
+Containerization implies a large consumption of terminal space. To fully load or unload a containership of 5,000 TEU, a minimum of 12 hectares of 
+stacking space is required. Conventional port areas are often inadequate for the location of container transshipment infrastructures, particularly 
+because of draft issues as well as required space for terminal operations. Many container vessels require a draft of at least 14 meters (45 feet), and 
+the later generation of larger ships requires at least 15 meters (50 feet). The site constraints imposed by containerization have incited the 
+development of new terminal facilities and migration towards better-suited sites. A similar challenge applies to container rail terminals; many were 
+relocated at the periphery of metropolitan areas. Consequently, major container handling facilities have new location criteria where suitable sites are 
+only found at the periphery and, at times, far from the original site.
+
+g. Infrastructure costs and stacking
+h. Thefts and losses
+i. Empty travel
+j. Illicit trade
+By its confidential character, the container is a common instrument used in the illicit trade of counterfeit goods, drugs, and weapons. At the global 
+level, only 2 to 5% of all containers handled at ports are manually inspected by customs, leaving opportunities for illicit cargoes. This share can go 
+as low as 1% for several large European ports. Manually inspecting a container requires physical resources such as inspection areas as well as labor 
+resources. Thus, assessing if a container should be physically inspected is the outcome of careful considerations related to its origin, the customs 
+declaration, the carrier, and the cargo owner. Concerns have also been raised about containers being used for terrorism.
+
+These fears have given rise to regulations to counter the illegal use of containers. In 2003, following US inspection requirements, the International 
+Maritime Organization (IMO) introduced regulations regarding the security of port sites and the vetting of workers in the shipping industry. The 
+United States established a 24-hour rule, requiring all shipments destined for the United States to receive clearance from US authorities 24 hours 
+before the vessel’s departure. In 2008, the US Congress passed a regulation requiring all US-bound containers to be electronically scanned at the 
+foreign loading port before departure. These measures incur additional costs and delays that many in the industry oppose.
+
