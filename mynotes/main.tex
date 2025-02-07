@@ -12,6 +12,11 @@
 \section{Introducción}
 Historia del transporte marítimo. Transporte marítimo de mercancías. Logística.
 Comercio mundial, nodos y puertos marítimos.
+La importancia económica y geopolítica del transporte fue reconocida de forma muy temprana. Desde la Antigüedad el transporte marítimo ha sido la forma más común de transporte de cargamentos y personas y, una ventaja, que no se transformaría realmente hasta la llegada de la Revolución Industrial. Los grandes imperios comerciales se establecieron a partir de la conformación de redes comerciales a nivel oceánico. A partir del siglo XIII comenzaron importantes redes regionales de comercio marítimo (el Mediterráneo Occidental, la Liga Hanseática en el Mar del Norte y el Báltico), el descubrimiento de los patrones de viento circulares en el Atlántico Norte por parte de los navegantes portugueses en la primera mitad del siglo XV marcaron el inicio de la expansión colonial europea. Estos estudios perimitieron el desarrollo de rutas comerciales confiables y de larga distancia. Por otro lado, a partir del siglo XIX, el avance en los materiales de construcción como el diseño monocasco o las juntas de acero, permitieron un aumento en la velocidad de las naves de un 50 por ciento [Revisar el simbolo] entre 1750 y 1830. Más adelante sería la entrada en el mercado de los barcos de vapor.
+
+El primer barco que transportaba contenedores data de 1956 cuando el Ideal-X [citar: Source: Maersk/SeaLand.] zarpó de Nueva York rumbo a Houston y dio inicio a la era de la contenerización que se empezó a consolidar a partir de la era post-fordista (a partir de la década de 1970). Esta contenerización permitió un ahorro de tiempo en la carga y descarga en puertos de entre el 50 -por ciento- y el 70 -por ciento-. A nivel de valor, la carga y descarga de un contenedor costaba de media 15 centavos frente a los 5 dólares americanos de un buque mercante tradicional. En 1960, la Autoridad Portuaria de Nueva York y Nueva Jersey vislumbraron el potencial de la contenerización y mandaron construir la primera terminal especializada en carga y descarga de contenedores próxima al Puerto de Newark (Port Elizabeth Marine Terminal) [citar]. A partir de la década de 1980, los servicios especializados de barcos contenedores se convirtieron en el estándar dominante del comercio mundial, transformando la industria marítima. La revolución del contenedor fue concomitante a los procesos de globalización que se darían en las décadas posteriores: participando en el transporte de bienes manufacturados, componentes y materias primas.
+
+- citar a [Source: adapted from D.M. Bernhofen, Z. El-Sahli and R. Kneller (2013) Estimating the Effects of the Container Revolution on World Trade, Lund University, Department of Economics, Working Paper 2013:4.]
 
 Tráfico de productos ilegales. Qué se considera como droga. La lucha contra el narcotráfico.
 ¿Cómo se mide la cantidad de mercancías? En containers (TEU), en tonelaje total transportado, en
@@ -19,6 +24,21 @@ cuantía del valor de la mercancía. ¿Cuál se adaptará mejor al problema a mo
 
 \subsection{Motivación del proyecto}
 Interés en la Geografía como elemento de estudio y su comprensión para generar valor con los datos estudiados a través de ella.
+Origen de webs de trazabilidad de barcos para comercio mundial (de origen privado), geopolítica y de alto interés.
+
+// Fuentes privadas vs fuentes públicas. Las fuentes privadas ofrecen servicios mediante pagos, viable a nivel empresarial, para empresas relacionadas con el comercio, los procesos logísticos o la especulación financiera. Los datos abiertos tienen un enfoque más de información transparente sobre resultados de administraciones. Debido a las restricciones en relación a los datos no abiertos, se trabajan a partir de los datos abiertos, en particular, con aquellos relacionados con el transporte de mercancías. Para el caso de datos brutos relacionados con la incautación de drogas, solamente están disponibles por agencias estatales o entidades públicas.
+
+// Conocimientos básicos sobre la Geografía del Transporte. El libro que me llevó a realizar este estudio.
+Gran parte del trabajo se basa en el interés por la Geografía Económica y la Geografía del Transporte. Trabajos como el realizado por [citar trabajo Jean-Paul Rodrigue] ha servido como acicate para aunar y profundizar conocimientos en este campo y aplicarlo a una temática tan sensible como es el tráfico de estupefacientes. El conocimiento del tema más la posibilidad de adquirir una gran cantidad de datos permite realizar estudios como éste para confirmar o desmentir ciertas conjeturas formuladas a priori. En particular la siguiente: Dada la actividad económica en puertos -entendida como el trasiego de contenedores-, ¿es posible estimar el volumen de incautación de droga? Más adelante se verá que esta pregunta envuelve algunas particularidades y limitaciones dada la variedad entre las fuentes (recordemos de que se tratan, en su mayoría, de informes a nivel de gobiernos estatales o federales, ya que los datos de grandes entidades tipo OMS, OCDE o Banco Mundial carecen del nivel de desagregación necesario) [citar].
+
+// [Leer]: https://oecdstatistics.blog/2024/03/21/monitoring-global-trade-using-data-on-vessel-traffic/
+
+
+
+// Guerras del opio y posible entrada de precursores desde China. Estados Unidos como principal demanda en el mercado. Origen y desarrollo de las triadas chinas.
+
+// Flujos comerciales: un problema de divergencias. Rutas coloniales históricas: Compañía neerlandesa de las Indias Orientales. Los puertos con mayor volumen de tráfico (en los últimos meses y en los últimos años). NAFTA. Manufacturas, Áreas Metropolitanas Globales, Índice Logístico(*).
+
 
 
 \subsection{Antecedentes}
@@ -26,12 +46,56 @@ Otros trabajos (¿mencionar TFM de Juande?), estudios pasados sobre geografía d
 Las diferentes aproximaciones en la lucha contra el narcotráfico en lugares de destino. Enfoque particular para Estados Unidos de América (EE UU), Reino Unido (UK) y la Unión Europea.
 SOTA in Drug Seizure and Maritim Traffic and Trade.
 
+// Los puertos más transitados del mundo.
+
+// ¿Qué es el TEU (unidad de medida)?
+
 \section{Descripción del problema}
-Diseño del Modelo
+Diseño del Modelo.
+Para la puesta a punto del conjunto de datos a tratar, primero hubo que implementar un desarrollo de integración de los mismos provenientes de distintas fuentes.
+En términos generales, hubo que conseguir un compromiso entre aquellos datos relacionados con el transporte de mercancías por medio marítimo con los datos de incautaciones de drogas realizados por las distintas agencias. Objetivo nada sencillo debido a la heterogeneidad de fuentes y de ámbitos administrativos. Debido a que muchos de los datos disponibles son provistos por entidades nacionales (agencias gubernamentales, estados, departamentos asociados...) existía un desajuste entre las diversas estructuras originales de los datos. En otras palabras, no existía ni una fuente común para todos los datos ni un armonizador de los mismos. En particular, para la ingesta de datos relacionados con la incautación de tráfico de drogas, la disponibilidad de los mismos se encuentra en las webs de los departamentos, agencias de aduanas y ministerios del interior de los distintos gobiernos estatales, con la ventaja de tratarse de datos abiertos al público, estructurados y dimensionados. Por su parte, para los datos de transporte marítimo, en un primer momento se intentó obtener los datos de distintas agencias privadas dedicadas al comercio global, con la contraparte de no tratarse de datos abiertos. Esto último hizo replantear la forma de capturar los mismos: hubo que renunciar a un modelo que tuviese en cuenta la estructura de grafo del transporte, de hallar flujos de transporte o las rutas (origen-destino) portuarias más comunes. Al igual que en el caso de las incautaciones de drogas, hubo que hacer acopio de conjuntos de datos de fuentes de datos abiertos (otra vez: instituciones y entidades gubernamentales, agencias de meteorología, ministerios de transportes...)
+
+// Construcción del dataset final de entrada.
+Una vez se localizaron las fuentes y los datos, se procedió a su descarga. Las características de los mismos, su rango -no solo a nivel temporal, sino también intravariable-, su granularidad o nivel de detalle, devino en un proceso alargado de integración y estandarización acorde a las necesidades del problema. Esa integración y estandarización debía hacerse a nivel geográfico: cuadrar los datos, unidades de medida, granularidad en la ventana de tiempo entre los datos procedentes del gobierno federal de Estados Unidos con los británicos, así como las áreas de cobertura administrativa para distintos niveles y orígenes de datos (CBP: agencia de aduanas de Estados Unidos, hubs portuarios y regiones de autoridad policial en Reino Unido); y a nivel de temática del dato: integrar los datos de transporte marítimo de mercancías en regiones costeras con incautaciones de drogas en regiones donde existen hubs portuarios. Todo este proceso de integración y estandarización desembocó en la construcción del dataset de entrada al modelo de Machine Learning.
+
+
+// Serie temporal no viable. Emparejamiento de ventanas temporales.
+Dado el origen diverso de los datos, así como su variabilidad en la granularidad de los mismos, se fue perdiendo detalle a medida que aumentaba el nivel de integración. Es decir, si tenía que integrar dos fuentes de datos con distinto nivel de desagregación, aquella que tuviera menor nivel de la misma, se usaría como base para el resto de fuentes: entre un conjunto de datos con información a nivel diario y otro a nivel anual, tocaría integrar (sumatoria) los diarios hasta convertirlos en anuales y, más adelante, integrarlos con el resto de datos. Hay casos particulares de desagregación como la procedencia del transporte de contenedores, que se pueden colegir cruzando datos entre aquéllos con mayor nivel de detalle, importancia del hub portuario y conocimiento de las dinámicas de la geografía del transporte a nivel marítimo [Citar libro]. En cuanto a la pérdida de detalle de las variables temporales, también había que sumar un desajuste entre el rango de los mismos: mientras unos conjuntos de datos proveen información de las últimas dos décadas, otros (caso CBP drug seizures [citar]) se limitaban a datos posteriores al año fiscal del 2019 (citar). Esta reducción de la ventana temporal, así como una mayor riqueza de los datos en otras variables (tipo de droga incautada, información geográfica de puertos, etc.), no solo desestimó el estudio del problema como uno de series temporales, sino que repensó el uso de la variable temporal como una variable más, a modo de un cuaternión [citar] u otra variable más anexa a la variable geográfica.
+
+// Detección de hubs portuarios: una primera incursión en modelos de Machine Learning.
+El acomodo de datos de distinta índole y su integración obligó en parte la búsqueda de una solución de compromiso entre los datos a nivel portuario y las jurisdicciones de agencias de aduanas: la detección de hubs portuarios. Para el caso de los datos de Reino Unido, fue sencillo: la propia fuente de datos incluía una columna denominada 'Port group' que integraba distintos puertos en una misma región [Citar]. En cambio, para el caso de Estados Unidos era más complicado: había que pasar de más de un centenar de grandes puertos de mercancías [citar fuente sobre tipos de puertos] con dos docenas de oficinas de la CBP (Oficina de Aduanas y Protección del Gobierno Federal de Estados Unidos). Para lograr esto se procedió la detección de posibles hubs portuarios en función del número de barcos detectados mediante AIS y tabulados por la NOAA (agencia de meteorología de Estados Unidos) durante una serie de días. Esto último se trató de uno de los procedimientos más complejos y delicados de esta fase de construcción del dataset de entrada. Se estimó (mediante estudios y técnicas de clustering) agrupar las señales de barcos en una treintena de grupos con un centro geográfico que se situaría, en el mejor de los casos, en las proximidades.
+
+// No todos los puertos, a pesar de su volumen, tenían un emparejamiento claro con la agencia aduanera.
+A pesar de crear esta figura del "hub portuario", quedaba la parte más importante a la hora de preparar el dataset de entrada: vincular esos hubs portuarios con las agencias de aduanas. En algunos casos, la equivalencia era trivial, en otros la ausencia de equipos de CBP, obligaba, o bien, integrar un hub portuario con otro para incluirlo en el alcance de una agencia (lo cual podía desvirtuar o desnaturalizar el origen del estudio) o bien, eliminarlo directamente (pérdida de posible información que podía ser útil para otros estudios). Se tomó una decisión acorde a la particularidad de cada hub portuario. Dado el fuerte conocimiento en geografía a nivel estadounidense, este proceso se pudo realizar con el máximo nivel de detalle. En cambio, para el caso del Reino Unido, para vincular los hubs con jurisdicciones policiales se realizó una supervisión mediante rastreo en herramientas geográficas, manejo de LLMs y estudio de la administración en el ministerio del interior [Citar fuente mapa regiones policiales UK].
+
+// Estructura del dataset: pivotar o no las variables relacionadas con la incautación de droga.
+Por último, para completar el conjunto de datos de entrada del modelo, se fueron realizando procesos de integración de variables (sumatorias) y de relacionar los datasets de distintas temáticas. En otras palabras, dado que se quiere saber la incautación de droga (el tipo de la misma no es relevante) en un hub portuario y se tienen los datos de transporte de contenedores a nivel de puertos, la integración de éstos últimos en hubs portuarios y la relación de los hubs con áreas jurisdiccionales de las distintas agencias encargadas de incautar la droga, se tuvo que realizar un proceso similar a SQL disponible con la librería pandas para cuadrar los datos de distintas procedencias.
+[[REVISAR]]
+Una vez obtenido el potencial dataset de partida, hubo que decidir si se tendría un long dataset o uno wide [citar]. Originalmente, el dataset long tenía una estructura de 162656 x 17 variables, muchas redundancias en algunas de las variables. Una alternativa que se barajó fue realizar un pivotaje entre las variables relacionadas con la incautación y volumen de droga: eliminar la variable característica del tipo de droga e integrarla de forma inherente a las variables de incautación y volumen (esta vez particularizadas por el tipo de droga). Esto hubiera dado un dataset con menos observaciones, pero mucho más rico en variables. Uno de los motivos por el que se desestimó fue que esto podía dar mayor relevancia al tipo de droga. Pese a que hay elementos interesantes en favor de ello: la cantidad en kilogramos incautada de un tipo de droga A frente a otro tipo B no sería determinante a la hora de realizar un análisis y que podría inducir a error, quizá si lo fuese su equivalente en valor monetario -pero inviable en términos prácticos- o la suma total de incautaciones (operaciones policiales). [[REVISAR]]
+
+
+[Realizar dibujo/esquema resumen de la integración de los datos de origen para la generación del dataset de entrada al modelo]
 
 \section{Estado del arte}
 Estudio con series temporales.
 Al faltar datos de flujos y vías marítimas, no es trivial hallar la red o grafo mundial de conexiones portuarias.
+
+// Conocimiento de cuaterniones
+
+
+// Conocimiento de técnicas de Machine Learning
+
+
+// Series temporales en python: Prophet.
+
+
+// Técnicas de clustering.
+
+
+// Estudio de la Geografía del Transporte.
+
+
+// Estudio sobre dinámicas del narcotráfico
 
 
 \section{Implementación Práctica del Modelo}
