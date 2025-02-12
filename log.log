@@ -461,3 +461,82 @@ drugs out of our communities and denies criminal organizations the profits deriv
 
 02/02/2025:
 Metodologia UK drug seizure: https://www.gov.uk/government/publications/seizures-of-drugs-in-england-and-wales-user-guide/seizures-of-drugs-in-england-and-wales-user-guide--2
+
+08/02/2025:
+- ydata_profile lanzado:
+- Rehacer wide_dataset tal que los NAs no sean 0.0 sino MV.
+- Google Colab on GPU T4. Debo dar de alta. Hago uso de A100:
+RAM del sistema
+RAM de la GPU 0.0 / 40.0 GB
+Disco 29.0 / 112.6 GB
+
+- ¿Cómo forzar a que haga uso de las GPUs?
+
+Data Preparation:
+Data preparation is normally a mandatory step. It converts prior useless data into
+new data that fits a DM process. First of all, if data is not prepared, the DM algorithm
+might not receive ir in order to operate or surely it will report errors during its runtime.
+
+- How do I clean up the data?—Data Cleaning.
+- How do I provide accurate data?—Data Transformation.
+- How do I incorporate and adjust data?—Data Integration.
+- How do I unify and scale data?—Data Normalization.
+- How do I handle missing data?—Missing Data Imputation.
+- How do I detect and manage noise?—Noise Identification.
+
+1) ¿Cómo imputo los MV? Separo entre los datos de "cargamento" de los de "incautacion de drogas". Por como se tomaron los datos, se sabe que en muchas
+columnas, depende de la fuente de donde se tomó (UK vs USA), por lo que se pueden considerar como MNAR.
+
+Respuesta ChatGPT:
+La correlación de 55% y 60% indica que existe una relación moderada entre Total Loaded Grand y las columnas Total DOMESTIC y Total OutBound FOREIGN. 
+Sin embargo, hay varios puntos a considerar antes de utilizar estos valores para imputar:
+
+    Relación Moderada y Varianza Explicada:
+        Una correlación del 55% implica que aproximadamente el 30% de la varianza de Total DOMESTIC se explica por Total Loaded Grand (ya que 0.55² ≈ 0.30).
+        De manera similar, una correlación del 60% implica que cerca del 36% de la varianza de Total OutBound FOREIGN es explicada por Total Loaded Grand (0.60² ≈ 0.36).
+
+    Esto significa que, si bien existe una relación, una gran parte de la variabilidad no se explica con este predictor. Por lo tanto, imputar basándose únicamente en Total Loaded Grand podría introducir errores, ya que no se captura toda la complejidad de la relación.
+
+    Naturaleza de la Relación:
+    La correlación mide una asociación lineal. Es importante verificar si la relación entre Total Loaded Grand y las otras variables es realmente lineal o si existen otros factores (quizás otras variables) que puedan ayudar a predecir de forma más precisa los valores faltantes o cero.
+
+    Consideración del Contexto y Validación:
+        Es fundamental evaluar si los ceros representan verdaderamente datos faltantes o si son valores válidos en el contexto de tu dataset.
+        Antes de aplicar la imputación, podrías hacer una validación (por ejemplo, mediante un modelo de regresión o imputación múltiple) para evaluar el impacto de la imputación en el análisis final.
+
+    Alternativas y Métodos Más Robustas:
+    Si dispones de otras variables que puedan aportar información predictiva, podrías considerar modelos de imputación que utilicen múltiples predictores (por ejemplo, regresión múltiple o imputación múltiple). Estos métodos suelen capturar mejor la variabilidad inherente y pueden producir imputaciones más fiables.
+
+Conclusión
+
+Si bien los valores de 55% y 60% muestran que Total Loaded Grand tiene cierta capacidad predictiva para Total DOMESTIC y Total OutBound FOREIGN, estos coeficientes no son tan altos como para garantizar que la imputación basada únicamente en esa variable sea robusta. Te recomendaría:
+
+    Realizar un análisis exploratorio adicional para ver la forma de la relación (por ejemplo, gráficos de dispersión, residuos de un modelo lineal, 
+    etc.).
+    Considerar la incorporación de más variables si están disponibles, para lograr una imputación más precisa.
+    Validar el modelo de imputación (por ejemplo, mediante validación cruzada o comparando resultados en un subconjunto con datos completos).
+
+En resumen, puedes usar Total Loaded Grand como parte de tu estrategia de imputación, pero deberías tener precaución y, de ser posible, complementar 
+con otros métodos o variables para mejorar la precisión de los valores imputados.
+
+2) Para incautacion de drogas -> revisar
+
+11/02/2025:
+Estrategias de imputacion de missing values:
+- Variables float64: Con ceros
+- Variables categóricas: Valor 'United Kingdom' para Land Filter, Region y Component.
+- Variable 'Major/Minor Port': Se va a utilizar una estrategia de imputacion basada en un problema de clasificación.
+
+
+*Opcion D) Dada la cantidad de incautacion de droga, hallar los hubs portuarios referidos.
+
+Aplicado StandardScaler() a todas las variables numéricas ('Year' se ha convertido a tipo 'object'). ¿El haber imputado previamente los NA a cero (0),
+¿tendrá o no implicaciones una vez aplicado StandardScaler()?
+
+Tipo de problema:
+- Serie Temporal: descartada, pocos datos, poca resolución.
+- Problema de clustering: no necesito 'target'.
+- Problema de regresión: Opcion C. Problema: hay tantas variables relacionadas con la incautación de drogas, habría que generar una para el target que
+englobase los 'Count of Event' con los 'Sum Qty (kg)'. No creo que sea recomendable usar una variable artificial como target.
+- Problema de clasificación (multi): Opción D. Problema: muy probablemente, las variables que más influencia tenga, posiblemente sean 'latitude' y 
+'longitude'. Quizá habría que eliminar estas variables para el modelo y dar prioridad a las relacionadas con las sustancias estupefacientes.

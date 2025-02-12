@@ -1,0 +1,78 @@
+La geografía del transporte. Historia y evolución de la globalización. Primeros barcos portacontenedores.
+
+El transporte forma parte indispensable de la economía a nivel global, permite crear conexiones entre regiones y actividades económicas. Se compone de modos, infraestructuras, redes y flujos. La propia geografía aparece como una fuerza generadora capaz seguir modelando el transporte a pesar de los avances tecnológicos, sociales o económicos.
+
+El propósito del transporte es trascender el espacio, modelado por restricciones humanas y físicas: tiempo, distancia, divisiones administrativas y topografía. De la movilidad obligada de un trabajador en el sistema de transporte público a los barcos mercantes repletos de contenedores cruzando el Océano Pacífico como parte de una transacción internacional, ambos dos deben regirse por las limitaciones geográficas y topográficas del entorno.
+
+Se han realizado estudios del impacto del efecto de la distancia en el transporte de mercancías [citar] y su propensión al escalado de la economía y masificación del transporte que permite ahorrar costes en el transporte mediante el aumento de la capacidad de mercancía movilizada en un solo viaje. [Revisar]. La contenerización ofrece una ventaja única debido a su tamaño pequeño y estandarizado [incluir norma ISO y definición 20 feet] que suele transportar, de media, entre 20 y 25 toneladas [Citar].
+
+Existen distintos patrones de flujos espaciales, aunque para el objeto de estudio, se muestra un interés especial en los flujos internacionales (a nivel marítimo) y, en menor medida, aquellos que conectan productores con consumidores [citar]. Hay que tener en cuenta que la movilización de estos bloques de contenedores se deben al desarrollo del comercio mundial. Entidades y bloques comerciales como la Unión Europea, acuerdos como el NAFTA o la relación histórica entre metrópolis y colonia desde una perspectiva histórica. 
+
+Los elementos clave del transporte de mercancías, y en extensión del comercio mundial, están vinculados a procesos históricos, efectos multiplicadores en la economía (factores en la producción e introducción de bienes y servicios de alto valor añadido, economía de escala, especialización de la región), cohesión social, gobernanza política y externalidades medioambientales. [REvisar, igual toca eliminar].
+
+En origen, este trabajo se planteó desde una perspectiva de la teoría de grafos, pero la imposibilidad de obtener una foto completa del escenario, desestimó dicha idea. Por lo que se centró en los puntos de interoperabilidad de zonas de demanda. O en otras palabras, los puertos de destino de los flujos de mercancía a nivel marítimo.
+
+El sistema de transportes de mercancías se compone de nodos (puertos de origen y destino), redes (caracterizadas por su conectividad y su capacidad) y la demanda. La demanda (volumen y frecuencia) se relaciona con los nodos por su situación relativa a nivel geográfico y con las redes por medio de las infraestructuras. Bien es cierto que un océano no tiene las infraestructuras que puede tener el transporte terrestre (autopistas, líneas de ferrocarril, etc), pero el volumen de demanda determina la extensión del puerto, de sus dársenas y de las zonas de carga y descarga de la estiba.
+
+Más estudios sobre la Geografía del Transporte en [citar dapted from B. Hoyle and J. Smith (1998) “Transport and Development: Conceptual Frameworks”, in B. Hoyle and R. Knowles, Modern Transport Geography, 2nd Edition, London: Wiley, p. 17.]
+
+Revisar [Source: adapted from OECD (2009) “Applications of Complexity Science for Public Policy: New Tools for Finding Unanticipated Consequences and Unrealized Opportunities”, Global Science Forum.]
+Sobre Sistemas Complejos y Transporte.
+
+A nivel geográfico, los situación de los puertos es un elemento dominante en la estructura de las redes marítimas [citar]. Este conocimiento permite intuir ciertos patrones y tomar determinadas decisiones a la hora de modelar un problema como el del trabajo presente. Este, junto con la mayor o menor facilidad de adquirir datos de alto valor para el trabajo, es esencial para decidir a qué cosas renunciar o descartar del objeto de estudio.
+
+El conocimiento de las masas de agua y, en particular de las corrientes marítimas así como de las flujos eólicos, permite estimar las conexiones marítimo-mercantiles históricas así como el periodo de un viaje. No solamente esto, los antiguos navegantes conocedores del viento a lo largo de la navegación a vela (Edad Moderna, siglos XV-XVIII) permitieron conformar las rutas mercantiles que, en muchos casos han permanecido prácticamente inalterables.
+
+[Rutas Maritimas, 1912]: Source: U.S. Hydrographic Chart #1262, 1912. W.S. Morison.
+
+Geografía económica (Actividades y sus localizaciones), Geografía comercial (transacciones) y la Geografía del Transporte (flujos y circulación) se interseccionan en el espacio.
+
+Centros financieros globales: Source: Z/Yen Group, Global Financial Centers Index, 2021.
+Note: The index considers five major factors; human resources, the business environment, market access, infrastructure (e.g. real estate), and general competitiveness.
+Economic Output of Global Metropolitan Areas: Source: “Global MetroMonitor 2012: Slowdown, Recovery, and Interdependence” (Washington: Brookings Institution).
+
+Logistics Performance Index: https://transportgeography.org/contents/chapter7/logistics-freight-distribution/logistics-performance-index/
+
+La globalización ha servido como vehículo para el incremento del valor añadido (R&D, Costos de producción, transporte de mercancías y sostenibilidad).
+------------------------------------------
+Las rutas unen localizaciones. Esto es algo menos evidente en los corredores marinos. Las rutas refuerzan corredores comerciales o la transacción de conocimiento y desarrollo tecnológico.
+El transporte amplifica el impacto en las organizaciones espaciales. A lo largo de la historia, las redes de transporte han estructurado el espacio a distintos niveles. El transporte marítimo se beneficia de la globalización y apoya la mayoría de flujos debido a su escala de servicios.
+
+Polos de la economía global: Norteamérica, Europa y Este Asia-Pacífico.
+
+Datos Migración neta global: Source: UNEP (2018): The UNEP Environmental Data Explorer, compiled from World Population Prospects, the 2012 Revision (WPP2012), United Nations Population Division. United Nations Environment Programme.
+
+La teoría de la localización tiene a tener un impacto explícito o implícito atribuido al transporte dado que la acesibilidad es un factor importante tanto para las preferencias de corporaciones e individuos [citar]. Las situaciones de los puertos buscan reducir los costes de transporte (en largas distancias) y son reflejo de patrones de comercio a escala global. La relación entre el transporte y la localización de los puertos es dinámica: puede variar según las circunstancias económicas y sociopolíticas. [citar].
+
+Teoria de la localización: citar [Source: adapted from R.W. McQuaid et al (2004) The Importance of Transport in Business’ Location Decisions, Department for Transport.]
+Principales puertos de contenedores: [Source: data collected from port authorities and regional port associations. Only consider ports with traffic above 500,000 TEU in 2020.]
+
+--------------------------------------------
+Infraestructuras de transporte con alta densidad así como redes altamente conectadas suelen asociarse a altos niveles de desarrollo.
+Dimensión geográfica: acceso a una base de mercado más amplia. También influye en la localización de las actividades económicas y en su impacto en el valor del terreno. El transporte conecta los factores de producción en una red compleja de relaciones entre productores y consumidores.
+
+La importancia histórica de los puertos marítimos ha perdurado. Proporcionaron el temprano desarrollo del comercio internacional a través de los imperios coloniales. Estaban limitados por el acceso por tierra. En el perio de la Revolución Industrial, muchos puertos se reconvirtieron en plataformas industriales. COn la globalización y la contenerización, los puertos marítimos incrementaron su importancia en el comercio global y la cadena de suministros. El manejo de los cargueros por los puertos comerciales refleja la complejidad económica del interior del país. Economías simples (poco desarrolladas) están relacionadas con los 'bulk cargoes', mientras que las economías más complejadas (desarrolladas) generan más flujos de contenedores. El desarrollo tecnológico y comercial han incentivado una gran confianza en los océanos como espacio económico y de circulación.
+
+[Ríos y canales. Excluir]
+
+El desarrollo de los puertos de contenedores, ha sido de interés estratégico como herramienta de integración en la economía global (ejemplo: China). Aparentemente existe una relaciób directa entre exportaciones y volumen de puertos de contenedores. Aparentemente, el aumento de la flota de contenedores ha sido 3 a 4 veces el aumento de la tasa de PIB (* revisar), subrayando un efecto multiplicador entre crecimiento económico y comercio con contenedores. Sin embargo, este efecto multiplicador ha reculado desde 2009.
+
+Compañía neerlandesa de las Indias Orientales: Source: Parthesius, R. (2010) Dutch Ships in Tropical Waters: The Development of the Dutch East India Company (VOC) Shipping Network in Asia 1595-1660, Amsterdam: Amsterdam University Press.
+Ciclos de innovacion: Source: Adapted from Hargroves, K. and M. Smith (2005) Natural Advantage of Nations: Business Opportunities, Innovation and Governance for the 21st Century. London: Routledge.
+Ciclo de contenerización: Adopción (1968-1992), Aceleración (1993-2001), Pico de crecimiento (2002-2008), Madurez (2009-Actualidad)
+
+Coste de transporte: Un servicio entre América del Norte y puertos de Asia-Pacífico puede llevar 12 días y una llamada a puerto es realizada cada dos días (Port Call frequency). Para asegurar un hueco en el cargamento del barco, el propietario de la carga debe avisar con al menos cinco días de antelación. Gracias a la economía de escala, cuanto más grande es el barco, el coste por unidad disminuye.
+
+Coste de importe de un 20-ft Container (2015): Source: World Bank, Doing Business project.
+Note: Cost measures the fees levied on an imported 20-foot container in U.S. dollars (USD). They include costs for documents, administrative fees for customs clearance and technical control, customs broker fees, terminal handling charges and inland transport. The cost measure does not include tariffs or trade taxes as well as maritime shipping costs.
+* Fricciones en funciones de la distancia: sin efectos, efecto lineal, efecto no lineal, transbordos.
+
+La demanda de transporte que coincide con el suministro de servicios de transporte genera tráfico en la correspondiente red de infraestructuras de transporte (barcos, camiones, trenes, etc). La capacidad de tráfico es normalmente mayor que la demanda real de transporte, debido a que el uso de vehículos rara vez alcanza el 100 %. Esto implica que haya veces que los camiones vayan vacíos o, en nuestro caso, una infrautilización en la capacidad de barcos contenedores que zarpan sobre una ruta caracterizada por los flujos de contenedores no balanceados (*). El transporte marítimo suele verse influido por la capacidad de los terminales de la infraestructura.
+
+Tipos de demanda de transporte: Constante, Determinista, Estocástica
+Capacidad estática y dinámica de la infraestructrua de transporte
+Factores detrás de la demanda de transporte de cargamento: Source: adapted from Cambridge Systematics (1996) Quick Response Freight Manual, Federal Highway Administration, Office of Planning and Environment Technical Support Services for Planning Research.
+
+--------------------------------------
+
+
