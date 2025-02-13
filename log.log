@@ -540,3 +540,4 @@ Tipo de problema:
 englobase los 'Count of Event' con los 'Sum Qty (kg)'. No creo que sea recomendable usar una variable artificial como target.
 - Problema de clasificación (multi): Opción D. Problema: muy probablemente, las variables que más influencia tenga, posiblemente sean 'latitude' y 
 'longitude'. Quizá habría que eliminar estas variables para el modelo y dar prioridad a las relacionadas con las sustancias estupefacientes.
+
