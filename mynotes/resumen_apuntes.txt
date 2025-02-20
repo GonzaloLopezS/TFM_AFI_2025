@@ -74,5 +74,66 @@ Capacidad estática y dinámica de la infraestructrua de transporte
 Factores detrás de la demanda de transporte de cargamento: Source: adapted from Cambridge Systematics (1996) Quick Response Freight Manual, Federal Highway Administration, Office of Planning and Environment Technical Support Services for Planning Research.
 
 --------------------------------------
+Modos de Transporte: son componentes esenciales del sistema de transporte. Se agrupan principalmente en: terrestres, acuáticos y aéreos.
+
+Transporte Marítimo: se basa en flotabilidad y fricción limitada. El transporte marítimo es el modo más efectivo para transportar grandes cantidades de mercancías sobre largas distancias. Se compone de océanos, costas, mares, lagos, ríos y canales. Dadas las características de la actividad económica, se suelen dar en el Atlántico Norte y en el Pacífico Norte.
+
+Aun así, con la contenerización, el transporte marítimo se ha convertido en el eje de la globalización, permitiendo el comercio de una gran variedad de bienes y materias primas.
+La contenerización ha sido un vector potente de integración intermodal, permitiendo a los sistemas de transporte marítimo y terrestre interconectarse.
+
+El transporte marítimo ofrece costes más bajos, es útil para las largas distancias.
+
+Main Freight Modal Options: Source: adapted from W.J. DeWitt. Freight Transport & Modes in Global Logistics & Supply Chains.
+
+Los primeros datos de comercio marítimp datan del 3200 a.C. cuando los antiguos egipcios navegaban las costas y riberas. Se ha documentado que los egipcios llegaron a comerciar hasta Sumatra (* revisar), representando una de la rutas marítimas más largas de la época. En el siglo X, los mercaderes chinos frecuentaban tanto el Mar de la China Meridional como el Océano Índico, estableciendo una red de comercio regional.
+
+Con el desarrollo de la máquina de vapor a mediados del siglo XIX, las redes comerciales se expandieron considerablemente a medida de que los barcos no dependían de los patrones de viento. También, con la apertura del Canal de Suez, en la segunda mitad del siglo XIX se vio una intensificación del comercio. En el siglo XX, el transporte marítimo creció de manera exponencial a medida de que el comercio internacional y el marítimo se interrelacionó. Como todo tipo de transporte, el transporte marítimo es una demanda derivada que existe para fortalecer las relaciones comerciales.
+
+Existe un nivel de reciprocidad entre el comercio y las capacidades de navegación marítima. A fecha de 2018, el comercio marino supuso el 80% del volumen del comercio mundial y un 70% de su valor. El transporte marítimo es una de las industrias más globalizadas en propietarios y operaciones.
+
+El transporte marítimo opera sobre su propio espacio, el cual es concomitantemente geográfico por sus propiedades físicas, estratégico por su control y comercial por su uso. Mientras que las condiciones geográficas suelen ser constantes en el tiempo (salvo patrones del clima), la estrategia y las consideraciones comerciales son mucho más dinámicas. La noción de transporte marítimo permanece existente gracias a itinerarios regulares o rutas marítimas.
+
+Rutas marítimas. Corredores que buscan evitar las discontinuidades del transporte de tierra mediante la conexión de puertos. Las rutas marítimas son función obligatoria de puntos de paso obligatorios, restricciones (costas, vientos, corrientes marinas, profundidad, arrecifes, hielo) y fronteras políticas.
+
+Entre los últimos avances tecnológicos, se ha buscado incrementar el tamaño, la automatización y la especialización de los buques. Esto ha requerido el desarrollo de instalaciones de terminales portuarias masivas.
+
+El crecimiento de la importancia de la navegación con contenedores también está asociada al riesgo de inmovilización de barcos (ship assets).
+
+La importancia y configuración de rutas marítimas ha variado con el desarrollo económico y las mejoras técnicas. La contenerización modificó la configuración de rutas de mercancías con servicios innovadores. Antes de la contenerización, la carga y descarga de un barco era una tarea costosa en tiempo y dinero, y el barco solía permanecer más tiempo amarrado que en altamar. Antes, el tiempo de navegación solía representar el 25% del total anual, ahora ronda el 70%. Con operaciones portuarias más rápidas y baratas, nuevas rutas han emergido como configuración de las redes de transporte marítimo de contenedores.
+
+Tráfico marítimo: suele estar orientado al transporte de mercancías (debido a la economía de escala). Están vinculados con la distribución geográfica de los recursos, implicando que los lugares de extracción difieren de los de consumo. Debido a ello, grandes cantidades de barcos mercantes deben transportar grandes cantidades de mercancías sobre largas distancias. Outsourcing, offshoring y liberalización comercial resultaron en el transporte de mercancías a lo largo de grandes distancias, suponiendo el crecimiento de la navegación con contenedores.
+
+Mejoras técnicas: las terminales marítimas y los barcos se han convertido en más eficientes en terminos de su rendimiento y de su capacidad para manejar una gran variedad de barcos cargueros (contenedores, de GNL, de bienes refrigerados) permitendo el comercio de larga distancia.
+Economía de escala: el crecimiento en el tamaño de los barcos ha permitido que el transporte sea más eficiente en términos de coste. Tendencia fortalecida por el fortalecimiento de la contenerización.
+
+El transporte marítimo se suele medir en toneladas en peso muerto, la cual hace referencia al cargamento que se podría cargar sobre un barco "vacío" sin exceder sus limites de diseño operacional. Este limite se suele identificar como la línea de flotación, la cual es el máximo calado del barco sin incluir la carga (pero incluyendo fuel y lastre de agua -ballast water-). El cargamento mar´timo convencionalmente se considera en dos mercados principales: bulk cargo (commodities) y break-buk cargo (goods).
+
+Geográficamente, el tráfico marítimo ha evolucionado considerablemente sobre las últimas décadas, especialmente a través del crecimiento entre Asia-Europa y comercio transpacífico. Las ventajas del transporte marítimo no descansan sobre su velocidad, sino sobre su capacidad  su continuidad en el despliegue de servicios.
+
+La flota mundial de barcos mercantes está provista de unos 55.000 barcos registrados de más de 1.000 toneladas.
+Changes in Global Trade Flows: Source: Seaborne trade data adapted from UNCTAD, Review of Maritime Transport.
+Tipos de Cargamentos Marítimos: Source: MarineTraffic, 2018. Note: Port time is defined as the difference between the time the ship enters the port limits (excluding anchorages) and the time that the ship exits those limits. Irrespective of whether the ship’s visit is related to cargo operations or other types of operations (e.g. bunkering, repair, maintenance), port time includes the time prior to berthing, the time spent at berth (dwell and working times), and the time spent undocking and transiting out of port limits.
+World Seaborne Trade by Cargo Type, 1970.2021: Source: UNCTAD Review of Maritime Transport, various years. Major dry bulks are iron ore, grain, and coal.
+
+La industria naviera es una de las más globalizadas. Suele ser lenta (15 nudos marinos) y suelen haber retrasos en los momentos de carga y descarga. Mejoras:
+- Velocidad y tamaño: cada vez que la dimensión de un barco se dobla, su capacidad se triplica. Los petroleros más grandes ~500.000 DWT, mientras que los cargueros pueden alcanzar los 350.000 DWT (la mayoría suelen estar ebtre 100.000 y 150.000 DWT). Un barco suele navegar de media a 15 nudos (28 km/h: 575 km en un día).
+- Especialización y diseño: la economía de escala suele derivar en una especialización y segmentación del mercado desde que muchos barcos están diseñados para llevar un solo tipo de mercancía.
+
+World Merchant Fleet, 1970-2020: Source: Lloyd’s Register of Shipping. Statistical Tables, World fleet statistics and Equasis.
+Vessel Size Groups: Source: UNCTAD (2000) Review of Maritime Transport. 
+Flexibility and Specialization: Source: Adapted from J. Woxenius (2010) “Flexibility vs. Specialisation in European Short Sea Shipping”, International Association of Maritime Economists, Lisbon, Portugal.
+
+
+
+Contenerización: se refiere al incremento y generalización del uso del contenedor como unidad de carga para el transporte de cargamento. Adoptado como modo de distribución de carga, se puede distribuir espacialmente a medida que aumenta el sistema de transporte.
+
+Ventajas y desafíos de la contenerización:
+- Estandarización, Flexibilidad de Uso, Economía de escala, velocidad operacional, seguridad y almacenamiento.
+La contenerización implica un gran consumo de espacio en la terminal. Por ejemplo, para cargar o descargar un contenedor de 5.000 TEU se requieren 12 hectáreas de espacio. 
+
+Otros: coste de infraestructuras y de apilamiento, robos y pérdidas, viajes vacíos, comercio ilícito*
+Por su carácter confidencial, el contenedor sirve como instrumento para el comercio ilícito (contrabando, sustancias ilegales, armas...) a nivel global, solamente entre el 2% y el 5% de los contenedores manejados en un puerto son inspeccionados de forma manual, dando oportunidad al comercio ilícito. En Europa esto baja al 1%. La inspeccion manual requiere de recursos físicos como áreas de inspección y recursos profesionales. Por lo tanto, decidir si un barco debe ser inspeccionado es el resultado de consideraciones tales como su origen, lo transportado, el propietario del cargamento, del barco y demás.
+
+En 2003, tras los requerimientos de inspección de EE UU, la organización marítima internacional (IMO) introdujo regulaciones con respecto a la seguridad en los puertos. En EE UU se aplica la regla de las 24 horas en las que todos los barcos destinados a EE UU deben recibir el visto bueno de las autoridades de EE UU 24 horas de zarpar.
 
 

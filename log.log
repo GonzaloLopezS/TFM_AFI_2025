@@ -541,3 +541,19 @@ englobase los 'Count of Event' con los 'Sum Qty (kg)'. No creo que sea recomenda
 - Problema de clasificación (multi): Opción D. Problema: muy probablemente, las variables que más influencia tenga, posiblemente sean 'latitude' y 
 'longitude'. Quizá habría que eliminar estas variables para el modelo y dar prioridad a las relacionadas con las sustancias estupefacientes.
 
+13/02/2025:
+- Modelo exclusivo para datos de USA
+- CBP Drugs Dosage Value and Weight: https://www.cbp.gov/newsroom/stats/cbp-drugs-dosage-value-and-weight
+- Ver info: https://explore.dot.gov/views/TEUMonthlyContainerPort/TEUbyPortDateandType?%3Aembed=y&%3AisGuestRedirectFromVizportal=y
+- Buscar informacion de webs de cada puerto:
+- Charleston, SC: https://scspa.com/wp-content/uploads/gl078-pc-teu-history.pdf
+https://scspa.com/wp-content/uploads/teu-history.pdf
+
+- Houston, TX: https://porthouston.com/wp-content/uploads/2025/01/Container-Volume-TEU-stats-in-depth-December-2024.pdf
+
+18/02/2025:https://www.portoflosangeles.org/business/statistic
+Ejemplo: https://www.portoflosangeles.org/business/statistics/container-statistics/historical-teu-statistics-2024
+
+Info: https://ustradenumbers.com/port/port-of-los-angeles/
+
+Para el puerto de Long Beach: datos descargados de: https://polb.com/business/port-statistics#teus-archive-1995-to-present
