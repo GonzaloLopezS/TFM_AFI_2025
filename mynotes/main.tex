@@ -9,142 +9,252 @@
 
 \maketitle
 
+\section{Resumen}
+
+\section{Abstract}
+
+	\subsubsection{Palabras clave}
+	Transporte marítimo, Geografía del Transporte, Geografía Marítima, Drogas, Estupefacientes, Narcotráfico, Machine Learning, Análisis de Datos, Clustering.
+
 \section{Introducción}
-Historia del transporte marítimo. Transporte marítimo de mercancías. Logística.\
-Comercio mundial, nodos y puertos marítimos.\
-La importancia económica y geopolítica del transporte fue reconocida de forma muy temprana. Desde la Antigüedad el transporte marítimo ha sido la forma más común de transporte de cargamentos y personas y, una ventaja, que no se transformaría realmente hasta la llegada de la Revolución Industrial. Los grandes imperios comerciales se establecieron a partir de la conformación de redes comerciales a nivel oceánico. A partir del siglo XIII comenzaron importantes redes regionales de comercio marítimo (el Mediterráneo Occidental, la Liga Hanseática en el Mar del Norte y el Báltico), el descubrimiento de los patrones de viento circulares en el Atlántico Norte por parte de los navegantes portugueses en la primera mitad del siglo XV marcaron el inicio de la expansión colonial europea. Estos estudios perimitieron el desarrollo de rutas comerciales confiables y de larga distancia. Por otro lado, a partir del siglo XIX, el avance en los materiales de construcción como el diseño monocasco o las juntas de acero, permitieron un aumento en la velocidad de las naves de un 50 por ciento [Revisar el simbolo] entre 1750 y 1830. Más adelante sería la entrada en el mercado de los barcos de vapor.\
 
-El primer barco que transportaba contenedores data de 1956 cuando el Ideal-X [citar: Source: Maersk/SeaLand.] zarpó de Nueva York rumbo a Houston y dio inicio a la era de la contenerización que se empezó a consolidar a partir de la era post-fordista (a partir de la década de 1970). Esta contenerización permitió un ahorro de tiempo en la carga y descarga en puertos de entre el 50 -por ciento- y el 70 -por ciento-. A nivel de valor, la carga y descarga de un contenedor costaba de media 15 centavos frente a los 5 dólares americanos de un buque mercante tradicional. En 1960, la Autoridad Portuaria de Nueva York y Nueva Jersey vislumbraron el potencial de la contenerización y mandaron construir la primera terminal especializada en carga y descarga de contenedores próxima al Puerto de Newark (Port Elizabeth Marine Terminal) [citar]. A partir de la década de 1980, los servicios especializados de barcos contenedores se convirtieron en el estándar dominante del comercio mundial, transformando la industria marítima. La revolución del contenedor fue concomitante a los procesos de globalización que se darían en las décadas posteriores: participando en el transporte de bienes manufacturados, componentes y materias primas.\
+	\subsection{Antecedentes}
+	Importancia del transporte marítimo en el comercio global y su relación con el tráfico de drogas.
+	Otros proyectos.
 
-- citar a [Source: adapted from D.M. Bernhofen, Z. El-Sahli and R. Kneller (2013) Estimating the Effects of the Container Revolution on World Trade, Lund University, Department of Economics, Working Paper 2013:4.]\
+	\subsection{Motivación del proyecto}
+	% Descripción del problema
 
-Tráfico de productos ilegales. Qué se considera como droga. La lucha contra el narcotráfico.\
-¿Cómo se mide la cantidad de mercancías? En containers (TEU), en tonelaje total transportado, en
-cuantía del valor de la mercancía. ¿Cuál se adaptará mejor al problema a modelar?\
+	\subsection{Objetivos}
+	De acuerdo con los expuesto en la sección "Motivación del proyecto", este trabajo se va a encargar de:
 
-\subsection{Motivación del proyecto}
-Interés en la Geografía como elemento de estudio y su comprensión para generar valor con los datos estudiados a través de ella.
-Origen de webs de trazabilidad de barcos para comercio mundial (de origen privado), geopolítica y de alto interés.
+	1. Agrupar puertos en regiones geográficas y metropolitanas próximas denominadas "hubs portuarios" a partir de señales de comunicaciones enviadas desde barcos próximos.
 
-// Fuentes privadas vs fuentes públicas. Las fuentes privadas ofrecen servicios mediante pagos, viable a nivel empresarial, para empresas relacionadas con el comercio, los procesos logísticos o la especulación financiera. Los datos abiertos tienen un enfoque más de información transparente sobre resultados de administraciones. Debido a las restricciones en relación a los datos no abiertos, se trabajan a partir de los datos abiertos, en particular, con aquellos relacionados con el transporte de mercancías. Para el caso de datos brutos relacionados con la incautación de drogas, solamente están disponibles por agencias estatales o entidades públicas.
+	2. Mostrar el comportamiento de distintos puertos con respecto al volumen de droga incautada por tipo de droga.
 
-// Conocimientos básicos sobre la Geografía del Transporte. El libro que me llevó a realizar este estudio.
-Gran parte del trabajo se basa en el interés por la Geografía Económica y la Geografía del Transporte. Trabajos como el realizado por [citar trabajo Jean-Paul Rodrigue] ha servido como acicate para aunar y profundizar conocimientos en este campo y aplicarlo a una temática tan sensible como es el tráfico de estupefacientes. El conocimiento del tema más la posibilidad de adquirir una gran cantidad de datos permite realizar estudios como éste para confirmar o desmentir ciertas conjeturas formuladas a priori. En particular la siguiente: Dada la actividad económica en puertos -entendida como el trasiego de contenedores-, ¿es posible estimar el volumen de incautación de droga? Más adelante se verá que esta pregunta envuelve algunas particularidades y limitaciones dada la variedad entre las fuentes (recordemos de que se tratan, en su mayoría, de informes a nivel de gobiernos estatales o federales, ya que los datos de grandes entidades tipo OMS, OCDE o Banco Mundial carecen del nivel de desagregación necesario) [citar].
+	3. Estudiar si el comportamiento puede ser caracterizado por factores periódicos en forma de serie temporal para un intervalo de 75 meses (6 años y 1 trimestre).
+	
+	4. Determinar si a partir de la actividad en un puerto comercial, dado volumen de carga y descarga en ese puerto, se podría estimar la cantidad de droga incautada en ese mismo puerto.
 
-// [Leer]: https://oecdstatistics.blog/2024/03/21/monitoring-global-trade-using-data-on-vessel-traffic/
+	# Conocimientos: Geografía del Transporte, Geografía Marítima, Estadística Descriptiva, Series Temporales, Clustering, Visualización-
 
+	\subsection{Enfoque y Metodología general}
 
+	\subsection{Estructura del Documento}
 
-// Guerras del opio y posible entrada de precursores desde China. Estados Unidos como principal demanda en el mercado. Origen y desarrollo de las triadas chinas.
-
-// Flujos comerciales: un problema de divergencias. Rutas coloniales históricas: Compañía neerlandesa de las Indias Orientales. Los puertos con mayor volumen de tráfico (en los últimos meses y en los últimos años). NAFTA. Manufacturas, Áreas Metropolitanas Globales, Índice Logístico(*).
-
-
-
-\subsection{Antecedentes}
-Otros trabajos (¿mencionar TFM de Juande?), estudios pasados sobre geografía del transporte.
-Las diferentes aproximaciones en la lucha contra el narcotráfico en lugares de destino. Enfoque particular para Estados Unidos de América (EE UU), Reino Unido (UK) y la Unión Europea.
-SOTA in Drug Seizure and Maritim Traffic and Trade.
-
-// Los puertos más transitados del mundo.
-
-// ¿Qué es el TEU (unidad de medida)?
-El Contenedor: una caja de metal con medidas estandares en las que el cargamento se encuentra empaquetado y configurado para los modos de transporte (ver definición ISO 668). Está diseñado para ser transportado y manejado para transferencias intermodales a altas velocidades en grandes unidades económicas. Funciona, por tanto, como unidad de carga (su referencia es la caja de 20-ft, 8'6" de alto x 8" de ancho x 20-ft long. También conocido como 1-TEU (Twenty-Foot Equivalent Unit).
-
-\section{Descripción del problema}
-\subsection{Diseño del Modelo.}
-Para la puesta a punto del conjunto de datos a tratar, primero hubo que implementar un desarrollo de integración de los mismos provenientes de distintas fuentes.
-En términos generales, hubo que conseguir un compromiso entre aquellos datos relacionados con el transporte de mercancías por medio marítimo con los datos de incautaciones de drogas realizados por las distintas agencias. Objetivo nada sencillo debido a la heterogeneidad de fuentes y de ámbitos administrativos. Debido a que muchos de los datos disponibles son provistos por entidades nacionales (agencias gubernamentales, estados, departamentos asociados...) existía un desajuste entre las diversas estructuras originales de los datos. En otras palabras, no existía ni una fuente común para todos los datos ni un armonizador de los mismos. En particular, para la ingesta de datos relacionados con la incautación de tráfico de drogas, la disponibilidad de los mismos se encuentra en las webs de los departamentos, agencias de aduanas y ministerios del interior de los distintos gobiernos estatales, con la ventaja de tratarse de datos abiertos al público, estructurados y dimensionados. Por su parte, para los datos de transporte marítimo, en un primer momento se intentó obtener los datos de distintas agencias privadas dedicadas al comercio global, con la contraparte de no tratarse de datos abiertos. Esto último hizo replantear la forma de capturar los mismos: hubo que renunciar a un modelo que tuviese en cuenta la estructura de grafo del transporte, de hallar flujos de transporte o las rutas (origen-destino) portuarias más comunes. Al igual que en el caso de las incautaciones de drogas, hubo que hacer acopio de conjuntos de datos de fuentes de datos abiertos (otra vez: instituciones y entidades gubernamentales, agencias de meteorología, ministerios de transportes...)
-
-\subsection{Construcción del dataset final de entrada.}
-Una vez se localizaron las fuentes y los datos, se procedió a su descarga. Las características de los mismos, su rango -no solo a nivel temporal, sino también intravariable-, su granularidad o nivel de detalle, devino en un proceso alargado de integración y estandarización acorde a las necesidades del problema. Esa integración y estandarización debía hacerse a nivel geográfico: cuadrar los datos, unidades de medida, granularidad en la ventana de tiempo entre los datos procedentes del gobierno federal de Estados Unidos con los británicos, así como las áreas de cobertura administrativa para distintos niveles y orígenes de datos (CBP: agencia de aduanas de Estados Unidos, hubs portuarios y regiones de autoridad policial en Reino Unido); y a nivel de temática del dato: integrar los datos de transporte marítimo de mercancías en regiones costeras con incautaciones de drogas en regiones donde existen hubs portuarios. Todo este proceso de integración y estandarización desembocó en la construcción del dataset de entrada al modelo de Machine Learning.
-
-
-\subsection{Serie temporal no viable. Emparejamiento de ventanas temporales.}
-Dado el origen diverso de los datos, así como su variabilidad en la granularidad de los mismos, se fue perdiendo detalle a medida que aumentaba el nivel de integración. Es decir, si tenía que integrar dos fuentes de datos con distinto nivel de desagregación, aquella que tuviera menor nivel de la misma, se usaría como base para el resto de fuentes: entre un conjunto de datos con información a nivel diario y otro a nivel anual, tocaría integrar (sumatoria) los diarios hasta convertirlos en anuales y, más adelante, integrarlos con el resto de datos. Hay casos particulares de desagregación como la procedencia del transporte de contenedores, que se pueden colegir cruzando datos entre aquéllos con mayor nivel de detalle, importancia del hub portuario y conocimiento de las dinámicas de la geografía del transporte a nivel marítimo [Citar libro]. En cuanto a la pérdida de detalle de las variables temporales, también había que sumar un desajuste entre el rango de los mismos: mientras unos conjuntos de datos proveen información de las últimas dos décadas, otros (caso CBP drug seizures [citar]) se limitaban a datos posteriores al año fiscal del 2019 (citar). Esta reducción de la ventana temporal, así como una mayor riqueza de los datos en otras variables (tipo de droga incautada, información geográfica de puertos, etc.), no solo desestimó el estudio del problema como uno de series temporales, sino que repensó el uso de la variable temporal como una variable más, a modo de un cuaternión [citar] u otra variable más anexa a la variable geográfica.
-
-\subsection{Detección de hubs portuarios: una primera incursión en modelos de Machine Learning.}
-El acomodo de datos de distinta índole y su integración obligó en parte la búsqueda de una solución de compromiso entre los datos a nivel portuario y las jurisdicciones de agencias de aduanas: la detección de hubs portuarios. Para el caso de los datos de Reino Unido, fue sencillo: la propia fuente de datos incluía una columna denominada 'Port group' que integraba distintos puertos en una misma región [Citar]. En cambio, para el caso de Estados Unidos era más complicado: había que pasar de más de un centenar de grandes puertos de mercancías [citar fuente sobre tipos de puertos] con dos docenas de oficinas de la CBP (Oficina de Aduanas y Protección del Gobierno Federal de Estados Unidos). Para lograr esto se procedió la detección de posibles hubs portuarios en función del número de barcos detectados mediante AIS y tabulados por la NOAA (agencia de meteorología de Estados Unidos) durante una serie de días. Esto último se trató de uno de los procedimientos más complejos y delicados de esta fase de construcción del dataset de entrada. Se estimó (mediante estudios y técnicas de clustering) agrupar las señales de barcos en una treintena de grupos con un centro geográfico que se situaría, en el mejor de los casos, en las proximidades.
-
-\subsection{No todos los puertos, a pesar de su volumen, tenían un emparejamiento claro con la agencia aduanera.}
-A pesar de crear esta figura del "hub portuario", quedaba la parte más importante a la hora de preparar el dataset de entrada: vincular esos hubs portuarios con las agencias de aduanas. En algunos casos, la equivalencia era trivial, en otros la ausencia de equipos de CBP, obligaba, o bien, integrar un hub portuario con otro para incluirlo en el alcance de una agencia (lo cual podía desvirtuar o desnaturalizar el origen del estudio) o bien, eliminarlo directamente (pérdida de posible información que podía ser útil para otros estudios). Se tomó una decisión acorde a la particularidad de cada hub portuario. Dado el fuerte conocimiento en geografía a nivel estadounidense, este proceso se pudo realizar con el máximo nivel de detalle. En cambio, para el caso del Reino Unido, para vincular los hubs con jurisdicciones policiales se realizó una supervisión mediante rastreo en herramientas geográficas, manejo de LLMs y estudio de la administración en el ministerio del interior [Citar fuente mapa regiones policiales UK].
-
-\subsection{Estructura del dataset: pivotar o no las variables relacionadas con la incautación de droga.}
-Por último, para completar el conjunto de datos de entrada del modelo, se fueron realizando procesos de integración de variables (sumatorias) y de relacionar los datasets de distintas temáticas. En otras palabras, dado que se quiere saber la incautación de droga (el tipo de la misma no es relevante) en un hub portuario y se tienen los datos de transporte de contenedores a nivel de puertos, la integración de éstos últimos en hubs portuarios y la relación de los hubs con áreas jurisdiccionales de las distintas agencias encargadas de incautar la droga, se tuvo que realizar un proceso similar a SQL disponible con la librería pandas para cuadrar los datos de distintas procedencias.\
-[[REVISAR]]\
-Una vez obtenido el potencial dataset de partida, hubo que decidir si se tendría un long dataset o uno wide [citar]. Originalmente, el dataset long tenía una estructura de 162656 x 17 variables, muchas redundancias en algunas de las variables. Una alternativa que se barajó fue realizar un pivotaje entre las variables relacionadas con la incautación y volumen de droga: eliminar la variable característica del tipo de droga e integrarla de forma inherente a las variables de incautación y volumen (esta vez particularizadas por el tipo de droga). Esto hubiera dado un dataset con menos observaciones, pero mucho más rico en variables. Uno de los motivos por el que se desestimó fue que esto podía dar mayor relevancia al tipo de droga. Pese a que hay elementos interesantes en favor de ello: la cantidad en kilogramos incautada de un tipo de droga A frente a otro tipo B no sería determinante a la hora de realizar un análisis y que podría inducir a error, quizá si lo fuese su equivalente en valor monetario -pero inviable en términos prácticos- o la suma total de incautaciones (operaciones policiales). [[REVISAR]]\
-
-
-[Realizar dibujo/esquema resumen de la integración de los datos de origen para la generación del dataset de entrada al modelo]
 
 \section{Estado del arte}
 
 Al faltar datos de flujos y vías marítimas, no es trivial hallar la red o grafo mundial de conexiones portuarias.
 
-\subsection{Conocimiento de cuaterniones}
+	\subsection{Literatura sobre el problema}
+	
+		\subsubsection{Estudio de la Geografía del Transporte.}
+		
+		
+		\subsubsection{Estudio sobre dinámicas del narcotráfico}
 
 
-\subsection{Conocimiento de técnicas de Machine Learning}
+	\subsection{Conocimiento de técnicas de Machine Learning}
+	Métodos tradicionales vs Métodos basados en Machine Learning/Data Science.
+	Modelos y técnicas más utilizados en trabajos previos
 
 
-\subsubsection{Series temporales en python: Prophet.}
-La falta de datos a nivel temporal (poco rango y poca resolución) hizo que pronto se desistiese por la implementación de un modelo basado en series temporales.
+		\subsubsection{Series temporales en python: Prophet.}
+		La falta de datos a nivel temporal (poco rango y poca resolución) hizo que pronto se desistiese por la implementación de un modelo basado en series temporales.
 
-\subsubsection{Técnicas de clustering.}
--- Incluir Vectorial K-Means (*)\
-Agrupamiento de los barcos de EE UU mediante técnicas de clustering. Objetivo: hallar punto en el litoral que sirva como "punto de puerto" para los barcos más próximos. Es preferible que se trate de un algoritmo de clustering de tipo jerárquico: para ir aumentando la granularidad basándose en la situación geográfica.
-Algoritmos tipo K-Means o PAM quedan descartados por dos motivos: no son jerárquicos y, sobre todo, su centro de masas tenderá a ser escogido en alta mar (o como punto medio o mediano de los barcos que formen cada clúster).\
+		\subsubsection{Técnicas de clustering.}
+		-- Incluir Vectorial K-Means (*)\
+		Agrupamiento de los barcos de EE UU mediante técnicas de clustering. Objetivo: hallar punto en el litoral que sirva como "punto de puerto" para los barcos más próximos. Es preferible que se trate de un algoritmo de clustering de tipo jerárquico: para ir aumentando la granularidad basándose en la situación geográfica.
+		Algoritmos tipo K-Means o PAM quedan descartados por dos motivos: no son jerárquicos y, sobre todo, su centro de masas tenderá a ser escogido en alta mar (o como punto medio o mediano de los barcos que formen cada clúster).\
+		
+	\subsection{Justificación de las herramientas y tecnologías elegidas}
+	
+	
+\section{Metodología empleada}	
+%Conjunto de métodos y técnicas aplicadas durante un proceso de investigación para alcanzar resultados teóricamente válidos.
+%Sirve como guía de los procedimientos de la investigación
 
-Para los puertos en Reino Unido no hay que realizar ninguna operación de este tipo. Sin embargo, a la hora de relacionar los distintos puertos y áreas portuarias con las regiones de autoridad policial, no es trivial. ¿Realizar embedding que relacione los puertos/ciudades con las regiones policiales?
+	\subsection{Descripción del conjunto de datos utilizado}
+	Para la puesta a punto del conjunto de datos a tratar, primero hubo que implementar un desarrollo de integración de los mismos provenientes de distintas fuentes.\
+	Para ello, hubo que conseguir un compromiso entre aquellos datos obtenidos del transporte de mercancías en puertos marítimos con los datos oficiales sobre incautaciones. La clave para ello estuvo en estandarizar el intervalo y el nivel de detalle en el eje temporal (meses para los últimos seis años fiscales en EE UU) y en el nivel geográfico.\
+	
+		\subsubsection{Origen de los datos}
+		%Primera aproximación al problema
+		Originalmente, el objetivo del trabajo buscaba relacionar el comercio global y sus flujos regionales con el tráfico de drogas. Debido a las complejidades a la hora de acceder a estos datos y que estos dependen de agencias privadas (bajo licencia), se replanteó el problema de tal modo que se trabajasen sobre puertos destino en Estados Unidos (datos abiertos) y no sobre un modelo de grafos basado en las rutas marítimas de transporte. La ventaja de los datos provistos por Estados Unidos (ya sea a nivel federal, nivel estatal o local) es que éstos suelen ser de buena calidad.\
+		
+		%Fuentes, Bases de Datos, Informes...
+		Los datos de transporte de contenedores se obtuvieron de las distintas páginas webs informativas de cada autoridad portuaria. Accediendo a las secciones de informes estadísticos se pudieron obtener datos a nivel mensual sobre carga y descarga de contenedores, así como exportaciones e importaciones. Todos aquellos puertos de EE UU que proveyeron esta información fueron considerados objeto de estudio. Por otro lado, los datos referidos a incautaciones de drogas se obtuvieron los informes estadísticos de incautación de droga provistos por la CBP (Agencia de aduanas de Estados Unidos) para las distintas oficinas regionales a nivel mensual para los años fiscales 2019 a 2024.\
+		
+		Una vez se localizaron las fuentes y los datos de interés, se procedió a su descarga. La construcción del dataset de entrada se trató de un problema de integración de datos. Se usó tanto la fecha (en formato "Año-mes") como la región geográfica como clave primaria para unir los datos de trasiego de contenedores en un puerto como de incautaciones de drogas para oficinas del CBP asignadas para su hub portuario correspondiente. Ya que a nivel temporal, el nivel de detalle que se pudo conseguir fue a nivel mensual, se obtuvieron de partida setenta y cinco meses de observaciones (equivalentes a seis años más un trimestre debido a que los años fiscales en Estados Unidos comienzan el 1 de octubre del año natural anterior).\
+		
+		Dado que el CBP se trata de una agencia federal de Estados Unidos,se evitó el inconveniente que pudiera acarrear si cada estado tuviese su agencia propia y no existiese una estandarización de los procedimientos y oficinas. Todos aquellos puertos que ofrecieron datos de calidad en relación a operaciones sobre contenedores (total de TEUs, Importaciones Totales, Exportaciones Totales, Contenedores Vacíos y Contenedores Llenos) y que resultasen de interés para el trabajo, fueron incluidos.\
+		
+		%Detección de hubs portuarios: Clustering.
+		Como se mencionó en la sub-sección \cite[Técnicas de clustering]{keylist}, originalmente, para simplificar el número de puertos y poder asignarlos a las oficinas del control de aduanas de Estados Unidos, se procedió a usar técnicas de Clustering (K-Means) para poder estimar en qué regiones geográficas se podían agrupar aquellos puertos que fueran cercanos geográficamente entre sí. Pese a ello, dadas las circunstancias y adversidades durante el desarrollo del trabajo, se simplificó bastante a la hora de integrar los datos. El resultado fue la asignación de coordenadas esféricas a partir de las señales emitidas por los barcos mercantes y detectadas por la agencia meteorológica de EE UU (NOAA, por sus siglas) durante quince días del mes de septiembre de 2024. Estas coordenadas sirvieron para estimar de forma aproximada barcos atracados en puertos próximos entre sí y, en último término, asignarlas a oficinas del CBP. Gracias al conocimiento geográfico de Estados Unidos, no fue demasiado complicado asignar los hubs portuarios a las agencias aduaneras.\
+		
+		%Asignación de un hub portuario con una agencia aduanera.
+		Tras la generación de la variable 'Hub Portuario' que pudiera agrupar puertos cercanos entre sí (caso más paradigmático, el caso de estudio del Área Metropolitana del Gran Los Ángeles agrupando los puertos de Los Ángeles y Long Beach), se les asignó a cada oficina aduanera correspondiente del CBP. Pese a que en las fuentes originales se dice que en el caso de los datasets referidos a "Nationwide Drug Seizures: Los agentes y oficiales del CBP prohiben la entrada y salida de productos narcóticos ilícitos a través de sus fronteras y en los puertos de entrada" \cite[CBP Nationwide]{}.\ Esto quiere decir, por un lado, que son datos centrados en parte a incautaciones en puertos -útil para el planteamiento del problema- frente a otras fuentes de datasets del mismo CBP que hacían referencia a AMO (Operaciones marinas y aéreas y cuyo alcance o jurisdicción quedaba, según la fuente original, más laxa* \cite[]{}) y por el otro, que posiblemente no se ciñiesen exclusivamente a éstos.\
+		
+		Por ejemplo, tras todo lo comentado en el anterior párrafo, hubiese sido interesante de incluir los datos de una ciudad fronteriza como San Diego. Sin embargo, no se lograron encontrar datos de suficiente calidad que pudieran ser integrados y provistos por la autoridad portuaria del puerto de San Diego \cite[San Diego Unified Port]{}. Sin embargo, si se consiguió para los puertos de Seattle y Tacoma \cite[]{}, en la frontera con Canadá.\
+		
+		%Pivote de las variables sobre incautaciones de drogas:
+		Por su parte, los datos provenientes de los datasets sobre incautaciones por parte de los "Field Office" (u oficinas de campo/regionales) tuvieron que pasar de una estructura "table longer" a una "table wider" para así poder encajar mes a mes con los datos de trasiego de contenedores. Además, pivotando respecto al tipo de drogas, se logró generar todas las variables de conteo de redadas y de cantidad incautada para cada tipo de droga. Generando así un dataset más rico en término de variables.\
+		
+		% Generación de la variable 'Sum of Counts'
+		Tras haber realizado el pivote de los datos de incautaciones de drogas para poder saber la cantidad y el número de drogas por cada tipo de droga y para cada mes, se generó una variable "Sum of Counts", la cual será desarrollada en la subsección \cite[Feature Engineering]{keylist}. La motivación en este caso, se fundamentó en la necesidad de agrupar un dato global y la inviabilidad de hacerlo sumando las cantidades (sea en kilogramos o libras) para tipos de drogas tan diferentes entre sí, junto con otros aspectos: el valor estimado, el nivel de adicción, letalidad...
+		 
+		% El dataset construido
+		Tras haber estudiado las fuentes originales, haber operado de modo que se pudieran compatibilizar los dos distintos ámbitos de estudio (el análisis del tráfico marítimo con la incautación de drogas) y la integración de los mismos en sentido último, se fueron generando, en primer lugar, conjuntos de datos para cada hub portuario y finalmente un conjunto de datos que integraba los distintos hubs portuarios en uno mismo.\cite[Puertos en el análisis]{} \
+		
+		A nivel técnico, esta integración entre distintas fuentes se realizó mediante operaciones "merge" proporcionadas por la librería de pandas para poder cuadrar los datos de distinta índole.\
+		
+		% Fort-Lauderdale tuvo un comportamiento particular
+		Un caso particular en la integración de datos se correspondió con los extraídos del Puerto de Everglades en Fort-Lauderdale (Área Metropolitana de Miami, Florida). Se reseña que no se pudieron incluir los datos del puerto de Miami por falta de calidad de los mismos (falta de granularidad, acuerdos de proceso de contenedores con operadores privados en los terminales que podían dificultar la integración de los datos \cite[]{}). Los datos fueron extraídos de los informes para cada año fiscal a disposición en \cite[]{}. En algún caso particular, se observó la ausencia de datos para el año fiscal 2021 (últimos tres meses). El tratamiento de estos missing values será desarrollado en su sección correspondiente.
+		
+		% Esquema dibujo de la construcción del dataset integrado.
+		Una vez conformado el dataset, se realizó un primer análisis exploratorio de datos. Por un lado, se realizó uno para cada hub portuario gracias al manejo de herramientas y librerías de visualización de python como plotnine \cite[plotnine]{} o ydata-profiling \cite[ydata-profiling]{}. Por otro lado, también se estimó la importancia que pudieran tener las variables geográficas. En este último caso, se generaron mapas geográficos con la librería plotly \cite[plotly]{}
+		
+		% Análisis Exploratorio de los datos
+		
+		
+		% Matriz de correlación de datos
+		
+		\subsubsection{Pre-procesamiento de los datos}
+		% Limpieza, Tratamiento de Missing Values, Normalización, Estandarización, Tratamiento de Outliers...
+		Este primer dataset construido, consta de 31 variables: Date (formato fecha 'YYYY-mm'), latitud y longitud (numérico float64), siete variables numéricas correspondientes a los datos portuarios, el resto de variables corresponden a los datos de incautaciones de drogas: diez variables numérica sobre "número de eventos" por droga o "Count of Events" en la versión original más una variable sumatoria de estas diez "Sum of Counts" y otras diez sobre la cantidad (en libras) incautada por droga.\
+		
+		% Aplicaciones de scikit-learn
+		A la vista del primer análisis exploratorio de datos, se observaron missing values en las variables relacionadas con las incautaciones de drogas y una gran diferencia de escala entre los datos portuarios (centenas de miles de contenedores) frente a los datos de incautaciones (decenas de incautaciones). Los missing values, al tratarse de datos de fuentes de origen fiables, se imputaron a cero haciendo uso de la función SimpleImputer provista por la librería de scikit-learn. Se consideró que, aquel mes para aquella autoridad aduanera, no hubo incautación. Para seguir por esa línea, se observó una constancia en la ausencia de datos en los pares número de incautaciones-cantidad incautada. Es decir, se comprobó que si no había datos de incautación, no había datos de cantidad incautada y, por tanto, se imputase a cero. Por su parte, para la normalización de datos se aplicó la función StandardScaler también proporcionada por scikit-learn. Es a partir de aquí, que los datos con los que se van a trabajar están estandarizados a media cero y varianza uno.\
+		
+		% Detalles del pipeline de scikit-learn.
+		Dado que los rangos para variables de distinto tipo (incautaciones vs contenedores) eran muy diferentes entre sí, se procedió a la estandarización de los mismos mediante la implementación de pipelines en scikit-learn. Los datos numéricos ausentes se imputaron a cero (como se explicó en el párrafo anterior) y se estandarizó a una normal(0,1). Por su parte, las variables categóricas se dispusieron a ser tratadas mediante 'OneHotEncoder'*.\
+		
+		% Error original en los datos de Los Angeles:
+		En el caso de los datos obtenidos del puerto de Los Ángeles, se descubrió un error de formato en los datos de origen. En efecto, para el dato del mes de noviembre del 2020 (año fiscal 2021) se descubrió un error de formato de cambio de separador de miles (coma vs punto) en la columna 'Total TEUs'. Dado que se verificó que esta columna era igual a la suma de los valores de las columnas 'Total Imports' and 'Total Exports', se aplicó la suma de esos valores para la observación del mes de noviembre de 2020.
+		
+		% Datos en miles para el puerto de Newark.
+		Por su parte, resultó que los datos obtenidos para el puerto de Newark (Área Metropolitana de Nueva York-Nueva Jersey) estaban contados en miles (de contenedores). Para resolverlo, se multiplicaron estos valores por mil aparte del resto de datos para después, ser reintegrados \cite[]{}. Posiblemente el problema de integración se tratase de una incompatibilidad entre el formato europeo y americano de separador de miles.
+		
+		% Ensamblaje y Missing Values en los datos de Fort Lauderdale
+		Por su parte, como se mencionó en la sección \cite[Origen de los datos]{}, en el caso de Fort Lauderdale, debido a las características particulares de su adquisición e integración de datos, se observaron la falta de los mismos correspondientes al último trimestre del año fiscal 2021.\
+		
+		Una ventaja que se tenía a la hora de poder imputar estos datos, era la posesión de todos los datos de años fiscales a nivel anual, es decir, el valor integrado de los datos mensuales \cite[]{Preliminary_Waterborne_Commerce_Chart_2024}. Conociendo estos datos y dado que no solo ofrecían el total de contenedores o de importaciones/exportaciones sino también qué contenedores están cargados y cuáles están vacíos, se pudo plantear el problema de la imputación de los missing values como valores MNAR, es decir, imputarlos a partir del contexto. Se aseguró que realmente los datos anuales coincidían con los datos mensuales y, en consecuencia, se fueron imputando según variables: de Loaded Imports, a Empty Exports, así hasta el total de importaciones y de exportaciones y, en último lugar, el total de TEUs (suma de las dos variables previas). En último lugar, respecto a esta operación, se imputó el mismo valor para cada mes ausente (una alternativa que se planteó fue la imputación aleatoria con una media próxima al valor imputado pero una cierta varianza incluida).\
+		
+		% Tratamiento de Outliers
+		Para el tratamiento de Outliers, en un primer momento se fueron estudiando caso a caso, la situación de cada uno, su contexto, etc. Intentando comprender qué valor aportaba al modelo, si pudiera ser un dato que alterase en exceso al resto o si fueran datos que simplemente estuviesen un poco más allá de las fronteras teóricas (rango intercuartil, QQ-Plot, método de las tres sigmas) fuera de lugar. Dado que el número de observaciones no era demasiado grande, en muchos casos, se limitó a que el umbral para excluir datos fuera el valor absoluto cinco de los datos normalizados. Es decir, se intentó minimizar el número de datos excluidos, pero se decidió que en algunos casos, era necesario para avanzar en el estudio del problema.
+		
+		% [Visualización Outlier de GLA]
+		
+		
+		% Visualización (o datos) de media por hub portuario de incautaciones y de tráfico de contenedores
+	
+		\subsubsection{Ingeniería de características}
+		Tras unas primeras visualizaciones y determinadas certezas respecto a los datos brutos que componían el dataset primitivo, se estimó necesario la inclusión de otras variables que fuesen generadas a partir de éstas primeras.\
+		% Generación de predictores. Filtrado y suavizado. Obtención de la derivada.
+		% Generación del target (y posibles alternativas)
+		
+		%Sum of Counts
+		Uno de los puntos que más quebraderos de cabeza trajo respecto al desarrollo del modelo fue, por encima de todo, qué variable se usaría como target. Pese a que este punto será abordado con mayor profundidad en la sección \cite[Implementación Práctica del Modelo]{}, pronto surgió la idea de incluir una variable que agrupase todas las incautaciones (número de redadas) sin importar la categoría de la droga para un mismo mes y una misma región. Sin embargo, esto no era posible realizarlo sobre la cantidad de droga incautada (masa en libras) ya que carecía de sentido mezclar masas de distintos orígenes (se llegó a pensar en hacer la suma del valor incautado, pero también se descartó por la falta de datos al respecto y, que la influencia del mismo valor al igual que la masa generase ciertas distorsiones entre una región u otra).\ 
+		
+		%Ratios por Tipo de Droga
+		Una vez generada la variable "Sum of Counts", era posible tener una asignación de cada puerto con la cantidad total de redadas mensuales. Pero dentro de esas redadas, se consideró que aportaría valor el conocer cómo eran esas redadas: si lograban continuamente capturar gran cantidad de estupefacientes, si en cambio, solían ser pequeñas incautaciones con algún "premio" en forma de gran redada... Si esto dependía del tipo de droga y/o del hub portuario. Para ello se fueron creando las variables "Ratio_" para cada tipo de droga que era el cociente entre la cantidad incautada de un tipo de droga durante un mes en una región y el número de redadas durante ese mes en esa misma región.\
+		
+		% Incluir cálculo "Ratio_"
+		
+		
+		Como se mencionó en el párrafo anterior, con estas nuevas variables se buscaba ver a primera vista qué tipo de incautaciones se llevaban de forma regular para cada hub portuario. Por ejemplo, para los casos de incautaciones de cocaína, los puertos de Newark y de Miami eran constantes las redadas con importantes cantidades incautadas. Por otro lado, en Seattle/Tacoma se encontraron picos de incautación (similar a una delta) en algún mes concreto.\
+		
+		% Incluir gráficas del Ratio Variables:
+		Para el cálculo de las variables de ratio, se barajó realizar el cálculo a partir de los datos normalizados. Sin embargo, a la vista de resultados contradictorios, se decidió finalmente realizarlo sobre los datos brutos. Una de las contraindicaciones que surgía de esta última forma de calcularlo era la aparición de indeterminaciones del tipo 0/0 fruto de observaciones con missing values. Dado que los missing values correspondían a meses estimados sin redadas y, por lo tanto, sin incautaciones, y que el resto de valores eran forzosamente enteros positivos, el valor del ratio debía ser definitivamente, entero positivo, estrictamente mayor que cero. Estas aseveraciones permitieron, sin lugar a dudas, imputar los ratios en los casos de missing values a cero. Su sentido dentro del contexto de los datos de esa variable es que el cero es el mínimo valor para esa variable y que ninguna redada realizada podía alcanzar ese mínimo. Por su parte, el descarte de realizar el cálculo a partir de los datos normalizados era la paradoja resultante de obtener un ratio negativo (por debajo de la media) en el caso de tener una cantidad incautada elevada (valor positivo por encima de la media, numerador del cociente) frente un número bajo de redadas (valor negativo por debajo de la media, denominador del cociente) que, en relación con el resto de ratios, debería estar en el extremo positivo de la distribución. Finalmente, al igual que el resto de variables, antes de ser integradas en el dataset fueron estandarizadas mediante StandardScaler() implementado en el Pipeline de scikit-learn.\
+		
+		
+		
+		% Suavizados de señales originales.
+		% Derivadas sobre suavizados.
+		%¿Por qué se realiza todo esto?: Si el volumen de carga de un puerto mantiene alguna relación con la cantidad de droga total incautada.
+		
+		%¿Por qué no se suman las cantidades de droga incautada?
+		Pese a que hay elementos interesantes en favor de ello: la cantidad en kilogramos incautada de un tipo de droga A frente a otro tipo B no sería determinante a la hora de realizar un análisis y que podría inducir a error, quizá si lo fuese su equivalente en valor monetario -pero inviable en términos prácticos-.\
+		
+	\subsection{Estrategia de división de datos}
+	% Train-Test Split, Validación Cruzada, GridSearch para estimación de hiperparámetros.
+	
+
+\section{Diseño del Modelo}
+	\subsection{Algoritmos y técnicas de Machine Learning utilizados}
+	% Detección de hubs portuarios: una primera incursión en modelos de Machine Learning.
+	% No todos los puertos, a pesar de su volumen, tenían un emparejamiento claro con la agencia aduanera.
+	% Hiperparámetros y técnicas de optimización.
+	
+	
+	Como se vio en la sección \cite[]{}, hubo ciertas dificultades a la hora de plantear el target y, en definitiva, lo que quiere predecir el modelo, se han desarrollado dos pequeños modelos al respecto: uno para predecir la cantidad incautada por redada en Newark (Estados de Nueva Jersey y Nueva York) y otro sobre la cantidad de redadas con éxito(*) en Port Everglades (Área Metropolitana Miami-Fort Lauderdale).
+	
+	% Modelo para el puerto de Nueva York
+	
+	
+	
+	% Modelo para Miami/Fort Lauderdale
+
+	\subsection{Implementación Práctica del Modelo}
+ 	- Descripción de las tareas realizadas para implementar el proyecto.
+ 	- Se destacan las principales actividades y decisiones.
+ 	- Fases de desarrollo del proyecto.
+ 	- Diagrama de Gantt con las tareas realizadas.
 
 
 
-\subsubsection{Estudio de la Geografía del Transporte.}
+	\subsection{Evaluación del rendimiento}
+	% Métrica utilizadas.
+	% Comparaciones con alternativas.
 
+\section{Interpretación de los resultados}
 
-\subsubsection{Estudio sobre dinámicas del narcotráfico}
+	\subsection{Visualización de resultados}
+	
+	%\subsection{Visualización de resultados}
+	\subsection{Sesgos y limitaciones}
 
-
-\section{Implementación Práctica del Modelo}
- - Descripción de las tareas realizadas para implementar el proyecto.
- - Se destacan las principales actividades y decisiones.
- - Fases de desarrollo del proyecto.
- - Diagrama de Gantt con las tareas realizadas.
-\subsection{Pre procesamiento de los datos}
-Captura de los datos. Open Data vs Datos bajo Licencia. Organizaciones e instituciones. Datasets disponibles.
-EDA, Limpieza, tratamiento de outliers.
-
-Tratamiento de Variables (Feature Selection, Feature Engineering).
-
-¿Las series temporales de los datos? ¿Son o no son invariantes en el tiempo?¿Existe o no estacionalidad? ¿Su dependencia está ligada con el ciclo económico?
-Conocimientos de trabajos pasados que ayuden a simplificar el número de observaciones y/o variables.
-Visualizacion de datos.
-
-\subsubsection{Tratamiento de Missing Values}
-En muchos casos no son realmente missing values, sino NAs resultantes de ensamblar distintos subdatasets con distinto origen y temática.\
-En muchos casos se ha podido realizar gracias a conocimientos previos (*: imputación a cero en caso de datos relacionados con incautaciones de drogas),
-se han eliminado todas las columnas con volumen de incautación ofrecida en libras (se han dejado sin tocar las ofrecidas en kilogramos, más inteligible y de rápida comprensión para el autor del trabajo).\
-- En general, en los missing values de variables numéricas se han imputado a cero (0) con la función SimpleImputer() de la librería scikit-learn.
-- La variable 'Year' que hace referencia al Año de obtención de los datos, se ha convertido de variable numérica a variable categórica.
-- Los missing values correspondientes con variables categóricas relacionadas con "el territorio" se han imputado con el valor 'United Kingdom'.
-
-- La variable 'Major/Minor Port' se ha imputado...
-
-
-
-\subsubsection{Tratamiento de Outliers}
-
-\subsection{Modelos de Machine Learning}
-
-
-\section{Metodología empleada}
-
-\section{Resultados y Análisis}
 
 \section{Conclusiones y trabajo futuro}
 
-\section{Bibliografia}
+	\subsection{Hallazgos relevantes}
+	
+	\subsection{Aplicabilidad del modelo en entornos reales}
+	
+	\subsection{Limitaciones del trabajo}
+	
+	\subsection{Líneas de investigación futuras}
+
+\section{Bibliografía}
 
 \section{Glosario}
+Field Office
+MNAR
+TEU
+
+\section{Anexos}
+https://www.portoflosangeles.org/business/statistics/container-statistics/historical-teu-statistics-2020
+https://www.cbp.gov/
+https://www.cbp.gov/document/stats/nationwide-drug-seizures
+https://www.cbp.gov/document/stats/amo-drug-seizures
+https://www.portofsandiego.org/
+https://www.nwseaportalliance.com/about-us/cargo-statistics
+https://plotnine.org/
+https://docs.profiling.ydata.ai/latest/
+https://plotly.com/python/
+https://www.miamidade.gov/portmiami/cargo.asp
+https://southfloridacontainer.com/
+http://pomtoc.com/
+https://www.seaboardmarine.com/
+https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/porteverglades/January_Monthly_Loaded_TEUs_02_13_2025_9e6f70c1-032a-4bbc-8f69-2d027dcfa394.pdf
+https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/porteverglades/FY2023_September_TEUS_Loaded_by_Month_7065b619-cddd-4b97-a02c-8c247c743ac0.pdf
+https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/porteverglades/August_TEUS_Loaded_by_Month_Fiscal_2020_Calander_2020_9439e3f7-7154-4030-a9b8-9ec592a57fde.pdf
+https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/porteverglades/Preliminary_Waterborne_Commerce_Chart_2024__1a6b16e6-94b2-46ac-89e7-d7080779f346.pdf
+https://www.panynj.gov/port/en/our-port/facts-and-figures.html
+
+Puertos en el análisis: Los Angeles, Long Beach, Seattle, Tacoma, Everglades-Fort Lauderdale, Houston, Newark-New York, Oakland.
 
 \end{document}
+
+ 
