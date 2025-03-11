@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.2)  11 MAR 2025 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.2)  11 MAR 2025 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,152 +934,160 @@ Overfull \hbox (31.06383pt too wide) in paragraph at lines 870--872
 [43 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_5.png (PNG copy)>] [44] [45] [46]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//miami_ts_1.png, id=702, 1284.8pt x 963.6pt>
+ages//miami_ts_1.png, id=703, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//miami_ts_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//miami_ts_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
 /TFM_AFI_2025/mynotes/images//miami_ts_1.png  used on input line 958.
-(pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
-
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 957--959
- []|  [] 
- []
-
+(pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//miami_ts_2.png, id=703, 1284.8pt x 963.6pt>
+ages//miami_ts_2.png, id=705, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//miami_ts_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//miami_ts_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//miami_ts_2.png  used on input line 965.
-(pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
-
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 964--966
- []|  [] 
+/TFM_AFI_2025/mynotes/images//miami_ts_2.png  used on input line 967.
+(pdftex.def)             Requested size: 338.5863pt x 253.94127pt.
+ [47 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+es/images//miami_ts_1.png (PNG copy)>]
+Overfull \hbox (142.91013pt too wide) in paragraph at lines 991--991
+[]\OT1/cmtt/m/n/10.95 future['Loaded Imports'] = pd.concat([df_imports_train['L
+oaded Imports'], df_imports_test['Loaded Imports']])[] 
  []
 
-[47 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
-s/images//miami_ts_1.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//miami_ts_3.png, id=713, 1284.8pt x 963.6pt>
+ages//miami_ts_3.png, id=717, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//miami_ts_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//miami_ts_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//miami_ts_3.png  used on input line 974.
-(pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
-
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 973--975
- []|  [] 
- []
-
+/TFM_AFI_2025/mynotes/images//miami_ts_3.png  used on input line 999.
+(pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
 [48 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//miami_ts_2.png (PNG copy)>] [49 </home/gonzalopc/Documentos/programas
 _mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//miami_ts_3.png (PNG copy)>]
-Overfull \hbox (16.96017pt too wide) in paragraph at lines 1033--1043
+Overfull \hbox (108.418pt too wide) in paragraph at lines 1064--1064
+[]  \OT1/cmtt/m/n/10.95 print("Numero de configuraciones: ", pd.DataFrame.from_
+dict(regressorsCV[name].cv_results_).shape[0])[] 
+ []
+
+
+Overfull \hbox (206.14569pt too wide) in paragraph at lines 1064--1064
+[]  \OT1/cmtt/m/n/10.95 aux = pd.DataFrame.from_dict(regressorsCV[name].cv_resu
+lts_).sort_values(by="mean_test_score", ascending=True).iloc[0][] 
+ []
+
+[50]
+Overfull \hbox (148.65881pt too wide) in paragraph at lines 1106--1106
+[]  \OT1/cmtt/m/n/10.95 xgb_model = xgb.XGBRegressor(objective='reg:squarederro
+r', n_estimators=100, learning_rate=0.1, max_depth=3)[] 
+ []
+
+[51]
+Overfull \hbox (16.96017pt too wide) in paragraph at lines 1120--1130
  [][] 
  []
 
-[50] [51] [52] (./main.bbl [53]) [54] [55]
-Overfull \hbox (22.7374pt too wide) in paragraph at lines 1095--1162
+[52] [53] [54] (./main.bbl [55]) [56] [57]
+Overfull \hbox (22.7374pt too wide) in paragraph at lines 1182--1249
  [][] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_3.png, id=773, 1284.8pt x 963.6pt>
+ages//timeseries_3.png, id=790, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_3.png  used on input line 1171.
+/TFM_AFI_2025/mynotes/images//timeseries_3.png  used on input line 1258.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1170--1172
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1257--1259
  []|  [] 
  []
 
-[56]
+[58]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_4.png, id=779, 1284.8pt x 963.6pt>
+ages//timeseries_4.png, id=796, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_4.png  used on input line 1178.
+/TFM_AFI_2025/mynotes/images//timeseries_4.png  used on input line 1265.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1177--1179
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1264--1266
  []|  [] 
  []
 
-[57 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[59 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_3.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_5.png, id=784, 1284.8pt x 963.6pt>
+ages//timeseries_5.png, id=801, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1185.
+/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1272.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1184--1186
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1271--1273
  []|  [] 
  []
 
-[58 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[60 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_4.png (PNG copy)>]
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1192.
+/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1279.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1191--1193
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1278--1280
  []|  [] 
  []
 
-[59 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[61 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_5.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_4.png, id=796, 627.09282pt x 411.78844pt>
+ages//hist_4.png, id=813, 627.09282pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_4.png  used on input line 1199.
+/TFM_AFI_2025/mynotes/images//hist_4.png  used on input line 1286.
 (pdftex.def)             Requested size: 483.69684pt x 317.63728pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1198--1200
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1285--1287
  []|  [] 
  []
 
-[60]
+[62]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_5.png, id=802, 633.11531pt x 411.78844pt>
+ages//hist_5.png, id=819, 633.11531pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_5.png  used on input line 1206.
+/TFM_AFI_2025/mynotes/images//hist_5.png  used on input line 1293.
 (pdftex.def)             Requested size: 483.69684pt x 314.60869pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1205--1207
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1292--1294
  []|  [] 
  []
 
-[61 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[63 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_4.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/T
 FM_AFI_2025/mynotes/images//hist_5.png>] (./main.aux)
 
@@ -1089,10 +1097,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1A5865019C496B02FBB98B141C30C71B;9663.
  ) 
 Here is how much of TeX's memory you used:
- 9916 strings out of 480247
- 184664 string characters out of 5896152
- 458305 words of memory out of 5000000
- 27507 multiletter control sequences out of 15000+600000
+ 9920 strings out of 480247
+ 184698 string characters out of 5896152
+ 458559 words of memory out of 5000000
+ 27509 multiletter control sequences out of 15000+600000
  477210 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,9n,63p,1650b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1108,13 +1116,14 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-t10.pfb>
-Output written on main.pdf (61 pages, 4788779 bytes).
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
+b>
+Output written on main.pdf (63 pages, 4803299 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 762 compressed objects within 8 object streams
- 202 named destinations out of 1000 (max. 500000)
+ 939 PDF objects out of 1000 (max. 8388607)
+ 778 compressed objects within 8 object streams
+ 204 named destinations out of 1000 (max. 500000)
  615 words of extra memory for PDF output out of 10000 (max. 10000000)
 

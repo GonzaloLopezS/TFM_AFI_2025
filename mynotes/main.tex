@@ -911,7 +911,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 
 \newpage
 \section{\label{Diseño}Diseño del Modelo}
-En esta sección se muestran los algoritmos y técnicas que se han utilizado para llevar a buen puerto el estudio en este proyecto. El objetivo de este trabajo se centra en intentar averiguar tendencias o patrones que relacionen el volumen de cargamento movido en contenedores gestionados por puertos con la cantidad de droga incautada. Así como para algún caso concreto, intentar hallar la relación temporal entre los mismos.
+En esta sección se muestran los algoritmos y técnicas que se han utilizado para intentar llevar a buen puerto el estudio en este proyecto. El objetivo de este trabajo se centra en intentar averiguar tendencias o patrones que relacionen el volumen de cargamento movido en contenedores gestionados por puertos con la cantidad de droga incautada. Así como para algún caso concreto, intentar hallar la relación temporal entre los mismos.
 
 	\subsection{Algoritmos y técnicas de Machine Learning utilizados}
 
@@ -948,38 +948,63 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	Recuérdese que las imágenes del resultado se pueden ver en la figura \ref{map_cluster_3} de la sección \ref{data origin})
 	
 	
-	\subsubsection{Implementación del algoritmo de Prophet para el análisis de series temporales}
-	Algunos de los motivos que me llevó a plantear un modelo que ajustase series temporales fueron los resultados arrojados para incautaciones de drogas en el puerto de Fort Lauderdale. A continuación se muestran tres casos en los que se comparan las tendencias de importaciones (de contenedores con cargamento) junto con redadas de cocaína, marihuana y otras drogas. Fíjense que la distribución de los datos está ajustada a un escalado min-max (entre 0 y 1.00) y en las tendencias que tienen. Esto último abrió la posibilidad de orientar el trabajo a una aproximación de tendencias (derivadas de funciones suavizadas con filtros de bajas frecuencias) \ref{trabajo futuro}.
+	\subsubsection{\label{stProphet}Implementación del algoritmo de Prophet para el análisis de series temporales}
+	Algunos de los motivos que me llevó a plantear un modelo que ajustase series temporales fueron los resultados arrojados para incautaciones de drogas en el puerto de Fort Lauderdale. A continuación se muestran tres casos en los que se comparan las tendencias de importaciones (de contenedores con cargamento) junto con redadas de cocaína, marihuana y otras drogas. En la imagen \ref{miami_ts_1} que la distribución de los datos está ajustada a un escalado min-max (entre 0 y 1.00) y en las tendencias que tienen. Esto último abrió la posibilidad de orientar el trabajo a una aproximación de tendencias (derivadas de funciones suavizadas con filtros de bajas frecuencias) \ref{trabajo futuro}.
 	
 	\begin{figure}[H]
 		\caption{\label{miami_ts_1} Serie Temporal en Puerto Fort Lauderdale con redadas de cocaína}
 		\centering
 		\hspace*{1cm}
-		\includegraphics[width=\textwidth]{miami_ts_1.png}
+		\includegraphics[width=0.8\textwidth]{miami_ts_1.png}
 	\end{figure}
 
+	Aunque originalmente una de las principales motivaciones para realizar el trabajo era predecir la incautación de droga en base a las entradas de cargamento (importaciones) en el puerto, al final se acabaron dejando estos modelos a modo de experimentación. A simple vista de la imagen dada, aunque más clara para el caso de evaluar las redadas de otras drogas (ver la figura \ref{miami_ts_2}), se ven tramos en los que coinciden la tendencia y la proporción en la subida (o bajada) para las series temporales que se comparan. Si bien es cierto que la variable de "loaded imports" tiene cambios de tendencia donde no las tiene "other drugs".
+	
 	\begin{figure}[H]
 		\caption{\label{miami_ts_2} Serie Temporal en Puerto Fort Lauderdale con redadas de otras drogas}
 		\centering
 		\hspace*{1cm}
-		\includegraphics[width=\textwidth]{miami_ts_2.png}
+		\includegraphics[width=0.7\textwidth]{miami_ts_2.png}
 	\end{figure}
 
-	También en las secciones \ref{interpretacion} y \ref{trabajo futuro} se detallan los porqués de ciertos cambios de tendencia. Especialmente en el caso de \ref{miami_ts_2}, o por qué en la figura \ref{miami_ts_3} hay un lag entre las redadas de marihuana y el cargamento importado.
+	Se podría realizar una transformación de los datos para "Count of Event Other drugs**" (línea roja en \ref{miami_ts_2}) de la forma:
+	%
+	$$F(x) = |f(x) - g(x)| + g(x)$$
+	%
+	para que tenga una línea de tendencia parecida a "Loaded Imports".
+	
+	Para la pequeña implementación de un modelo de series temporales en prophet se ha usado "Count of Event Other drugs**" como variable objetivo y "Loaded Imports" como regresor exógeno.
+	
+	A continuación se deja un pequeño fragmento de código para la llamada al constructor de prophet, ajuste y predicción:
+	\begin{verbatim}
+		m = Prophet()
+		m.add_regressor('Loaded Imports')
+		m.fit(df_imports_train)
+		
+		# Make future dataframe for prediction
+		future = m.make_future_dataframe(periods=len(df_imports_test))
+		# Add the regressor values for both training and prediction periods
+		future['Loaded Imports'] = pd.concat([df_imports_train['Loaded Imports'], df_imports_test['Loaded Imports']])
+		
+		# Make predictions
+		forecast = m.predict(future)
+	\end{verbatim}
+
+	También en las secciones \ref{interpretacion} y \ref{trabajo futuro} se comentan los cambios de tendencia. Especialmente en el caso de \ref{miami_ts_2}, o por qué en la figura \ref{miami_ts_3} hay un lag entre las redadas de marihuana y el cargamento importado.
 	
 	\begin{figure}[H]
 		\caption{\label{miami_ts_3} Serie Temporal en Puerto Fort Lauderdale con redadas de Marihuana}
 		\centering
 		\hspace*{1cm}
-		\includegraphics[width=\textwidth]{miami_ts_3.png}
+		\includegraphics[width=0.8\textwidth]{miami_ts_3.png}
 	\end{figure}
 	
 	% Implementacion del modelo de serie temporal para Miami
+	También, como complemento a los modelos de series temporales a prophet, se implementó un pequeño modelo sarimax incluido en la librería statsmodel y un XGBoost.
 	
-	
-	\subsubsection{Implementación de la matriz de ajuste hiperparámetros para los distintos algoritmos de regresión}
+	\subsubsection{\label{hiperCV}Implementación de la matriz de ajuste hiperparámetros para los distintos algoritmos de regresión}
 	% Copiar código de GridSearchCV
-	Tras explorar, revisar y manipular los datos brutos, una de las aproximaciones que se valoró fue la referente a tratar de modelar el problema como un problema de regresión. Casos como el de la relación entre variables 'Sum of Counts' con 'Total Imports' para el puerto de Newark/Nueva York daban lugar a pensar en ello. Dado que la librería scikit-learn ofrece muchas posibilidades en lo que a algoritmos para resolver problemas de regresión, se decidió crear un pool de regresores de distinta índole (lineal, AdaBoost, Árboles de decisión...) para compararlos entre ellos. Como apunte, se acotó el problema a algoritmos definidos en scikit-learn (dejando fuera otros de interés como, por ejemplo, XGBoost). A continuación se muestran todos los regresores (con sus distintas combinaciones de hiperparámetros) que se estimaron oportunos para intentar predecir la relación de las variables mencionadas un poco más arriba.
+	Tras explorar, revisar y manipular los datos brutos, una de las aproximaciones que se valoró fue la referente a tratar de modelar el problema como un problema de regresión. Casos como el de la relación entre variables 'Sum of Counts' con 'Total Imports' para el puerto de Newark/Nueva York daban lugar a pensar en ello. Dado que la librería scikit-learn ofrece muchas posibilidades en lo que a algoritmos para resolver problemas de regresión, se decidió crear un pool de regresores de distinta índole (lineal, AdaBoost, Árboles de decisión...) para compararlos entre ellos. Como apunte, se acotó el problema a algoritmos definidos en scikit-learn (dejando fuera de aquí, en este caso, otros de interés como, por ejemplo, XGBoost). A continuación se muestran todos los regresores (con sus distintas combinaciones de hiperparámetros) que se estimaron oportunos para intentar predecir la relación de las variables mencionadas un poco más arriba.
 	
 	\begin{verbatim}
 		regressors = {
@@ -1011,14 +1036,76 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
  	% Descripción de las tareas realizadas para implementar el proyecto.
  	% Se destacan las principales actividades y decisiones.
  	% Fases de desarrollo del proyecto.
- 	En este apartado, se describen las tareas realizadas para llevar a cabo el proyecto. Dado la dificultad para encontrar un objetivo concreto lo suficientemente atractivo para las condiciones de los datos recopilados, se dejó la puerta abierta a intentar aproximar el modelo para distintos casos: una aproximación de un modelo de regresión a partir de los datos curados del puerto de Nueva York (Newark, \ref{NY model}), del puerto de Miami (Fort Lauderdale, \ref{FL model}) e inclusión una predicción para un modelo de series temporales.
+ 	En este apartado, se describen las tareas realizadas para llevar a cabo el proyecto. Dado la dificultad para encontrar un objetivo concreto lo suficientemente atractivo para las condiciones de los datos recopilados, se dejó la puerta abierta a intentar aproximar el modelo para distintos casos: una aproximación de un modelo de regresión a partir de los datos curados del puerto de Nueva York (Newark, \ref{NY model}) e inclusión una predicción para un modelo de series temporales del puerto de Miami (Fort Lauderdale, \ref{FL model}).
  	
  	\subsubsection{\label{NY model} Modelo para el puerto de Nueva York}
+ 	Para el caso del modelo del puerto de Newark, se generó un diccionario de regresores (mencionados en la sección \ref{hiperCV}) y evaluados tanto con la métrica de R² como de MAPE tal y como están definidas en la API de scikit-learn.
  	
- 	% Modelo para Miami/Fort Lauderdale
+ 	\begin{verbatim}
+ 		test_scores = []
+ 		
+ 		for name in list(params.keys()):
+ 		print(name)
+ 		print("Numero de configuraciones: ", pd.DataFrame.from_dict(regressorsCV[name].cv_results_).shape[0])
+ 		
+ 		# Get sorted results, ensuring lower MAPE is better
+ 		aux = pd.DataFrame.from_dict(regressorsCV[name].cv_results_).sort_values(by="mean_test_score", ascending=True).iloc[0]
+ 		
+ 		# Ensure MAPE is positive
+ 		mape_cv_test = abs(aux['mean_test_score'])
+ 		mape_cv_train = abs(aux['mean_train_score'])
+ 		
+ 		# Get best model and compute MAPE
+ 		best_model = regressorsCV[name].best_estimator_
+ 		mape_train = mean_absolute_percentage_error(y_train, best_model.predict(X_train))
+ 		mape_test = mean_absolute_percentage_error(y_test, best_model.predict(X_test))
+ 		
+ 		test_scores.append((name, mape_train, mape_cv_train, mape_cv_test, mape_test))
+ 	\end{verbatim}
+ 	El fragmento de código anterior tiene su equivalente para evaluar modelos usando la métrica de R². Los resultados arrojados se muestran en la sección \ref{eval performance}.
+ 	
  	\subsubsection{\label{FL model} Modelo para el puerto de Fort Lauderdale}
-
-	% Modelo para ajuste de una serie temporal
+ 	Por su parte, tal y como se expuso en la subsección \ref{stProphet} también se probó un modelo de series temporales con la librería prophet para predecir las incautaciones en Fort Lauderdale.
+ 	
+ 	En este caso, incluso se ha generado una matriz (grid) de hiperparámetros para intentar escoger el mejor modelo de regresión de series temporales. En este caso se ha buscado incluir puntos de cambio de tendencia (changepoints) en los hiperparámetros a ajustar.
+ 	Se deja el código a disposición en la sección de anexos.
+ 	
+ 	La combinación de hiperparámetros para el modelo de Prophet que ajusta unos valores de una forma superior al resto de combinaciones de hiperparámetros es:
+ 	
+ 	\begin{verbatim}
+ 		m = Prophet(
+ 		changepoint_prior_scale=0.01,  # Controls flexibility (default is 0.05)
+ 		changepoint_range=0.8,        # Where changepoints can occur (default is 0.8)
+ 		n_changepoints=30             # Number of potential changepoints (default is 25)
+ 		)
+ 	\end{verbatim}
+ 
+ 	Como se mencionó en \ref{stProphet}, también se generaron modelos con las librerías statsmodel y xgboost. En el caso del primero, se generó un modelo sarimax. En todos los casos, se incluyó "Loaded Imports" como regresor exógeno.
+ 	
+ 	Aquí se deja un pequeño fragmento de código con XGBoost:
+ 	\begin{verbatim}
+ 		import xgboost as xgb
+ 		df_xgb.rename(columns={'Date': 'ds', 'Ratio_Other Drugs**': 'y', 
+ 			'Loaded Imports': 'loaded_imports'}, inplace=True)
+ 		
+ 		# Convertir la columna de fecha a datetime
+ 		df_xgb['ds'] = pd.to_datetime(df_xgb['ds'])
+ 		
+ 		# Dividir en conjunto de entrenamiento y prueba según la regla dada
+ 		df_train = df_xgb[df_xgb['ds'] < '2024-01-01']
+ 		df_test = df_xgb[df_xgb['ds'] >= '2024-01-01']
+ 		
+ 		[...]
+ 		
+ 		# Crear y entrenar el modelo XGBoost
+ 		xgb_model = xgb.XGBRegressor(objective='reg:squarederror', n_estimators=100, learning_rate=0.1, max_depth=3)
+ 		xgb_model.fit(X_train, y_train)
+ 		
+ 		# Realizar predicciones en test
+ 		y_pred_xgb = xgb_model.predict(X_test)
+ 	\end{verbatim}
+ 
+ 	En la siguiente sección se muestran las evaluaciones del desempeño para cada modelo. Y va a servir para responder en parte a la pregunta que dio origen a este problema: ¿se puede predecir la cantidad de droga incautada en una región a partir de la actividad comercial en un puerto marítimo?
 
 	\subsection{\label{eval performance}Evaluación del rendimiento}
 	% Métrica utilizadas.
@@ -1208,9 +1295,39 @@ Otras imágenes:
 
 \end{document}
 
-
-%Pre procesamiento de los datos
-
-%EDA, Limpieza, tratamiento de outliers.
+Fragmento de código para hiperparámetros en Prophet:
+\begin{verbatim}
+	from prophet.diagnostics import cross_validation, performance_metrics
+	import numpy as np
+	import itertools
+	
+	# Define parameter grid
+	param_grid = {  
+		'changepoint_prior_scale': [0.001, 0.01, 0.1, 0.5],
+		'changepoint_range': [0.8, 0.9, 0.95]
+	}
+	
+	# Generate all combinations of parameters
+	all_params = [dict(zip(param_grid.keys(), v)) for v in itertools.product(*param_grid.values())]
+	rmses = []  # Store the RMSE for each parameter combination
+	
+	# Cross-validation for each parameter combination
+	for params in all_params:
+	# Create and fit model with current parameters
+	m = Prophet(**params)
+	m.add_regressor('Loaded Imports')
+	m.fit(df_imports_train)
+	
+	# Cross-validate
+	df_cv = cross_validation(m, initial='180 days', period='30 days', horizon='90 days', parallel="processes")
+	
+	# Calculate metrics
+	df_metrics = performance_metrics(df_cv)
+	rmses.append(df_metrics['rmse'].mean())
+	
+	# Print current parameters and RMSE
+	print(f"Parameters: {params}, RMSE: {rmses[-1]:.2f}")
+	
+\end{verbatim}
 
  
