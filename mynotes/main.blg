@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: apalike.bst
+Database file #1: bibliografia.bib
+Warning--entry type for "cidob2025maritime" isn't style-file defined
+--line 43 of file bibliografia.bib
+Warning--entry type for "nauticaprofesional2025ais" isn't style-file defined
+--line 52 of file bibliografia.bib
+Warning--entry type for "justice2023indictments" isn't style-file defined
+--line 124 of file bibliografia.bib
+Warning--entry type for "justice2023fentanyl" isn't style-file defined
+--line 133 of file bibliografia.bib
+Warning--entry type for "federaltimes2022fiscalyear" isn't style-file defined
+--line 142 of file bibliografia.bib
+Warning--entry type for "cbp2025ports" isn't style-file defined
+--line 151 of file bibliografia.bib
+Warning--entry type for "wired2012container" isn't style-file defined
+--line 160 of file bibliografia.bib
+Warning--entry type for "towardsdatascience2025timeseries" isn't style-file defined
+--line 169 of file bibliografia.bib
+Warning--entry type for "panynj2025facts" isn't style-file defined
+--line 188 of file bibliografia.bib
+Warning--entry type for "portmiami2025cargo" isn't style-file defined
+--line 206 of file bibliografia.bib
+Warning--entry type for "plotly2025python" isn't style-file defined
+--line 215 of file bibliografia.bib
+Warning--entry type for "ydata2025profiling" isn't style-file defined
+--line 224 of file bibliografia.bib
+Warning--entry type for "plotnine2025" isn't style-file defined
+--line 233 of file bibliografia.bib
+Warning--entry type for "cbp2025drugseizures" isn't style-file defined
+--line 242 of file bibliografia.bib
+Warning--entry type for "nwseaportalliance2025cargo" isn't style-file defined
+--line 251 of file bibliografia.bib
+Warning--entry type for "portla2025containerstats" isn't style-file defined
+--line 260 of file bibliografia.bib
+Warning--entry type for "porteverglades2025stats" isn't style-file defined
+--line 269 of file bibliografia.bib
+Warning--entry type for "portofsandiego2025" isn't style-file defined
+--line 287 of file bibliografia.bib
+Warning--entry type for "cbp2025amodrugseizures" isn't style-file defined
+--line 296 of file bibliografia.bib
+Warning--I didn't find a database entry for ""
+You've used 37 entries,
+            1935 wiz_defined-function locations,
+            619 strings with 8307 characters,
+and the built_in function-call counts, 10629 in all, are:
+= -- 1081
+> -- 417
+< -- 33
++ -- 144
+- -- 134
+* -- 748
+:= -- 2079
+add.period$ -- 114
+call.type$ -- 37
+change.case$ -- 258
+chr.to.int$ -- 31
+cite$ -- 37
+duplicate$ -- 397
+empty$ -- 632
+format.name$ -- 177
+if$ -- 1960
+int.to.chr$ -- 7
+int.to.str$ -- 0
+missing$ -- 6
+newline$ -- 191
+num.names$ -- 111
+pop$ -- 155
+preamble$ -- 1
+purify$ -- 252
+quote$ -- 0
+skip$ -- 335
+stack$ -- 0
+substring$ -- 521
+swap$ -- 6
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 220
+warning$ -- 0
+while$ -- 78
+width$ -- 0
+write$ -- 466
+(There were 20 warnings)
