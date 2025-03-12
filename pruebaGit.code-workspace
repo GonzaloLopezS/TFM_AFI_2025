@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../Python/pruebaGit"
+		},
+		{
+			"name": "TFM_AFI_2025",
+			"path": "."
+		},
+		{
+			"name": "Python4Finance",
+			"path": "../../Python/python4finance/Python4Finance"
+		},
+		{
+			"name": "Python",
+			"path": "../../Python/clon/Python"
+		},
+		{
+			"path": "../../../AFI/Aplicaciones/AFI2025_Enero"
+		}
+	],
+	"settings": {}
+}

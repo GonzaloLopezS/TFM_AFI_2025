@@ -1,0 +1,1001 @@
+ID;Status;Uptime;Country;Location;Ships;Distinct
+2213;;100 %; Unknown;Worldwide;3533;1686
+2010;;100 %; Norway; ;3052;2190
+2077;;100 %; Netherlands;Harderwijk;1075;62
+2241;;100 %; Netherlands;Gouda;989;199
+3438;;99 %; Netherlands;Amsterdam;774;221
+2945;;100 %; Netherlands;Rotterdam;767;31
+3103;;100 %; Canada;Multiple Locations;679;0
+3343;;100 %; Canada;Point Grey, BC;679;0
+3131;;100 %; Greece;Elliniko;628;51
+2141;;100 %; Norway;Multiple AIS stations;607;103
+3272;;100 %; Hong Kong;Tseung Kwan O;585;364
+2145;;100 %; Belgium;Antwerp;566;259
+2435;;100 %; Netherlands;Katwijk;555;57
+2134;;100 %; United States of America;Fort Lauderdale, FL;553;103
+2918;;100 %; Singapore;Singapore;542;65
+2097;;100 %; Netherlands;Hellevoetsluis;518;5
+2323;;100 %; Netherlands;Marken;505;16
+2902;;100 %; Singapore;Singapore;495;38
+2517;;100 %; Brazil;Belem;485;277
+3808;;100 %; Singapore;Singapore;473;125
+2214;;100 %; Netherlands;Rotterdam;467;1
+3344;;100 %; Greece;Athens;451;7
+2118;;100 %; Greece;Alimos;438;5
+2404;;100 %; Unknown;Roaming stations;421;98
+3074;;100 %; Greece;Piraeus;406;3
+2946;;100 %; Singapore;Singapore;404;6
+2459;;100 %; Netherlands;Edam;400;11
+3567;;100 %; Singapore;Singapore;387;103
+3332;;100 %; Russian Federation;Vladivostok;386;384
+2446;;100 %; Netherlands;IJmuiden;377;12
+2997;;100 %; Singapore;Keppel Bay;377;30
+2577;;100 %; Germany;Hamburg;366;16
+2698;;57 %; Netherlands;Arnemuiden Oranjeplaat;356;90
+3979;;100 %; Netherlands;Hellevoetsluis;351;9
+3943;;100 %; Korea;Busan;343;207
+2032;;100 %; Greece;Athens;335;3
+3038;;100 %; Greece;Piraeus;316;1
+3182;;61 %; United States of America;Seattle;314;45
+2011;;100 %; Sweden;Gothenburg;313;0
+2164;;100 %; Sweden;Goteborg, West Coast;311;0
+2488;;100 %; Netherlands;Oud-Beijerland;307;4
+2475;;100 %; Netherlands;Poortugaal;304;1
+2413;;81 %; Germany;Hamburg Alster;301;1
+3270;;100 %; Sweden;Gothenburg - SW, Särö;294;35
+2954;;100 %; France;Sophia Antipolis, MINES Paristech;288;49
+2843;;100 %; United Kingdom;Gravesend;288;58
+2744;;100 %; United States of America;Seattle;285;11
+3124;;100 %; Netherlands;Zierikzee;277;74
+2276;;100 %; Belgium;Schilde;271;6
+2292;;100 %; Belgium;Gent;266;181
+3857;;100 %; Germany;Hamburg;263;0
+2650;;100 %; United States of America;Sabine Pass, TX;261;72
+3124;;100 %; Netherlands;Zierikzee;261;73
+3700;;100 %; Netherlands;Emmeloord;261;55
+2169;;100 %; Italy;La Spezia;260;82
+3372;;100 %; Netherlands;Wijchen;259;45
+2636;;100 %; Netherlands;IJmuiden;258;0
+3731;;100 %; Netherlands;Rotterdam;258;1
+3016;;76 %; Indonesia;Jakarta;254;237
+2484;;100 %; United States of America;Biscayne Bay PS - Miami FL;248;65
+2353;;100 %; Taiwan (Province of China);Kaohsiung;245;244
+2068;;100 %; Spain;Roaming station;242;18
+2603;;100 %; Germany;Geesthacht;239;25
+3040;;100 %; Netherlands;Ter Heijde;237;1
+2672;;100 %; United States of America;Highlands;236;134
+2036;;100 %; Germany;Hamburg;234;1
+2405;;100 %; France;Cap Camarat;233;25
+2468;;80 %; Netherlands;Rotterdam;232;21
+2326;;100 %; Japan;Sumoto;231;225
+2177;;100 %; Hong Kong;Kowloon;228;33
+2799;;86 %; Indonesia;Jepara;227;207
+2126;;100 %; Germany;Cologne;224;143
+3978;;100 %; United States of America;Mandeville, LA;222;221
+2987;;100 %; Netherlands;Vogelwaarde, Zeeland;220;32
+2047;;100 %; United States of America;Galveston Bay Texas;218;3
+2236;;91 %; Netherlands;IJmuiden;217;0
+2146;;100 %; Spain;Palma de Mallorca;216;0
+2182;;92 %; Canada;Vancouver;215;4
+2662;;100 %; France;Le Havre;212;27
+3836;;11 %; Indonesia;Batam;211;38
+2261;;100 %; United States of America;Seattle;211;84
+2624;;100 %; Spain;Las Palmas de Gran Canaria;210;95
+2826;;99 %; Unknown;Roaming station;207;205
+3630;;89 %; Australia;Cape Lambert;203;55
+2031;;100 %; Poland;Gdynia;202;48
+2375;;100 %; Canada;Vancouver;198;2
+2249;;100 %; United States of America;San Diego;198;85
+2619;;100 %; United States of America;Groves;195;8
+2878;;100 %; Germany;Friedrichsort;190;3
+2402;;100 %; Netherlands;Spijkenisse;190;3
+2724;;99 %; Australia;North Ryde, NSW;189;82
+2029;;100 %; Netherlands;Den Oever;189;42
+2443;;100 %; Netherlands;Julianadorp;188;48
+3116;;100 %; Netherlands;Amsterdam;188;1
+3092;;100 %; United States of America;Bainbridge Island;187;4
+3632;;100 %; Singapore;Singapore;186;1
+2981;;100 %; Belgium;Oostende;186;3
+2397;;85 %; Denmark;Copenhagen;184;69
+2803;;100 %; Netherlands;Bergharen;183;13
+3029;;100 %; Netherlands;Rockanje;183;11
+3737;;96 %; Brazil;Rio de Janeiro;182;21
+2543;;100 %; Germany;Hamburg;180;0
+2099;;99 %; United States of America;US East Coast;180;5
+3715;;100 %; Spain;Valencia;179;53
+3354;;100 %; Australia;Port Hedland;170;22
+3974;;100 %; United States of America;Seattle;167;5
+2638;;100 %; Australia;Manly;167;65
+3965;;100 %; Italy;Genoa;167;12
+3665;;100 %; Sweden;Stockholm;166;67
+2112;;100 %; Netherlands;Harlingen;166;57
+3443;;100 %; United States of America;Seattle;165;0
+3681;;100 %; United States of America;Seattle;165;0
+3240;;86 %; Netherlands;Huizen;164;17
+2602;;100 %; Spain;Castelldefels;160;55
+3455;;100 %; United States of America;Los Angeles;159;79
+3984;;100 %; Norway;Tromsoe;159;34
+2528;;100 %; United Arab Emirates;Abu Dhabi;159;128
+3203;;100 %; Greece;Athens;159;4
+2270;;100 %; Saint Martin (FR);Simpson Bay;159;13
+3023;;100 %; Netherlands;Rozenburg;157;1
+2042;;100 %; Canada;Vancouver;156;5
+3392;;100 %; Germany;Lienen;156;21
+2088;;100 %; Singapore;Singapore;156;0
+2355;;100 %; Sweden;Torslanda, Gothenburg ;155;19
+3335;;100 %; Netherlands;Genderen;152;52
+2737;;100 %; Germany;Hamburg;148;1
+3156;;100 %; Greece;Athens;146;2
+2489;;100 %; Italy;Genoa;146;5
+2178;;100 %; France;Rouen;146;0
+2831;;96 %; Netherlands;Delft;144;1
+2344;;100 %; Slovenia;Koper;143;25
+3322;;100 %; Korea;Busan;142;10
+3537;;100 %; Poland;Bolesławiec;141;5
+3142;;100 %; Unknown;Roaming station;140;0
+2523;;100 %; Netherlands;Middenbeemster;140;2
+3012;;92 %; Turkey;Istanbul;140;139
+2372;;100 %; Canada;Vancouver;139;3
+2726;;100 %; United States of America;Seattle;138;0
+2505;;100 %; Sweden;Göteborg;138;0
+2291;;100 %; Germany;Bremerhaven;136;2
+2955;;100 %; Canada;Bowen Island;136;1
+3143;;100 %; United States of America;Houston, Texas;136;69
+3377;;100 %; United Kingdom;Gosport;136;6
+2384;;100 %; Norway;Kristiansund;135;17
+2610;;100 %; Germany;Kiel;132;34
+2388;;100 %; Finland;Finland;131;65
+2087;;100 %; Germany;Duisburg;130;97
+3135;;100 %; Netherlands;Koog aan de Zaan;129;5
+3358;;100 %; Sweden;Gothenburg;129;0
+2139;;100 %; Denmark;Islands Brygge;128;38
+3824;;82 %; United States of America;Miami, FL;128;3
+2102;;100 %; France;Antibes;127;0
+2076;;100 %; Spain;Murcia;126;93
+2559;;100 %; Netherlands;Nijmegen;126;6
+2278;;100 %; Argentina;Mar del Plata;125;125
+2940;;87 %; Australia;Thornlands, Queensland;125;33
+2281;;100 %; Portugal;Sines;124;89
+2857;;100 %; Canada;Vancouver;124;0
+2554;;100 %; Netherlands;Gorinchem;124;28
+2457;;100 %; Germany;Madgeburg;124;18
+2597;;100 %; United States of America;San Pedro;123;22
+2221;;100 %; Norway;Stavanger;121;19
+2426;;100 %; United States of America;San Francisco Bay;121;29
+3428;;100 %; Spain;Valencia;120;1
+2338;;100 %; United Arab Emirates;Ansam;120;88
+3046;;99 %; Taiwan (Province of China);Keelung, National Taiwan Ocean University;119;119
+2963;;100 %; United States of America;Anacortes, WA;118;25
+3682;;100 %; France;UK;118;28
+2035;;100 %; United States of America;Seattle;117;108
+2350;;100 %; Netherlands;Delfzijl;117;90
+2334;;100 %; Russian Federation;Ust-Luga;116;85
+3673;;100 %; Spain;Barcelona;116;35
+2770;;100 %; New Zealand;Marlborough Sounds;115;94
+3376;;100 %; United States of America;San Francisco;115;11
+3168;;98 %; Poland;Gdańsk;114;7
+2797;;100 %; United States of America;Signal Hill;114;28
+2460;;100 %; Denmark;Nivå;112;12
+3459;;100 %; Belgium;Oostende;110;1
+2775;;9 %; Netherlands;Franeker;109;17
+3299;;99 %; Netherlands;Zwijndrecht;108;24
+3317;;100 %; Netherlands;Veere;107;8
+2912;;93 %; Belgium;Zeebruge;106;18
+2771;;100 %; Netherlands;West-Terschelling;106;62
+2512;;100 %; Canada;Quadra Island;105;58
+2117;;100 %; Indonesia;Bintulu, Sarawak;103;103
+3198;;100 %; Norway;Jeloy, Moss;103;7
+2817;;93 %; Netherlands;WSV de Kogge;102;20
+2422;;100 %; Australia;Collaroy Plateau;102;60
+2747;;100 %; Germany;Wilhelmshaven;102;10
+2018;;100 %; United Kingdom;Cowes;102;16
+2950;;90 %; United States of America;Anacortes, WA;101;8
+2163;;100 %; Australia;Koumala;101;18
+2481;;100 %; Finland;Vaasa;100;8
+2708;;100 %; United Kingdom;Fareham;99;7
+3933;;100 %; United Kingdom;Bursledon, Solent;99;7
+2757;;100 %; United States of America;New Orleans;98;96
+2305;;100 %; United States of America;Florida, Fort Lauderdale;97;0
+2718;;100 %; Unknown;Roaming station;97;45
+2975;;100 %; Turkey;Fethiye;97;94
+2136;;100 %; Netherlands;NW_Overijssel ;96;16
+2136;;100 %; Netherlands;NW_Overijssel ;96;16
+3752;;100 %; Japan;Tokyo;95;94
+2093;;100 %; France;Rouen;95;2
+2351;;100 %; Netherlands;Goes;95;5
+2335;;100 %; France;Le Havre;95;0
+2127;;100 %; Netherlands;Rotterdam;94;0
+2548;;100 %; Netherlands;Poortugaal;94;0
+2607;;100 %; Unknown;Roaming station;94;5
+2731;;100 %; Ukraine;Kyiv;91;0
+2474;;100 %; United Kingdom;Gosport;91;0
+3423;;100 %; Germany;Oldendorf;91;32
+2649;;100 %; United Kingdom;Southampton;90;6
+2813;;100 %; Canada;Vancouver;90;1
+2379;;100 %; Netherlands;Zeist;89;26
+3296;;100 %; Norway;Stavanger;89;12
+3660;;99 %; Australia;Roaming station;89;27
+3287;;100 %; Netherlands;Renesse;88;10
+2655;;100 %; Netherlands;Sliedrecht;87;57
+2371;;100 %; Israel;Haifa;86;0
+2893;;100 %; Israel;Haifa;86;0
+3093;;100 %; Cyprus;Limassol;86;48
+3207;;100 %; Thailand;Bangkok;86;2
+2892;;100 %; Netherlands;Duiven;86;35
+3653;;98 %; Greece;Aegina Island;85;4
+2697;;100 %; United States of America;Bremerton, WA;85;13
+3234;;100 %; France;L'Epine;85;12
+3400;;100 %; Philippines;Paranaque;85;84
+2807;;100 %; Germany;Bremerhaven;84;0
+3254;;100 %; Netherlands;Emmeloord;84;1
+2720;;100 %; Spain;Vigo Bay;84;27
+3597;;100 %; United States of America;Hampton Virginia;83;45
+2886;;100 %; Netherlands;Maassluis;83;0
+3634;;100 %; Italy;Udine;82;3
+2899;;100 %; Germany;Berlin;82;60
+3445;;9 %; United Kingdom;Minster On Sea;81;0
+3593;;100 %; Germany;Rostock;81;66
+2641;;100 %; Germany;Hooksiel;81;27
+2812;;100 %; United States of America;San Francisco;80;67
+3152;;100 %; Belgium;Zeebrugge;79;46
+2845;;100 %; Germany;Cuxhaven;79;75
+2923;;100 %; Denmark;Lemvig;78;77
+3329;;100 %; United Kingdom;Plymouth;78;25
+2511;;100 %; South Africa;Cape Town;77;25
+2347;;100 %; Netherlands;The Hague;77;0
+2648;;100 %; United Kingdom;London;77;4
+2262;;100 %; Sweden;Karlskrona;76;75
+3258;;53 %; Viet Nam;Haiphong;76;76
+2471;;100 %; France;UBS-Vannes;75;2
+2502;;100 %; Australia;Scarborough;75;43
+3136;;100 %; Norway;Bergen;75;2
+2471;;100 %; France;UBS-Vannes;75;2
+2061;;100 %; Belgium;Ostend;74;0
+2289;;100 %; France;Six Fours Les Plages;74;73
+2473;;100 %; Norway;Oslofjord, Fulehuk Lighthouse;74;7
+3412;;100 %; Netherlands;Rotterdam;74;0
+2949;;100 %; Norway;Bergen;73;1
+2463;;100 %; Canada;Prince Rupert;73;2
+3544;;100 %; Sweden;Gothenburg;73;0
+3202;;100 %; Hong Kong;Tsuen Wan;73;4
+2273;;98 %; Netherlands;Rotterdam;73;0
+2180;;100 %; France;Rouen;72;0
+2113;;100 %; Saudi Arabia;Tabuk;72;68
+2537;;100 %; United States of America;Savannah, Georgia;72;36
+2716;;100 %; United Kingdom;Gosport;72;5
+2825;;100 %; United Kingdom;Alton;71;13
+2804;;100 %; Norway;Oslo;71;5
+2593;;100 %; Canada;Prince Rupert;71;0
+3090;;95 %; South Africa;Umhlanga;71;2
+2365;;100 %; New Zealand;Auckland;70;4
+2137;;100 %; Germany;Bremen;70;3
+2135;;100 %; United States of America;Wilmington, CA;70;1
+2333;;100 %; United Kingdom;Worldwide;69;37
+3589;;100 %; Norway;Tomasjord;69;0
+2279;;100 %; Australia;Minyama Sunshine Coast QLD;69;64
+3845;;100 %; United States of America;Bellingham, WA;69;49
+3987;;100 %; Belgium;Wenduine;69;8
+2586;;100 %; Norway;Jeloy, Moss;69;0
+2073;;100 %; United Kingdom;Felixstowe ;68;14
+2189;;100 %; Italy;Milazzo;68;48
+2277;;100 %; United States of America;Dania Beach - Florida;68;4
+2996;;100 %; Greece;Nea Erithrea;68;0
+3176;;100 %; Sweden;Näsudden Ingarö;67;5
+2719;;100 %; Lithuania;Klaipeda;67;67
+2661;;97 %; Netherlands;Amersfoort;67;18
+3674;;100 %; United States of America;Seattle, WA;67;0
+3004;;96 %; Slovenia;Izola;67;2
+3269;;100 %; Netherlands;Bergen op Zoom;67;10
+3473;;100 %; Netherlands;Breskens;66;0
+2116;;100 %; United States of America;Eastport, Annapolis, MD;66;32
+2199;;100 %; United States of America;Vicksburg;66;57
+3212;;100 %; Netherlands;Maarssenbroek;66;27
+3840;;100 %; Denmark;Røsnæs Fyr;66;51
+2959;;100 %; Spain;Valencia;65;0
+2043;;95 %; Poland;Szczecin-Golecin;65;30
+2380;;100 %; Finland;Helsinki;65;21
+3939;;100 %; France;Nice;65;3
+2821;;100 %; Canada;Burnaby;65;0
+3102;;100 %; Greece;Athens;65;0
+2911;;100 %; Spain;el Toro;65;39
+2247;;100 %; United States of America;Hanover, Maryland ;64;9
+3007;;100 %; Netherlands;Maarssen;63;6
+2922;;100 %; Spain;Alcaidesa;63;37
+3347;;100 %; Netherlands;Krimpen aan den IJssel;63;4
+2394;;100 %; Italy;Livorno;63;2
+3077;;100 %; Germany;Kiel;63;0
+3032;;99 %; Spain;Badalona;63;16
+2701;;100 %; Australia;O'Connor;62;55
+3646;;94 %; Netherlands;Urk;62;2
+3497;;100 %; Denmark;Rødby;61;7
+2653;;100 %; France;La Rochelle;61;38
+2819;;100 %; Unknown;Roaming station;61;9
+3271;;100 %; Spain;Torrevieja;61;33
+2037;;96 %; France;France;61;8
+3768;;100 %; South Africa;Cape Town;60;2
+3130;;100 %; Denmark;Lunderskov;60;9
+3711;;100 %; Australia;Cairns;60;59
+2667;;98 %; Netherlands;Eelde;60;11
+2739;;100 %; Australia;Townsville;60;18
+2290;;100 %; Greece;Athens;60;15
+2115;;100 %; United Kingdom;London;60;0
+3827;;89 %; Taiwan (Province of China);Keelung;59;58
+3721;;100 %; Norway;Bergen;59;3
+2887;;100 %; Sweden;Djurhamn;59;23
+2110;;100 %; Germany;Bremen;58;4
+3193;;100 %; United Kingdom;Aberdeenshire;58;26
+3809;;100 %; United States of America;Norfolk VA;58;21
+2081;;92 %; Martinique;Fort-de-France;58;57
+3574;;100 %; Spain;Vigo;58;3
+3024;;100 %; Japan;Katsuura, Chiba;58;57
+3749;;100 %; Sweden;Enskede;58;0
+3151;;100 %; Norway;Trondheim;58;22
+2791;;100 %; United States of America;Florida, Tampa;58;44
+2689;;100 %; Norway;Haugesund;57;4
+3145;;100 %; Canada;Vancouver;56;2
+2020;;99 %; United Kingdom;Liverpool;56;0
+2160;;100 %; Norway;Bergen;56;31
+3654;;100 %; United Kingdom;Portsmouth;56;0
+3175;;98 %; United Kingdom;Tangmere;55;16
+3174;;100 %; United Kingdom;Higham, Kent;55;0
+2070;;100 %; Australia;Nelson Bay, NSW;55;29
+2589;;100 %; Norway;Asker;54;20
+3147;;100 %; Norway;Tromsø;54;0
+2198;;100 %; Norway;Kristiansund;54;0
+2976;;100 %; Canada;Vancouver;54;0
+3997;;100 %; Norway;Molde;54;22
+2058;;91 %; Denmark;Humlebaek;53;0
+2741;;100 %; United States of America;Stanford;53;5
+3149;;100 %; Germany;Bremerhaven;53;0
+2095;;100 %; United Kingdom;Southampton;53;7
+2525;;100 %; Italy;Meta (Naples);53;53
+2525;;100 %; Italy;Meta (Naples);53;53
+3447;;96 %; Sweden;Helsingborg;52;7
+2995;;100 %; Australia;Kingston;52;3
+3950;;100 %; Netherlands;Amsterdam;52;1
+3842;;100 %; United Kingdom;Brighton;52;27
+2428;;100 %; France;Le Havre;52;0
+2130;;100 %; United Kingdom;Sheerness;52;0
+3075;;97 %; Slovenia;Colomban;52;0
+3031;;99 %; Malta;Malta Freeport;51;49
+3812;;97 %; Spain;Valencia;51;0
+2836;;100 %; France;Brest;51;5
+2573;;100 %; Italy;Venice;51;12
+2642;;90 %; United Kingdom;Southampton;51;1
+2867;;100 %; Finland;Vantaa;51;7
+2019;;100 %; Canada;Victoria, BC;50;4
+2952;;100 %; Germany;Hamburg;50;0
+2107;;100 %; Brazil;Santos;50;50
+2111;;100 %; Turkey;Göcek;49;46
+2059;;100 %; Portugal;Azores;49;8
+2282;;100 %; United States of America;Seattle;49;5
+2695;;100 %; Finland;Turku;49;9
+2308;;100 %; United States of America;Jupiter, FL;48;48
+2938;;100 %; Russian Federation;Sakhalin;48;48
+2313;;100 %; United Kingdom;Broadstairs, Kent;48;0
+2403;;100 %; Germany;Stadersand;48;4
+3487;;100 %; United States of America;Friday Harbor;48;3
+3221;;100 %; United States of America;Mill Valley, CA;47;5
+2654;;100 %; Guernsey;St Martin;47;18
+3324;;98 %; United Kingdom;London;47;47
+2796;;100 %; Canada;Victoria;47;1
+2684;;96 %; Norway;Oslo, Frognerkilen;47;24
+3141;;100 %; Netherlands;Harkstede;47;4
+2625;;99 %; Netherlands;Sint Anne;47;4
+2251;;99 %; Netherlands;Maasbommel;46;3
+2191;;100 %; United Kingdom;Aberdeen;46;35
+2637;;100 %; Australia;Devonport;46;20
+2206;;99 %; United Kingdom;Cleethorpes;46;0
+3417;;100 %; Sweden;Sodra Bjorkfjarden;46;33
+3658;;99 %; United States of America;Cape May;46;39
+2782;;100 %; Netherlands;Sneek;45;38
+2464;;99 %; Germany;Wentorf;45;0
+2453;;100 %; Norway;Kristiansand;45;13
+2627;;100 %; United States of America;Groton CT;45;17
+2801;;100 %; France;Boulogne-sur-Mer;44;42
+2060;;100 %; United Kingdom;Solent;44;0
+2398;;100 %; Germany;Berlin;44;1
+2761;;100 %; Netherlands;Huissen;44;1
+3166;;100 %; Netherlands;Zaandam;43;1
+2805;;100 %; Germany;Norderney;43;36
+3159;;100 %; Netherlands;Gendt;43;2
+2369;;100 %; United States of America;Seattle;43;42
+2485;;99 %; Slovakia;Miloslavov;43;39
+2669;;100 %; Cyprus;Limaasol;43;5
+2967;;100 %; United Kingdom;Birkenhead;43;0
+3166;;100 %; Netherlands;Zaandam;43;1
+3159;;100 %; Netherlands;Gendt;43;2
+3256;;100 %; United Kingdom;Bangor;42;27
+2928;;100 %; Norway;Hammerfest;42;15
+2066;;100 %; United Kingdom;Orkney;42;41
+3300;;100 %; Norway;Bodø;42;0
+3543;;100 %; Canada;Halifax;41;10
+2143;;95 %; Netherlands;Sliedrecht;41;18
+3179;;100 %; Denmark;Aarhus;41;6
+3370;;100 %; Norway;Bodo;41;0
+3099;;100 %; Netherlands;Espel;41;0
+3200;;100 %; Norway;Bergen / Nygårdshøyden;41;4
+3278;;100 %; United States of America;Maryland;41;0
+2106;;99 %; Denmark;Lørslev;40;21
+2285;;48 %; Canada;Vancouver;40;0
+3549;;86 %; Norway;Mehamn;40;40
+2094;;100 %; Netherlands;Helmond;40;0
+2571;;100 %; Netherlands;Leens;40;0
+2304;;100 %; Sweden;Ingarostrand;40;1
+2652;;100 %; Germany;Hamburg;40;0
+2925;;100 %; Australia;Elizabeth;39;7
+2175;;100 %; Germany;Berlin Rummelsburg;39;3
+3457;;100 %; United States of America;Stephensville, Louisiana;39;35
+3419;;100 %; United States of America;Cambridge, MA;39;9
+2584;;99 %; Germany;Rendsburg;39;17
+3096;;100 %; United Kingdom;Wirral;39;0
+2885;;100 %; United Kingdom;Hartlepool;39;38
+2447;;100 %; United Kingdom;Rochester;39;1
+2522;;100 %; France;Port de Bouc;39;39
+3054;;100 %; Finland;Turku;38;1
+2266;;93 %; Sweden;Sodersvik;38;9
+3841;;100 %; France;Brest;38;0
+3582;;100 %; United States of America;Charleston;38;21
+2778;;100 %; Norway;Tromsø;38;0
+2346;;100 %; Netherlands;Amsterdam;38;0
+3233;;100 %; United Kingdom;Roaming station;37;37
+3998;;71 %; Faroe Islands;Tórshavn;37;37
+2973;;100 %; United States of America;Savannah GA;37;1
+2749;;100 %; France;Carnon;37;37
+2079;;100 %; Canada;Halifax;37;7
+3217;;100 %; United States of America;Seattle, WA;37;7
+3076;;100 %; France;Hegenheim;37;26
+2713;;81 %; United Kingdom;Scotland, Greenock;37;19
+3083;;97 %; Canada;New Westminster;37;0
+2504;;100 %; Malaysia;Kota Kinabalu;36;36
+3232;;100 %; Germany;Cologne;36;0
+2504;;100 %; Malaysia;Kota Kinabalu;36;36
+3241;;100 %; Morocco;Casablanca;36;36
+3822;;100 %; Canada;Calgary;36;17
+2864;;100 %; Canada;Victoria;36;9
+2773;;85 %; Spain;Burriana;36;24
+2777;;100 %; United Kingdom;Southampton;36;0
+2509;;100 %; Portugal;Matosinhos;36;1
+2750;;100 %; United States of America;Stevensville, MD;35;5
+3215;;100 %; Belgium;Antwerp;35;0
+3410;;100 %; Japan;Aomori;35;28
+3211;;100 %; New Zealand;Auckland;34;0
+3291;;100 %; Greece;Peraia;34;20
+3021;;100 %; Netherlands;Echteld;34;2
+2493;;100 %; Canada;Sorel-Tracy;34;1
+2861;;98 %; Germany;Karlsruhe;34;31
+2321;;100 %; Ireland;Cobh;33;5
+3598;;100 %; Australia;Tasmania;33;0
+3226;;94 %; Poland;Szczecin;33;0
+2300;;99 %; Belgium;Antwerp Harbour 1;33;1
+2367;;100 %; Spain;Sant Carles de la Rapita;33;33
+2179;;100 %; New Zealand;Roaming station;33;2
+2415;;100 %; France;Brest;33;2
+3367;;100 %; Qatar;Doha;33;33
+3727;;100 %; United States of America;Boston, MA;33;3
+2240;;99 %; Spain;Vilanova i la Geltru;33;7
+3268;;100 %; Netherlands;The Hague;33;0
+3251;;100 %; United States of America;Palmetto, FL;33;33
+2165;;100 %; Germany;Hamburg;32;3
+3862;;100 %; Australia;Tea Tree Gully;32;0
+3456;;54 %; Japan;Hakodate;32;25
+2590;;100 %; Netherlands;Breda;32;6
+2046;;100 %; Portugal;Faial Island;32;10
+2377;;100 %; United Kingdom;Poole;32;16
+2611;;100 %; New Zealand;Tauranga;32;1
+2818;;100 %; United States of America;Hawaii, Kailua;32;16
+2030;;100 %; Germany;Rostock;31;15
+2140;;100 %; Netherlands;Rotterdam;31;0
+2400;;100 %; Denmark;Norresundby;31;28
+2132;;100 %; South Africa;Durban;31;0
+3710;;99 %; Portugal;Maia;31;4
+3220;;94 %; Poland;Szczecin, Dąbie;31;0
+3095;;94 %; Poland;Szczecin;31;0
+2882;;100 %; United States of America;Roaming station;31;18
+2656;;100 %; Italy;Cagliari;31;31
+2527;;100 %; Estonia;Vaana-Joesuu;30;9
+2319;;100 %; Sweden;Stockholm;30;0
+3460;;97 %; United States of America;Everett, Washington;30;23
+3470;;5 %; France;Saint-Malo;30;2
+3488;;100 %; Australia;Parramatta;30;0
+3264;;84 %; Netherlands;Utrecht;30;3
+2527;;100 %; Estonia;Vaana-Joesuu;28;10
+3115;;100 %; Denmark;Skoedstrup;28;4
+2904;;100 %; Netherlands;Wezep;28;2
+3441;;97 %; Netherlands; ;28;7
+3186;;100 %; United Kingdom;Newlyn;28;23
+2798;;100 %; Austria;Linz;28;8
+2205;;100 %; Portugal;Silves;27;8
+2327;;100 %; Denmark;Roenne, Bornholm ;27;26
+2209;;100 %; France;Saint-Malo;27;1
+3071;;76 %; Mexico;Gulf of California;27;17
+3488;;100 %; Australia;Parramatta;27;0
+3963;;100 %; Hong Kong;Wanchai;27;0
+2678;;98 %; Netherlands;Beverwijk;27;0
+2890;;100 %; Canada;Montreal;26;2
+3248;;39 %; United Kingdom;Kent;26;2
+3052;;100 %; Norway;Sandvika;26;2
+3913;;100 %; Germany;Simonsberg;26;25
+2255;;100 %; Cyprus;Limassol;26;0
+2376;;100 %; Unknown;Roaming Station;26;19
+2507;;100 %; Mexico;Nuevo Vallarta, Nayarit;26;24
+3575;;86 %; Spain;Huelva;26;26
+2895;;100 %; Norway;Indre Arna;26;1
+3375;;100 %; Spain;Santander;26;26
+2558;;100 %; United Kingdom;Gelliswick;25;22
+2985;;100 %; Germany;Heilbronn;25;8
+2275;;100 %; France;Lorient;25;0
+2340;;100 %; Spain;Valencia;25;0
+2348;;91 %; Chile;Viña del Mar;25;15
+3222;;80 %; Spain;La Coruña;25;14
+2454;;86 %; Viet Nam;Ho Chi Minh City;25;25
+3465;;98 %; Spain;Fuengirola;25;13
+2974;;98 %; Hong Kong;Hong Kong;25;0
+2506;;94 %; Norway;Lista;25;0
+3627;;100 %; Netherlands;Druten;25;0
+2915;;100 %; Netherlands;Amersfoort;25;0
+2917;;100 %; France;Brest;25;0
+3753;;100 %; Germany;Minden;25;25
+2524;;100 %; Cyprus;Limassol;25;1
+2588;;100 %; Netherlands;The Hague;25;0
+3471;;98 %; Sweden;Wik-Inn Marina;24;18
+2217;;100 %; Italy;Taranto;24;24
+2312;;100 %; United Kingdom;Bristol;24;3
+2595;;100 %; Germany;Bremen;24;0
+2299;;100 %; France;Locmalo, Port-Louis;24;0
+2561;;100 %; Germany;Bremerhaven;24;1
+2345;;100 %; Unknown;Multiple AIS stations;24;0
+2567;;86 %; United Kingdom;Plymouth;24;1
+2811;;100 %; Estonia;Tallinn;24;8
+3764;;100 %; United States of America;Burlington KY;24;24
+2647;;100 %; United Kingdom;Edinburgh;24;2
+2647;;100 %; United Kingdom;Edinburgh;24;2
+2811;;100 %; Estonia;Tallinn;24;8
+2688;;100 %; Germany;Lübeck;24;24
+2693;;100 %; France;Roaming station;24;0
+3471;;98 %; Sweden;Wik-Inn Marina;24;18
+2723;;89 %; United States of America;Cosmopolis;24;17
+2746;;100 %; Austria;Leonding;24;4
+3764;;100 %; United States of America;Burlington KY;24;24
+3409;;99 %; Germany;Hamburg;23;0
+2190;;99 %; Finland;Ekenas;23;20
+3319;;100 %; Canada;Toronto;23;2
+2822;;97 %; India;Visakhapatnam;23;23
+3616;;100 %; Netherlands;Vlissingen;23;0
+3429;;100 %; Netherlands;Terneuzen;23;0
+3121;;100 %; Finland;Mariehamn;23;16
+2628;;100 %; Sweden;Nyköping;23;5
+3264;;84 %; Netherlands;Utrecht;22;0
+2972;;100 %; United States of America;San Francisco;22;0
+3356;;100 %; United Kingdom;Musselburgh;22;0
+2560;;96 %; Netherlands;Urk;22;0
+2385;;100 %; Portugal;Porto;22;0
+2937;;100 %; France;Rivedoux-Plage;22;0
+2317;;48 %; Canada;Maple Bay;22;0
+2629;;100 %; United States of America;Monterey, CA;22;18
+2639;;95 %; Spain;Calonge;22;22
+3568;;100 %; France;Vabonne;22;2
+2743;;100 %; United Kingdom;Little Clacton, Essex;22;0
+3486;;96 %; France;Hendaye;22;20
+2101;;93 %; Norway;Tysnes;21;3
+2257;;100 %; Japan;Shimizu;21;21
+2311;;100 %; Germany;Leer;21;18
+3318;;100 %; Spain;Getxo;21;21
+3918;;100 %; Georgia;Batumi;21;21
+2508;;100 %; Germany;Neckarwestheim;21;3
+2837;;100 %; United Kingdom;Oldcroft;21;1
+2337;;100 %; Brazil;Florianopolis;21;18
+2855;;100 %; United States of America;Brunswick;21;14
+2652;;100 %; Germany;Hamburg;21;0
+2738;;99 %; United States of America;Huntingdon Valley;21;4
+3755;;100 %; Germany;Woltersdorf;21;2
+3281;;100 %; United Kingdom;Felixstowe / Harwich / Mistley;20;0
+3242;;100 %; Norway;Haugesund;20;2
+2092;;100 %; Portugal;Lisbon;20;2
+2442;;86 %; Canada;Montreal;20;0
+2445;;100 %; New Zealand;Roaming station;20;20
+2583;;100 %; United Kingdom;Broadford;20;11
+2521;;100 %; Italy;Gela;20;18
+2196;;100 %; Sweden;Norrtälje;20;0
+2876;;99 %; Indonesia;Batang;20;3
+2943;;100 %; New Zealand;Auckland;20;19
+2876;;99 %; Indonesia;Batang;20;3
+3242;;100 %; Norway;Haugesund;20;2
+2916;;1 %; Slovenia;Izola;20;0
+3238;;100 %; Canada;East Point Saturna Island;19;0
+2287;;100 %; Netherlands;Rosmalen;19;10
+2259;;100 %; Colombia;Salgar;19;2
+2320;;100 %; France;Brest;19;0
+3485;;100 %; Greece;Patra;19;19
+3910;;100 %; Greece;Ermoupoli Syros;19;14
+3348;;100 %; Portugal;Coimbra;19;7
+3036;;99 %; Greece;Piraeus;19;0
+2709;;100 %; Norway;Tromsø;19;0
+3126;;100 %; United States of America;Mililani, HI;19;4
+2051;;100 %; Norway;Lovund;18;2
+2129;;40 %; Poland;Szczecin;18;2
+3162;;100 %; France;Cléden-Cap-Sizun;18;4
+2520;;99 %; Austria;Vienna;18;16
+2436;;100 %; United States of America;Treehouse, Virgin Islands;18;8
+2587;;100 %; United Kingdom;Felixstowe;18;0
+2069;;100 %; Portugal;Albufeira;18;17
+2715;;92 %; Thailand;Songhla;18;18
+2986;;76 %; Italy;Gulf of Milazzo;18;0
+2759;;100 %; Germany;Bruehl-Baden;18;8
+2827;;100 %; United States of America;Key Largo;18;18
+2022;;100 %; Japan;Hamamatsu Hamana;17;17
+3015;;92 %; Indonesia;Balikpapan, East Kalimantan;17;0
+2208;;100 %; Germany;Mannheim;17;3
+3765;;99 %; United States of America;Sea Isle City, NJ;17;11
+2408;;100 %; United States of America;Vashon Island, WA;17;3
+2562;;100 %; Norway;Brostadbotn;17;14
+3461;;100 %; France;Théoule-sur-Mer;17;1
+2183;;100 %; Portugal;Lisbon;17;4
+2108;;100 %; Australia;Sans Souci;17;3
+3955;;98 %; Germany;Münster;17;17
+2646;;24 %; United States of America;Arkwright, NY;17;11
+3853;;100 %; Mauritius;Port Louis;17;17
+2685;;100 %; United States of America;Berwick;17;9
+2730;;100 %; Indonesia;Kota Kupang;17;16
+2751;;100 %; Netherlands;Grootegast;17;5
+2765;;100 %; France;Guipavas;17;0
+2793;;100 %; Germany;Wismar;17;2
+2982;;100 %; Norway;Tromsø;17;0
+2089;;99 %; Italy;Trapani;16;16
+3273;;100 %; Sweden;Faro;16;14
+2500;;100 %; Netherlands;Drachten;16;5
+2050;;100 %; Estonia;Tallinn;16;2
+2104;;100 %; Denmark;Gershøj;16;2
+3436;;100 %; Netherlands;Ferwoude;16;1
+2969;;100 %; United States of America;Clifton;16;3
+2637;;100 %; Australia;Devonport;16;6
+2637;;100 %; Australia;Devonport;16;6
+2830;;100 %; New Zealand;Wellington;16;0
+2838;;100 %; Australia;Geraldton;16;16
+2969;;100 %; United States of America;Clifton;16;3
+2983;;100 %; Thailand;Bangkok;16;16
+3056;;100 %; Netherlands;Leiden;16;2
+3273;;100 %; Sweden;Faro;16;14
+3436;;100 %; Netherlands;Ferwoude;16;1
+2184;;79 %; Cyprus;Larnaca;15;15
+2497;;100 %; Netherlands;Warmond;15;3
+2370;;60 %; Trinidad and Tobago;Chaguaramas;15;14
+2676;;46 %; Canada;Toronto;15;0
+2706;;100 %; Canada;Montreal;15;2
+2786;;99 %; Turkey;Bakırköy;15;15
+2851;;85 %; Italy;Chioggia;15;2
+3028;;96 %; United States of America;Fairhaven, MA;15;15
+3110;;100 %; United States of America;Vicksburg;15;14
+3146;;100 %; United Kingdom;London;15;0
+3177;;100 %; Sweden;Visby;15;13
+3378;;100 %; United States of America;Canada, Redwood City;15;2
+3776;;100 %; United States of America;Roaming station;15;15
+3823;;100 %; United States of America;Roaming station;15;3
+2202;;100 %; Canada;Ucluelet;14;14
+2314;;98 %; Netherlands;Utrecht;14;3
+2207;;100 %; Germany;Wismar;14;2
+2197;;91 %; United States of America;Warwick, Rhode Island;14;10
+2157;;100 %; Norway;Kolvereid;14;2
+2515;;100 %; United Kingdom;Lyme Regis;14;5
+2434;;100 %; Switzerland;Pratteln;14;3
+2551;;100 %; Germany;Elbe River, Drochtersen;14;2
+2660;;100 %; Canada;Sorel-Tracy;14;0
+2691;;100 %; Netherlands;Utrecht;14;0
+2707;;100 %; United States of America;Hampton, VA;14;0
+2755;;100 %; Netherlands;Nes Ameland;14;13
+2872;;100 %; Denmark;Dragør;14;0
+2883;;100 %; Korea;Nam-gu,Pohang;14;14
+2889;;99 %; Russian Federation;Moscow;14;14
+2939;;98 %; Austria;Loimersdorf;14;9
+3180;;100 %; Japan;Aichi Takahama;14;14
+3197;;100 %; Greece;Thessaloniki;14;1
+3230;;100 %; United States of America;Port Ludlow, WA;14;10
+3478;;100 %; United Kingdom;Canvey Island;14;0
+3656;;100 %; Russian Federation;Sankt Petersburg;14;14
+2570;;100 %; Germany;Kiel-Suchsdorf;13;0
+2580;;100 %; Denmark;Frederikssund;13;10
+2297;;100 %; United Kingdom;Great Yarmouth;13;12
+2572;;100 %; France;Mandelieu La Napoule;13;0
+2040;;100 %; Viet Nam;HCMC;13;12
+2239;;100 %; Netherlands;Goor;13;13
+2150;;100 %; Ireland;Lackenbehy;13;0
+2544;;100 %; New Zealand;Tauranga;13;0
+2041;;100 %; United States of America;New York;13;0
+2194;;100 %; Serbia;Belgrade;13;13
+2429;;100 %; Netherlands;Rotterdam;13;7
+2614;;100 %; United States of America;Kingwood;13;4
+2732;;100 %; United Kingdom;Rosneath;13;0
+2980;;100 %; Netherlands;Amsterdam;13;0
+2998;;100 %; Sweden;Harnosand;13;13
+3062;;99 %; Australia;Rockingham;13;8
+3188;;100 %; Kuwait;Kuwait;13;13
+3189;;100 %; Canada;Vancouver - Fraser River;13;0
+3563;;100 %; Germany;Berlin;13;0
+3875;;99 %; United Kingdom;Cornwall;13;0
+2159;;100 %; United Kingdom;Swanage;12;0
+2187;;100 %; United States of America;Canada, Monterey;12;7
+2166;;100 %; France;Saint Georges de Didonnes;12;0
+2055;;100 %; United Kingdom;London & Poole;12;1
+2725;;100 %; Denmark;Aarhus;12;0
+2728;;99 %; Netherlands;Beuningen;12;0
+2754;;100 %; Germany;Barrien;12;6
+2834;;25 %; Australia;Bunbury;12;0
+2865;;100 %; Germany;Frankfurt;12;6
+2898;;100 %; United States of America;Burien;12;0
+3128;;94 %; Sweden;Malmö;12;3
+3274;;100 %; United Kingdom;Welton;12;2
+3427;;100 %; Australia;Lemon Tree Passage;12;0
+3519;;73 %; Unknown;Roaming station;12;9
+3676;;100 %; Canada;Kitimat;12;12
+3689;;100 %; Dominican Republic;Santo Domingo, D. N.;12;12
+2495;;100 %; United States of America;Duluth, MN;11;2
+2084;;100 %; Greece;Ios;11;6
+2514;;100 %; United Kingdom;Lochgelly;11;2
+2342;;100 %; Sweden;Ostra Husby;11;0
+2028;;100 %; United States of America;Roaming station;11;0
+2530;;97 %; United States of America;Key Largo, FL;11;0
+2418;;100 %; Norway;Årland;11;3
+2503;;100 %; United Kingdom;Ardrossan;11;10
+2840;;100 %; Germany;Duisburg;11;0
+3201;;100 %; Canada;Sorel-Tracy;11;0
+3298;;100 %; Spain;Baiona;11;10
+3323;;100 %; Spain;A Coruña;11;0
+3368;;100 %; United Kingdom;Stornoway;11;11
+3482;;100 %; Philippines;Cebu;11;11
+3493;;100 %; South Africa;Gordon's Bay;11;5
+3498;;100 %; United Kingdom;Hadleigh, Essex;11;0
+3614;;100 %; Netherlands;Dordrecht;11;0
+2265;;100 %; United Kingdom;Falmouth;10;5
+2483;;94 %; Netherlands;Nederweert;10;10
+2328;;100 %; Canada;Rimouski;10;1
+3048;;96 %; France;Poses;10;10
+2109;;96 %; Sweden;Oskarshamn;10;10
+2477;;100 %; United Kingdom;Humber Dock;10;2
+2470;;100 %; Netherlands;Zwolle;10;0
+2100;;100 %; United States of America;Portsmouth;10;9
+2752;;95 %; Sweden;Grisslehamn;10;5
+2989;;100 %; Germany;Gernsheim;10;7
+2993;;100 %; Thailand;Samut Prakan;10;10
+3069;;91 %; Unknown; ;10;0
+3204;;100 %; Canada;Ontario, Burlington;10;2
+3282;;100 %; Germany;Emden;10;5
+3638;;100 %; United Kingdom;Portland;10;0
+3754;;100 %; Germany;Fürstenwalde;10;9
+3914;;100 %; Germany;Kornwestheim;10;8
+3934;;100 %; United States of America;Montclair;10;0
+2263;;100 %; United Kingdom;Wigan;9;0
+2114;;100 %; Spain;Fuerteventura;9;9
+2162;;99 %; Finland;Kiukainen;9;0
+2271;;100 %; United States of America;Pohick, WV;9;0
+2049;;100 %; United States of America;Maryland;9;0
+2542;;100 %; Australia;Shellharbour;9;7
+2582;;100 %; Germany;Siegburg;9;0
+2232;;100 %; Portugal;Porto;9;4
+2935;;100 %; Denmark;Omoe;9;2
+2948;;100 %; United States of America;Delaware, Fenwick Island;9;7
+2964;;100 %; Canada;Oakville, Ontario;9;0
+3017;;100 %; Germany;Duisburg;9;0
+3114;;97 %; Spain;Cala Llonga, Menorca;9;9
+3164;;93 %; Canada;Mississauga;9;0
+3205;;100 %; Portugal;Carvoeira;9;9
+3213;;100 %; United States of America;Merritt Island, FL;9;1
+3237;;99 %; France;Castel-Bian Carantec;9;3
+3247;;100 %; United States of America;Philadelphia;9;0
+3433;;80 %; Germany;Roaming station;9;1
+3541;;100 %; Sweden;Furuvik;9;9
+3584;;100 %; Ireland;Greystones;9;2
+3696;;100 %; Ireland;Rashbrooke, Cobh;9;0
+2294;;76 %; Unknown;Roaming station;8;0
+2038;;100 %; United States of America;Williamstown, WV;8;0
+2200;;100 %; United States of America;Vienna, VW;8;0
+2056;;93 %; United States of America;New Orleans;8;8
+2431;;100 %; France;Cap Ferret;8;8
+2152;;100 %; United States of America;Brielle;8;6
+2409;;100 %; Netherlands;Sliedrecht;8;1
+2479;;100 %; Estonia;Tallinn;8;0
+2381;;100 %; Brazil;Recife;8;8
+2234;;100 %; Spain;Laracha;8;8
+2651;;100 %; Jersey;S/Y Aweh;8;7
+2717;;100 %; Germany;Heilbronn;8;2
+2814;;100 %; United States of America;Port Huron;8;8
+2850;;100 %; Brazil;Fortaleza;8;8
+3245;;100 %; Spain;Málaga;8;7
+3260;;100 %; Netherlands;Lelystad;8;0
+3304;;100 %; Ireland;Newcastle;8;2
+3342;;100 %; United States of America;San Francisco;8;7
+3351;;100 %; United Kingdom;Shoreham;8;0
+3424;;100 %; Denmark;Holbæk;8;7
+3452;;100 %; Estonia;Tallinn;8;1
+2218;;100 %; Canada;Newfoundland, St. Johns;7;7
+2025;;63 %; Canada;Windsor, Ontario;7;7
+2149;;100 %; United States of America;Niceville, FL;7;6
+2122;;53 %; Norway;Homborsund;7;0
+2250;;100 %; Netherlands;Zoeterwoude;7;0
+2526;;100 %; Spain;Oviedo;7;7
+2223;;100 %; Germany;Bremen Winterhafen;7;0
+2451;;100 %; Sweden;Segersang;7;4
+2745;;100 %; United States of America;Seattle;7;1
+2824;;100 %; Belgium;Antwerpen;7;0
+2866;;100 %; Colombia;Puerto Colombia;7;4
+2994;;85 %; Norway;Moss;7;0
+3167;;100 %; Australia;Gladstone;7;7
+3403;;100 %; Spain;Carboneras;7;7
+3576;;85 %; Italy;Zagarolo;7;6
+3832;;100 %; United States of America;Indian Harbour Beach;7;7
+3956;;100 %; United States of America;Boaz, WV;7;7
+2280;;96 %; South Africa;Cape Town;6;3
+2295;;100 %; Germany;Cologne;6;0
+2366;;100 %; Norway;Trondheim;6;0
+2244;;100 %; Netherlands;Almelo;6;5
+2393;;100 %; Norway;Rognan;6;6
+2382;;100 %; Germany;Offenbach;6;5
+2301;;100 %; Netherlands;Grave;6;0
+2427;;97 %; Mexico;Cozumel;6;0
+2438;;99 %; United Kingdom;Scotland, Broadford Bay, Isle of Skye;6;0
+2105;;100 %; Netherlands;Spijkenisse;6;0
+2440;;100 %; United Kingdom;Cardiff;6;3
+2245;;100 %; Australia;Tasmania;6;0
+2553;;100 %; Italy;Pescara ;6;6
+2665;;63 %; United Kingdom;London;6;0
+2711;;100 %; Indonesia;Sampang;6;6
+2734;;99 %; Netherlands;Driebergen;6;2
+2849;;57 %; Netherlands;Nieuwersluis;6;1
+2901;;100 %; France;Lorient;6;0
+2924;;97 %; Spain;O Grove;6;5
+2927;;100 %; Sweden;Luleå;6;6
+2999;;90 %; United States of America;Providence, RI;6;2
+3139;;98 %; Spain;Canary Islands, Tenerife, Playa Paraiso;6;6
+3160;;100 %; Germany;Wildau;6;1
+3171;;100 %; Norway;Sokndal;6;1
+3228;;99 %; France;Carantec;6;0
+3320;;96 %; Netherlands;Venhuizen;6;1
+3489;;100 %; Brazil;Maceio;6;6
+3495;;100 %; United Kingdom;Cornwall, The Lizard;6;0
+3655;;100 %; United States of America;Chicago, IL;6;4
+2343;;100 %; United States of America;La Conner, WA;5;1
+2283;;99 %; Israel;Haifa;5;4
+2168;;100 %; Denmark;Dragør;5;0
+3011;;100 %; United States of America;Belpre, Ohio;5;1
+2033;;100 %; United States of America;Bodega Bay;5;1
+2014;;99 %; United States of America;Fairfield;5;4
+2425;;98 %; Netherlands;Ter Walslage;5;5
+2496;;100 %; United Kingdom;London;5;0
+2450;;100 %; Sweden;Trollhattan;5;0
+2389;;99 %; Thailand;Surat Thani;5;5
+2531;;93 %; Germany;Frankfurt;5;0
+2600;;100 %; Germany;Hamm;5;5
+2615;;100 %; New Zealand;Tasman;5;0
+2677;;100 %; Netherlands;Loch Lomond;5;2
+2780;;96 %; New Zealand;Christchurch;0;0
+2789;;100 %; Denmark;Aabenraa;5;5
+2832;;100 %; Netherlands;Moune Ein / 9214VR / Smalle EE;5;0
+2891;;97 %; India;Nagercoil;5;5
+2968;;100 %; Netherlands;Drachten;5;0
+3295;;100 %; Netherlands;Eijsden;5;5
+3306;;78 %; United States of America;Rockport, MA;5;4
+3454;;86 %; United States of America;Tennessee, Eva;5;0
+3516;;100 %; Unknown;Roaming station;5;4
+3951;;100 %; Netherlands;Drachten;5;0
+3971;;97 %; Japan;Itoigawa-shi, Niigata;5;5
+2264;;100 %; Finland;Uto;4;3
+2288;;96 %; Australia;Johanna;4;4
+2363;;100 %; Germany;Offenbach Bürgel;4;0
+2174;;100 %; New Zealand;Whakatane;4;4
+2330;;86 %; Netherlands;Stein;4;3
+2410;;100 %; United Kingdom;Gourock;4;0
+2407;;100 %; Finland;Turku;4;0
+2538;;100 %; United States of America;Wilmington;4;4
+2336;;100 %; Sweden;Trollhättan;4;0
+2585;;100 %; United States of America;Seattle, WA;4;1
+2082;;100 %; Netherlands;Amsterdam;4;0
+2673;;100 %; Ireland;Dublin;4;3
+2772;;100 %; United States of America;San Diego Web Cam (PLE);4;1
+2815;;96 %; Netherlands;Delft;4;0
+2858;;100 %; Germany;Brandenburg;4;4
+2863;;100 %; Netherlands;Camping Kijkuit, Zonnemaire;4;0
+2875;;82 %; United States of America;Isleton;4;4
+2900;;100 %; United Kingdom;Dyffryn Ardudwy;4;3
+2905;;95 %; Canada;Lower Three Fathom Harbour;4;1
+2977;;100 %; Sweden;Krokslätt;4;0
+3349;;100 %; Norway;Hordvik;4;0
+3361;;98 %; Denmark;Korsør;4;3
+3371;;95 %; Spain;Sanlúcar de Barrameda;4;4
+3374;;64 %; Australia;Point Lonsdale;4;4
+3453;;100 %; Germany;Stralsund;4;4
+3472;;100 %; Germany;Flensburg;4;4
+3560;;100 %; United States of America;Illinois, Lake Bluff;4;2
+3607;;98 %; United Kingdom;Scotland, Edinburgh;4;1
+3693;;85 %; Sweden;Hudiksvall;4;4
+3703;;100 %; Uruguay;Roaming station;4;3
+3705;;98 %; Netherlands;Den Ham;4;2
+3932;;90 %; French Polynesia;Roaming station;4;1
+2103;;99 %; United Kingdom;London;3;0
+2172;;93 %; United States of America;Navarre FL;3;3
+2286;;98 %; United Kingdom;Isle of Islay Scotland;3;2
+2494;;100 %; Sweden;Ingarö;3;0
+2091;;100 %; Germany;Berlin;3;1
+2478;;99 %; United Kingdom;Berwick-upon-Tweed;3;3
+2181;;100 %; Norway;Vanersborg;3;0
+2203;;100 %; Sweden;Vanersborg;3;0
+2568;;99 %; Germany;Wesel;3;3
+2048;;96 %; Sweden;Åkersberga;3;1
+2618;;100 %; Venezuela;Puerto Ordaz;3;3
+2783;;100 %; Germany;Wunstorf;3;3
+2785;;24 %; Hong Kong;Aberdeen;3;1
+2829;;100 %; Australia;Mount Hicks;3;2
+2854;;90 %; United Kingdom;Whitby;3;2
+3006;;100 %; Netherlands;Heerenveen;3;2
+3105;;100 %; Netherlands;Roaming station;3;0
+3134;;100 %; Norway;Nærsnes;3;2
+3243;;100 %; United Kingdom;Killyleagh;3;1
+3253;;99 %; France;Le Mée sur Seine;3;3
+3257;;90 %; United Kingdom;Hythe, Hampshire;3;0
+3385;;100 %; Finland;Parainen;3;1
+3435;;84 %; Australia;Taringa;3;0
+3514;;100 %; Ireland;Baltimore;3;3
+3639;;100 %; United Kingdom;Port of Tyne;3;3
+3738;;100 %; United States of America;Pickwick Dam, Counce, TN;3;2
+3915;;95 %; Russian Federation;Vladivostok;3;0
+2151;;90 %; Norway;Straume;2;0
+2248;;57 %; Australia;Perth;2;0
+2444;;100 %; United States of America;Roaming station;2;2
+2449;;51 %; United States of America;Johns Hopkins University;2;0
+2368;;99 %; Denmark;Copenhagen ;2;0
+2352;;100 %; Germany;Dresden;2;2
+2176;;98 %; Germany;Glueckstadt;2;0
+2053;;99 %; United States of America;New Jersey, Howell;2;0
+2476;;100 %; Sweden;Norrmjöle;2;2
+2016;;85 %; United States of America;Carolina Beach;2;2
+2419;;98 %; Portugal;Porto Salvo;2;1
+2566;;100 %; Estonia;Tallinn;2;0
+2604;;100 %; Sweden;Sundbyberg;2;2
+2645;;100 %; Netherlands;Ouddorp;2;0
+2699;;95 %; United Kingdom;Poole;2;0
+2758;;100 %; United Kingdom;Helensburgh;2;0
+2762;;99 %; Singapore;Singapore;2;0
+2774;;100 %; France;Bidart;2;0
+2873;;94 %; Italy;Licata;2;0
+2913;;99 %; Taiwan (Province of China);Taipei;2;2
+2921;;100 %; Netherlands;Zeist;2;2
+2941;;64 %; Unknown;Roaming station;2;2
+2988;;77 %; Sweden;Trollhättan;2;0
+3150;;91 %; Argentina;Ushuaia;2;2
+3173;;81 %; Australia;Pgehgans Bay;2;1
+3294;;99 %; Czech Republic;Prague;2;2
+3301;;41 %; United States of America;Roaming station;2;2
+3341;;100 %; Netherlands;Amstelveen;2;0
+3357;;35 %; Ireland;Inishbofin;2;2
+3413;;77 %; United States of America;Fairview;2;0
+3416;;99 %; United Kingdom;London;2;0
+3510;;100 %; Netherlands;Ter Apel;2;2
+3801;;50 %; Ireland;Arranmore Island;2;2
+3865;;67 %; Italy;Anzio;2;1
+3896;;79 %; United States of America;Tarrytown, New York;2;1
+3899;;82 %; Panama;Roaming station;2;0
+2193;;76 %; United States of America;St George;1;1
+3045;;92 %; United States of America;New York;1;0
+2555;;88 %; United Kingdom;St. Andrews;1;1
+2229;;100 %; United States of America;New York;1;1
+2057;;88 %; United States of America;Seattle;1;0
+2133;;43 %; United Kingdom;Caithness (Scotland);1;0
+2364;;100 %; Netherlands;Uithoorn;1;0
+2013;;94 %; Netherlands;Delft;1;0
+2592;;100 %; Taiwan (Province of China);Keelung, National Taiwan Ocean University;1;1
+2437;;100 %; United Kingdom;Liverpool;1;0
+2482;;99 %; United States of America;San Francisco Bay;1;1
+2220;;98 %; United Kingdom;Eccles;1;0
+3003;;99 %; Canada;Young Island, Mahone Bay, Nova Scotia;1;1
+2529;;98 %; United States of America;Arnold, MD;1;1
+2309;;100 %; United Kingdom;Brighton;1;0
+2390;;100 %; United States of America;Shelton Washington;0;0
+2332;;100 %; United States of America;Martinique;1;1
+2192;;85 %; Sweden;Norrköping;1;0
+2302;;98 %; Spain;Llastres;1;1
+2612;;89 %; Unknown; ;0;0
+2613;;99 %; Germany;Winsen (Luhe);1;1
+2616;;53 %; Netherlands;Houten;1;0
+2633;;85 %; Germany;Bremen;1;0
+2635;;100 %; Italy;Roaming station;1;0
+2686;;100 %; United Kingdom;Brighton;1;0
+2722;;93 %; United States of America;Salish Sea;1;1
+2733;;100 %; Germany;Berlin;1;1

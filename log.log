@@ -461,3 +461,123 @@ drugs out of our communities and denies criminal organizations the profits deriv
 
 02/02/2025:
 Metodologia UK drug seizure: https://www.gov.uk/government/publications/seizures-of-drugs-in-england-and-wales-user-guide/seizures-of-drugs-in-england-and-wales-user-guide--2
+
+08/02/2025:
+- ydata_profile lanzado:
+- Rehacer wide_dataset tal que los NAs no sean 0.0 sino MV.
+- Google Colab on GPU T4. Debo dar de alta. Hago uso de A100:
+RAM del sistema
+RAM de la GPU 0.0 / 40.0 GB
+Disco 29.0 / 112.6 GB
+
+- ¿Cómo forzar a que haga uso de las GPUs?
+
+Data Preparation:
+Data preparation is normally a mandatory step. It converts prior useless data into
+new data that fits a DM process. First of all, if data is not prepared, the DM algorithm
+might not receive ir in order to operate or surely it will report errors during its runtime.
+
+- How do I clean up the data?—Data Cleaning.
+- How do I provide accurate data?—Data Transformation.
+- How do I incorporate and adjust data?—Data Integration.
+- How do I unify and scale data?—Data Normalization.
+- How do I handle missing data?—Missing Data Imputation.
+- How do I detect and manage noise?—Noise Identification.
+
+1) ¿Cómo imputo los MV? Separo entre los datos de "cargamento" de los de "incautacion de drogas". Por como se tomaron los datos, se sabe que en muchas
+columnas, depende de la fuente de donde se tomó (UK vs USA), por lo que se pueden considerar como MNAR.
+
+Respuesta ChatGPT:
+La correlación de 55% y 60% indica que existe una relación moderada entre Total Loaded Grand y las columnas Total DOMESTIC y Total OutBound FOREIGN. 
+Sin embargo, hay varios puntos a considerar antes de utilizar estos valores para imputar:
+
+    Relación Moderada y Varianza Explicada:
+        Una correlación del 55% implica que aproximadamente el 30% de la varianza de Total DOMESTIC se explica por Total Loaded Grand (ya que 0.55² ≈ 0.30).
+        De manera similar, una correlación del 60% implica que cerca del 36% de la varianza de Total OutBound FOREIGN es explicada por Total Loaded Grand (0.60² ≈ 0.36).
+
+    Esto significa que, si bien existe una relación, una gran parte de la variabilidad no se explica con este predictor. Por lo tanto, imputar basándose únicamente en Total Loaded Grand podría introducir errores, ya que no se captura toda la complejidad de la relación.
+
+    Naturaleza de la Relación:
+    La correlación mide una asociación lineal. Es importante verificar si la relación entre Total Loaded Grand y las otras variables es realmente lineal o si existen otros factores (quizás otras variables) que puedan ayudar a predecir de forma más precisa los valores faltantes o cero.
+
+    Consideración del Contexto y Validación:
+        Es fundamental evaluar si los ceros representan verdaderamente datos faltantes o si son valores válidos en el contexto de tu dataset.
+        Antes de aplicar la imputación, podrías hacer una validación (por ejemplo, mediante un modelo de regresión o imputación múltiple) para evaluar el impacto de la imputación en el análisis final.
+
+    Alternativas y Métodos Más Robustas:
+    Si dispones de otras variables que puedan aportar información predictiva, podrías considerar modelos de imputación que utilicen múltiples predictores (por ejemplo, regresión múltiple o imputación múltiple). Estos métodos suelen capturar mejor la variabilidad inherente y pueden producir imputaciones más fiables.
+
+Conclusión
+
+Si bien los valores de 55% y 60% muestran que Total Loaded Grand tiene cierta capacidad predictiva para Total DOMESTIC y Total OutBound FOREIGN, estos coeficientes no son tan altos como para garantizar que la imputación basada únicamente en esa variable sea robusta. Te recomendaría:
+
+    Realizar un análisis exploratorio adicional para ver la forma de la relación (por ejemplo, gráficos de dispersión, residuos de un modelo lineal, 
+    etc.).
+    Considerar la incorporación de más variables si están disponibles, para lograr una imputación más precisa.
+    Validar el modelo de imputación (por ejemplo, mediante validación cruzada o comparando resultados en un subconjunto con datos completos).
+
+En resumen, puedes usar Total Loaded Grand como parte de tu estrategia de imputación, pero deberías tener precaución y, de ser posible, complementar 
+con otros métodos o variables para mejorar la precisión de los valores imputados.
+
+2) Para incautacion de drogas -> revisar
+
+11/02/2025:
+Estrategias de imputacion de missing values:
+- Variables float64: Con ceros
+- Variables categóricas: Valor 'United Kingdom' para Land Filter, Region y Component.
+- Variable 'Major/Minor Port': Se va a utilizar una estrategia de imputacion basada en un problema de clasificación.
+
+
+*Opcion D) Dada la cantidad de incautacion de droga, hallar los hubs portuarios referidos.
+
+Aplicado StandardScaler() a todas las variables numéricas ('Year' se ha convertido a tipo 'object'). ¿El haber imputado previamente los NA a cero (0),
+¿tendrá o no implicaciones una vez aplicado StandardScaler()?
+
+Tipo de problema:
+- Serie Temporal: descartada, pocos datos, poca resolución.
+- Problema de clustering: no necesito 'target'.
+- Problema de regresión: Opcion C. Problema: hay tantas variables relacionadas con la incautación de drogas, habría que generar una para el target que
+englobase los 'Count of Event' con los 'Sum Qty (kg)'. No creo que sea recomendable usar una variable artificial como target.
+- Problema de clasificación (multi): Opción D. Problema: muy probablemente, las variables que más influencia tenga, posiblemente sean 'latitude' y 
+'longitude'. Quizá habría que eliminar estas variables para el modelo y dar prioridad a las relacionadas con las sustancias estupefacientes.
+
+13/02/2025:
+- Modelo exclusivo para datos de USA
+- CBP Drugs Dosage Value and Weight: https://www.cbp.gov/newsroom/stats/cbp-drugs-dosage-value-and-weight
+- Ver info: https://explore.dot.gov/views/TEUMonthlyContainerPort/TEUbyPortDateandType?%3Aembed=y&%3AisGuestRedirectFromVizportal=y
+- Buscar informacion de webs de cada puerto:
+- Charleston, SC: https://scspa.com/wp-content/uploads/gl078-pc-teu-history.pdf
+https://scspa.com/wp-content/uploads/teu-history.pdf
+
+- Houston, TX: https://porthouston.com/wp-content/uploads/2025/01/Container-Volume-TEU-stats-in-depth-December-2024.pdf
+
+18/02/2025:https://www.portoflosangeles.org/business/statistic
+Ejemplo: https://www.portoflosangeles.org/business/statistics/container-statistics/historical-teu-statistics-2024
+
+Info: https://ustradenumbers.com/port/port-of-los-angeles/
+
+Para el puerto de Long Beach: datos descargados de: https://polb.com/business/port-statistics#teus-archive-1995-to-present
+
+24/02/2025: Buscar documentación sobre 'Other_Drugs**'. No se aporta.
+portmiami statistics: https://www.miamidade.gov/portmiami/cargo.asp
+
+01/03/2025 A leer: "academic research drug seizure in ports"
+- https://upcommons.upc.edu/bitstream/handle/2117/392133/181021_TFG_final.pdf?sequence=2
+- file:///home/gonzalopc/Descargas/8878396.pdf
+- https://www.academia.edu/41206898/Ports_struggle_to_close_door_to_drug_crime
+- https://www.researchgate.net/publication/378976199_ADDRESSING_MARITIME_DRUG_TRAFFICKING_THROUGH_REGIONAL_SECURITY_PARTNERSHIPS_IN_THE_INDIAN_OCEAN
+- https://britanniapandi.com/wp-content/uploads/2024/01/Drug-Smuggling-in-Brazlian-Ports-2023-Brazil-May-Have-New-Routes-for-International-Drug-Trafficking-Brazil-P-and-I-01-2024.pdf
+
+
+\newblock{\em Revista Logos, Ciencia & Tecnología}, 16:118--133.
+
+@article{article,
+	author = {Ortiz, Linda and Paipa, Edwin and Rodríguez, Victor and Nieves, Javier and Rosa, Yesten},
+	year = {2024},
+	month = {08},
+	pages = {118-133},
+	title = {Modalidades de transporte y detección de drogas ilícitas en puertos europeos: revisión sistemática de literatura},
+	volume = {16},
+	journal = {Revista Logos, Ciencia & Tecnología},
+	doi = {10.22335/rlct.v16i2.1955}
+}
