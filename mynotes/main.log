@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.2)  11 MAR 2025 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.2)  12 MAR 2025 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -226,29 +226,32 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Label `map_bubble_6' multiply defined.
 
 
+LaTeX Warning: Label `tabla' multiply defined.
+
+
 LaTeX Warning: Label `timeseries_5' multiply defined.
 
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count275
@@ -305,7 +308,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 57.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -317,793 +320,850 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count281
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
+</home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
+ages//American_Film_Institute_(AFI)_logo.svg.png, id=184, 642.4pt x 224.84pt>
+File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+es/images//American_Film_Institute_(AFI)_logo.svg.png Graphic file (type png)
+<use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+s/images//American_Film_Institute_(AFI)_logo.svg.png>
+Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
+/TFM_AFI_2025/mynotes/images//American_Film_Institute_(AFI)_logo.svg.png  used 
+on input line 65.
+(pdftex.def)             Requested size: 241.84842pt x 84.64757pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 44.
+(Font)              <14.4> on input line 65.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 44.
+(Font)              <7> on input line 65.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (0.45935pt too wide) in paragraph at lines 62--63
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/gonzalopc/Documentos
+/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//American_Film_Institu
+te_(AFI)_logo.svg.png>] (./main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+ [2])
+\tf@toc=\write4
+\openout4 = `main.toc'.
+
+ [3]
+(./main.lof [4] [5])
+\tf@lof=\write5
+\openout5 = `main.lof'.
+
+ [6] (./main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+ [7] [8]
+Overfull \hbox (0.45935pt too wide) in paragraph at lines 96--97
 []\OT1/cmr/m/n/10.95 Estados Unidos, como prin-ci-pal mer-cado de con-sumo, y C
 hina, como fuente de pre-cur-sores qu^^S^^Pmicos
  []
 
-[3] [4] [5] [6] [7] [8] [9]
+[9] [10] [11] [12] [13] [14] [15]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 198.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 198.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 198.
- [10]
+(Font)              <10.95> on input line 232.
+ [16]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_cluster_1.png, id=292, 811.53188pt x 451.6875pt>
+ages//map_cluster_1.png, id=508, 811.53188pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_cluster_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_cluster_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_cluster_1.png  used on input line 213.
+/TFM_AFI_2025/mynotes/images//map_cluster_1.png  used on input line 247.
 (pdftex.def)             Requested size: 241.84842pt x 134.6113pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_cluster_2.png, id=302, 1401.235pt x 787.94376pt>
+ages//map_cluster_2.png, id=517, 1401.235pt x 787.94376pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_cluster_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_cluster_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_cluster_2.png  used on input line 225.
+/TFM_AFI_2025/mynotes/images//map_cluster_2.png  used on input line 259.
 (pdftex.def)             Requested size: 386.95894pt x 217.59294pt.
- [11 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [17 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_cluster_1.png> </home/gonzalopc/Documentos/programas_mios/TFM_AF
 I_2025/TFM_AFI_2025/mynotes/images//map_cluster_2.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_cluster_3.png, id=316, 648.92438pt x 451.6875pt>
+ages//map_cluster_3.png, id=528, 648.92438pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_cluster_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_cluster_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_cluster_3.png  used on input line 233.
+/TFM_AFI_2025/mynotes/images//map_cluster_3.png  used on input line 267.
 (pdftex.def)             Requested size: 241.84842pt x 168.33478pt.
- [12 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [18 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_cluster_3.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_1.png, id=368, 1284.8pt x 963.6pt>
+ages//timeseries_1.png, id=579, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_1.png  used on input line 275.
+/TFM_AFI_2025/mynotes/images//timeseries_1.png  used on input line 309.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
- [13]
+ [19]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_2.png, id=382, 1284.8pt x 963.6pt>
+ages//timeseries_2.png, id=591, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_2.png  used on input line 282.
+/TFM_AFI_2025/mynotes/images//timeseries_2.png  used on input line 316.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_6.png, id=383, 1284.8pt x 963.6pt>
+ages//timeseries_6.png, id=592, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_6.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_6.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_6.png  used on input line 291.
+/TFM_AFI_2025/mynotes/images//timeseries_6.png  used on input line 325.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
- [14 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [20 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_1.png (PNG copy)> </home/gonzalopc/Documentos/programas_m
 ios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//timeseries_2.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_7.png, id=391, 1284.8pt x 963.6pt>
+ages//timeseries_7.png, id=600, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_7.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_7.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_7.png  used on input line 300.
+/TFM_AFI_2025/mynotes/images//timeseries_7.png  used on input line 334.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_8.png, id=392, 1284.8pt x 963.6pt>
+ages//timeseries_8.png, id=601, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_8.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_8.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_8.png  used on input line 307.
+/TFM_AFI_2025/mynotes/images//timeseries_8.png  used on input line 341.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
- [15 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [21 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_6.png (PNG copy)> </home/gonzalopc/Documentos/programas_m
 ios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//timeseries_7.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_9.png, id=401, 1284.8pt x 963.6pt>
+ages//timeseries_9.png, id=608, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_9.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_9.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_9.png  used on input line 316.
+/TFM_AFI_2025/mynotes/images//timeseries_9.png  used on input line 350.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
- [16 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [22 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_8.png (PNG copy)> </home/gonzalopc/Documentos/programas_m
 ios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//timeseries_9.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_1.png, id=409, 627.09282pt x 411.78844pt>
+ages//hist_1.png, id=615, 627.09282pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_1.png  used on input line 328.
+/TFM_AFI_2025/mynotes/images//hist_1.png  used on input line 362.
 (pdftex.def)             Requested size: 386.95894pt x 254.11234pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_2.png, id=410, 627.09282pt x 411.78844pt>
+ages//hist_2.png, id=616, 627.09282pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_2.png  used on input line 335.
+/TFM_AFI_2025/mynotes/images//hist_2.png  used on input line 369.
 (pdftex.def)             Requested size: 386.95894pt x 254.11234pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_3.png, id=412, 633.11531pt x 411.78844pt>
+ages//hist_3.png, id=618, 633.11531pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_3.png  used on input line 344.
+/TFM_AFI_2025/mynotes/images//hist_3.png  used on input line 378.
 (pdftex.def)             Requested size: 386.95894pt x 251.68695pt.
- [17 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [23 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_1.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/
 TFM_AFI_2025/mynotes/images//hist_2.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//matrix_corr_1.png, id=424, 850.17625pt x 683.55376pt>
+ages//matrix_corr_1.png, id=627, 850.17625pt x 683.55376pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//matrix_corr_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//matrix_corr_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//matrix_corr_1.png  used on input line 359.
+/TFM_AFI_2025/mynotes/images//matrix_corr_1.png  used on input line 393.
 (pdftex.def)             Requested size: 386.95894pt x 311.12175pt.
 
-[18 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[24 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_3.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//matrix_corr_2.png, id=432, 850.17625pt x 683.55376pt>
+ages//matrix_corr_2.png, id=633, 850.17625pt x 683.55376pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//matrix_corr_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//matrix_corr_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//matrix_corr_2.png  used on input line 366.
+/TFM_AFI_2025/mynotes/images//matrix_corr_2.png  used on input line 400.
 (pdftex.def)             Requested size: 386.95894pt x 311.12175pt.
- [19 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [25 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//matrix_corr_1.png (PNG copy)> </home/gonzalopc/Documentos/programas_
 mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//matrix_corr_2.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//matrix_corr_3.png, id=439, 862.22125pt x 778.91pt>
+ages//matrix_corr_3.png, id=640, 862.22125pt x 778.91pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//matrix_corr_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//matrix_corr_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//matrix_corr_3.png  used on input line 375.
+/TFM_AFI_2025/mynotes/images//matrix_corr_3.png  used on input line 409.
 (pdftex.def)             Requested size: 338.5863pt x 305.86548pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//total_teus_ports.png, id=442, 925.20656pt x 694.09312pt>
+ages//total_teus_ports.png, id=643, 925.20656pt x 694.09312pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//total_teus_ports.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//total_teus_ports.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//total_teus_ports.png  used on input line 389.
+/TFM_AFI_2025/mynotes/images//total_teus_ports.png  used on input line 423.
 (pdftex.def)             Requested size: 386.95894pt x 290.29916pt.
- [20 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [26 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//matrix_corr_3.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//loaded_vs_imports_ports.png, id=452, 1328.965pt x 747.79375pt>
+ages//loaded_vs_imports_ports.png, id=650, 1328.965pt x 747.79375pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//loaded_vs_imports_ports.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//loaded_vs_imports_ports.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
 /TFM_AFI_2025/mynotes/images//loaded_vs_imports_ports.png  used on input line 4
-00.
+34.
 (pdftex.def)             Requested size: 386.95894pt x 217.73323pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_bubble_1.png, id=453, 996.72375pt x 451.6875pt>
+ages//map_bubble_1.png, id=651, 996.72375pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_bubble_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_bubble_1.png  used on input line 408.
+/TFM_AFI_2025/mynotes/images//map_bubble_1.png  used on input line 442.
 (pdftex.def)             Requested size: 483.69684pt x 219.19223pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 407--409
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 441--443
  []|  [] 
  []
 
-[21 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[27 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//total_teus_ports.png> </home/gonzalopc/Documentos/programas_mios/TFM_
 AFI_2025/TFM_AFI_2025/mynotes/images//loaded_vs_imports_ports.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_bubble_2.png, id=461, 996.72375pt x 451.6875pt>
+ages//map_bubble_2.png, id=657, 996.72375pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_bubble_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_bubble_2.png  used on input line 419.
+/TFM_AFI_2025/mynotes/images//map_bubble_2.png  used on input line 453.
 (pdftex.def)             Requested size: 483.69684pt x 219.19223pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 418--420
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 452--454
  []|  [] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_bubble_3.png, id=462, 996.72375pt x 451.6875pt>
+ages//map_bubble_3.png, id=658, 996.72375pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_bubble_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_bubble_3.png  used on input line 426.
+/TFM_AFI_2025/mynotes/images//map_bubble_3.png  used on input line 460.
 (pdftex.def)             Requested size: 483.69684pt x 219.19223pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 425--427
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 459--461
  []|  [] 
  []
 
-[22 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[28 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_1.png (PNG copy)> </home/gonzalopc/Documentos/programas_mi
 os/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//map_bubble_2.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_bubble_4.png, id=468, 996.72375pt x 451.6875pt>
+ages//map_bubble_4.png, id=663, 996.72375pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_bubble_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_bubble_4.png  used on input line 433.
+/TFM_AFI_2025/mynotes/images//map_bubble_4.png  used on input line 467.
 (pdftex.def)             Requested size: 483.69684pt x 219.19223pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 432--434
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 466--468
  []|  [] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_bubble_6.png, id=477, 996.72375pt x 451.6875pt>
+ages//map_bubble_6.png, id=672, 996.72375pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_bubble_6.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_6.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_bubble_6.png  used on input line 444.
+/TFM_AFI_2025/mynotes/images//map_bubble_6.png  used on input line 478.
 (pdftex.def)             Requested size: 483.69684pt x 219.19223pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 443--445
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 477--479
  []|  [] 
  []
 
-[23 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[29 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_3.png (PNG copy)> </home/gonzalopc/Documentos/programas_mi
 os/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//map_bubble_4.png (PNG copy)>]
-[24 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
-s/images//map_bubble_6.png (PNG copy)>] [25]
-Overfull \hbox (33.68506pt too wide) in paragraph at lines 540--540
+[30 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+s/images//map_bubble_6.png (PNG copy)>] [31]
+Overfull \hbox (33.68506pt too wide) in paragraph at lines 574--574
 []\OT1/cmtt/m/n/10.95 impute_value_imports = round((missing_total * prop_import
 s)/data['Loaded Imports'].isna().[] 
  []
 
 
-Overfull \hbox (33.68506pt too wide) in paragraph at lines 540--540
+Overfull \hbox (33.68506pt too wide) in paragraph at lines 574--574
 []\OT1/cmtt/m/n/10.95 impute_value_exports = round((missing_total * prop_export
 s)/data['Loaded Exports'].isna().[] 
  []
 
-[26]
+[32]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//boxplot_1.png, id=512, 836.12375pt x 549.05125pt>
+ages//boxplot_1.png, id=703, 836.12375pt x 549.05125pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//boxplot_1.png  used on input line 560.
+/TFM_AFI_2025/mynotes/images//boxplot_1.png  used on input line 594.
 (pdftex.def)             Requested size: 483.69684pt x 317.62892pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 559--561
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 593--595
  []|  [] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//boxplot_3.png, id=513, 856.19875pt x 549.05125pt>
+ages//boxplot_3.png, id=704, 856.19875pt x 549.05125pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//boxplot_3.png  used on input line 567.
+/TFM_AFI_2025/mynotes/images//boxplot_3.png  used on input line 601.
 (pdftex.def)             Requested size: 483.69684pt x 310.18102pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 566--568
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 600--602
  []|  [] 
  []
 
-[27 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[33 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_1.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//boxplot_4.png, id=519, 627.09282pt x 411.78844pt>
+ages//boxplot_4.png, id=709, 627.09282pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//boxplot_4.png  used on input line 574.
+/TFM_AFI_2025/mynotes/images//boxplot_4.png  used on input line 608.
 (pdftex.def)             Requested size: 483.69684pt x 317.63728pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 573--575
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 607--609
  []|  [] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//boxplot_2.png, id=520, 856.19875pt x 549.05125pt>
+ages//boxplot_2.png, id=710, 856.19875pt x 549.05125pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//boxplot_2.png  used on input line 581.
+/TFM_AFI_2025/mynotes/images//boxplot_2.png  used on input line 615.
 (pdftex.def)             Requested size: 483.69684pt x 310.18102pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 580--582
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 614--616
  []|  [] 
  []
 
-[28 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[34 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_3.png (PNG copy)> </home/gonzalopc/Documentos/programas_mios/
 TFM_AFI_2025/TFM_AFI_2025/mynotes/images//boxplot_4.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//st_ratios_1.png, id=532, 1284.8pt x 963.6pt>
+ages//st_ratios_1.png, id=720, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//st_ratios_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//st_ratios_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//st_ratios_1.png  used on input line 594.
+/TFM_AFI_2025/mynotes/images//st_ratios_1.png  used on input line 628.
 (pdftex.def)             Requested size: 362.77263pt x 272.07048pt.
- [29 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [35 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_2.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//st_ratios_2.png, id=540, 1284.8pt x 963.6pt>
+ages//st_ratios_2.png, id=726, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//st_ratios_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//st_ratios_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//st_ratios_2.png  used on input line 603.
+/TFM_AFI_2025/mynotes/images//st_ratios_2.png  used on input line 637.
 (pdftex.def)             Requested size: 362.77263pt x 272.07048pt.
- [30 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [36 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//st_ratios_1.png (PNG copy)> </home/gonzalopc/Documentos/programas_mi
 os/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//st_ratios_2.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//st_ratios_3.png, id=547, 1284.8pt x 963.6pt>
+ages//st_ratios_3.png, id=733, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//st_ratios_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//st_ratios_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//st_ratios_3.png  used on input line 614.
+/TFM_AFI_2025/mynotes/images//st_ratios_3.png  used on input line 648.
 (pdftex.def)             Requested size: 338.5863pt x 253.94127pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//qqplots_1.png, id=550, 425.33907pt x 342.5297pt>
+ages//qqplots_1.png, id=736, 425.33907pt x 342.5297pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//qqplots_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//qqplots_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//qqplots_1.png  used on input line 630.
+/TFM_AFI_2025/mynotes/images//qqplots_1.png  used on input line 664.
 (pdftex.def)             Requested size: 338.5863pt x 272.6809pt.
- [31 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [37 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//st_ratios_3.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//qqplots_2.png, id=559, 417.05812pt x 342.5297pt>
+ages//qqplots_2.png, id=742, 417.05812pt x 342.5297pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//qqplots_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//qqplots_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//qqplots_2.png  used on input line 637.
+/TFM_AFI_2025/mynotes/images//qqplots_2.png  used on input line 671.
 (pdftex.def)             Requested size: 338.5863pt x 278.09563pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//qqplots_3.png, id=561, 435.12563pt x 342.5297pt>
+ages//qqplots_3.png, id=744, 435.12563pt x 342.5297pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//qqplots_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//qqplots_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//qqplots_3.png  used on input line 646.
+/TFM_AFI_2025/mynotes/images//qqplots_3.png  used on input line 680.
 (pdftex.def)             Requested size: 338.5863pt x 266.55013pt.
- [32 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [38 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//qqplots_1.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_20
 25/TFM_AFI_2025/mynotes/images//qqplots_2.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_6.png, id=571, 643.6547pt x 411.78844pt>
+ages//hist_6.png, id=753, 643.6547pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_6.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_6.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_6.png  used on input line 657.
+/TFM_AFI_2025/mynotes/images//hist_6.png  used on input line 691.
 (pdftex.def)             Requested size: 338.5863pt x 216.61943pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//outliers_1.png, id=572, 963.6pt x 722.7pt>
+ages//outliers_1.png, id=754, 963.6pt x 722.7pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//outliers_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//outliers_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//outliers_1.png  used on input line 666.
+/TFM_AFI_2025/mynotes/images//outliers_1.png  used on input line 700.
 (pdftex.def)             Requested size: 483.69684pt x 362.77165pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 665--667
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 699--701
  []|  [] 
  []
 
-[33 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[39 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//qqplots_3.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_202
 5/TFM_AFI_2025/mynotes/images//hist_6.png>]
-Overfull \hbox (4.94162pt too wide) in paragraph at lines 682--682
+Overfull \hbox (4.94162pt too wide) in paragraph at lines 716--716
 []\OT1/cmtt/m/n/10.95 newark_data = filtered_data[filtered_data['Hub Portuario_
 name'] == 'Newark/New York'][] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//qqplots_4.png, id=583, 441.90094pt x 342.5297pt>
+ages//qqplots_4.png, id=763, 441.90094pt x 342.5297pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//qqplots_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//qqplots_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//qqplots_4.png  used on input line 692.
+/TFM_AFI_2025/mynotes/images//qqplots_4.png  used on input line 726.
 (pdftex.def)             Requested size: 386.95894pt x 299.95839pt.
-[34 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[40 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//outliers_1.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//qqplots_5.png, id=588, 426.84468pt x 342.5297pt>
+ages//qqplots_5.png, id=768, 426.84468pt x 342.5297pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//qqplots_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//qqplots_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//qqplots_5.png  used on input line 699.
+/TFM_AFI_2025/mynotes/images//qqplots_5.png  used on input line 733.
 (pdftex.def)             Requested size: 386.95894pt x 310.5422pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//outliers_2.png, id=589, 963.6pt x 722.7pt>
+ages//outliers_2.png, id=769, 963.6pt x 722.7pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//outliers_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//outliers_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//outliers_2.png  used on input line 706.
+/TFM_AFI_2025/mynotes/images//outliers_2.png  used on input line 740.
 (pdftex.def)             Requested size: 483.69684pt x 362.77165pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 705--707
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 739--741
  []|  [] 
  []
 
-[35 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[41 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//qqplots_4.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_202
-5/TFM_AFI_2025/mynotes/images//qqplots_5.png>] [36 </home/gonzalopc/Documentos/
+5/TFM_AFI_2025/mynotes/images//qqplots_5.png>] [42 </home/gonzalopc/Documentos/
 programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//outliers_2.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 743.
-
-Overfull \hbox (1.0978pt too wide) in paragraph at lines 743--755
+Overfull \hbox (1.0978pt too wide) in paragraph at lines 777--789
  [] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//boxplot_5.png, id=614, 635.37375pt x 411.78844pt>
+ages//boxplot_5.png, id=789, 635.37375pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//boxplot_5.png  used on input line 775.
+/TFM_AFI_2025/mynotes/images//boxplot_5.png  used on input line 809.
 (pdftex.def)             Requested size: 435.32419pt x 282.14249pt.
-[37]
+[43]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_7.png, id=626, 633.11531pt x 411.78844pt>
+ages//hist_7.png, id=799, 633.11531pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_7.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_7.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_7.png  used on input line 782.
+/TFM_AFI_2025/mynotes/images//hist_7.png  used on input line 816.
 (pdftex.def)             Requested size: 435.32419pt x 283.14783pt.
- [38 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [44 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_5.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_20
 25/TFM_AFI_2025/mynotes/images//hist_7.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//boxplot_6.png, id=635, 635.37375pt x 385.44pt>
+ages//boxplot_6.png, id=807, 635.37375pt x 385.44pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_6.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//boxplot_6.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//boxplot_6.png  used on input line 793.
+/TFM_AFI_2025/mynotes/images//boxplot_6.png  used on input line 827.
 (pdftex.def)             Requested size: 386.95894pt x 234.74753pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_8.png, id=636, 633.11531pt x 411.78844pt>
+ages//hist_8.png, id=808, 633.11531pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_8.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_8.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_8.png  used on input line 800.
+/TFM_AFI_2025/mynotes/images//hist_8.png  used on input line 834.
 (pdftex.def)             Requested size: 386.95894pt x 251.68695pt.
- [39 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [45 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//boxplot_6.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_20
 25/TFM_AFI_2025/mynotes/images//hist_8.png>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//graph_ratios_1.png, id=643, 1284.8pt x 963.6pt>
+ages//graph_ratios_1.png, id=813, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//graph_ratios_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//graph_ratios_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//graph_ratios_1.png  used on input line 814.
+/TFM_AFI_2025/mynotes/images//graph_ratios_1.png  used on input line 848.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//graph_ratios_2.png, id=646, 1284.8pt x 963.6pt>
+ages//graph_ratios_2.png, id=816, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//graph_ratios_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//graph_ratios_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//graph_ratios_2.png  used on input line 823.
+/TFM_AFI_2025/mynotes/images//graph_ratios_2.png  used on input line 857.
 (pdftex.def)             Requested size: 362.77263pt x 272.07048pt.
- [40 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [46 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//graph_ratios_1.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//graph_ratios_3.png, id=653, 1284.8pt x 963.6pt>
+ages//graph_ratios_3.png, id=821, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//graph_ratios_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//graph_ratios_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//graph_ratios_3.png  used on input line 830.
+/TFM_AFI_2025/mynotes/images//graph_ratios_3.png  used on input line 864.
 (pdftex.def)             Requested size: 362.77263pt x 272.07048pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//graph_ratios_4.png, id=655, 1284.8pt x 963.6pt>
+ages//graph_ratios_4.png, id=823, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//graph_ratios_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//graph_ratios_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//graph_ratios_4.png  used on input line 839.
+/TFM_AFI_2025/mynotes/images//graph_ratios_4.png  used on input line 873.
 (pdftex.def)             Requested size: 362.77263pt x 272.07048pt.
- [41 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [47 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//graph_ratios_2.png (PNG copy)> </home/gonzalopc/Documentos/programas
 _mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//graph_ratios_3.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//map_bubble_5.png, id=664, 996.72375pt x 451.6875pt>
+ages//map_bubble_5.png, id=831, 996.72375pt x 451.6875pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_bubble_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_bubble_5.png  used on input line 862.
+/TFM_AFI_2025/mynotes/images//map_bubble_5.png  used on input line 896.
 (pdftex.def)             Requested size: 483.69684pt x 219.19223pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 861--863
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 895--897
  []|  [] 
  []
 
-[42 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[48 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//graph_ratios_4.png (PNG copy)>]
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//map_bubble_6.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//map_bubble_6.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//map_bubble_6.png  used on input line 871.
+/TFM_AFI_2025/mynotes/images//map_bubble_6.png  used on input line 905.
 (pdftex.def)             Requested size: 483.69684pt x 219.19223pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 870--872
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 904--906
  []|  [] 
  []
 
-[43 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
-s/images//map_bubble_5.png (PNG copy)>] [44] [45] [46]
+[49 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+s/images//map_bubble_5.png (PNG copy)>] [50] [51] [52]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//miami_ts_1.png, id=703, 1284.8pt x 963.6pt>
+ages//miami_ts_1.png, id=869, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//miami_ts_1.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//miami_ts_1.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//miami_ts_1.png  used on input line 958.
+/TFM_AFI_2025/mynotes/images//miami_ts_1.png  used on input line 992.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//miami_ts_2.png, id=705, 1284.8pt x 963.6pt>
+ages//miami_ts_2.png, id=871, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//miami_ts_2.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//miami_ts_2.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//miami_ts_2.png  used on input line 967.
+/TFM_AFI_2025/mynotes/images//miami_ts_2.png  used on input line 1001.
 (pdftex.def)             Requested size: 338.5863pt x 253.94127pt.
- [47 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+ [53 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//miami_ts_1.png (PNG copy)>]
-Overfull \hbox (142.91013pt too wide) in paragraph at lines 991--991
+Overfull \hbox (142.91013pt too wide) in paragraph at lines 1025--1025
 []\OT1/cmtt/m/n/10.95 future['Loaded Imports'] = pd.concat([df_imports_train['L
 oaded Imports'], df_imports_test['Loaded Imports']])[] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//miami_ts_3.png, id=717, 1284.8pt x 963.6pt>
+ages//miami_ts_3.png, id=881, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//miami_ts_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//miami_ts_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//miami_ts_3.png  used on input line 999.
+/TFM_AFI_2025/mynotes/images//miami_ts_3.png  used on input line 1033.
 (pdftex.def)             Requested size: 386.95894pt x 290.21439pt.
-[48 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
-s/images//miami_ts_2.png (PNG copy)>] [49 </home/gonzalopc/Documentos/programas
+[54 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+s/images//miami_ts_2.png (PNG copy)>] [55 </home/gonzalopc/Documentos/programas
 _mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/images//miami_ts_3.png (PNG copy)>]
-Overfull \hbox (108.418pt too wide) in paragraph at lines 1064--1064
+Overfull \hbox (108.418pt too wide) in paragraph at lines 1098--1098
 []  \OT1/cmtt/m/n/10.95 print("Numero de configuraciones: ", pd.DataFrame.from_
 dict(regressorsCV[name].cv_results_).shape[0])[] 
  []
 
 
-Overfull \hbox (206.14569pt too wide) in paragraph at lines 1064--1064
+Overfull \hbox (206.14569pt too wide) in paragraph at lines 1098--1098
 []  \OT1/cmtt/m/n/10.95 aux = pd.DataFrame.from_dict(regressorsCV[name].cv_resu
 lts_).sort_values(by="mean_test_score", ascending=True).iloc[0][] 
  []
 
-[50]
-Overfull \hbox (148.65881pt too wide) in paragraph at lines 1106--1106
+[56]
+Overfull \hbox (148.65881pt too wide) in paragraph at lines 1140--1140
 []  \OT1/cmtt/m/n/10.95 xgb_model = xgb.XGBRegressor(objective='reg:squarederro
 r', n_estimators=100, learning_rate=0.1, max_depth=3)[] 
  []
 
-[51]
-Overfull \hbox (16.96017pt too wide) in paragraph at lines 1120--1130
- [][] 
+[57] [58]
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
+
  []
 
-[52] [53] [54] (./main.bbl [55]) [56] [57]
-Overfull \hbox (22.7374pt too wide) in paragraph at lines 1182--1249
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1211
+
+ []
+
+[59]
+</home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
+ages//st_test_1.png, id=920, 753.5653pt x 406.51875pt>
+File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+es/images//st_test_1.png Graphic file (type png)
+<use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+s/images//st_test_1.png>
+Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
+/TFM_AFI_2025/mynotes/images//st_test_1.png  used on input line 1228.
+(pdftex.def)             Requested size: 483.69684pt x 260.93407pt.
+
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1227--1229
+ []|  [] 
+ []
+
+</home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
+ages//st_test_2.png, id=921, 895.09406pt x 444.15938pt>
+File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
+es/images//st_test_2.png Graphic file (type png)
+<use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+s/images//st_test_2.png>
+Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
+/TFM_AFI_2025/mynotes/images//st_test_2.png  used on input line 1235.
+(pdftex.def)             Requested size: 290.22105pt x 144.01122pt.
+[60 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+s/images//st_test_1.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_202
+5/TFM_AFI_2025/mynotes/images//st_test_2.png>] [61] [62] [63] (./main.bbl
+[64]) [65] [66]
+Overfull \hbox (22.7374pt too wide) in paragraph at lines 1323--1390
  [][] 
  []
 
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_3.png, id=790, 1284.8pt x 963.6pt>
+ages//timeseries_3.png, id=973, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_3.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_3.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_3.png  used on input line 1258.
+/TFM_AFI_2025/mynotes/images//timeseries_3.png  used on input line 1399.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1257--1259
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1398--1400
  []|  [] 
  []
 
-[58]
+[67]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_4.png, id=796, 1284.8pt x 963.6pt>
+ages//timeseries_4.png, id=979, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_4.png  used on input line 1265.
+/TFM_AFI_2025/mynotes/images//timeseries_4.png  used on input line 1406.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1264--1266
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1405--1407
  []|  [] 
  []
 
-[59 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[68 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_3.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//timeseries_5.png, id=801, 1284.8pt x 963.6pt>
+ages//timeseries_5.png, id=984, 1284.8pt x 963.6pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1272.
+/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1413.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1271--1273
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1412--1414
  []|  [] 
  []
 
-[60 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[69 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_4.png (PNG copy)>]
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//timeseries_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1279.
+/TFM_AFI_2025/mynotes/images//timeseries_5.png  used on input line 1420.
 (pdftex.def)             Requested size: 483.69684pt x 362.77533pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1278--1280
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1419--1421
  []|  [] 
  []
 
-[61 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[70 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//timeseries_5.png (PNG copy)>]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_4.png, id=813, 627.09282pt x 411.78844pt>
+ages//hist_4.png, id=993, 627.09282pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_4.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_4.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_4.png  used on input line 1286.
+/TFM_AFI_2025/mynotes/images//hist_4.png  used on input line 1427.
 (pdftex.def)             Requested size: 483.69684pt x 317.63728pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1285--1287
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1426--1428
  []|  [] 
  []
 
-[62]
+[71]
 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynotes/im
-ages//hist_5.png, id=819, 633.11531pt x 411.78844pt>
+ages//hist_5.png, id=998, 633.11531pt x 411.78844pt>
 File: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynot
 es/images//hist_5.png Graphic file (type png)
 <use /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_5.png>
 Package pdftex.def Info: /home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025
-/TFM_AFI_2025/mynotes/images//hist_5.png  used on input line 1293.
+/TFM_AFI_2025/mynotes/images//hist_5.png  used on input line 1434.
 (pdftex.def)             Requested size: 483.69684pt x 314.60869pt.
 
-Overfull \hbox (31.06383pt too wide) in paragraph at lines 1292--1294
+Overfull \hbox (31.06383pt too wide) in paragraph at lines 1433--1435
  []|  [] 
  []
 
-[63 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
+[72 </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/TFM_AFI_2025/mynote
 s/images//hist_4.png> </home/gonzalopc/Documentos/programas_mios/TFM_AFI_2025/T
 FM_AFI_2025/mynotes/images//hist_5.png>] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1A5865019C496B02FBB98B141C30C71B;9663.
+(rerunfilecheck)             Checksum: C703EB4198BA0085B3ECCC1D37E7512F;10162.
  ) 
 Here is how much of TeX's memory you used:
- 9920 strings out of 480247
- 184698 string characters out of 5896152
- 458559 words of memory out of 5000000
- 27509 multiletter control sequences out of 15000+600000
- 477210 words of font info for 54 fonts, out of 8000000 for 9000
+ 9987 strings out of 480247
+ 187317 string characters out of 5896152
+ 460223 words of memory out of 5000000
+ 27547 multiletter control sequences out of 15000+600000
+ 477517 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,9n,63p,1650b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,63p,1800b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/gonzalopc/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095
 .600pk> </home/gonzalopc/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcb
 x1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
@@ -1114,16 +1174,15 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
-b>
-Output written on main.pdf (63 pages, 4803299 bytes).
+type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb>
+Output written on main.pdf (72 pages, 4916156 bytes).
 PDF statistics:
- 939 PDF objects out of 1000 (max. 8388607)
- 778 compressed objects within 8 object streams
- 204 named destinations out of 1000 (max. 500000)
- 615 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1119 PDF objects out of 1200 (max. 8388607)
+ 945 compressed objects within 10 object streams
+ 221 named destinations out of 1000 (max. 500000)
+ 646 words of extra memory for PDF output out of 10000 (max. 10000000)
 

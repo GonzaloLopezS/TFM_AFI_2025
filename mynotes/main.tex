@@ -13,9 +13,30 @@
 \rightmargin 1cm
 \setlength{\baselineskip}{18pt}
 
-\title{Transporte marítimo e incautación de droga}
-\author{Gonzalo Lopez Segovia}
-\date{December 2024}
+%Transporte marítimo e incautación de droga
+% 
+
+\title{\bf AFI - Escuela de Finanzas\\
+\vspace{3cm}
+Máster Executive en Data Science, Big Data e Inteligencia Artificial\\
+\vspace{2cm}
+\begin{center}
+	\hspace*{-2cm}
+	\includegraphics[width=0.5\textwidth]{American_Film_Institute_(AFI)_logo.svg.png} \\
+\end{center}
+
+\vspace{2cm}
+Trabajo Fin de Máster\\
+\vspace{1cm}
+Transporte marítimo e incautación de droga
+}
+
+\author{
+		\bf Autor: Gonzalo López Segovia \\
+		\bf Tutor: José Manuel Rodríguez
+	}                                                                                            
+\date{\bf Marzo 2025}
+
 
 % Keywords command
 \providecommand{\keywords}[1]
@@ -38,16 +59,29 @@
 	%Incluir Logo AFI en la Portada
 
 	
-\Large
+%\Large
 
 \maketitle
 
 \newpage
 
+\tableofcontents
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+\listoftables
+
+\newpage
+
 \section{\label{resumen}Resumen}
+El transporte marítimo es parte esencial del comercio internacional. No obstante, también es un canal de entrada principal para las redes de narcotráfico internacionales. En este estudio, se analiza el volumen de actividad en distintos puertos comerciales en Estados Unidos, medido en tráfico de contenedores, y la cantidad de droga incautada por las oficinas de campo del servicio de aduanas de Estados Unidos para las áreas metropolitanas próximas a esos puertos. También se busca hallar una posible relación entre estos dos conceptos. Para ello, se ha hecho uso de distintas técnicas de Machine Learning aprendidas desde modelos de regresión a modelos de series temporales. Los resultados muestran patrones de incautaciones que varían según la ubicación y el tipo de droga. Sin embargo, la correlación directa con la actividad portuaria se verá que no es concluyente y afectará en el desarrollo y desempeño de los distintos modelos de predicción. A pesar de las limitaciones en los datos disponibles y en la sobrevaloración en la concepción misma del trabajo, éste mismo ofrece una base para mejorar la detección de tráfico ilícito a través de un buen análisis y optimizar la gestión de recursos.
 
 \section{\label{abstract}Abstract}
-
+Maritime transport is an essential part of international trade. However, it is also a major entry channel for international drug trafficking networks. This study analyzes the volume of activity in various commercial ports in the United States, measured in container traffic, and the amount of drugs seized by the U.S. Customs Field Offices in metropolitan areas near these ports. It also aims to identify a possible relationship between these two factors. To achieve this, various Machine Learning techniques have been applied, ranging from regression models to time series models. The results show seizure patterns that vary depending on location and drug type. However, the direct correlation with port activity is found to be inconclusive, impacting the development and performance of the different predictive models. Despite the limitations in the available data and the overestimation in the initial conception of the study, this research provides a foundation for improving illicit trafficking detection through thorough analysis and optimizing resource management.
 
 \keywords{Transporte marítimo, Geografía del Transporte, Geografía Marítima, Drogas, Estupefacientes, Narcotráfico, Machine Learning, Análisis de Datos, Clustering}
 
@@ -1110,6 +1144,13 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	\subsection{\label{eval performance}Evaluación del rendimiento}
 	% Métrica utilizadas.
 	% Comparaciones con alternativas.
+	En esta sección se evaluan los algoritmos aplicados a los distintos modelos. Por un lado, los distintos regresores para el caso del puerto de Newark (\ref{evalNewark}) y por el otro, el acercamiento a un análisis de series temporales simplificado para el puerto de Everglades en Fort Lauderdale (\ref{evalFL}).
+	
+	\subsubsection{\label{evalNewark} Caso puerto de Newark}
+	Para este primer caso, se han entrenado y comparado una regresión lineal, un árbol de decisión, un regresor con Bagging, un AdaBoost Regressor y Gradient Boost Regressor. Como se expuso en \ref{hiperCV} se reentrenaron los modelos para un pool de hiperparámetros mediante GridSearchCV.
+	
+	Las métricas utilizadas para evaluar los algoritmos han sido: MAPE (Mean Average Percentual Error) y R². A continuación se muestran los resultados con respecto a las dos métricas:
+	
 	\begingroup
 	\begin{table}[H]
 	\caption{\label{tabla}}
@@ -1119,39 +1160,139 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 %		\setlength{\abovesep}{10pt}
 		\begin{tabular}{|c|c|c|c|c|c|c|}
 			\hline
-			Regressor &	mse\_train &	mse\_CV\_train &	mse\_validation &	mse\_test &	r2\_train &	r2\_test \\
+			Regressor & mape\_train & mape\_cv\_train & mape\_validation & mape\_test \\
 			\hline
-			GradientBoostRegressor &	0.131800 &	0.660717 &	-5.208851 &	0.262034 &	0.635442 &	-1.381853 \\
-			baggingRegressor &	0.365540 &	0.322685 &	-5.609068 &	0.353780 &	-0.011080 &	-2.215812 \\
-			AdaBoostRegressor &	0.058360 &	0.839348 &	-5.939976 &	0.277698 &	0.838576 &	-1.524235 \\
-			LinearRegressor &	0.173767 &	0.530510 &	-6.821326 &	0.151522 &	0.519362 &	-0.377315 \\
+			Linear Regression & 1.4520 & 1.4731 & 208.4639 & 2.5341 \\
+			AdaBoost Regressor & 0.9073 & 8.0217 & 9.2459 & 4.4848 \\
+			Bagging Regressor & 1.3386 & 1.4954 & 3.6096 & 2.5462 \\
+			Gradient Boost Regressor & 1.0054 & 2.4422 & 3.1325 & 2.0218 \\
+			Decision Tree Regressor & 1.9798 & 1.7043 & 3.4321 & 3.9323 \\
 			\hline
 		\end{tabular}
 	\end{table}
 	\endgroup
+	
+	\begingroup
+	\begin{table}[H]
+		\caption{\label{tabla}}
+		\centering
+		\setlength{\tabcolsep}{3pt}
+		\renewcommand{\arraystretch}{1.5}
+		%		\setlength{\abovesep}{10pt}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Regressor & r2\_train & r2\_cv\_train & r2\_validation & r2\_test \\
+			\hline
+			Linear Regression & 0.3075 & 0.3854 & -1.3767 & -1.1043 \\
+			AdaBoost Regressor & 0.8269 & -5.9975 & -1.1504 & -1.5091 \\
+			Bagging Regressor & 0.7066 & -0.0609 & -1.6010 & -1.4800 \\
+			Gradient Boost Regressor & 0.8509 & -5.9475 & -7.0195 & -1.5137 \\
+			Decision Tree Regressor & 0.5631 & 1.0 & -1.7928 & -1.1616 \\
+			\hline
+		\end{tabular}
+	\end{table}
+	\endgroup
+	
+	Como se expondrá en el capítulo de "Interpretación de resultados" (\ref{interpretacion}), los resultados arrojados muestran que ninguno de los modelos planteados, para los hiperparámetros optimizados, genera un modelo de calidad. Casos como el del árbol de decisión generan incluso overfitting.
 
-	Datos para intentar predecir la cantidad de redadas mensuales en el puerto de Newark:
+	Esto anterior, prefigura que el problema no esté en los algoritmos, ni siquiera tanto en su configuración de hiperparámetros sino en un error de concepción del problema.
+	
+	\subsubsection{\label{evalFL} Caso puerto de Everglades - Fort Lauderdale}
+	% Series temporales
+	Modelo muy simple para realizar una regresión de series temporales. Se han excluido periodos estacionales, cambios de tendencia... Se ha mantenido exclusivamente la tendencia a largo plazo. Debido a esto, los resultados del ajuste son bastante pobres.
+	
+	\underline{Resultados en Test}: \\
+	\begin{itemize}
+		\item[-] R²: -9.1261 (los datos del ajuste del modelo son más grandes, y por lo tanto, peores que si usasemos la media).
+		\item[-] MAPE: 382,9\%
+	\end{itemize}
+
+	\underline{Resultados en Train}: \\
+	\begin{itemize}
+		\item[-] MAPE: 12,41\%
+	\end{itemize}
+	
 	
 
 \newpage
 \section{\label{interpretacion}Interpretación de los resultados}
-Ninguno de los modelos fue capaz de predecir el comportamiento a futuro (obsérvese la columna de la métrica de r2 para el conjunto de test).
+Ninguno de los modelos fue capaz de predecir el comportamiento a futuro para el puerto de Newark. El caso para el puerto de Fort Lauderdale se cuenta como más experimental respecto al uso de la librería. En ningún caso puede considerarse los resultados como válidos para aceptar ninguno de los modelos. Esto hace pensar que el problema de base esté en la concepción del problema.
 
 	\subsection{Visualización de resultados}
+	En esta subsección se dejan algunas gráficas con los resultados de los ajustes (para el modelo de series temporales):
+	
+	\begin{figure}[H]
+		\caption{\label{st_test_1} Serie temporal con Prophet para tendencia de incautaciones en Fort Lauderdale}
+		\centering
+		\hspace*{1cm}
+		\includegraphics[width=\textwidth]{st_test_1.png}
+	\end{figure}
+
+	\begin{figure}[H]
+		\caption{\label{st_test_2} Zoom para datos de test (2024) para Fort Lauderdale}
+		\centering
+		\hspace*{1cm}
+		\includegraphics[width=0.6\textwidth]{st_test_2.png}
+	\end{figure}
+
+	La figura \ref{st_test_1} representa el ajuste simplificado mediante las funciones de la librería prophet para la serie de datos ordenados cronológicamente para estimar la incautación de droga mensual en el puerto de Fort Lauderdale. Se ha incluido la variable "Loaded Imports" como regresor exógeno. Como se puede apreciar en la imagen, el modelo está tan simplificado (y automatizado) que no se ha concretado ninguna periodicidad (funciones de autocorrelación, aplicaciones de lags o retardos, etc.). La figura \ref{st_test_2} es un zoom de los datos de test (predicciones para 2024).
 	
 	
-	\subsection{Sesgos y limitaciones}
+	\subsection{\label{sesgos}Sesgos y limitaciones}
+	Para el caso de las predicciones usando regresores de distinta índole en el caso del puerto de Newark, se ve que ninguno de ellos ajusta correctamente. En prácticamente todos los modelos, el valor en test de R² es negativo, lo cual quiere decir que si se hubiese trazado la recta de la media de los valores, ésta última hubiera ajustado mejor que cualquiera de los modelos. Si observamos los datos en el conjunto de entrenamiento (datos que abarcan desde 2018 hasta 2023), en ningún caso se puede decir que el ajuste sea anómalamente alto. Esto no quiere decir que no haya overfitting (que lo hay), pero en ningún modelo en entrenamiento supera el R² = 0.85 (si acaso Gradient Boost Regressor). En cambio, los datos arrojados por los conjuntos de validación (media de resultados para una estratificación K-Fold igual a cinco) dan a entender la alta variabilidad entre los datos, lo cual dificulta mucho que el modelo aprenda por cada nuevo dato. Esto ha sido la tónica general a lo largo de este trabajo y que viene a resumir lo que desde las primeras páginas se barruntaba: con los datos en la mano, no se puede relacionar la actividad portuaria con la cantidad de droga incautada. Porque precisamente hay que distinguir entre "droga incautada" de droga que entra en un puerto. Si esa droga incautada representa un porcentaje muy pequeño respecto a la que, téoricamente, entra por el mismo, a menos que sea una muestra muy representativa, va a producir sesgos y distorsiones para cualquier modelo. No solo eso, es posible que haya terceros factores que influyan más en la relación entre actividad y droga incautada: política de lucha contra la droga, presupuestos, recursos humanos, demanda, consumo, competencia de otros territorios consumidores...
+	
+	Por su parte, para el caso de series temporales, el rango cronológico de datos parece insuficiente para tomar en consideración tendencias a largo plazo, encontrar patrones de estacionalidad, determinar cual es el nivel de variabilidad entre datos... 
 
 \newpage
 \section{\label{trabajo futuro}Conclusiones y trabajo futuro}
+A lo largo de este trabajo se han seguido los pasos metodológicos correspondientes a un proyecto de ciencia de datos. Desde la captura e integración de los datos, su limpieza, procesado y curado hasta la generación de modelos de Machine Learning que intentasen predecir el comportamiento de las variables predictoras a una variable target. La decisión para elegir la variable target no fue sencilla en absoluto. Dada la disparidad de valores, de objetos de interés y de estudio, incluso se recurrió a técnicas de ingenería de características para generar potenciales variables target que pudiesen satisfacer la pregunta que se planteaba para desarrollar el modelo. Y es que, ante todo, el modelo intentó predecir la cantidad de droga incautada a partir de la actividad portuaria. En un primer momento, se intentó integrar todos los puertos en un mismo modelo, para más adelante realizar un modelo para cada puerto en particular.
+
+En este trabajo, lo que se ha analizado ha sido la relación entre el tráfico de contenedores en los principales puertos de EE.UU. y la cantidad de droga incautada por las oficinas de campo del CBP. Como se comentó en \ref{sesgos}, la confusión entre droga incautada (datos tangibles y contabilizados) con droga entrante de forma clandestina (estimaciones y aproximaciones) ha sido principalmente el error de concepto que ha impedido generar modelos correctos. En parte por la falta de datos del lado de las variables predictoras (tanto observaciones como variables). Pocos datos, 75 meses, para un asunto que quizá requiera un rango mayor en este sentido, que pueda abarcar muchos más años. Pero sobre todo, pocas variables y muy rendundantes en muchos casos. Es decir, los datos del CBP limitan el rango temporal. Los datos de actividad portuaria limitan la calidad y variación de información para los predictores.
+
+En esta sección se ponen evidencia hallazgos relevantes encontrados, la posible aplicabilidad del modelo entornos reales, las limitaciones del trabajo y líneas de investigación futuras.
+
+Todos los programas, recursos, archivos, fuentes y datos están disponibles en la siguiente dirección:
+\url{https://github.com/GonzaloLopezS/TFM_AFI_2025}
 
 	\subsection{Hallazgos relevantes}
+	A pesar de todo se han encontrado los siguientes hallazgos:
+	\begin{itemize}
+		\item [-] Se han identificado ciertos puertos con una mayor recurrencia de incautaciones en función del tipo de droga.
+		\item [-] Dados los resultados de los modelos predictivos, se ha concluido que la actividad en un puerto no es suficiente para teorizar la cantidad incautada en la misma región.
+		\item [-] Se ha realizado un análisis exploratorio de datos profundo que ha permitido detectar, en algunos casos, aparentes patrones temporales para la actividad portuaria y las incautaciones de droga.
+	\end{itemize}
 	
 	\subsection{Aplicabilidad del modelo en entornos reales}
+	La parte de análisis de datos puede ser de utilidad para agencias de seguridad y control aduanero. Especialmente para especializarse en la incautación y prevención de entrada de algún tipo de droga en concreto. Esto puede servir para:
+	\begin{itemize}
+		\item [-] Optimizar la asignación de recursos para inspecciones en puertos con mayor probabilidad de tráfico ilícito.
+		\item [-] Integrar los datos obtenidos en bases de datos más actualizadas y con mayor rango temporal.
+	\end{itemize}
 	
 	\subsection{Limitaciones del trabajo}
+	A pesar de obtener algunos hallazgos, la tónica general del estudio viene precedida por una serie de limitaciones: tanto a nivel de concepción, de datos obtenidos como del modelo:
+	
+	\begin{itemize}
+		\item [-] Pese a tratarse de datos de calidad certificada (datos oficiales validados), su limitación a nivel de cardinalidad (número de variables) como de profundidad (número de observaciones) afecta no solo a la precisión de los modelos, sino a la puesta en práctica del problema mismo.
+		\item [-] Integrar los datos obtenidos en bases de datos más actualizadas y con mayor rango temporal.
+		\item [-] La naturaleza dinámica del tráfico marítimo implica que factores externos, como cambios en rutas comerciales o políticas de seguridad, pueden influir en los resultados.
+		\item [-] La impredecibilidad de los datos, afecta al ajuste del modelo. Lo cual indica una necesidad de un ajuste fino en la selección de variables y en la optimización de hiperparámetros.
+		\item [-] La falta de una variable objetivo clara y concreta, ha hecho dispersar parte de la energía en realizar este trabajo. Siendo en ningún caso una variable lo suficientemente clara y satisfactoria para implementar el mismo.
+	\end{itemize}
 	
 	\subsection{Líneas de investigación futuras}
+	Incluir origen de importaciones, variables de consumo, demanda, variación de la población en áreas metropolitanas como variables predictoras, entre otras.
+	
+	Hallar nuevos patrones y  mejores correlaciones. Descubrir alguna variable target que satisfaga las condiciones de partida de la hipótesis (tener claro a fin de cuentas qué se va a evaluar exactamente). Por ejemplo, incluir funciones de suavizado, o tratar sobre las derivadas de las señales temporales. Usar nuevas métricas de evaluación tales como el producto escalar o hallar el ángulo entre dos vectores (muy similar).
+	
+	Por lo tanto, dado el fallido modelo de este trabajo debido al error, sobre todo, en la concepción del mismo, se abre la posibilidad aún así de reciclar tanto los datos como estudios aportados para:
+	\begin{itemize}
+		\item [-] Profundizar en un modelo de predicción de actividad portuaria, aparte.
+		\item [-] Profundizar en modelos de predicción sobre consumo de drogas a partir de droga incautada, demanda, población, tipo de consumo, factores socioeconómicos, inteligencia policial, etc.
+		\item[-] Persistir en relacionar los dos primeros conceptos (actividad portuaria e incautación de drogas) con terceros factores y desarrollar modelos de predicción.
+		\item [-] Ampliar la base datos en términos de observaciones y variables.
+		\item [-] Mejorar la detección de anomalías de patrones inusuales,
+	\end{itemize} 
 
 \newpage
 %\section{Bibliografía}
