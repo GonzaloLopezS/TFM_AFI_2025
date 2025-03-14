@@ -66,6 +66,16 @@ Transporte marítimo e incautación de droga
 
 \newpage
 
+\section{\label{resumen}Resumen}
+El transporte marítimo es parte esencial del comercio internacional. No obstante, también es un canal de entrada principal para las redes de narcotráfico internacionales. En este estudio, se analiza el volumen de actividad en distintos puertos comerciales en Estados Unidos, medido en tráfico de contenedores, y la cantidad de droga incautada por las oficinas de campo del servicio de aduanas de Estados Unidos para las áreas metropolitanas próximas a esos puertos. También se busca hallar una posible relación entre estos dos conceptos. Para ello, se ha hecho uso de distintas técnicas de Machine Learning aprendidas desde modelos de regresión a modelos de series temporales. Los resultados muestran patrones de incautaciones que varían según la ubicación y el tipo de droga. Sin embargo, la correlación directa con la actividad portuaria se verá que no es concluyente y afectará en el desarrollo y desempeño de los distintos modelos de predicción. A pesar de las limitaciones en los datos disponibles y en la sobrevaloración en la concepción misma del trabajo, éste mismo ofrece una base para mejorar la detección de tráfico ilícito a través de un buen análisis y optimizar la gestión de recursos.
+
+\section{\label{abstract}Abstract}
+Maritime transport is an essential part of international trade. However, it is also a major entry channel for international drug trafficking networks. This study analyzes the volume of activity in various commercial ports in the United States, measured in container traffic, and the amount of drugs seized by the U.S. Customs Field Offices in metropolitan areas near these ports. It also aims to identify a possible relationship between these two factors. To achieve this, various Machine Learning techniques have been applied, ranging from regression models to time series models. The results show seizure patterns that vary depending on location and drug type. However, the direct correlation with port activity is found to be inconclusive, impacting the development and performance of the different predictive models. Despite the limitations in the available data and the overestimation in the initial conception of the study, this research provides a foundation for improving illicit trafficking detection through thorough analysis and optimizing resource management.
+
+\keywords{Transporte marítimo, Geografía del Transporte, Geografía Marítima, Drogas, Estupefacientes, Narcotráfico, Machine Learning, Análisis de Datos, Clustering}
+
+\newpage
+% Añadir indice de contenidos
 \tableofcontents
 
 \newpage
@@ -77,17 +87,6 @@ Transporte marítimo e incautación de droga
 \listoftables
 
 \newpage
-
-\section{\label{resumen}Resumen}
-El transporte marítimo es parte esencial del comercio internacional. No obstante, también es un canal de entrada principal para las redes de narcotráfico internacionales. En este estudio, se analiza el volumen de actividad en distintos puertos comerciales en Estados Unidos, medido en tráfico de contenedores, y la cantidad de droga incautada por las oficinas de campo del servicio de aduanas de Estados Unidos para las áreas metropolitanas próximas a esos puertos. También se busca hallar una posible relación entre estos dos conceptos. Para ello, se ha hecho uso de distintas técnicas de Machine Learning aprendidas desde modelos de regresión a modelos de series temporales. Los resultados muestran patrones de incautaciones que varían según la ubicación y el tipo de droga. Sin embargo, la correlación directa con la actividad portuaria se verá que no es concluyente y afectará en el desarrollo y desempeño de los distintos modelos de predicción. A pesar de las limitaciones en los datos disponibles y en la sobrevaloración en la concepción misma del trabajo, éste mismo ofrece una base para mejorar la detección de tráfico ilícito a través de un buen análisis y optimizar la gestión de recursos.
-
-\section{\label{abstract}Abstract}
-Maritime transport is an essential part of international trade. However, it is also a major entry channel for international drug trafficking networks. This study analyzes the volume of activity in various commercial ports in the United States, measured in container traffic, and the amount of drugs seized by the U.S. Customs Field Offices in metropolitan areas near these ports. It also aims to identify a possible relationship between these two factors. To achieve this, various Machine Learning techniques have been applied, ranging from regression models to time series models. The results show seizure patterns that vary depending on location and drug type. However, the direct correlation with port activity is found to be inconclusive, impacting the development and performance of the different predictive models. Despite the limitations in the available data and the overestimation in the initial conception of the study, this research provides a foundation for improving illicit trafficking detection through thorough analysis and optimizing resource management.
-
-\keywords{Transporte marítimo, Geografía del Transporte, Geografía Marítima, Drogas, Estupefacientes, Narcotráfico, Machine Learning, Análisis de Datos, Clustering}
-
-\newpage
-% Añadir indice de contenidos
 
 \section{\label{intro}Introducción}
 	El transporte marítimo ha sido, desde la Antigüedad, el eje central del comercio global. Imperios y civilizaciones han dependido de rutas marítimas para el intercambio de bienes, desde las redes comerciales del Mediterráneo hasta las rutas coloniales que unieron continentes en la era moderna. Sin embargo, fue la Revolución Industrial la que transformó radicalmente la logística marítima, con avances avances en la construcción naval y, más recientemente, con la revolución de la contenerización iniciada en 1956 por el Ideal-X en su ruta Newark-Houston (\cite{wired2012container}). Este cambio permitió una drástica reducción en los tiempos y costos de carga y descarga, consolidando el transporte de contenedores como el estándar del comercio global. Hoy en día, la mayor parte del comercio internacional depende de esta infraestructura, con puertos como Los Ángeles, Shanghái y Rotterdam actuando como nodos críticos de la economía mundial.
@@ -189,55 +188,117 @@ Por otro lado, como se comentó en \ref{motivacion}, al faltar datos de flujos y
 	En estudios previos sobre el tráfico marítimo y la detección de actividades ilícitas, se han utilizado diversos modelos y técnicas de Machine Learning entre los cuales, algunos de ellos serán utilizados a lo largo de este trabajo.
 	
 		\subsubsection{Algoritmos para métodos de regresión}
-		En el contexto de este estudio, se van a emplear algoritmos de Machine Learning enfocados en la predicción a partir de datos históricos. Puesto que en este caso, uno de los propósitos es resolver un problema de regresión, se ha decidido realizar pruebas con modelos basados en árboles de decisión y técnicas, tanto de boosting como de bagging. Los algoritmos considerados candidatos vendrían a ser:
+		En este estudio, se han empleado algoritmos de Machine Learning diseñados para la predicción a partir de datos históricos. Puesto que en este caso, el problema a resolver es de regresión, se ha decidido realizar pruebas y evaluaciones con modelos basados en árboles de decisión y técnicas, tanto de boosting como de bagging, entre otros. Los algoritmos seleccionados para su análisis y comparación son:
 		
 		\begin{description}
-			\item[·] Árboles de Decisión: cuenta con la ventaja de ser interpretable y basarse en reglas. Sin embargo, las alternativas que complejizan este sencillo algoritmo tales como los métodos de bagging o boosting, dan poco margen a este tipo de algoritmos.
-			\item[·] Regresión Lineal.
+			\item[·] Árboles de Decisión:\\
+			Ventajas: cuenta con la ventaja de ser interpretable y basarse en reglas. Se pueden interpretar, requieren poca preparación de datos (pese a que en este trabajo se acaben manejando datos normalizados, al igual que el resto de algoritmos).
+			
+			Problemas: su tendencia al sobreajuste (overfitting). Para predicciones, los resultados no son ni continuos ni suavizados (ver figura \ref{sphx_glr_plot_tree_regression_001} obtenida de \cite{scikit-learn})
+			
+			\begin{figure}[H]
+				\caption{\label{sphx_glr_plot_tree_regression_001} Imagen de una regresión mediante árbol de decisión}
+				\centering
+				\hspace*{1cm}
+				\includegraphics[width=0.6\textwidth]{sphx_glr_plot_tree_regression_001.png}
+				\caption*{\textit{Imagen de scikit-learn}.}
+			\end{figure}
+			
+			%sphx_glr_plot_tree_regression_001.png
+			
+			Sin embargo, las alternativas que complejizan este sencillo algoritmo tales como los métodos de bagging o boosting, dan poco margen a este tipo de algoritmos.
+			
+			
+			\item[·] Regresión Lineal:\\
+			
+			El modelo más sencillo de regresión. En este caso se espera que la variable objetivo sea una combinación lineal de sus variables predictoras. 
+			
+			\begin{equation}
+				y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
+			\end{equation}
+		
+			Donde $\epsilon$ es el intercept y $\beta$ son los coeficientes lineales. En este caso, se implementará el modelo más sencillo y rudimentario, usando como función de coste aquella que minimice el residuo de la suma de cuadrados.
+		
+						
 			\item[·] Adaboost: técnica de boosting a partir de árboles muy sencillos (modelos débiles) asignando mayor peso a los datos peor predichos.
 			\item[·] Bagging: conjunto de múltiples árboles compuesto por el subconjunto aleatorio de observaciones.
-			\item[·] GradientBoost: Algoritmo de boosting con librería de python propia. Su función de pérdida es diferenciable.
+			\item[·] GradientBoost: Algoritmo de boosting cuya función de pérdida es diferenciable.
 		\end{description}
 
 
 		\subsubsection{\label{prophet}Series temporales con Prophet}
-		Puesto que uno de los objetivos originales del problema era, en caso de que fuera posible, hallar la cantidad de droga incautada -con independencia del tipo- a partir de una serie temporal sobre la llegada de cargamentos, se planteó el enfoque del problema desde la caracterización de la señal por medio de series temporales.No obstante, dada, posiblemente, la falta de horizonte temporal, o ciertas características que pudieran condicionarla como una serie temporal (\cite{towardsdatascience2025timeseries}) dificultó la correcta realización de un problema de esta índole. Sin embargo, en algún caso que si se demostró factible se hizo uso de la librería prophet de Meta (\cite{Taylor2017}) para la resolución de series temporales.
+		Uno de los objetivos originales del estudio era determinar si era posible predecir la cantidad de droga incautada —independientemente del tipo— a partir de una serie temporal basada en la llegada de cargamentos. Para abordar este problema, se planteó el análisis de la señal mediante modelos de series temporales.
 		
-		Para una serie temporal hay que considerar su tendencia a nivel general, si tienen comportamientos estacionales y el resto que no pudiere ser caracterizado, identificarlo como ruido blanco gaussiano (el residuo) \cite{towardsdatascience2025timeseries}.
+		No obstante, ciertos factores como, posiblemente, la falta de horizonte temporal suficientemente amplio o la presencia de características que pudieran condicionar su estructura como serie temporal (\cite{towardsdatascience2025timeseries}) dificultaron la correcta formulación y resolución de un problema bajo este enfoque. Sin embargo, en algún caso que si se demostró factible se hizo uso de la librería prophet de Meta (\cite{Taylor2017}) para la modelización y predicción de series temporales.
+		
+		Para una serie temporal hay que considerar:
+		\begin{itemize}
+			\item 1. Su tendencia a nivel general.
+			\item 2. Si tienen comportamientos estacionales.
+			\item 3. Si el resto de la señal no puede ser catacterizado, identificarlo como ruido blanco gaussiano (residuo del modelo).
+		\end{itemize}
+		Ver: \\
+		\cite{towardsdatascience2025timeseries}.
 		
 		% Incluir alguna imagen de ejemplo de como tratar una serie temporal
+		En la figura \ref{saturating_forecasts_16_0} se ve un ejemplo obtenido de la página web de \cite{ProphetSaturatingForecasts} sobre la modelización de series temporales con prophet:
+		%saturating_forecasts_16_0.png
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{saturating_forecasts_16_0.png}
+			\hspace*{1cm}
+			\caption{Gráfico de previsiones saturadas en Prophet. \textit{Fuente: Meta (Facebook) \cite{ProphetSaturatingForecasts}.}}
+			\label{fig:prophet_saturating}
+		\end{figure}
+		
 
 		\subsubsection{\label{clustering}Técnicas de clustering}
 	%	 Incluir Vectorial K-Means (*)\
-		Como se irá viendo a lo largo del trabajo, una de las dificultades en su origen fue conectar los datos de distintos orígenes y temáticas. Por un lado, dada la gran disparidad entre el número de puertos y el número de oficinas aduaneras del CBP, se estimó necesario la agrupación de los primeros en "hubs portuarios". Para ello se barajaron distintas técnicas de clustering para poder agrupar las señales emitidas por aquellos barcos de tipo carguero (cargo ship) que se encontrasen de algún modo atracados a lo largo de una serie de días de septiembre de 2024. A partir de las señales de los barcos, se aplicó un algoritmo K-Means sencillo -tomando como variables la latitud y la longitud- para hallar aquellos puntos cercanos al litoral que mejor agrupasen barcos (y, en definitiva, puertos) cercanos entre sí.
+		A lo largo de este estudio, uno de los principales desafíos ha sido la integración de datos provenientes de fuentes y temáticas diversas. Por un lado, dada la gran disparidad entre el número de puertos y el número de oficinas aduaneras del CBP, se estimó necesario la agrupación de los primeros en "hubs portuarios". Para ello se exploraron distintas técnicas de clustering con el objetivo de poder agrupar las señales emitidas por aquellos barcos cargueros (cargo ship) que permanecieran atracados a lo largo de varios días en septiembre de 2024. A partir de las señales de los barcos, se optó por aplicar un algoritmo sencillo de K-Means utilizando la latitud y la longitud como variables con el fin de hallar aquellos puntos cercanos al litoral que mejor identificasen la agrupación de barcos -y, en definitiva, puertos- en función de su proximidad geográfica.
 		
-		Para este problema, se utilizó 'silhouette' para medir la calidad del clustering, en detrimento de otras opciones (wss). Las ventajas de usar 'silhouette' como medida de discriminación de elementos particulares frente a clusters se encuentra en que es más robusto para clusters con distinta densidad y tiene en cuenta la separación entre clusters. También se estimó el uso de alternativas como K-Means Vectorial (\cite{ferreira2012vectorfieldkmeansclustering}), pero debido a su alcance más de nicho (no implementado en scikit-learn o cualquier otra gran librería de Python) frenó sus posibilidades de implementación, junto con la poca claridad del objetivo final del problema por aquel entonces.	
+		Para evaluar la calidad del clustering, se utilizó la métrica de 'silhouette', en detrimento de otras opciones alternativas como wss. La ventaja principal de usar 'silhouette' como medida de discriminación de elementos particulares frente a clusters radica en su robustez para identifcar clusters con distintas densidades y en su capacidad para tener en cuenta la separación entre grupos.
+		
+		% Incluir fórmula de silhouette
+		
+		Por otro lado, también se estimó el uso de alternativas como K-Means Vectorial (\cite{ferreira2012vectorfieldkmeansclustering}), pero debido a su limitada disponibilidad en librerías ampliamente utilizadas como scikit-learn (o cualquier otra gran librería de Python) frenó sus posibilidades de implementación.	
 	
 	\subsection{Justificación de las herramientas y tecnologías elegidas}
-	Para el desarrollo de este problema de ciencia de datos, se ha hecho uso, principalmente, del lenguaje de programación python y librerías básicas asociadas al estudio de problemas de ciencia de datos, tales como pandas o scikit-learn (\cite{scikit-learn}). En algunos desarrollos se echó mano de Google Colab y otros de VisualStudio en función de si se requería una gran capacidad de recursos y cálculo. Debido a los cambios constantes en los planteamientos y objetivos del problema a causa de las dificultades inherentes a la captura e integración de datos, se fueron reinstanciando los distintos bloques, siendo algunas partes originales del problema desestimadas. Sin embargo, se decidió rescatar el problema de clustering de puertos para generar el hub portuario, aunque como se menciona en la subsección \ref{clustering}. Para ello se extrajeron seis hubs portuarios lo suficientemente representativos para después continuar con el desarrollo del problema.
+	Para el desarrollo de este problema de ciencia de datos, se ha hecho uso del lenguaje de programación Python junto con librerías básicas asociadas al estudio de problemas de ciencia de datos, tales como pandas o scikit-learn (\cite{scikit-learn}). En función de las necesidades computacionales, para algunos desarrollos se recurrió tanto a Google Colab como a Visual Studio Code.
 	
-	%Técnicas de clustering para cita en parrafo anterior
+	Debido a los cambios constantes en los planteamientos y objetivos del problema, motivados por las dificultades inherentes a la captura e integración de datos, algunos bloques del análisis original se tuvieron que reformular o, directamente, descartar. Sin embargo, se decidió conservar la aplicación de técnicas de clustering para la identificación de hubs portuarios, como se detalla en la subsección \ref{clustering}. Para ello se extrajeron seis hubs portuarios lo suficientemente representativos que sirviesen de base para continuar con el desarrollo del problema.
+	
 \newpage
 	
 \section{Metodología empleada}	
-Este trabajo busca identificar patrones, correlaciones y tendencias entre el volumen de cargamento gestionado en una serie determinada de puertos de EE.UU. y la cantidad de droga incautada por las secciones adyacentes (oficinas de campo) del servicio de aduanas (CBP). Para ello a continuación se detalla la metodología que se ha seguido para implementar una serie de técnicas de análisis de datos y Machine Learning.
+Este trabajo tiene como objetivo identificar patrones, correlaciones y tendencias entre el volumen de cargamento gestionado en una selección de puertos de EE.UU. y la cantidad de droga incautada en las áreas adyacentes, supervisadas por las oficinas de campo del Servicio de Aduanas y Protección Fronteriza (CBP). Para ello, se ha seguido una metodología que se basa en técnicas de análisis de datos y Machine Learning, cuya implementación se detalla a lo largo de esta sección.
 
 	\subsection{Descripción del conjunto de datos utilizado}
-	Para la puesta a punto del conjunto de datos a tratar, primero hubo que implementar un desarrollo de integración de los mismos provenientes de distintas fuentes.
-	Para ello, hubo que conseguir un compromiso entre aquellos datos obtenidos del transporte de mercancías en puertos marítimos con los datos oficiales sobre incautaciones. La clave para ello estuvo en estandarizar el intervalo y el nivel de detalle en el eje temporal  y en el nivel geográfico: con una resolución en meses para los últimos seis años fiscales en EE UU.
+	Para la construcción del conjunto de datos se requirió la integración de información proveniente de distintas fuentes.
+	Para ello,fue necesario establecer un compromiso entre aquellos datos relativos al transporte de mercancías en puertos marítimos con los registros oficiales sobre incautaciones de drogas. La clave de este proceso fue estandarizar tanto el eje temporal (resolución mensual considerando los últimos seis años fiscales en EE.UU.) como el eje geográfico (estructuración de los datos conforme a la distribución de las incautaciones en relación con los puertos comerciales más relevantes).
+	
+	Este enfoque permitió la consolidación de un conjunto de datos homogéneo y coherente, facilitando su análisis en el contexto del tráfico marítimo y las operaciones de control aduanero.
 	
 		\subsubsection{\label{data origin}Origen de los datos}
 		%Primera aproximación al problema
-		Originalmente, el objetivo del trabajo buscaba relacionar el comercio global y sus flujos regionales con el tráfico de drogas. Debido a las complejidades a la hora de acceder a estos datos y que estos dependen de agencias privadas (bajo licencia), se replanteó el problema de tal modo que se trabajasen sobre puertos destino en Estados Unidos (datos abiertos) y no sobre un modelo de grafos basado en las rutas marítimas de transporte. La ventaja de los datos provistos por Estados Unidos (ya sea a nivel federal, nivel estatal o local) es que éstos suelen ser de buena calidad y bastante completos.
+		Originalmente, el objetivo de este estudio era analizar la relación entre el comercio global, sus flujos regionales y el tráfico de drogas. Sin embargo,debido a las dificultades a la hora de acceder a datos detallados -principalmente porque éstos están gestionados por agencias privadas y requieren licencias-, se tuvo que replantear el enfoque del problema. En lugar de modelar las rutas marítimas a nivel global mediante grafos de transporte, se optó por tabajar exclusivamente con puertos destino en Estados Unidos, gracias a sus datos abiertos disponibles.
+		
+		Una de las principales ventajas de esta decisión es que, la información proporcionada por las entidades gubernamentales en EE.UU. tanto a nivel federal, estatal y local han gozado de una calidad alta y bastante completa, lo cual garantiza una mayor fiabilidad y análisis.
 		
 		\underline{Fuentes, Bases de Datos, Informes}\\
-		Los datos de transporte de contenedores se obtuvieron de las distintas páginas webs informativas de cada autoridad portuaria (Ver las fuentes en la sección de Bibliografía). Accediendo a las secciones de informes estadísticos se pudieron obtener datos a nivel mensual sobre carga y descarga de contenedores, así como exportaciones e importaciones. Todos aquellos puertos de EE UU que proporcionaron esta información fueron considerados como parte del objeto de estudio. Por otro lado, los datos referidos a incautaciones de drogas se obtuvieron de los informes estadísticos sobre incautación de droga provistos por la CBP (Agencia de aduanas de Estados Unidos) para las distintas oficinas de campo a nivel mensual para los años fiscales 2019 a 2024.
+		Los datos de transporte de contenedores se recopilaron a partir de las distintas páginas webs oficiales de cada autoridad portuaria (ver fuentes en la sección de Bibliografía). A través de las secciones y de los informes estadísticos disponibles en estas plataformas, se obtuvieron registros a nivel mensual sobre carga y descarga de contenedores, así como a datos sobre exportaciones e importaciones. Se incluyeron en el estudio todos aquellos puertos de EE UU que proporcionaron información detallada y de calidad sobre estas operaciones.
+		
+		Por otro lado, los datos referidos a incautaciones de drogas fueron extraídos de los informes estadísticos del CBP (Customs and Border Protection), que recopilan información sobre las oficinas de campo de esta agencia en EE.UU. Se seleccionaron los datos disponibles a nivel mensual para los años fiscales 2019 a 2024.
 		
 		% Imagen web CBP
 		
-		Una vez se localizaron las fuentes y los datos de interés, se procedió a su descarga. La construcción del dataset de entrada se trató como un problema de integración de datos. Se usó tanto la fecha (en formato "Año-mes") como la región geográfica como clave primaria para unir los datos de movimiento de contenedores en un puerto como de incautaciones de drogas para oficinas del CBP asignadas para su hub portuario correspondiente. Ya que a nivel temporal, el nivel de detalle que se pudo conseguir fue a nivel mensual, se obtuvieron de partida setenta y cinco meses de observaciones (equivalentes a seis años más un trimestre debido a que los años fiscales en Estados Unidos comienzan el 1 de octubre del año natural anterior).
+		Una vez se localizaron, identificaron y recopilaron las fuentes de datos de interés, se procedió a su descarga e integración. La construcción del dataset de entrada se trató como un problema de fusión de datos. Se usó un esquema común usando tanto la fecha (en formato "Año-mes") como la región geográfica como clave primaria para combinar la información de ambos dominios: la de movimiento de contenedores en un puerto con las incautaciones de drogas por cada oficina de campo del CBP correspondiente.
 		
-		Dado que el CBP se trata de una agencia federal de Estados Unidos,se evitó el inconveniente que pudiera acarrear si cada estado tuviese su agencia propia y no existiese una estandarización de los procedimientos y oficinas. Todos aquellos puertos que ofrecieron datos de calidad en relación a operaciones sobre contenedores (total de TEUs, importaciones totales, exportaciones totales, contenedores vacíos y contenedores llenos) y que resultasen de interés para el trabajo, fueron incluidos.
+		Dado que a nivel temporal, el nivel de granularidad era mensual, se obtuvieron de partida 75 meses de observaciones (equivalentes a seis años más un trimestre), considerando que en EE.UU. el año fiscal comienza el 1 de octubre del año anterior al natural.
+		
+		Dado que el CBP se trata de una agencia federal de Estados Unidos,permitió evitar el inconveniente que pudiera haber surgido si cada estado gestionara sus propias incautaciones de forma independiente y no existiese una estandarización de los procedimientos y reportes. Para este estudio, solo se incluyeron aquellos puertos que ofrecieron datos completos de calidad en relación a operaciones sobre contenedores: total de TEUs, importaciones totales, exportaciones totales, contenedores vacíos o llenos.
+		
+		Estos criterios garantizaron la homogeneidad de los datos utilizados a lo largo del estudio.
 		
 		\underline{Detección de hubs portuarios}\\ %: Clustering.
 		Como se mencionó en la sub-sección \ref{clustering}, para simplificar el número de puertos y poder asignarlos a las oficinas del control de aduanas de Estados Unidos, se procedió a usar técnicas de Clustering (K-Means). Esto se hizo para poder estimar en qué regiones geográficas se podían agrupar aquellos puertos que fueran cercanos geográficamente entre sí. 
@@ -263,7 +324,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		Una vez filtrados los barcos con ese status (y con proximidad al litoral), se pudo realizar la agrupación basándose exclusivamente en las variables de coordenadas (latitud y longitud). Se implementó un problema de clustering haciendo uso del algoritmo k-Means con la métrica de 'silhouette' como método de evaluador de la calidad, para agrupar los barcos próximos a la costa en una treintena clusters. De entre estos clusters, finalmente se obtuvieron los potenciales hubs portuarios para considerar dentro del análisis (Véase la imagen \ref{map_cluster_3}).
 		
 		\begin{figure}[H]
-			\caption{\label{map_cluster_3} Señales AIS de barcos atracados o con movilidad restringida recopilados por el NOAA}
+			\caption{\label{map_cluster_3} Clusters obtenidos de aplicar K-Means sobre barcos atracados o con movilidad restringida}
 			\centering
 			\includegraphics[width=0.5\textwidth]{map_cluster_3.png}
 		\end{figure}
@@ -273,7 +334,9 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		 Debido a las complejidades y adversidades del problema, finalmente se decidió incluir hasta seis hubs portuarios: (Newark (\cite{panynj2025facts}), Miami/Fort Lauderdale (\cite{porteverglades2025stats}), Houston (\cite{porthouston2025teus}), SFBA, Seattle/Tacoma (\cite{nwseaportalliance2025cargo}) y Área Metropolitana del Gran Los Ángeles (\cite{portla2025containerstats})) para el objeto de estudio.
 		 
 		 \underline{Pivote de las variables sobre incautaciones de drogas}\\
-		 Por su parte, los datos provenientes de los datasets sobre incautaciones por parte de los "Field Office" (u oficinas de campo/regionales, \cite{cbp2025drugseizures}) tuvieron que pasar de una estructura "table longer" a una "table wider" para así poder encajar mes a mes con los datos de estibado de contenedores (\cite{cbp2022drugseizures}). Además, pivotando respecto al tipo de drogas, se logró generar todas las variables de conteo de redadas y de cantidad incautada para cada tipo de droga. Generando así un dataset más rico en término de variables.
+		 Por su parte, los datos sobre incautaciones de drogas extraídos de los datasets de las oficinas de campo del CBP (\cite{cbp2025drugseizures}) requirieron un proceso de transformación para su correcta integración con los datos de movimiento de contenedores (\cite{cbp2022drugseizures}). Inicialmente, la información se encontraba en un formato "table longer", por lo que fue necesario pivotarla a una estructura "table wider" que permitiera alinear los registros mes a mes con los datos portuarios.
+		 
+		 Además, mediante una segmentación basada en el tipo de droga incautada, se logró generar un conjunto de variables específicas que incluyen tanto el número de redadas como la cantidad total incautada por sustancia. Esta transformación permitió construir un dataset más estructurado y rico en término de variables.
 		 
 		 Una muestra de los datos originales publicados por el CBP para el caso de Nueva York:
 		\begin{figure}[H]
@@ -348,7 +411,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		\end{verbatim}
 	
 		
-		Una vez seleccionadas y modificadas estas columnas, como se ve en la sección de código justo anterior, se produjo un drop de la variable 'Area of Responsibility' y para ello, se generaron dos nuevas ('latitude' y 'longitude') que la sustituyesen e hiciesen de identificadores, en este caso, para la región de Nueva York/Nueva Jersey:
+		Una vez seleccionadas y modificadas estas columnas, como se ve en la sección de código justo anterior, se generaron a partir de la variable 'Area of Responsibility' dos nuevas -'latitude' y 'longitude'- que sirviesen de identificadores, en el ejemplo compartido, para la región de Nueva York/Nueva Jersey:
 		
 		\begin{verbatim}
 			# row 6: NJ/NY, El id=6 corresponde al hub portuario de Newark (ver Anexos)
@@ -410,7 +473,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		
 
 		\underline{Asignación de un hub portuario con una agencia aduanera}\\
-		Tras la transposición de los datos de incautaciones de drogas proporcionados por los documentos del CBP (detallado anteriormente), junto con la generación de la variable 'Hub Portuario' (mediante el clustering también definido), se pudo vincular los datos de las incautaciones de la oficina de campo del CBP a su hub portuario más indicado.
+		Tras la trasposición de los datos de incautaciones de drogas proporcionados por los documentos del CBP (detallado anteriormente), junto con la generación de la variable 'Hub Portuario' (mediante el clustering también definido), se pudo vincular los datos de las incautaciones de la oficina de campo del CBP a su hub portuario más indicado.
 		
 		Sobre por qué se decidió asignar cada oficina del CBP al hub portuario, en las fuentes originales se menciona que en el caso de los datasets referidos a "Nationwide Drug Seizures: Los agentes y oficiales del CBP prohiben la entrada y salida de productos narcóticos ilícitos a través de sus fronteras y en los puertos de entrada" (\cite {cbp2025drugseizures}). Es decir, se hace referencia explícita sobre los datos se refieren, en parte, a incautaciones en puertos. Esto es útil para el planteamiento del problema frente a otras fuentes de datasets del mismo CBP que hacían referencia a AMO (Operaciones marinas y aéreas cuyo alcance o jurisdicción quedaba más laxa* \cite{cbp2025amodrugseizures}). Sin embargo, los retardos y acumulaciones en las incautaciones de los segundos, no hacen evidente la relación entre la actividad portuaria con la cantidad de droga detectada. Más adelante se dejará constancia de terceros factores que pudieran influir en el análisis.
 		
@@ -493,14 +556,14 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		Un caso particular en la integración de datos se correspondió con los extraídos del Puerto de Everglades en Fort-Lauderdale (Área Metropolitana de Miami, Florida). Se reseña que no se pudieron incluir los datos del puerto de Miami por falta de calidad de los mismos (falta de granularidad, acuerdos de proceso de contenedores con operadores privados en los terminales que podían dificultar la integración de los datos \cite{portmiami2025cargo}, etc.). Los datos fueron extraídos de los informes para cada año fiscal a disposición en \cite{porteverglades2025stats}. En algún caso particular, se observó la ausencia de datos para el año fiscal 2021 (últimos tres meses, \cite{porteverglades2021teus}). El tratamiento de estos missing values será desarrollado en su sección correspondiente \ref{preprocessing}.
 		
 		\subsubsection{\label{feature engineering}Ingeniería de características}
-		Antes de realizar las primeras visualizaciones ya se vislumbraron determinadas certezas respecto a los datos brutos que componían el dataset primitivo y, de paso, se estimó necesario la inclusión de otras variables que fuesen generadas a partir de éstas primeras.
-		% Generación del target (y posibles alternativas)
-		Esto se debe a que en ningún caso de los datos originales, se veía con claridad que alguna variable pudiera ser considerada objetivo de las variables de contenedores. Excepto, como se muestra en la lista de variables del dataset construido en \ref{data origin}, la variable "sum of counts". 
+		Antes de realizar las primeras visualizaciones, se identificaron ciertas limitaciones respecto a los datos brutos que componían el dataset original. Esto llevó a la necesidad de generar nuevas variables que fuesen generadas a partir de las existentes.
 		
-		Esta subsección va a servir como propósito para no solo mostrar la generación de ciertas variables a partir de las variables originales (proceso de feature engineering), sino también para incluir nuevas ideas que pudieran ser aportadas para otros trabajos que siguiesen en la misma línea.
+		Esto se debe a que en ningún caso de los datos originales, se veía con claridad que alguna variable pudiera ser considerada como variable objetivo en relación con el movimiento de contenedores. Sin embargo, como se menciona en la lista de variables del dataset construido en \ref{data origin}, se detectó que la variable "sum of counts" era la que mejor podría sintetizar la información disponible sobre incautaciones. 
+		
+		El propósito de esta subsección es, por tanto, no solo describir el proceso de generación de nuevas variables a partir de las variables originales mediante técnicas de ingeniería de características (feature engineering), sino también para aportar nuevas ideas que pudieran ser útiles para otros futuros estudios que siguiesen en una línea de investigación similar.
 		
 		\underline{Sum of Counts}\\
-		Uno de los puntos que más quebraderos de cabeza trajo respecto al desarrollo del trabajo fue, por encima de todo, qué variable se usaría como target para el modelo. Pese a que este punto será abordado con mayor profundidad en la sección \ref{implementacionPractica}, pronto surgió la idea de incluir una variable que agrupase todas las incautaciones (número de redadas) sin importar la categoría de la droga para un mismo mes y una misma región. Esto no era posible de realizar sobre la cantidad de droga incautada (masa en libras) ya que carecía de sentido mezclar masas de distintos orígenes. También se llegó a pensar en hacer la suma del valor incautado, pero también se descartó por la falta de datos al respecto y, que la influencia del mismo valor al igual que la masa generase ciertas distorsiones entre una región u otra.
+		Uno de los puntos que más quebraderos de cabeza trajo respecto al desarrollo del trabajo fue, por encima de todo, qué variable se usaría como target para el modelo. Pese a que este punto será abordado con mayor profundidad en la sección \ref{implementacionPractica}, pronto surgió la idea de incluir una variable que agrupase todas las incautaciones (número de redadas), sin importar la categoría de la droga, para un mismo mes y una misma región. Esto no era posible de realizar sobre la cantidad de droga incautada (masa en libras) ya que carecía de sentido mezclar masas de distintos orígenes. También se llegó a pensar en hacer la suma del valor incautado, pero también se descartó por la falta de datos al respecto y, que la influencia del mismo valor al igual que la masa generase ciertas distorsiones entre una región u otra.
 		
 		La variable "sum of counts" se define, entonces, como la suma de redadas mensuales para cada tipo de droga. A continuación se formula su expresión matemática:
 		
@@ -518,7 +581,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		\small
 		\begin{table}[H]
 			\begin{center}
-				\caption{Incautaciones de drogas por puerto}
+				\caption{Incautaciones de drogas por puerto al mes}
 				\label{tabla_incautaciones}
 				\setlength{\tabcolsep}{1pt}
 				\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
@@ -544,9 +607,33 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		\endgroup
 		
 		\underline{Ratios por Tipo de Droga}\\
-		Una vez generada la variable "Sum of Counts", era posible tener una asignación de cada puerto con la cantidad total de redadas mensuales. Pero para cada una de esas redadas se consideró que aportaría valor el conocer cómo eran: si lograban continuamente capturar gran cantidad de estupefacientes, si en cambio, solían ser pequeñas incautaciones con algún "premio" en forma de gran redada... Si esto dependía del tipo de droga y/o del hub portuario. Para ello se fueron creando las variables "Ratio\_" para cada tipo de droga. Su cálculo no es más que el cociente entre la cantidad incautada de un tipo de droga durante un mes en una región y el número de redadas durante ese mes en esa misma región.
+		Una vez generada la variable "Sum of Counts", era posible tener una asignación de cada puerto con la cantidad total de redadas mensuales. Pero para cada una de esas redadas, en un principio, se consideró que aportaría valor el conocer cómo eran: si lograban continuamente capturar gran cantidad de estupefacientes, si en cambio, solían ser pequeñas incautaciones con algún "premio" en forma de gran redada... Si esto dependía del tipo de droga y/o del hub portuario. Para ello se fueron creando las variables "Ratio\_" para cada tipo de droga. Su cálculo no es más que el cociente entre la cantidad incautada de un tipo de droga durante un mes en una región y el número de redadas durante ese mes en esa misma región.
 		
-		A continuación se muestran una serie de gráficas que muestran la relación entre la cantidad de droga incautada con el número de redadas. Nótese que las figuras representadas son anteriores al análisis y exclusión de outliers:
+		Aquí la nueva variable es el cociente entre las dos variables anteriores. A continuación se muestra su expresión matemática: 
+		% Incluir cálculo "Ratio_"
+		% Cociente entre count event de tipo de drogas:
+		$$
+		Ratio\; of\; Drug\; Type = \frac{Sum\; Qty_i}{Count\; of\; Event_i}
+		$$
+		%
+		Donde $i$ es cada tipo de droga.
+		
+		% Suavizados de señales originales.
+		% Derivadas sobre suavizados.
+		\underline{Otras feature engineering}\\
+		Por otro lado, también se estimó realizar un modelo basado en la comparación de tendencias entre variables de entrada (relacionadas con la gestión de los contenedores) y si el volumen de carga en un puerto mantiene alguna relación con la variación en la cantidad de droga total incautada. En este caso, fueron otras prioridades y ciertas restricciones de tiempo las que dejaron de lado este acercamiento al problema que hubiese sido, sin duda alguna, muy interesante de plantear. En todo caso, para lograr intuir la tendencia de señales temporales con mucho ruido habría que haber aplicado un filtro que suavizase la señal original y después derivar.
+		% Incluir fórmula para derivada de la señal filtrada
+		
+		\underline{¿Por qué no se suman las cantidades de droga incautada?}\\
+		Como se ha comentado con anterioridad en esta misma sección, pese a que hay elementos interesantes en favor de ello: la cantidad en kilogramos incautada de un tipo de droga A frente a otro tipo B no sería determinante a la hora de realizar un análisis y que podría inducir a error, quizá si lo fuese su equivalente en valor monetario -pero inviable en términos prácticos-.
+		
+		\subsubsection{\label{EDA}Análisis exploratorio de los datos}
+		Una vez conformado el dataset, se realizó un primer análisis exploratorio de datos. Por un lado, se realizó uno para cada hub portuario gracias al manejo de herramientas y librerías de visualización de python como plotnine (\cite{plotnine2025}) o ydata-profiling (\cite{ydata2025profiling}). Por otro lado, también se estimó la importancia que pudieran tener las variables geográficas. En este último caso, se generaron mapas geográficos con la librería plotly (\cite{plotly2025python}).
+		
+		\underline{Comportamiento de las variables Ratio}\\
+		Como se vio en la subsección anterior (Ver \ref{feature engineering}), una de las primeras variables que se generaron fueron aquellas que relacionaban la cantidad de droga incautada al mes con el número de redadas sobre esa misma droga durante el mismo mes.
+		
+		A continuación se muestran una serie de gráficas que muestran la relación entre la cantidad de droga incautada con el número de redadas:
 		
 		\begin{figure}[H]
 			\caption{\label{graph_ratios_1} Relación entre la cantidad de cocaína incautada y el número de redadas por puerto}
@@ -570,7 +657,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			\hspace*{1cm}
 			\includegraphics[width=0.75\textwidth]{graph_ratios_3.png}
 		\end{figure}
-		
+	
 		En la figura inmediatamente superior (figura \ref{graph_ratios_3}), se observan los datos que servirán para generar la variable "ratio marihuana". A destacar una redada importante en Seattle. Los puertos de Los Angeles y Newark suelen tener de media más incautaciones en este caso. Aunque se recuerda al lector que pese a que la marihuana está legalizada en algunos estados como California, en este trabajo se trata con los datos registrados como tal.
 		
 		\begin{figure}[H]
@@ -579,22 +666,21 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			\hspace*{1cm}
 			\includegraphics[width=0.75\textwidth]{graph_ratios_4.png}
 		\end{figure}
+	
+		Por ejemplo, obsérvese que para el caso de redadas de cocaína, se tiene constancia de una redada a principios de 2023 en Seattle con una gran cantidad de la misma incautada \ref{st_ratio_1}. En el caso de trabajar con esta variable "ratio cocaine", se vería que, en efecto, para el caso de Seattle hubo una importante operación en la que se incautó una gran cantidad de cocaína. El resto de valores se encuentran muy próximos de la media.
 		
-		Tras estas visualizaciones gráficas entre la cantidad de droga incautada y el número de redadas exitosas respecto a esa misma droga, ahora toca dar forma y finalidad a la variable que se quiere generar a partir de ellas.
+		\begin{figure}[H]
+			\caption{\label{st_ratio_1} Serie temporal sobre redadas de cocaína para cada puerto}
+			\centering
+			\hspace*{1cm}
+			\includegraphics[width=0.75\textwidth]{st_ratios_1.png}
+		\end{figure}
 		
-		Si bien es cierto que en las representaciones no se han omitido los outliers, se trata como bien se dice, de meras representaciones gráficas. Aquí la nueva variable es el cociente entre las dos variables anteriores. A continuación se muestra su expresión matemática: 
-		% Incluir cálculo "Ratio_"
-		% Cociente entre count event de tipo de drogas:
-		$$
-		Ratio\; of\; Drug\; Type = \frac{Sum\; Qty_i}{Count\; of\; Event_i}
-		$$
-		%
-		Donde $i$ es cada tipo de droga.
+		
+		Si bien es cierto que en las representaciones aún no se han omitido los outliers, se trata como bien se dice, de meras representaciones gráficas. 
 		
 		%Visualización en un mapa de Max Ratios:
-		Tras generar esta variable, toca comprobar como se comporta respecto al resto de variables del conjunto de datos. En la subsección \ref{preprocessing} ya se mostraron alguas representaciones gráficas sobre el comportamiento de las variables "ratio" (ver las figuras \ref{st_ratio_3} o \ref{outliers_2}) mucho antes de que fuesen definidas.
-		
-		Por otro lado, a continuación se muestran algunas visualizaciones para cada variable del tipo "Ratio" para cada tipo de droga en cada puerto:
+		Con la variable "Ratio" ya creada (ver \ref{feature engineering}) así como confirmada la relación entre 'Sum (Qty)' y 'Count of Event', se pasó a realizar un pequeño análisis visual a nivel geográfico:
 		
 		\begin{figure}[H]
 			\caption{\label{map_bubble_5} Principales redadas por tipo de droga en cada puerto}
@@ -612,26 +698,10 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			\includegraphics[width=\textwidth]{map_bubble_6.png}
 		\end{figure}
 		
-		Como se mencionó en uno de los párrafos anteriores, con estas nuevas variables se buscaba ver a primera vista qué tipo de incautaciones se llevaban de forma regular para cada hub portuario. Por ejemplo, para los casos de incautaciones de cocaína, los puertos de Newark y de Miami eran constantes las redadas con importantes cantidades incautadas. Por otro lado, en Seattle/Tacoma se encontraron picos de incautación (similar a una delta) en algún mes concreto (Ver figura \ref{st_ratio_1} en la subsección \ref{preprocessing}).
-		
-		% Añadir alguna otra figura con ratio.
-		Para el cálculo de las variables de ratio, se barajó realizar el cálculo a partir de los datos normalizados. Sin embargo, a la vista de resultados contradictorios, se decidió finalmente realizarlo sobre los datos brutos. Una de las contraindicaciones que surgía de esta última forma de calcularlo era la aparición de indeterminaciones del tipo $ \frac{0}{0}$ fruto de observaciones con missing values. Dado que los missing values correspondían a meses estimados sin redadas y, por lo tanto, sin incautaciones, y que el resto de valores eran forzosamente enteros positivos, el valor del ratio debía ser definitivamente, entero positivo, estrictamente mayor que cero. Estas aseveraciones permitieron, sin lugar a dudas, imputar los ratios en los casos de missing values a cero. Su sentido dentro del contexto de los datos de esa variable es que el cero es el mínimo valor para esa variable y que ninguna redada realizada podía alcanzar ese mínimo. Por su parte, el descarte de realizar el cálculo a partir de los datos normalizados era la paradoja resultante de obtener un ratio negativo (por debajo de la media) en el caso de tener una cantidad incautada elevada (valor positivo por encima de la media, numerador del cociente) frente un número bajo de redadas (valor negativo por debajo de la media, denominador del cociente) que, en relación con el resto de ratios, debería estar en el extremo positivo de la distribución. Finalmente, al igual que el resto de variables, antes de ser integradas en el dataset fueron estandarizadas mediante StandardScaler() implementado en el Pipeline de scikit-learn.
-		
-		% Pequeño esquema sobre proceso de generacion ratio sobre datos brutos + estandarización posterior.
-		
-		% Suavizados de señales originales.
-		% Derivadas sobre suavizados.
-		\underline{Otras feature engineering}\\
-		Por otro lado, también se estimó realizar un modelo basado en la comparación de tendencias entre variables de entrada (relacionadas con la gestión de los contenedores) y si el volumen de carga en un puerto mantiene alguna relación con la variación en la cantidad de droga total incautada. En este caso, fueron otras prioridades y ciertas restricciones de tiempo las que dejaron de lado este acercamiento al problema que hubiese sido, sin duda alguna, muy interesante de plantear. En todo caso, para lograr intuir la tendencia de señales temporales con mucho ruido habría que haber aplicado un filtro que suavizase la señal original y después derivar.
-		
-		\underline{¿Por qué no se suman las cantidades de droga incautada?}\\
-		Como se ha comentado con anterioridad en esta misma sección, pese a que hay elementos interesantes en favor de ello: la cantidad en kilogramos incautada de un tipo de droga A frente a otro tipo B no sería determinante a la hora de realizar un análisis y que podría inducir a error, quizá si lo fuese su equivalente en valor monetario -pero inviable en términos prácticos-.
-		
-		\subsubsection{\label{EDA}Análisis Exploratorio de los Datos}
-		Una vez conformado el dataset, se realizó un primer análisis exploratorio de datos. Por un lado, se realizó uno para cada hub portuario gracias al manejo de herramientas y librerías de visualización de python como plotnine (\cite{plotnine2025}) o ydata-profiling (\cite{ydata2025profiling}). Por otro lado, también se estimó la importancia que pudieran tener las variables geográficas. En este último caso, se generaron mapas geográficos con la librería plotly (\cite{plotly2025python}).
+		Como se mencionó en uno de los párrafos anteriores, con estas nuevas variables se buscaba ver a primera vista qué tipo de incautaciones se llevaban de forma regular para cada hub portuario. Por ejemplo, para los casos de incautaciones de cocaína, los puertos de Newark y de Miami eran constantes las redadas con importantes cantidades incautadas. Por otro lado, en Seattle/Tacoma se encontraron picos de incautación (similar a una delta o pulso) en algún mes concreto (Ver figura \ref{st_ratio_1}).
 
 		\underline{Análisis temporal (series temporales)}\\
-		Dado que los datos reportados tienen un orden cronológico, se consideró la inclusión de un análisis de series temporales. Ciertas apariencias de los datos brutos daban lugar a estimar ese acercamiento. En las figuras \ref{timeseries_1} y \ref{timeseries_2} se observa el comportamiento en el puerto de Miami. Nótese que para la primera imagen los datos están estandarizados (ésta compara el número total de redadas en comparación con el trasiego de contenedores). Por su parte la segunda imagen desagrega "Sum of Counts" (Véase \ref{feature engineering}) en los distintos tipos de drogas. En este último caso, los datos aportados están en valores absolutos.
+		Dado que los datos reportados tienen un orden cronológico, se consideró la inclusión de un análisis de series temporales. Ciertas apariencias de los datos brutos daban lugar a estimar ese acercamiento. En las figuras \ref{timeseries_1} y \ref{timeseries_2} se observa el comportamiento en el puerto de Miami. Nótese que para la primera imagen los datos están estandarizados (ésta compara el número total de redadas en comparación con el movimiento de contenedores). Por su parte la segunda imagen desagrega "Sum of Counts" (Véase \ref{feature engineering}) en los distintos tipos de drogas. En este último caso, los datos aportados están en valores absolutos.
 		\begin{figure}[H]
 			\caption{\label{timeseries_1} Actividad (movimiento de cargamento) en el puerto de Fort Lauderdale}
 			\centering
@@ -680,7 +750,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			\includegraphics[width=0.8\textwidth]{timeseries_9.png}
 		\end{figure}
 	
-		\underline{Análisis de Port Everglades}\\
+		\underline{Análisis de Port Everglades (Fort Lauderdale)}\\
 		Port Everglades es como se conoce al puerto de Fort Lauderdale (en el hub portuario de Miami).
 		
 		Tras unas pequeñas demostraciones del comportamiento en función del tiempo de los distintos puertos, se tuvo en consideración la representación visual para variables respecto a este último puerto (véanse las figuras \ref{hist_1} y \ref{hist_2}). Nótese la estandarización de los datos para estas variables.
@@ -710,24 +780,29 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 	
 		Es un caso a destacar por la forma de la distribución y, sobre todo, porque son datos obtenidos de la oficina de campo de Los Angeles (Los Angeles Field Office, \cite{cbp_la_field_office}) del CBP. Es decir, no se trata de una fusión de datos entre Los Ángeles y Long Beach que pudieran dar lugar a ello).
 		
+		Un aspecto a destacar es que, como seguramente habrá comprobado el lector, pese a que los datos han sido estandarizados para cada variable, en la mayoría de los casos no se encuentran centrados en torno al cero, sino que tienden a situarse en distintas posiciones. Esto se debe a que, en la fase inicial del procesamiento, la estandarización se aplicó a cada variable, pero considerando todos los puertos simultáneamente.
+		
+		Cabe mencionar que, durante esta etapa, el estudio aún no tenía un objetivo claramente definido, por lo que este enfoque resultó útil para comparar el comportamiento relativo entre diferentes puertos, permitiendo identificar patrones en las distribuciones sin priorizar análisis individuales. Aunque más adelante se refinó la metodología, esta decisión fue valiosa para detectar tendencias globales y facilitar una visión comparativa.
 		
 		\underline{Matrices de correlación de datos}\\
-		Teniendo en cuenta que el propósito de este trabajo es generar un modelo que pudiese anticipar la droga incautada (sea la cantidad, el número de redadas, por tipo, etc) a partir de la actividad en un puerto (contenedores movilizados), resulta evidente generar una matriz de correlaciones para observar a primera vista si existía alguna variable que fuera fácilmente representante del "target". En las figuras \ref{matriz_corr_1} y \ref{matriz_corr_2} se muestra una relación entre las posibles variables predictoras y variables objetivo para los puertos de Newark y Fort Lauderdale, respectivamente.
+		Teniendo en cuenta que el objetivo principal de este estudio es desarrollar un modelo capaz de anticipar la cantidad de droga incautada -ya sea en términos de volumen, número de redadas o clasificación por tipo- a partir de la actividad en un puerto (movilización de contenedores), resulta fundamental analizar las correlaciones entre las variables. Para ello se ha generado una matriz de correlaciones, con el propósito de identificar a primera vista si existía alguna variable relacionada con las drogas que fuera fácilmente representante del "target". En las figuras \ref{matriz_corr_1} y \ref{matriz_corr_2} se muestra una relación entre las posibles variables predictoras y variables objetivo para los puertos de Newark y Fort Lauderdale, respectivamente.
 		
-		Realmente lo que se muestra en las figuras mencionadas en el párrafo anterior no representa la matriz de correlaciones per sé. Es un subconjunto menor en el que se enfrentan las variables de entrada (predictores, en el eje vertical) con alguno de los posibles targets para modelar (eje horizontal). Dada la baja correlación -salvo en contadas excepciones- entre las variables de contenedores y las de incautaciones de droga, a partir de aquí se empezará a ver lo complejo que es predecir la segunda (o el número de redadas) a partir de la actividad de la primera en un mismo mes. 
+		No obstante, cabe señalar que las figuras mencionadas en el párrafo anterior no representa la matriz de correlaciones completa, sino un subconjunto reducido en el que se comparan las variables de entrada (predictores, en el eje vertical) con alguno de los posibles objetivos del modelo (targets, en el eje horizontal).
+		
+		Dada la baja correlación -con excepciones puntuales- entre las variables de contenedores y las de incautaciones de droga pone de manifiesto lo complejo de predecir el volumen de incautaciones (o el número de redadas) únicamente a partir de la actividad portuaria en un mismo mes. 
 		
 		\begin{figure}[H]
 			\caption{\label{matriz_corr_1} Correlación entre variables predictoras y potenciales variables objetivo para el puerto de Newark}
 			\centering
 			\hspace*{1cm}
-			\includegraphics[width=0.8\textwidth]{matrix_corr_1.png}
+			\includegraphics[width=0.75\textwidth]{matrix_corr_1.png}
 		\end{figure}
 	
 		\begin{figure}[H]
-			\caption{\label{matriz_corr_2} Para el puerto de Fort Lauderdale}
+			\caption{\label{matriz_corr_2} Correlación entre variables predictoras y potenciales variables objetivo para el puerto de Fort Lauderdale}
 			\centering
 			\hspace*{1cm}
-			\includegraphics[width=0.8\textwidth]{matrix_corr_2.png}
+			\includegraphics[width=0.75\textwidth]{matrix_corr_2.png}
 		\end{figure}
 		
 		La figura \ref{matriz_corr_4} muestra un ejemplo de correlación entre variables predictoras para el caso del puerto de Newark (se ha comprobado que el comportamiento es muy similar para el resto de puertos. Ver la sección de anexos para matrices de correlación para otros puertos).
@@ -739,10 +814,12 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			\includegraphics[width=0.7\textwidth]{matrix_corr_4.png}
 		\end{figure}
 	
-		La lógica indica que la existencia de una fuerte correlación entre Total Imports y Loaded Imports viene dada por la naturaleza de las dos variables. No así con Total Exports que a pesar de todo, tiene una correlación con éstas mayor incluso que con Total TEUs. Seguramente sea una indicador del nivel de gestión de contenedores (en tiempo) sea muy alto. Es decir, los contenedores tarden muy poco en estar en la estiba o que, por otro lado, el nivel de actividad sea tal que el resultado neto es que entren tantos contenedores (importaciones) como salgan del puerto (exportaciones). Dicho sea de paso, el concepto "exportaciones" no se aclara si son salidas del puerto por vía marítima o terrestre (interior, inland en inglés). De todos modos, en caso de tener que prescindir de variables (debido a la redundancia entre éstas) serían las de exportaciones. Tiene más sentido desarrollar un modelo que prediga la cantidad de droga (a partir de los datos de incautaciones) que entra en un puerto, dados los datos de importaciones.
+		Desde un punto de vista lógico, la fuerte correlación entre Total Imports y Loaded Imports se debe a la naturaleza misma de ambas variables, ya que reflejan el volumen de mercancía que ingresa en un puerto. Sin embargo, un caso particular se observa con Total Exports que, a pesar de todo, muestra una correlación mayor con estas variables que con Total TEUs. Esto sugiere que el nivel de gestión de contenedores (en tiempo) sea altamente eficiente, lo cual implica que los contenedores tarden muy poco en ser estobadps o que, por otro lado, el nivel de actividad sea tal que se genere un balance neto donde las importaciones y exportaciones se compensen mutuamente.
+		
+		Cabe mencionar que el concepto "exportaciones" no especifica si se refiere exclusivamente a salidas por vía marítima o si, por el contrario, también incluye transporte terrestre hacia el interior del país (inland exports en inglés). En cualquier caso, si fuera necesario reducir el número de variables debido a redundancias entre éstas, las de exportaciones serían las candidatas más prescindibles. Para el propósito de este estudio, tiene mayor sentido desarrollar un modelo predictivo que estime la cantidad de droga -a partir de los datos de incautaciones- que ingresa en un puerto, basándose en los datos de importaciones.
 		
 		
-		Dada la poca claridad respecto a la finalidad del problema, se llegó a plantear distintos enfoques a distintos niveles. Es decir, se barajó un modelo para un puerto en concreto, para varios puertos por separado o con todos a la vez. Considerando o no sus variables geográficas, qué tipo de droga analizar. Todo ello ha sido recopilado a lo largo de esta subsección que concluye con una pequeña amalgama de mapas y otras visualizaciones.
+		Dado que en las etapas iniciales no había una definición clara del problema, se exploraron distintos enfoques a diferentes niveles. Es decir, se consideraron alternativas como desarrollar un modelo para un único puerto, modelos independientes para varios puertos o un modelo global que integrara todos los datos disponibles. También se evaluó la inclusión o exclusión de variables geográficas, así como el análisis específico de diferentes tipos de droga. Todo ello ha sido documentado a lo largo de esta subsección que concluye con una pequeña amalgama de mapas y otras visualizaciones que visualizan los hallazgos obtenidos.
 		
 		Por ejemplo, se estudió variación temporal del total de contenedores gestionados por cada puerto \ref{total_teus_ports}, junto con la cantidad de contenedores vacíos (y cargados) \ref{loaded_vs_imports_ports} gestionados por los mismos.
 		
@@ -758,7 +835,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		Debido a ciertos problemas a la hora de visualizar en un mapa los gráficos de tipo pie chart, se renunció a ello. La separación entre los gráficos \ref{loaded_vs_imports_ports} y \ref{map_bubble_1} viene a dar cuenta de ello.
 		
 		\begin{figure}[H]
-			\caption{\label{loaded_vs_imports_ports} Contenedores gestionados por puertos por tipo: Vacío o Cargado}
+			\caption{\label{loaded_vs_imports_ports} Contenido de los contenedores gestionados por puertos por tipo: vacío o lleno de carga}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.8\textwidth]{loaded_vs_imports_ports.png}
@@ -766,7 +843,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 	
 		
 		\begin{figure}[H]
-			\caption{\label{map_bubble_1} }
+			\caption{\label{map_bubble_1} Mapa de burbujas con total de contenedores manejados por hub portuario}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{map_bubble_1.png}
@@ -777,21 +854,21 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		Pese a lo comentado anteriormente, si que se puede realizar un análisis de la situación de los puertos con más actividad (Los Ángeles a la cabeza), al igual que, como se irá viendo a continuación, hacerlo para cada tipo de droga y cada puerto.
 		
 		\begin{figure}[H]
-			\caption{\label{map_bubble_2} }
+			\caption{\label{map_bubble_2} Mapa de burbujas con total de cocaína incautada por hub portuario}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{map_bubble_2.png}
 		\end{figure}
 	
 		\begin{figure}[H]
-			\caption{\label{map_bubble_3} }
+			\caption{\label{map_bubble_3} Mapa de burbujas con total de marihuana incautada por hub portuario}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{map_bubble_3.png}
 		\end{figure}
 	
 		\begin{figure}[H]
-			\caption{\label{map_bubble_4} }
+			\caption{\label{map_bubble_4} Mapa de burbujas con total de otras drogas incautadas por hub portuario}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{map_bubble_4.png}
@@ -802,7 +879,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		El puerto de Newark/Nueva York es un ejemplo paradigmático sobre incautaciones frecuentes para todos los tipos de drogas. La cocaína se incauta más en la zona de la costa este (especialmente por Miami) al igual que "Other Drugs". Seguramente conocer la distribución del origen geográfico de las importaciones habría aportado más información a este trabajo. Sin embargo, atendiendo a la figura \ref{timeseries_6}, anteriormente mostrada, la comparación con el número de redadas era considerablemente menor que en otros casos (Véanse \ref{timeseries_7} o \ref{timeseries_8}). Especialmente para el caso de Newark.
 		
 		\begin{figure}[H]
-			\caption{\label{map_bubble_6} }
+			\caption{\label{map_bubble_6} Mapa de burbujas con total de redadas por tipo de droga y hub portuario}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{map_bubble_6.png}
@@ -817,13 +894,92 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		% Limpieza, Tratamiento de Missing Values, Normalización, Estandarización, Tratamiento de Outliers...
 		Este primer dataset construido, consta de 31 variables: Date (formato fecha 'YYYY-mm'), latitud y longitud (numérico float64), siete variables numéricas correspondientes a los datos portuarios, el resto de variables corresponden a los datos de incautaciones de drogas: diez variables numérica sobre "número de eventos" por droga o "Count of Events" en la versión original más una variable sumatoria de estas diez "Sum of Counts" y otras diez sobre la cantidad (en libras) incautada por droga.
 		
-		% Codigo con columnas del dataset
+		En la siguiente página se muestra una tabla con las variables listadas y descritas. En este punto, se consideraron prescindibles las variables "Ratio" a la hora de realizar el análisis. No obstante, se ha decidido mantener el origen de su generación así como su concepto por si pudiera servir para otros estudios sobre el mismo tema.
+		
+		Por otro lado, esta subsección servirá para detallar las transformaciones de los datos que se han ido realizando para cada variable: desde la creación de un pipeline con las funciones de la librería scikit-learn, hasta tratamientos de casos particulares, outliers y missing values.
+		
+		% Tabla de variables
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{|l|p{10cm}|}
+				\hline
+				\textbf{Variable} & \textbf{Descripción} \\ 
+				\hline
+				Date & Fecha de la observación en formato "Año-Mes". \\ 
+				\hline
+				Empty Exports & Número de contenedores exportados vacíos. \\ 
+				\hline
+				Loaded Exports & Número de contenedores exportados con carga. \\ 
+				\hline
+				Empty Imports & Número de contenedores importados vacíos. \\ 
+				\hline
+				Loaded Imports & Número de contenedores importados con carga. \\ 
+				\hline
+				Total TEUs & Cantidad total de TEUs (unidad equivalente a un contenedor de 20 pies) movilizados en el puerto. \\ 
+				\hline
+				Total Imports & Suma total de importaciones, considerando contenedores vacíos y con carga. \\ 
+				\hline
+				Total Exports & Suma total de exportaciones, considerando contenedores vacíos y con carga. \\ 
+				\hline
+				latitude & Latitud del puerto asociado a la observación. \\ 
+				\hline
+				longitude & Longitud del puerto asociado a la observación. \\ 
+				\hline
+				Count of Event\_Cocaine & Número de incautaciones de cocaína en el puerto. \\ 
+				\hline
+				Count of Event\_Ecstasy & Número de incautaciones de éxtasis en el puerto. \\ 
+				\hline
+				Count of Event\_Fentanyl & Número de incautaciones de fentanilo en el puerto. \\ 
+				\hline
+				Count of Event\_Heroin & Número de incautaciones de heroína en el puerto. \\ 
+				\hline
+				Count of Event\_Ketamine & Número de incautaciones de ketamina en el puerto. \\ 
+				\hline
+				Count of Event\_Khat (Catha Edulis) & Número de incautaciones de khat en el puerto. \\ 
+				\hline
+				Count of Event\_Lsd & Número de incautaciones de LSD en el puerto. \\ 
+				\hline
+				Count of Event\_Marijuana & Número de incautaciones de marihuana en el puerto. \\ 
+				\hline
+				Count of Event\_Methamphetamine & Número de incautaciones de metanfetamina en el puerto. \\ 
+				\hline
+				Count of Event\_Other Drugs** & Número de incautaciones de otras drogas en el puerto. \\ 
+				\hline
+				Sum Qty (lbs)\_Cocaine & Cantidad total de cocaína incautada (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Ecstasy & Cantidad total de éxtasis incautado (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Fentanyl & Cantidad total de fentanilo incautado (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Heroin & Cantidad total de heroína incautada (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Ketamine & Cantidad total de ketamina incautada (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Khat (Catha Edulis) & Cantidad total de khat incautado (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Lsd & Cantidad total de LSD incautado (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Marijuana & Cantidad total de marihuana incautada (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Methamphetamine & Cantidad total de metanfetamina incautada (en libras). \\ 
+				\hline
+				Sum Qty (lbs)\_Other Drugs** & Cantidad total de otras drogas incautadas (en libras). \\ 
+				\hline
+				Sum\_of\_Counts & Suma total del número de incautaciones realizadas en un puerto. \\ 
+				\hline
+			\end{tabular}
+			\caption{Descripción de las variables utilizadas en el análisis.}
+			\label{tab:variables_description}
+		\end{table}
+		
+		
 		
 		\underline{Aplicaciones de scikit-learn}\\
-		A la vista del primer análisis exploratorio de datos, se encontraron missing values en las variables relacionadas con las incautaciones de drogas y una gran diferencia de escala entre los datos portuarios (centenas de miles de contenedores) frente a los datos de incautaciones (decenas de incautaciones). Los missing values, al tratarse de datos de fuentes de origen fiables, se imputaron a cero haciendo uso de la función SimpleImputer provista por la librería de scikit-learn. En ese caso, se consideró que durante aquel mes para aquella oficina de campo aduanera, no hubo incautación. Para seguir por esa línea, se observó una determinada constancia en la ausencia de datos en los pares número de incautaciones-cantidad incautada. Es decir, se comprobó que si no había datos de incautación, no había datos de cantidad incautada y, por tanto, se imputase a cero. Entendible todo ello en el contexto de que se considerase de que no hubo redada (al menos exitosa en relación a esa droga). Por su parte, para la normalización de datos se aplicó la función StandardScaler también proporcionada por scikit-learn. Es a partir de aquí, que los datos con los que se van a trabajar están estandarizados a media cero y varianza uno.
+		A la vista del primer análisis exploratorio de datos, se encontraron missing values en las variables relacionadas con las incautaciones de drogas y una gran diferencia de escala entre los datos portuarios (centenas de miles de contenedores) frente a los datos de incautaciones (decenas de incautaciones). Los missing values, al tratarse de datos de fuentes de origen fiables, se imputaron a cero haciendo uso de la función SimpleImputer provista por la librería de scikit-learn. En ese caso, se consideró que durante aquel mes para aquella oficina de campo aduanera, no hubo incautación alguna. Para seguir por esa línea, se observó una determinada constancia en la ausencia de datos en los pares número de incautaciones-cantidad incautada. Es decir, se comprobó que si no había datos de incautación, no había datos de cantidad incautada y, por tanto, se imputase a cero. Entendible todo ello en el contexto de que se considerase de que no hubo redada (al menos exitosa en relación a esa droga). Por su parte, para la normalización de datos se aplicó la función StandardScaler también proporcionada por scikit-learn. Es a partir de aquí, que los datos con los que se van a trabajar están estandarizados a media cero y varianza uno.
 		
 		\underline{Detalles del pipeline de scikit-learn}\\
-		Dado que los rangos para variables de distinto tipo (incautaciones vs contenedores) eran muy diferentes entre sí, se procedió a la estandarización de los mismos mediante la implementación de pipelines en scikit-learn. Los datos numéricos ausentes se imputaron a cero (como se explicó en el párrafo anterior) y se estandarizó a una normal(0,1). Por su parte, las variables categóricas se dispusieron a ser tratadas mediante 'OrdinalEncoder'*.
+		Dado que las escalas de las variables diferían significativamente entre sí -particularmente entre las variables de incautaciones drogas y las relacionadas con movimientos de contenedores)-, se llevó a cabo un proceso de estandarización de los mismos usando pipelines de scikit-learn.
+		Para ello, los datos numéricos ausentes se imputaron con ceros, como se mencionó previamente, y posteriormente se escalaron a una distribución normal estándar (media 0, varianza 1). Por su parte, para las variables categóricas se optó por transformarlas mediante el método 'OrdinalEncoder', garantizando así su compatibilidad con modelos de Machine Learning.
 		
 		% Incluir fragmento de código del Pipeline scikit-learn
 		\begin{verbatim}
@@ -864,9 +1020,16 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			standardized_data = pipeline.fit_transform(standardized_data)
 		\end{verbatim}
 	
-		Uno de los casos de evitar el uso de One-Hot-Encoder se basó en la poca optimización de los recursos de memoria (aunque en este caso fuera anecdótico) frente a alternativas como OrdinalEncoder o TargetEncoder. En otras palabras, en vez de crear N variables nuevas por cada caso distinto de la variable categórica original, se mantiene una variable con los datos categóricos numerizados.
+		Uno de los motivos para evitar el uso de One-Hot-Encoder se basó en la poca optimización de los recursos de memoria. Aunque en este caso específico la diferencia fuera anecdótica, se optó por como OrdinalEncoder o TargetEncoder. En lugar de crear N nuevas variables para representar cada categoría de la variable original, se mantuvo una variable con los datos categóricos numerizados.
 		
-		Otro aspecto a remarcar en el proceso de estandarización de los datos fue que esa estandarización se produjo con el dataset para los distintos puertos integrados. Es por ello que en algunas gráficas mostradas, para un hub portuario en particular, se ven que las distribuciones de los datos se encuentran un poco alejadas de lo que debería ser su media (cero). También esto sirve para comparar el peso que tiene cada puerto o cada tipo de droga respecto del resto.
+		Otro aspecto relevante en el proceso de estandarización de los datos es que esa transformación se aplicó sobre el conjunto de datos global, integrando información de todos los puertos analizados. 
+		
+		Como ya se hizo mención en páginas anteriores, el resultado obtenido mostraba que para algunas gráficas específicas, para un hub portuario en particular, las distribuciones de los datos se encuentran desplazadas respecto a su media esperada (cero). No obstante, este enfoque facilita la comparación entre diferentes puertos y permite analizar el peso relativo que tiene cada puerto o cada tipo de droga en relación con el resto (Ver sección \ref{EDA}).
+		
+		\underline{Tratamiento de las variables Ratio}\\
+		Para el cálculo de las variables de ratio, se barajó realizar el cálculo a partir de los datos normalizados. Sin embargo, a la vista de resultados contradictorios, se decidió finalmente realizarlo sobre los datos brutos. Una de las contraindicaciones que surgía de esta última forma de calcularlo era la aparición de indeterminaciones del tipo $ \frac{0}{0}$ fruto de observaciones con missing values. Dado que los missing values correspondían a meses estimados sin redadas y, por lo tanto, sin incautaciones, y que el resto de valores eran forzosamente enteros positivos, el valor del ratio debía ser definitivamente, entero positivo, estrictamente mayor que cero. Estas aseveraciones permitieron, sin lugar a dudas, imputar los ratios en los casos de missing values a cero. Su sentido dentro del contexto de los datos de esa variable es que el cero es el mínimo valor para esa variable y que ninguna redada realizada podía alcanzar ese mínimo. Por su parte, el descarte de realizar el cálculo a partir de los datos normalizados era la paradoja resultante de obtener un ratio negativo (por debajo de la media) en el caso de tener una cantidad incautada elevada (valor positivo por encima de la media, numerador del cociente) frente un número bajo de redadas (valor negativo por debajo de la media, denominador del cociente) que, en relación con el resto de ratios, debería estar en el extremo positivo de la distribución. Finalmente, al igual que el resto de variables, antes de ser integradas en el dataset fueron estandarizadas mediante StandardScaler() implementado en el mismo pipeline de scikit-learn generado.
+		% Pequeño esquema sobre proceso de generacion ratio sobre datos brutos + estandarización posterior.
+		
 		
 		\underline{Error original en los datos de Los Angeles}\\
 		En el caso de los datos obtenidos del puerto de Los Ángeles, se detectó un error de formato en los datos de origen. En efecto, para el dato del mes de noviembre del 2020 (año fiscal 2021, \cite{portla2025containerstats}) se verificó un error respecto al formato de separador de miles (coma vs punto) en la columna 'Total TEUs'. Dado que se verificó que esta columna era igual a la suma de los valores de las columnas 'Total Imports' and 'Total Exports', se aplicó la suma de esos valores para la observación del mes de noviembre de 2020.
@@ -903,32 +1066,31 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			data.loc[data['Loaded Exports'].isna(), 'Loaded Exports'] = impute_value_exports
 		\end{verbatim}
 	
-		Este proceso se generalizó para el resto de variables con missing values para el puerto de Fort Lauderdale. Con esto se trató el principal problema de missing values que, como se mencionó al principio del trabajo, no fue la tónica general. Los informes, tablas y fuentes de datos eran de calidad en ese aspecto.
+		Este proceso se generalizó para el resto de variables con missing values para el puerto de Fort Lauderdale. Con esto se trató el principal problema de missing values que, como se mencionó al principio del trabajo, no fue la tónica general. Los informes, tablas y fuentes de datos eran de alta calidad en ese aspecto.
 		
 		\underline{Tratamiento de outliers}\\
 		Para el tratamiento de outliers, en un primer momento se fue estudiando caso a caso, la situación de cada uno, su contexto, etc. Intentando comprender qué valor aportaba al modelo, si pudiera ser un dato que alterase en exceso al resto o si fueran datos que simplemente estuviesen un poco más allá de las fronteras teóricas (rango intercuartil, QQ-Plot, método de las tres sigmas) fuera de lugar.
 		Dado que el número de observaciones no era demasiado grande, en muchos casos, se limitó a que el umbral para excluir datos fueran criterios muy alejados en las colas de la distribución tales como el valor absoluto cinco de los datos normalizados. Es decir, se intentó minimizar el número de datos excluidos, pero se decidió que en algunos casos, eran necesarios para avanzar en el estudio del problema.
 		
-		En la siguiente sección \ref{feature engineering} se hace referencia y se detalla la generación de nuevas variables. Entre ellas destaca el conjunto de variables de tipo "Ratio". Pese a no haberse hecho mención de ella, salvo si acaso, de pasada, será útil para detectar ciertas anomalías en los comportamientos. Esto puede servir para ver como orientar el modelo, más allá de que se acabe usando o no en éste. Aportará información de gran relevancia de forma visual. Aquí dejo una serie de gráficas estandarizadas sobre esa variable que sirve para detectar ciertos valores extremos (outliers) que serán excluidos.
-		
+		En la sección \ref{feature engineering} se abordó la generación de nuevas variables, entre ellas destaca el conjunto de variables de tipo "Ratio". Estas variables pueden resultar útiles para identificar anomalías en los datos y analizar posibles patrones de comportamientos atípicos. Si bien, no se utilizarán en el modelo de predicción final, su análisis aporta información visualmente relevante, permitiendo incluso orientar mejor la estrategia del modelo. A continuación, se presenta una serie de gráficos estandarizados, que facilitan la detección de outliers, los cuáles, según el caso y la necesidad del problema, serán excluidos del conjunto de datos.
 		
 		% Visualización (o datos) de media por hub portuario de incautaciones y de tráfico de contenedores.
 		
-		El criterio de exclusión de outliers ha sido muy laxo. Como se ha mencionado en uno de los párrafos anteriores, se han considerado todos aquellos valores normalizados más allá de cinco, por ejemplo. Esto es debido a la escasez de datos y con la intención de minimizar el número de datos a excluir, buscando aquellos valores que se encontrasen en los extremos residuales de las colas de la distribución normal.
+		Por otro lado, el criterio de exclusión de outliers ha sido aplicado de manera muy laxa. Como se mencionó previamente, solo se han considerado aquellos valores normalizados que se encuentren extremadamente alejados del resto. Esta decisión responde a la escasez de datos disponibles y al objetivo de minimizar la pérdida de información, excuyendo únicamente aquellos valores que se sitúen en los extremos residuales de las colas de la distribución normal.
 		
 		% [Tras eliminar outliers] Graficos de dispersion (scatter plots). Correlacion entre variables.
 		\begin{figure}[H]
 			\caption{\label{boxplot_1} Boxplot para hallar outliers en redadas de cocaína}
 			\centering
 			\hspace*{1cm}
-			\includegraphics[width=\textwidth]{boxplot_1.png}
+			\includegraphics[width=0.8\textwidth]{boxplot_1.png}
 		\end{figure}
 	
 		\begin{figure}[H]
 			\caption{\label{boxplot_3} Boxplot para hallar outliers en ratios de cocaína}
 			\centering
 			\hspace*{1cm}
-			\includegraphics[width=\textwidth]{boxplot_3.png}
+			\includegraphics[width=0.8\textwidth]{boxplot_3.png}
 		\end{figure}
 	
 		\begin{figure}[H]
@@ -944,19 +1106,11 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{boxplot_2.png}
 		\end{figure}
+		\newpage
 	
-		Obsérvese en qué valores se sitúan aquellos referentes a las variables "Ratio", muy alejados del resto del grupo de valores. En cambio, para las variables "Count" la distribución es más común y aquellos valores outliers no afectan tanto a la distribución. Y aunque estrictamente, algunos valores de los boxplots para las variables que no son "Ratio" superen ese valor de cinco (con la distribución estandarizada), se ha decidido mantenerlos. Es decir, un criterio secundario ha sido observar como de alejado está un dato concreto respecto de otro par (distancia entre puntos).
+		Obsérvese en qué valores se sitúan aquellos referentes a las variables "Ratio", muy alejados del resto del grupo de valores. En cambio, para las variables "Count" la distribución es más común y aquellos valores outliers no afectan tanto a la distribución. Y aunque estrictamente, algunos valores de los boxplots para las variables que no son "Ratio" superan valores y alots percentiles (con la distribución estandarizada), se ha decidido mantenerlos. Es decir, al final se ha considerado como de alejado está un dato concreto respecto de otro par (distancia entre puntos).
 	
 		En los pares de imágenes \ref{boxplot_1} - \ref{boxplot_3}  y \ref{boxplot_4} - \ref{boxplot_2} se muestra que la aplicación de la variable ratio tenderá a poseer datos que se alejan mucho del resto. Éstos podrían considerarse como grandes redadas, grandes operaciones de incautación de una tacada. Ello hace que algunos puertos con poca actividad ilícita detectada, tenga algunos meses especiales que sobresalgan respecto a su media. A continuación se dejan algunas visualizaciones temporales para distintos puertos en los que se observan este tipo de comportamientos.
-	
-		Por ejemplo, obsérvese que para el caso de redadas de cocaína, se tiene constancia de una redada a principios de 2023 en Seattle con una gran cantidad de la misma incautada \ref{st_ratio_1}. En el caso de trabajar con esta variable "ratio cocaine", se vería que, en efecto, para el caso de Seattle hubo una importante operación en la que se incautó una gran cantidad de cocaína. El resto de valores se encuentran muy próximos de la media.
-		
-		\begin{figure}[H]
-			\caption{\label{st_ratio_1} Serie temporal sobre redadas de cocaína para cada puerto}
-			\centering
-			\hspace*{1cm}
-			\includegraphics[width=0.75\textwidth]{st_ratios_1.png}
-		\end{figure}
 	
 		En el caso de redadas de marihuana \ref{st_ratio_2}, se observan grandes redadas realizadas por las distintas oficinas de campo cada cierto tiempo. Pese a tratarse de una droga de consumo legal en ciertos estados (entre ellos California o el estado de Washington), ésta se incluye en los informes del CBP sin detallar si es de contrabando o cuál es su status real. En este trabajo no se entra a detallar el status, más allá de que vengan incluidas en las estadísticas mensuales aportadas. Curiosamente se observa que en el puerto de Los Angeles se realizan las redadas con mayor cantidad de marihuana incautada.
 		
@@ -1015,7 +1169,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		Para lo mencionado en el anterior párrafo, se enfrentó la variable 'Total Imports' (Ver su distribución en forma de histograma en \ref{hist_6}) frente a las distintas variables relacionadas con las drogas (Ver figura \ref{outliers_1}). 
 		
 		\begin{figure}[H]
-			\caption{\label{hist_6} }
+			\caption{\label{hist_6} Histograma con datos normalizados del total de importaciones para el puerto de Newark/Nueva York}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.7\textwidth]{hist_6.png}
@@ -1024,7 +1178,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		
 		
 		\begin{figure}[H]
-			\caption{\label{outliers_1} }
+			\caption{\label{outliers_1} Scatter plots para detectar outliers en Total Imports para el puerto de Newark/Nueva York}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{outliers_1.png}
@@ -1050,21 +1204,21 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		Por su parte, en las figuras \ref{qqplots_4} y \ref{qqplots_5} se muestra como quedaron las distribuciones QQ-Plots en 'Empty Imports' y 'Total Imports' y en \ref{outliers_2} su relación con las variables de drogas.
 		
 		\begin{figure}[H]
-			\caption{\label{qqplots_4} QQ-Plot para Total TEUs (Newark/Nueva York)}
+			\caption{\label{qqplots_4} QQ-Plot para Empty Imports (Newark/Nueva York)}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.8\textwidth]{qqplots_4.png}
 		\end{figure}
 	
 		\begin{figure}[H]
-			\caption{\label{qqplots_5} QQ-Plot para Total TEUs (Newark/Nueva York)}
+			\caption{\label{qqplots_5} QQ-Plot para Total Imports (Newark/Nueva York)}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.8\textwidth]{qqplots_5.png}
 		\end{figure}
 	
 		\begin{figure}[H]
-			\caption{\label{outliers_2} }
+			\caption{\label{outliers_2} Scatter plots para variables respecto a Total Imports en el puerto de Newark}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=\textwidth]{outliers_2.png}
@@ -1072,8 +1226,8 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 	
 		%Revisar esto
 		\underline{Aplicando la transformación logarítmica}:\\
-		Tras analizar los datos correspondientes al puerto de Newark en \ref{outliers_2}, se ha identificado un patrón particular en la variable Sum of Counts (último gráfico de dispersión).
-		A priori, su distribución sugieren un comportamiento interesante para la construcción de modelos de predicción, lo que la convierte en una variable relevante a considerar.
+		Tras analizar los datos correspondientes al puerto de Newark en \ref{outliers_2}, se identificó un patrón particular en la variable Sum of Counts (último gráfico de dispersión).
+		A priori, su distribución sugiere un comportamiento interesante para la construcción de modelos de predicción, lo que la convierte en una variable relevante a considerar.
 		
 		Sin embargo, al examinar su distribución en detalle -especialmente en comparación con otros hubs portuarios mediante el gráfico de boxplot en \ref{boxplot_5}- se evidencia una marcada asimetría con una cola pesada (\ref{hist_7}). Dada esta característica, se considera necesario aplicar una transformación logarítmica sobre los datos brutos para suavizar la distribución y aproximarlos a una distribución más próxima a la normal. Esta transformación deberá facilitar la modelización y mejorar la interpretación de resultados.
 		
@@ -1085,7 +1239,7 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		\end{figure}
 		
 		\begin{figure}[H]
-			\caption{\label{hist_7} }
+			\caption{\label{hist_7} Histograma para Redadas('Sum of Counts') normalizado sobre el puerto de Newark/Nueva York}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.9\textwidth]{hist_7.png}
@@ -1097,14 +1251,14 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		
 		
 		\begin{figure}[H]
-			\caption{\label{boxplot_6} Boxplot para Sum of Counts}
+			\caption{\label{boxplot_6} Boxplot para Redadas('Sum of Counts') en el puerto de Newark/Nueva York tras aplicar transformación logarítmica y estandarización}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.8\textwidth]{boxplot_6.png}
 		\end{figure}
 		
 		\begin{figure}[H]
-			\caption{\label{hist_8} }
+			\caption{\label{hist_8} Histograma para Redadas('Sum of Counts') en el puerto de Newark/Nueva York tras aplicar transformación logarítmica y estandarización}
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.8\textwidth]{hist_8.png}
@@ -1112,10 +1266,10 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 		
 		Los hallazgos obtenidos a partir de esta transformación abren la posibilidad de desarrollar un modelo predictivo para intentar estimar el número de incautaciones exitosas en el puerto de Newark.
 		
-		Tras la aplicación de la transformación logarítmica y la estandarización para los datos del puerto de Newark, el gráfico de dispersión para las variables 'Sum of Counts' y 'Total Imports' queda tal y como se muestra en la figura \ref{}
+		Tras la aplicación de la transformación logarítmica y la estandarización para los datos del puerto de Newark, el gráfico de dispersión para las variables 'Sum of Counts' y 'Total Imports' queda tal y como se muestra en la figura \ref{scattered_2}:
 		
 		\begin{figure}[H]
-			\caption{\label{scattered_2} Gráfico de dispersión Importaciones y Redadas en Newark tras transformación logarítmica y estandarización }
+			\caption{\label{scattered_2} Gráfico de dispersión Importaciones y Redadas ('Sum of Counts') en Newark tras transformación logarítmica y estandarización }
 			\centering
 			\hspace*{1cm}
 			\includegraphics[width=0.7\textwidth]{scattered_2.png}
@@ -1152,6 +1306,16 @@ Este trabajo busca identificar patrones, correlaciones y tendencias entre el vol
 	Teniendo en cuenta que se tenían 75 meses de partida y en el mejor de los casos, se reservarían los doce últimos para el conjunto de test, el ratio del split vendría a ser: 84\% de los datos para entrenamiento, frente al 16\% para evaluar como generaliza el modelo.
 	
 	% Representacion gráfica con una barra que distinga train de test.
+	
+	Para el caso de modelos de series temporales, se reservaron los datos hasta junio de 2024 como entrenamiento. Y los últimos 6 meses de 2024 como conjunto de validación:
+	
+	\begin{verbatim}
+		train = df_imports[df_imports['ds'] < '2024-06-30']
+		validation = df_imports[df_imports['ds'] >= '2024-06-30']
+	\end{verbatim}
+
+	Después, se trataría de realizar predicciones a nivel mensual para un horizonte temporal de tres meses.
+
 
 \newpage
 \section{\label{Diseño}Diseño del Modelo}
@@ -1196,7 +1360,7 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	Algunos de los motivos que me llevó a plantear un modelo que ajustase series temporales fueron los resultados arrojados para incautaciones de drogas en el puerto de Fort Lauderdale. A continuación se muestran tres casos en los que se comparan las tendencias de importaciones (de contenedores con cargamento) junto con redadas de cocaína, marihuana y otras drogas. En la imagen \ref{miami_ts_1} que la distribución de los datos está ajustada a un escalado min-max (entre 0 y 1.00) y en las tendencias que tienen. Esto último abrió la posibilidad de orientar el trabajo a una aproximación de tendencias (derivadas de funciones suavizadas con filtros de bajas frecuencias) \ref{trabajo futuro}.
 	
 	\begin{figure}[H]
-		\caption{\label{miami_ts_1} Serie Temporal en Puerto Fort Lauderdale con redadas de cocaína}
+		\caption{\label{miami_ts_1} Serie Temporal en Fort Lauderdale con redadas de cocaína. Reescalado min-max}
 		\centering
 		\hspace*{1cm}
 		\includegraphics[width=0.8\textwidth]{miami_ts_1.png}
@@ -1205,7 +1369,7 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	Aunque originalmente una de las principales motivaciones para realizar el trabajo era predecir la incautación de droga en base a las entradas de cargamento (importaciones) en el puerto, al final se acabaron dejando estos modelos a modo de experimentación. A simple vista de la imagen dada, aunque más clara para el caso de evaluar las redadas de otras drogas (ver la figura \ref{miami_ts_2}), se ven tramos en los que coinciden la tendencia y la proporción en la subida (o bajada) para las series temporales que se comparan. Si bien es cierto que la variable de "loaded imports" tiene cambios de tendencia donde no las tiene "other drugs".
 	
 	\begin{figure}[H]
-		\caption{\label{miami_ts_2} Serie Temporal en Puerto Fort Lauderdale con redadas de otras drogas}
+		\caption{\label{miami_ts_2} Serie Temporal en Puerto Fort Lauderdale con redadas de otras drogas. Reescalado min-max}
 		\centering
 		\hspace*{1cm}
 		\includegraphics[width=0.7\textwidth]{miami_ts_2.png}
@@ -1237,14 +1401,11 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	También en las secciones \ref{interpretacion} y \ref{trabajo futuro} se comentan los cambios de tendencia. Especialmente en el caso de \ref{miami_ts_2}, o por qué en la figura \ref{miami_ts_3} hay un lag entre las redadas de marihuana y el cargamento importado.
 	
 	\begin{figure}[H]
-		\caption{\label{miami_ts_3} Serie Temporal en Puerto Fort Lauderdale con redadas de Marihuana}
+		\caption{\label{miami_ts_3} Serie Temporal en Puerto Fort Lauderdale con redadas de Marihuana. Reescalado min-max}
 		\centering
 		\hspace*{1cm}
 		\includegraphics[width=0.8\textwidth]{miami_ts_3.png}
 	\end{figure}
-	
-	% Implementacion del modelo de serie temporal para Miami
-	También, como complemento a los modelos de series temporales a prophet, se implementó un pequeño modelo sarimax incluido en la librería statsmodel y un XGBoost.
 	
 	\subsubsection{\label{hiperCV}Implementación de la matriz de ajuste hiperparámetros para los distintos algoritmos de regresión}
 	% Copiar código de GridSearchCV
@@ -1283,7 +1444,7 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
  	En este apartado, se describen las tareas realizadas para llevar a cabo el proyecto. Dado la dificultad para encontrar un objetivo concreto lo suficientemente atractivo para las condiciones de los datos recopilados, se dejó la puerta abierta a intentar aproximar el modelo para distintos casos: una aproximación de un modelo de regresión a partir de los datos curados del puerto de Nueva York (Newark, \ref{NY model}) e inclusión una predicción para un modelo de series temporales del puerto de Miami (Fort Lauderdale, \ref{FL model}).
  	
  	\subsubsection{\label{NY model} Modelo para el puerto de Nueva York}
- 	Para el caso del modelo del puerto de Newark, se generó un diccionario de regresores (mencionados en la sección \ref{hiperCV}) para intentar predecir la variable "Sum of Counts" a partir de: Loaded Exports, Empty Imports, Loaded Imports, Total TEUs y Total Imports. El criterio de elegir estas variables predictoras se basó en los resultados de la matriz de correlaciones de la figura \ref{matrix_corr_7}.
+ 	Para el caso del modelo del puerto de Newark, se generó un diccionario de regresores (mencionados en la sección \ref{hiperCV}) para intentar predecir la variable "Sum of Counts" a partir de las siguientes variables predictoras: Loaded Exports, Empty Imports, Loaded Imports, Total TEUs y Total Imports. El criterio de elegir estas variables predictoras se basó en los resultados de la matriz de correlaciones de la figura \ref{matrix_corr_7}.
  	
  	Por su parte, estos regresores fueron evaluados tanto con la métrica de R² como de MAPE tal y como están definidas en la API de scikit-learn.
  	
@@ -1318,45 +1479,9 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
  	% 
  	Por su parte, tal y como se expuso en la subsección \ref{stProphet} también se probó un modelo de series temporales con la librería prophet para predecir las incautaciones en Fort Lauderdale.
  	
- 	En este caso, incluso se ha generado una matriz (grid) de hiperparámetros para intentar escoger el mejor modelo de regresión de series temporales. En este caso se ha buscado incluir puntos de cambio de tendencia (changepoints) en los hiperparámetros a ajustar.
  	Se deja el código a disposición en la sección de anexos.
- 	
- 	La combinación de hiperparámetros para el modelo de Prophet que ajusta unos valores de una forma superior al resto de combinaciones de hiperparámetros es:
- 	
- 	\begin{verbatim}
- 		m = Prophet(
- 		changepoint_prior_scale=0.01,  # Controls flexibility (default is 0.05)
- 		changepoint_range=0.8,        # Where changepoints can occur (default is 0.8)
- 		n_changepoints=30             # Number of potential changepoints (default is 25)
- 		)
- 	\end{verbatim}
- 
- 	Como se mencionó en \ref{stProphet}, también se generaron modelos con las librerías statsmodel y xgboost. En el caso del primero, se generó un modelo sarimax. En todos los casos, se incluyó "Loaded Imports" como regresor exógeno.
- 	
- 	Aquí se deja un pequeño fragmento de código con XGBoost:
- 	\begin{verbatim}
- 		import xgboost as xgb
- 		df_xgb.rename(columns={'Date': 'ds', 'Ratio_Other Drugs**': 'y', 
- 			'Loaded Imports': 'loaded_imports'}, inplace=True)
- 		
- 		# Convertir la columna de fecha a datetime
- 		df_xgb['ds'] = pd.to_datetime(df_xgb['ds'])
- 		
- 		# Dividir en conjunto de entrenamiento y prueba según la regla dada
- 		df_train = df_xgb[df_xgb['ds'] < '2024-01-01']
- 		df_test = df_xgb[df_xgb['ds'] >= '2024-01-01']
- 		
- 		[...]
- 		
- 		# Crear y entrenar el modelo XGBoost
- 		xgb_model = xgb.XGBRegressor(objective='reg:squarederror', n_estimators=100, learning_rate=0.1, max_depth=3)
- 		xgb_model.fit(X_train, y_train)
- 		
- 		# Realizar predicciones en test
- 		y_pred_xgb = xgb_model.predict(X_test)
- 	\end{verbatim}
- 
- 	En la siguiente sección se muestran las evaluaciones del desempeño para cada modelo. Y va a servir para responder en parte a la pregunta que dio origen a este problema: ¿se puede predecir la cantidad de droga incautada en una región a partir de la actividad comercial en un puerto marítimo?
+
+ 	En la siguiente sección se muestran las evaluaciones del desempeño para cada modelo que va a servir para responder en parte a la pregunta que dio origen a este problema: ¿se puede predecir la cantidad de droga incautada en una región a partir de la actividad comercial en un puerto marítimo?
 
 	\subsection{\label{eval performance}Evaluación del rendimiento}
 	% Métrica utilizadas.
@@ -1370,7 +1495,7 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	
 	\begingroup
 	\begin{table}[H]
-	\caption{\label{tabla}}
+	\caption{\label{tabla} Evaluación de resultados de los distintos regresores para el puerto de Newark (MAPE)}
 		\centering
 		\setlength{\tabcolsep}{3pt}
 		\renewcommand{\arraystretch}{1.5}
@@ -1391,7 +1516,7 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	
 	\begingroup
 	\begin{table}[H]
-		\caption{\label{tabla}}
+		\caption{\label{tabla_r2_newark}Evaluación de resultados de los distintos regresores para el puerto de Newark (R²)}
 		\centering
 		\setlength{\tabcolsep}{3pt}
 		\renewcommand{\arraystretch}{1.5}
@@ -1401,7 +1526,7 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 			Regressor & r2\_train & r2\_cv\_train & r2\_validation & r2\_test \\
 			\hline
 			Linear Regression & 0.4384 & 0.4635 & -11.4976 & -0.9048 \\
-			AdaBoost Regressor & -0.7262 & -3.1662 & -58.4642 & -5.6579 \\
+			AdaBoost Regressor & -0.7262 & -3.1662 & -5.8464 & -5.6579 \\
 			Bagging Regressor & 0.8465 & 0.6500 & -15.2525 & -2.0731 \\
 			Gradient Boost Regressor & 0.7463 & -8.2508 & -7.3105 & -1.5215 \\
 			Decision Tree Regressor & 0.6910 & 0.8401 & -7.9630 & -2.6052 \\
@@ -1416,12 +1541,12 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 	
 	\subsubsection{\label{evalFL} Caso puerto de Everglades - Fort Lauderdale}
 	% Series temporales
-	Modelo muy simple para realizar una regresión de series temporales. Se han excluido periodos estacionales, cambios de tendencia... Se ha mantenido exclusivamente la tendencia a largo plazo. Debido a esto, los resultados del ajuste son bastante pobres.
+	Modelo muy simple para realizar una regresión de series temporales usando 'Loaded Imports' como regresor exógeno. Debido a esto, los resultados del ajuste son bastante pobres.
 	
 	\underline{Resultados en Test}: \\
 	\begin{itemize}
-		\item[-] R²: -9.1261 (los datos del ajuste del modelo son más grandes, y por lo tanto, peores que si usasemos la media).
-		\item[-] MAPE: 382,9\%
+		\item[-] R²: -99.6696 (los datos del ajuste del modelo son peores que si usasemos la media).
+		\item[-] MAPE: 4.4790
 	\end{itemize}
 
 	\underline{Resultados en Train}: \\
@@ -1436,25 +1561,31 @@ En esta sección se muestran los algoritmos y técnicas que se han utilizado par
 Ninguno de los modelos fue capaz de predecir el comportamiento a futuro para el puerto de Newark. El caso para el puerto de Fort Lauderdale se cuenta como más experimental respecto al uso de la librería. En ningún caso puede considerarse los resultados como válidos para aceptar ninguno de los modelos. Esto hace pensar que el problema de base esté en la concepción del problema.
 
 	\subsection{Visualización de resultados}
+	En la figura \ref{r2_scores_newark} se muestran los resultados para el modelo de predicción del puerto de Newark. Es la representación visual de los datos publicados en la tabla \ref{tabla_r2_newark} y como se puede observar a simple vista, los datos guardados para generalizar (test) tienen un resultado de R² peor que si el modelo de regresión fuese la media de los datos.
 	
-	% Incluir gráficos para modelo de regresores
-	En esta subsección se dejan algunas gráficas con los resultados de los ajustes (para el modelo de series temporales):
-	
-	\begin{figure}[H]
-		\caption{\label{st_test_1} Serie temporal con Prophet para tendencia de incautaciones en Fort Lauderdale}
-		\centering
-		\hspace*{1cm}
-		\includegraphics[width=\textwidth]{st_test_1.png}
-	\end{figure}
 
 	\begin{figure}[H]
-		\caption{\label{st_test_2} Zoom para datos de test (2024) para Fort Lauderdale}
+		\caption{\label{r2_scores_newark} Resultados de R² para los distintos regresores y subconjuntos}
 		\centering
 		\hspace*{1cm}
-		\includegraphics[width=0.6\textwidth]{st_test_2.png}
+		\includegraphics[width=\textwidth]{r2_scores_newark.png}
 	\end{figure}
 
-	La figura \ref{st_test_1} representa el ajuste simplificado mediante las funciones de la librería prophet para la serie de datos ordenados cronológicamente para estimar la incautación de droga mensual en el puerto de Fort Lauderdale. Se ha incluido la variable "Loaded Imports" como regresor exógeno. Como se puede apreciar en la imagen, el modelo está tan simplificado (y automatizado) que no se ha concretado ninguna periodicidad (funciones de autocorrelación, aplicaciones de lags o retardos, etc.). La figura \ref{st_test_2} es un zoom de los datos de test (predicciones para 2024).
+	Pese a que los datos del conjunto de entrenamiento no arrojan valores de R² excesivamente fuera de lugar (excepto el regresor de AdaBoost que ya con el conjunto de entrenamiento devuelve un resultado negativo), los datos del conjunto de validación usado para elegir los hiperparámetros más adaptados ya demuestran pobres resultados en esta métrica.
+	
+	En cuanto al desempeño del modelo de series temporales, en las figura \ref{st_exogena} se muestra el resultado usando una variable exógena ('Loaded Imports'). Otras visualizaciones se pueden ver en la sección de anexos (Ver figuras \ref{st_test_1} y \ref{st_test_2}).
+	
+	\begin{figure}[H]
+		\caption{\label{st_exogena} Serie temporal con Prophet para tendencia de incautaciones en Fort Lauderdale (con regresor exógeno)}
+		\centering
+		\hspace*{1cm}
+		\includegraphics[width=\textwidth]{st_exogena.png}
+	\end{figure}
+
+
+	La figura \ref{st_exogena} representa el ajuste simplificado mediante las funciones de la librería prophet para la serie de datos ordenados cronológicamente para estimar la incautación de droga mensual en el puerto de Fort Lauderdale. Se ha incluido la variable "Loaded Imports" como regresor exógeno. Como se puede apreciar en la imagen, el modelo está tan simplificado (y automatizado) que no se ha concretado ninguna periodicidad (funciones de autocorrelación, aplicaciones de lags o retardos, etc.).
+	
+	El haber incluido la variable exógena 'Loaded Imports' y su falta de datos para 2025 impidió, finalmente, extender el horizonte de predicción a los primeros meses de 2025, lo cual hubiese dado un valor interesante al modelo. No obstante, dados los resultados alcanzados por el modelo (expuestos en la sección \ref{evalFL}), el modelo es incapaz de predecir la cantidad de droga incautada con los datos dados y con la colaboración de los datos de importación de contenedores cargados.
 	
 	
 	\subsection{\label{sesgos}Sesgos y limitaciones}
@@ -1467,6 +1598,8 @@ Ninguno de los modelos fue capaz de predecir el comportamiento a futuro para el 
 A lo largo de este trabajo se han seguido los pasos metodológicos correspondientes a un proyecto de ciencia de datos. Desde la captura e integración de los datos, su limpieza, procesado y curado hasta la generación de modelos de Machine Learning que intentasen predecir el comportamiento de las variables predictoras a una variable target. La decisión para elegir la variable target no fue sencilla en absoluto. Dada la disparidad de valores, de objetos de interés y de estudio, incluso se recurrió a técnicas de ingenería de características para generar potenciales variables target que pudiesen satisfacer la pregunta que se planteaba para desarrollar el modelo. Y es que, ante todo, el modelo intentó predecir la cantidad de droga incautada a partir de la actividad portuaria. En un primer momento, se intentó integrar todos los puertos en un mismo modelo, para más adelante realizar un modelo para cada puerto en particular.
 
 En este trabajo, lo que se ha analizado ha sido la relación entre el tráfico de contenedores en los principales puertos de EE.UU. y la cantidad de droga incautada por las oficinas de campo del CBP. Como se comentó en \ref{sesgos}, la confusión entre droga incautada (datos tangibles y contabilizados) con droga entrante de forma clandestina (estimaciones y aproximaciones) ha sido principalmente el error de concepto que ha impedido generar modelos correctos. En parte por la falta de datos del lado de las variables predictoras (tanto observaciones como variables). Pocos datos, 75 meses, para un asunto que quizá requiera un rango mayor en este sentido, que pueda abarcar muchos más años. Pero sobre todo, pocas variables y muy rendundantes en muchos casos. Es decir, los datos del CBP limitan el rango temporal. Los datos de actividad portuaria limitan la calidad y variación de información para los predictores.
+
+Pese a que en este estudio, las variables "Ratio" se acabasen considerando prescindibles a la hora de realizar el análisis. Se ha decidido mantener el origen de su generación así como su concepto por si pudiera servir para otros estudios sobre el mismo tema.
 
 En esta sección se ponen evidencia hallazgos relevantes encontrados, la posible aplicabilidad del modelo entornos reales, las limitaciones del trabajo y líneas de investigación futuras.
 
@@ -1537,7 +1670,7 @@ Todos los programas, recursos, archivos, fuentes y datos están disponibles en l
 Clusters para hubs portuarios:
 
 \begin{table}[H]
-	\caption{\label{tabla_hubs} Coordenadas de ubicaciones portuarias y fluviales}
+	\caption{\label{tabla_hubs} Coordenadas de ubicaciones portuarias y fluviales. Hubs portuarios asignados a cada cluster de K-Means}
 	\centering
 	\begin{tabular}{|c|c|c|c|}
 		\hline
@@ -1608,7 +1741,7 @@ Clusters para hubs portuarios:
 	\end{tabular}
 \end{table}
 
-
+\newpage
 Otras imágenes:
 
 \begin{figure}[H]
@@ -1655,36 +1788,58 @@ Otras imágenes:
 
 Fragmento de código para hiperparámetros en Prophet:
 \begin{verbatim}
-	from prophet.diagnostics import cross_validation, performance_metrics
-	import numpy as np
-	import itertools
+	# Convertir la columna de fecha al formato datetime
+	df['Date'] = pd.to_datetime(df['Date'])
 	
-	# Define parameter grid
-	param_grid = {  
-		'changepoint_prior_scale': [0.001, 0.01, 0.1, 0.5],
-		'changepoint_range': [0.8, 0.9, 0.95]
-	}
+	# Seleccionar solo las columnas necesarias
+	df = df[['Date', 'Count of Event_Other Drugs**', 'Loaded Imports']]
 	
-	# Generate all combinations of parameters
-	all_params = [dict(zip(param_grid.keys(), v)) for v in itertools.product(*param_grid.values())]
-	rmses = []  # Store the RMSE for each parameter combination
+	# Renombrar columnas para Prophet
+	df = df.rename(columns={'Date': 'ds', 'Count of Event_Other Drugs**': 'y', 'Loaded Imports': 'loaded_imports'})
 	
-	# Cross-validation for each parameter combination
-	for params in all_params:
-	# Create and fit model with current parameters
-	m = Prophet(**params)
-	m.add_regressor('Loaded Imports')
-	m.fit(df_imports_train)
+	# Partición de datos: Train hasta septiembre 2024, Validación desde octubre 2024 a diciembre 2024
+	train = df[df['ds'] <= '2024-09-30']
+	validation = df[(df['ds'] > '2024-09-30') & (df['ds'] <= '2024-12-31')]
 	
-	# Cross-validate
-	df_cv = cross_validation(m, initial='180 days', period='30 days', horizon='90 days', parallel="processes")
+	# Definir el modelo de Prophet con un regresor exógeno
+	model = Prophet()
+	model.add_regressor('loaded_imports')
 	
-	# Calculate metrics
-	df_metrics = performance_metrics(df_cv)
-	rmses.append(df_metrics['rmse'].mean())
+	# Ajustar el modelo con los datos de entrenamiento
+	model.fit(train)
 	
-	# Print current parameters and RMSE
-	print(f"Parameters: {params}, RMSE: {rmses[-1]:.2f}")
+	# Crear conjunto de validación para predicciones
+	future_validation = validation[['ds', 'loaded_imports']]
+	
+	# Hacer predicciones sobre el conjunto de validación
+	forecast_validation = model.predict(future_validation)
+	
+	# Evaluación del modelo
+	y_true = validation['y'].values
+	y_pred = forecast_validation['yhat'].values
+	
+	# Calcular MAPE y R²
+	mape = mean_absolute_percentage_error(y_true, y_pred)
+	r2 = r2_score(y_true, y_pred)
+	
+	print(f"MAPE: {mape:.4f}")
+	print(f"R² Score: {r2:.4f}")
+	
+	# Definir horizonte de predicción (primeros 3 meses de 2025)
+	future = model.make_future_dataframe(periods=6, freq='M')
+	future = future.merge(df[['ds', 'loaded_imports']], on='ds', how='left')
+	
+	# Hacer predicciones para 2025
+	forecast = model.predict(future)
+	
+	# Graficar resultados
+	fig, ax = plt.subplots(figsize=(10, 5))
+	model.plot(forecast, ax=ax)
+	plt.title("Predicción de 'Count of Event_Other Drugs**' usando Prophet")
+	plt.xlabel("Fecha")
+	plt.ylabel("Cantidad de incautaciones")
+	plt.show()
+	
 	
 \end{verbatim}
 
@@ -1734,6 +1889,47 @@ Matrices de correlación para el resto de puertos (Referencia de la figura \ref{
 	\centering
 	\hspace*{1cm}
 	\includegraphics[width=0.7\textwidth]{matrix_corr_6.png}
+\end{figure}
+
+\newpage
+Ejemplos de señales suavizadas y su derivada aplicando distintos métodos (Ver "Otras feature engineering" de la sección \ref{feature engineering}):
+
+\begin{figure}[H]
+	\caption{\label{timeseries_diff_1} Señal original para importaciones cargadas en Fort Lauderdale y su función de diferencias}
+	\centering
+	\hspace*{1cm}
+	\includegraphics[width=0.7\textwidth]{timeseries_diff_1.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{timeseries_diff_2} Señal suavizada para importaciones cargadas en Fort Lauderdale (ventana temporal = 4) y su función de diferencias tras aplicación de filtro Savitzky-Golay}
+	\centering
+	\hspace*{1cm}
+	\includegraphics[width=0.7\textwidth]{timeseries_diff_2.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{timeseries_diff_3} Señal suavizada para importaciones cargadas en Fort Lauderdale (ventana temporal = 4) y su función de diferencias también suavizada}
+	\centering
+	\hspace*{1cm}
+	\includegraphics[width=0.7\textwidth]{timeseries_diff_3.png}
+\end{figure}
+
+\newpage:
+Otras visualizaciones para la serie temporal con regresor exógeno:
+	
+\begin{figure}[H]
+	\caption{\label{st_test_1} Serie temporal con Prophet para tendencia de incautaciones en Fort Lauderdale}
+	\centering
+	\hspace*{1cm}
+	\includegraphics[width=\textwidth]{st_test_1.png}
+\end{figure}
+
+\begin{figure}[H]
+	\caption{\label{st_test_2} Zoom para datos de test (2024) para Fort Lauderdale}
+	\centering
+	\hspace*{1cm}
+	\includegraphics[width=0.6\textwidth]{st_test_2.png}
 \end{figure}
 
 

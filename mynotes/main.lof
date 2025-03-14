@@ -1,63 +1,71 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Señales AIS de barcos recopilados por el NOAA}}{17}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Señales AIS de barcos atracados o con movilidad restringida recopilados por el NOAA}}{17}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Señales AIS de barcos atracados o con movilidad restringida recopilados por el NOAA}}{18}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Datos brutos del CBP para NY}}{18}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Relación entre la cantidad de cocaína incautada y el número de redadas por puerto}}{25}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Relación entre la cantidad de heroína incautada y el número de redadas por puerto}}{26}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Relación entre la cantidad de marihuana incautada y el número de redadas por puerto}}{26}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Relación entre la cantidad de otras drogas incautadas y el número de redadas por puerto}}{27}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Principales redadas por tipo de droga en cada puerto}}{28}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Principales redadas de otras drogas y demas en cada puerto}}{28}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Actividad (movimiento de cargamento) en el puerto de Fort Lauderdale}}{30}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Redadas en el puerto de Fort Lauderdale}}{30}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Redadas incautando cocaína por puerto}}{31}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Redadas incautando éxtasis por puerto}}{31}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Redadas incautando heroína por puerto}}{32}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Redadas incautando otras drogas por puerto}}{32}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Distribución por número de redadas por cada mes en Fort Lauderdale}}{33}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Distribución por número de TEUs por cada mes en Fort Lauderdale}}{33}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Distribución por número de redadas por cada mes en Los Ángeles}}{34}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Correlación entre variables predictoras y potenciales variables objetivo para el puerto de Newark}}{35}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Para el puerto de Fort Lauderdale}}{35}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Correlación entre predictores para el puerto de Newark}}{36}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Serie temporal con TEUs gestionados por los puertos}}{37}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Contenedores gestionados por puertos por tipo: Vacío o Cargado}}{37}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces }}{38}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces }}{38}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces }}{39}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces }}{39}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces }}{40}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Boxplot para hallar outliers en redadas de cocaína}}{43}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Boxplot para hallar outliers en ratios de cocaína}}{44}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Boxplot para hallar outliers en redadas de otras drogas}}{44}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Boxplot para hallar outliers en ratios de otras drogas}}{45}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Serie temporal sobre redadas de cocaína para cada puerto}}{46}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Serie temporal sobre redadas de marihuana para cada puerto}}{46}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Serie temporal sobre redadas de otro tipo de drogas para cada puerto}}{47}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces QQ-Plot para importaciones vacías (Newark/Nueva York)}}{48}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces QQ-Plot para el total de importaciones (Newark/Nueva York)}}{48}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces QQ-Plot para Total TEUs (Newark/Nueva York)}}{49}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces }}{49}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces }}{50}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces QQ-Plot para Total TEUs (Newark/Nueva York)}}{51}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces QQ-Plot para Total TEUs (Newark/Nueva York)}}{51}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces }}{52}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Boxplot para hallar outliers en Sum of Counts}}{53}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces }}{53}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Boxplot para Sum of Counts}}{54}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces }}{54}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Gráfico de dispersión Importaciones y Redadas en Newark tras transformación logarítmica y estandarización }}{55}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Matriz de correlaciones tras transformación logaritmica y estandarizacion}}{55}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Serie Temporal en Puerto Fort Lauderdale con redadas de cocaína}}{58}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Serie Temporal en Puerto Fort Lauderdale con redadas de otras drogas}}{59}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Serie Temporal en Puerto Fort Lauderdale con redadas de Marihuana}}{60}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Serie temporal con Prophet para tendencia de incautaciones en Fort Lauderdale}}{65}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Zoom para datos de test (2024) para Fort Lauderdale}}{65}{figure.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Newark}}{73}{figure.56}%
-\contentsline {figure}{\numberline {57}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Seattle}}{74}{figure.57}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Los Angeles}}{75}{figure.58}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Los Angeles}}{76}{figure.59}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Distribución de redadas por mes en Newark}}{77}{figure.60}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Distribución de redadas por mes en Newark}}{77}{figure.61}%
-\contentsline {figure}{\numberline {62}{\ignorespaces Correlación entre predictores para el puerto de Fort Lauderdale}}{80}{figure.62}%
-\contentsline {figure}{\numberline {63}{\ignorespaces Correlación entre predictores para el hub portuario de Los Angeles}}{80}{figure.63}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Imagen de una regresión mediante árbol de decisión}}{15}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces *}}{15}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Gráfico de previsiones saturadas en Prophet. \textit {Fuente: Meta (Facebook) \cite {ProphetSaturatingForecasts}.}}}{16}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Señales AIS de barcos recopilados por el NOAA}}{19}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Señales AIS de barcos atracados o con movilidad restringida recopilados por el NOAA}}{20}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Clusters obtenidos de aplicar K-Means sobre barcos atracados o con movilidad restringida}}{20}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Datos brutos del CBP para NY}}{21}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Relación entre la cantidad de cocaína incautada y el número de redadas por puerto}}{29}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Relación entre la cantidad de heroína incautada y el número de redadas por puerto}}{30}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Relación entre la cantidad de marihuana incautada y el número de redadas por puerto}}{30}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Relación entre la cantidad de otras drogas incautadas y el número de redadas por puerto}}{31}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Serie temporal sobre redadas de cocaína para cada puerto}}{31}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Principales redadas por tipo de droga en cada puerto}}{32}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Principales redadas de otras drogas y demas en cada puerto}}{32}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Actividad (movimiento de cargamento) en el puerto de Fort Lauderdale}}{33}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Redadas en el puerto de Fort Lauderdale}}{34}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Redadas incautando cocaína por puerto}}{34}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Redadas incautando éxtasis por puerto}}{35}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Redadas incautando heroína por puerto}}{35}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Redadas incautando otras drogas por puerto}}{36}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Distribución por número de redadas por cada mes en Fort Lauderdale}}{37}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Distribución por número de TEUs por cada mes en Fort Lauderdale}}{37}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Distribución por número de redadas por cada mes en Los Ángeles}}{38}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Correlación entre variables predictoras y potenciales variables objetivo para el puerto de Newark}}{39}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Correlación entre variables predictoras y potenciales variables objetivo para el puerto de Fort Lauderdale}}{39}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Correlación entre predictores para el puerto de Newark}}{40}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Serie temporal con TEUs gestionados por los puertos}}{41}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Contenido de los contenedores gestionados por puertos por tipo: vacío o lleno de carga}}{41}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Mapa de burbujas con total de contenedores manejados por hub portuario}}{42}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Mapa de burbujas con total de cocaína incautada por hub portuario}}{42}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Mapa de burbujas con total de marihuana incautada por hub portuario}}{43}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Mapa de burbujas con total de otras drogas incautadas por hub portuario}}{43}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Mapa de burbujas con total de redadas por tipo de droga y hub portuario}}{44}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Boxplot para hallar outliers en redadas de cocaína}}{49}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Boxplot para hallar outliers en ratios de cocaína}}{49}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Boxplot para hallar outliers en redadas de otras drogas}}{50}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Boxplot para hallar outliers en ratios de otras drogas}}{50}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Serie temporal sobre redadas de marihuana para cada puerto}}{51}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Serie temporal sobre redadas de otro tipo de drogas para cada puerto}}{52}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces QQ-Plot para importaciones vacías (Newark/Nueva York)}}{53}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces QQ-Plot para el total de importaciones (Newark/Nueva York)}}{53}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces QQ-Plot para Total TEUs (Newark/Nueva York)}}{54}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Histograma con datos normalizados del total de importaciones para el puerto de Newark/Nueva York}}{54}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Scatter plots para detectar outliers en Total Imports para el puerto de Newark/Nueva York}}{55}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces QQ-Plot para Empty Imports (Newark/Nueva York)}}{56}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces QQ-Plot para Total Imports (Newark/Nueva York)}}{56}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Scatter plots para variables respecto a Total Imports en el puerto de Newark}}{57}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Boxplot para hallar outliers en Sum of Counts}}{58}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Histograma para Redadas('Sum of Counts') normalizado sobre el puerto de Newark/Nueva York}}{58}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Boxplot para Redadas('Sum of Counts') en el puerto de Newark/Nueva York tras aplicar transformación logarítmica y estandarización}}{59}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Histograma para Redadas('Sum of Counts') en el puerto de Newark/Nueva York tras aplicar transformación logarítmica y estandarización}}{59}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Gráfico de dispersión Importaciones y Redadas ('Sum of Counts') en Newark tras transformación logarítmica y estandarización }}{60}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Matriz de correlaciones tras transformación logaritmica y estandarizacion}}{60}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Serie Temporal en Fort Lauderdale con redadas de cocaína. Reescalado min-max}}{63}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Serie Temporal en Puerto Fort Lauderdale con redadas de otras drogas. Reescalado min-max}}{64}{figure.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Serie Temporal en Puerto Fort Lauderdale con redadas de Marihuana. Reescalado min-max}}{65}{figure.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Resultados de R² para los distintos regresores y subconjuntos}}{69}{figure.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Serie temporal con Prophet para tendencia de incautaciones en Fort Lauderdale (con regresor exógeno)}}{70}{figure.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Newark}}{78}{figure.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Seattle}}{79}{figure.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Los Angeles}}{80}{figure.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Serie temporal sobre redadas por tipo de droga en Los Angeles}}{81}{figure.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Distribución de redadas por mes en Newark}}{82}{figure.63}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Distribución de redadas por mes en Newark}}{82}{figure.64}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Correlación entre predictores para el puerto de Fort Lauderdale}}{86}{figure.65}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Correlación entre predictores para el hub portuario de Los Angeles}}{86}{figure.66}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Señal original para importaciones cargadas en Fort Lauderdale y su función de diferencias}}{87}{figure.67}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Señal suavizada para importaciones cargadas en Fort Lauderdale (ventana temporal = 4) y su función de diferencias tras aplicación de filtro Savitzky-Golay}}{87}{figure.68}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Señal suavizada para importaciones cargadas en Fort Lauderdale (ventana temporal = 4) y su función de diferencias también suavizada}}{88}{figure.69}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Serie temporal con Prophet para tendencia de incautaciones en Fort Lauderdale}}{89}{figure.70}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Zoom para datos de test (2024) para Fort Lauderdale}}{89}{figure.71}%
