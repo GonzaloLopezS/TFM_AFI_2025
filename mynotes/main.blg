@@ -42,45 +42,45 @@ Warning--entry type for "portofsandiego2025" isn't style-file defined
 Warning--entry type for "cbp2025amodrugseizures" isn't style-file defined
 --line 296 of file bibliografia.bib
 Warning--I didn't find a database entry for ""
-You've used 37 entries,
+You've used 38 entries,
             1935 wiz_defined-function locations,
-            619 strings with 8307 characters,
-and the built_in function-call counts, 10629 in all, are:
-= -- 1081
-> -- 417
-< -- 33
-+ -- 144
-- -- 134
-* -- 748
-:= -- 2079
-add.period$ -- 114
-call.type$ -- 37
-change.case$ -- 258
-chr.to.int$ -- 31
-cite$ -- 37
-duplicate$ -- 397
-empty$ -- 632
-format.name$ -- 177
-if$ -- 1960
+            624 strings with 8425 characters,
+and the built_in function-call counts, 10874 in all, are:
+= -- 1107
+> -- 424
+< -- 34
++ -- 146
+- -- 136
+* -- 763
+:= -- 2128
+add.period$ -- 117
+call.type$ -- 38
+change.case$ -- 264
+chr.to.int$ -- 32
+cite$ -- 38
+duplicate$ -- 407
+empty$ -- 647
+format.name$ -- 180
+if$ -- 2005
 int.to.chr$ -- 7
 int.to.str$ -- 0
 missing$ -- 6
-newline$ -- 191
-num.names$ -- 111
-pop$ -- 155
+newline$ -- 196
+num.names$ -- 114
+pop$ -- 158
 preamble$ -- 1
-purify$ -- 252
+purify$ -- 258
 quote$ -- 0
-skip$ -- 335
+skip$ -- 344
 stack$ -- 0
-substring$ -- 521
+substring$ -- 533
 swap$ -- 6
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
+type$ -- 226
 warning$ -- 0
-while$ -- 78
+while$ -- 80
 width$ -- 0
-write$ -- 466
+write$ -- 478
 (There were 20 warnings)

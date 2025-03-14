@@ -1,4 +1,7 @@
-\contentsline {table}{\numberline {1}{\ignorespaces Incautaciones de drogas por puerto}}{43}{table.1}%
-\contentsline {table}{\numberline {2}{\ignorespaces }}{58}{table.2}%
-\contentsline {table}{\numberline {3}{\ignorespaces }}{58}{table.3}%
-\contentsline {table}{\numberline {4}{\ignorespaces Coordenadas de ubicaciones portuarias y fluviales}}{67}{table.4}%
+\contentsline {table}{\numberline {1}{\ignorespaces Descripción de las variables del conjunto de datos original del CBP}}{22}{table.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces Incautaciones de Cocaína y Marihuana en 2024 en NY}}{24}{table.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces Incautaciones de drogas por puerto al mes}}{28}{table.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces Descripción de las variables utilizadas en el análisis.}}{45}{table.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces Evaluación de resultados de los distintos regresores para el puerto de Newark (MAPE)}}{67}{table.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces Evaluación de resultados de los distintos regresores para el puerto de Newark (R²)}}{68}{table.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces Coordenadas de ubicaciones portuarias y fluviales. Hubs portuarios asignados a cada cluster de K-Means}}{77}{table.7}%
